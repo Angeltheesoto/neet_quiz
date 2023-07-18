@@ -1,20 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, ActivityIndicator, StyleSheet } from "react-native";
+import data from "./src/utils/data";
+import Tabs from "./src/components/Tabs";
+import { NavigationContainer } from "@react-navigation/native";
 
 export default function App() {
+  // console.log(data);
+  // const titles = data.quizes.react.titles;
+  // Object.keys(titles).forEach((title) => {
+  //   console.log(title);
+  // });
+
+  const { container } = styles;
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer style={container}>
+      <Tabs />
+    </NavigationContainer>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
