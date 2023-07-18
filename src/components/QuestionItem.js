@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import {
-  SafeAreaView,
   ScrollView,
   View,
   Text,
   StyleSheet,
   TouchableOpacity,
 } from "react-native";
+import { FontAwesome5 } from "@expo/vector-icons";
 
 const QuestionItem = ({
   question,
@@ -101,16 +101,22 @@ const QuestionItem = ({
         <Text
           style={styles.titleText}
         >{`Total: ${totalCorrect} / ${lengthOfQuiz}`}</Text>
+        <View style={styles.percentageContainer}>
+          <Text style={styles.percentageText}>{`${
+            (totalCorrect / lengthOfQuiz) * 100
+          }%`}</Text>
+        </View>
       </View>
     );
   };
 
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.quizName}>{quizName}</Text>
-      <View style={styles.quizContainer}>
-        {isEnd ? renderQuizEnd() : renderQuiz()}
-      </View>
+      <Text style={styles.quizName}>
+        <FontAwesome5 name="question-circle" size={25} color="black" />{" "}
+        {quizName}
+      </Text>
+      {isEnd ? renderQuizEnd() : renderQuiz()}
     </ScrollView>
   );
 };
@@ -118,17 +124,17 @@ const QuestionItem = ({
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "white",
+    paddingHorizontal: 20,
     marginBottom: 50,
-    minHeight: "80%",
+    paddingBottom: "100%",
 
-    // borderWidth: 3,
-    // borderColor: "green",
+    // borderWidth: 1,
+    // borderColor: "red",
   },
   titleText: {
     fontSize: 30,
-  },
-  questionText: {
-    fontSize: 50,
+    marginTop: 20,
+    marginBottom: 20,
   },
   optionsText: {
     borderWidth: 2,
@@ -148,14 +154,17 @@ const styles = StyleSheet.create({
   },
   questionText: {
     fontWeight: "bold",
+    fontSize: 15,
   },
   questionTextActive: {
     color: "white",
     fontWeight: "bold",
   },
   buttonContainer: {
+    flex: 1,
     flexDirection: "row",
     justifyContent: "center",
+    paddingVertical: 10,
   },
   buttonStyle: {
     backgroundColor: "#eee",
@@ -175,22 +184,33 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginBottom: 10,
   },
-  quizContainer: {
-    padding: 10,
-
-    // borderWidth: 2,
-    // borderColor: "red",
-  },
   quizEndContainer: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    paddingTop: 100,
-    paddingBottom: 100,
+    paddingTop: 50,
+    paddingBottom: "100%",
   },
   quizName: {
     textAlign: "center",
     fontSize: 20,
+    marginTop: 30,
+    backgroundColor: "#eee",
+    borderRadius: 22,
+    paddingVertical: 10,
+  },
+  percentageContainer: {
+    width: 200,
+    height: 200,
+    borderRadius: 100,
+    borderWidth: 3,
+    borderColor: "red",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  percentageText: {
+    fontSize: 50,
+    fontWeight: "bold",
   },
 });
 export default QuestionItem;

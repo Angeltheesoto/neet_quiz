@@ -1,10 +1,16 @@
 import React, { useState } from "react";
-import { FlatList, SafeAreaView, TouchableOpacity } from "react-native";
+import {
+  FlatList,
+  SafeAreaView,
+  ScrollView,
+  TouchableOpacity,
+} from "react-native";
 import globalStyles from "../styles/globalStyles";
 import ListItem from "../components/ListItem";
 import data from "../utils/data";
 import GenreItem from "../components/GenreItem";
 import QuestionItem from "../components/QuestionItem";
+import { View } from "react-native-web";
 
 const Quizes = () => {
   const [genre, setGenre] = useState("react");
@@ -151,15 +157,15 @@ const styles = {
     paddingTop: 5,
     paddingBottom: 5,
     backgroundColor: "white",
-
-    minHeight: 50,
+    minHeight: 55,
   },
 
   quizListContainer: {
     backgroundColor: "white",
     padding: 10,
-    paddingBottom: 50,
-    minHeight: "100%",
+    // paddingBottom: 50,
+    paddingBottom: "110%",
+
     // borderWidth: 3,
     // borderColor: "red",
   },

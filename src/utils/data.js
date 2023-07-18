@@ -6,10 +6,10 @@ const data = {
           {
             question: "What is a react component?",
             options: [
-              "flexGrow describes how any space within a container should be distributed among its children along the main axis. After laying out its children, its children along the main axis. After laying out its children,",
-              "flexGrow describes how any space within a container should be distributed among its children along the main axis. After laying out its children, its children along the main axis. After laying out its children,",
-              "flexGrow describes how any space within a container should be distributed among its children along the main axis. After laying out its children, its children along the main axis. After laying out its children,",
-              "flexGrow describes how any space within a container should be distributed among its children along the main axis. After laying out its children, its children along the main axis. After laying out its children,",
+              "flexGrow describes how any space within a container should be distributed among its children along the main axis. After laying out its children, its children along the main axis. After laying out its children, flexGrow describes how any space within a container should be distributed among its children along the main axis. After laying out its children, its children along the main axis. After laying out its children,",
+              "flexGrow describes how any space within a container should be distributed among its children along the main axis. After laying out its children, its children along the main axis. After laying out its children, flexGrow describes how any space within a container should be distributed among its children along the main axis. After laying out its children, its children along the main axis. After laying out its children,",
+              "flexGrow describes how any space within a container should be distributed among its children along the main axis. After laying out its children, its children along the main axis. After laying out its children, flexGrow describes how any space within a container should be distributed among its children along the main axis. After laying out its children, its children along the main axis. After laying out its children,",
+              "flexGrow describes how any space within a container should be distributed among its children along the main axis. After laying out its children, its children along the main axis. After laying out its children, flexGrow describes how any space within a container should be distributed among its children along the main axis. After laying out its children, its children along the main axis. After laying out its children,",
             ],
             correctAnswer: "0",
           },
