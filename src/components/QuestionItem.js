@@ -47,10 +47,6 @@ const QuestionItem = ({
       setTotalCorrect((prev) => (index == correctAnswer ? prev + 1 : prev));
     }
   };
-  // *console.log(
-  //   `Question#: ${questionNum}`,
-  //   `Total: ${totalCorrect} / ${lengthOfQuiz}`
-  // );
 
   const renderQuiz = () => {
     return (

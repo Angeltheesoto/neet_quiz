@@ -1,16 +1,9 @@
-import React, { useState } from "react";
-import {
-  FlatList,
-  SafeAreaView,
-  ScrollView,
-  TouchableOpacity,
-} from "react-native";
-import globalStyles from "../styles/globalStyles";
+import React, { useEffect, useState } from "react";
+import { FlatList, SafeAreaView, TouchableOpacity } from "react-native";
 import ListItem from "../components/ListItem";
 import data from "../utils/data";
 import GenreItem from "../components/GenreItem";
 import QuestionItem from "../components/QuestionItem";
-import { View } from "react-native-web";
 
 const Quizes = () => {
   const [genre, setGenre] = useState("react");
@@ -32,42 +25,15 @@ const Quizes = () => {
 
   const handleQuizSelect = (quiz) => {
     setSelectedQuiz(quiz);
-    handleQuizQuestions();
-
-    // !Sets the quizLength onClick for here.
-    const hasQuizQuestions = data.quizes[genre][quiz]?.questions;
-    if (hasQuizQuestions) {
-      setQuizLength(data.quizes[genre][quiz].questions.length);
-    } else {
-      setQuizLength(0);
-    }
   };
   // *console.log("Selected quiz: ", selectedQuiz);
 
   const handleQuizQuestions = () => {
     if (selectedQuiz) {
-      setSelectedQuizQuestions(data.quizes[genre][selectedQuiz].questions);
+      setSelectedQuizQuestions(data.quizes[genre][selectedQuiz]?.questions);
     }
   };
-
-  // !Goes to previous question
-  const handleGoBack = () => {
-    if (idCount == 0) {
-      setSelectedQuizQuestions(null);
-    } else {
-      setIdCount((prev) => (prev -= 1));
-    }
-  };
-
-  // !Goes to next question
-  const handleNext = () => {
-    if (idCount < quizLength - 1) {
-      setIdCount((prev) => (prev += 1));
-    } else {
-      console.log("You reached the end of the quiz.");
-      setIsEnd(!isEnd);
-    }
-  };
+  // *console.log("Selected questions: ", selectedQuizQuestions);
 
   // !Displays topbar genres using GenreItem comp.
   const renderGenreItem = ({ item, index }) => (
@@ -90,17 +56,15 @@ const Quizes = () => {
   const renderQuizList = () => {
     if (genre) {
       const quizTitles = data.quizes[genre];
-      if (quizTitles) {
-        const quizKeys = Object.keys(quizTitles);
-        return (
-          <FlatList
-            data={quizKeys}
-            renderItem={renderQuizItem}
-            keyExtractor={(item) => item}
-            contentContainerStyle={styles.quizListContainer}
-          />
-        );
-      }
+      const quizKeys = Object.keys(quizTitles);
+      return (
+        <FlatList
+          data={quizKeys}
+          renderItem={renderQuizItem}
+          keyExtractor={(item) => item}
+          contentContainerStyle={styles.quizListContainer}
+        />
+      );
     }
 
     return null;
@@ -134,6 +98,44 @@ const Quizes = () => {
   };
   // *console.log(idCount, quizLength);
 
+  // !Goes to previous question. For [renderQuizQuestions].
+  const handleGoBack = () => {
+    if (idCount == 0) {
+      setSelectedQuizQuestions(null);
+    } else {
+      setIdCount((prev) => (prev -= 1));
+    }
+  };
+
+  // !Goes to next question. For [renderQuizQuestions].
+  const handleNext = () => {
+    if (idCount < quizLength - 1) {
+      setIdCount((prev) => (prev += 1));
+    } else {
+      console.log("You reached the end of the quiz.");
+      setIsEnd(!isEnd);
+    }
+  };
+
+  useEffect(() => {
+    const updateQuizQuestions = async () => {
+      handleQuizQuestions();
+
+      // !Sets the quizLength onClick for here.
+      const hasQuizQuestions = data.quizes[genre][selectedQuiz]?.questions;
+
+      if (hasQuizQuestions) {
+        setQuizLength(data.quizes[genre][selectedQuiz].questions.length);
+      } else {
+        setQuizLength(0);
+      }
+    };
+
+    if (selectedQuiz) {
+      updateQuizQuestions();
+    }
+  }, [selectedQuiz]);
+
   return (
     <SafeAreaView styles={styles.container}>
       <FlatList
@@ -165,7 +167,6 @@ const styles = {
     padding: 10,
     // paddingBottom: 50,
     paddingBottom: "110%",
-
     // borderWidth: 3,
     // borderColor: "red",
   },
