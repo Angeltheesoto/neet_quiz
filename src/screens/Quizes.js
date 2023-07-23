@@ -4,16 +4,15 @@ import ListItem from "../components/ListItem";
 import data from "../utils/data";
 import GenreItem from "../components/GenreItem";
 import QuestionItem from "../components/QuestionItem";
-import { getSavedQuizes } from "../utils/savedQuizes";
 
 const Quizes = () => {
   const [genre, setGenre] = useState("react");
   const [selectedQuiz, setSelectedQuiz] = useState(null);
   const [selectedQuizQuestions, setSelectedQuizQuestions] = useState(null);
+
   const [idCount, setIdCount] = useState(0);
   const [quizLength, setQuizLength] = useState(0);
   const [isEnd, setIsEnd] = useState(false);
-  let savedQuizes = getSavedQuizes();
 
   // !Resets everything when you choose a new genre
   const handleGenreSelect = (gen) => {
@@ -120,7 +119,7 @@ const Quizes = () => {
   };
 
   // !WORKING ON SAVEDQUIZES ----->
-
+  // console.log(data.quizes.react["10 react questions"].saved);
   // !WORKING ON SAVEDQUIZES ----->
 
   useEffect(() => {

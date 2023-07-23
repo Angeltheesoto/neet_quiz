@@ -10,8 +10,6 @@ import { StyleSheet } from "react-native";
 const Tab = createBottomTabNavigator();
 
 const Tabs = () => {
-  const {} = styles;
-
   return (
     <Tab.Navigator
       screenOptions={{

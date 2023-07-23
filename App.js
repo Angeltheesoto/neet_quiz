@@ -1,20 +1,25 @@
-import { StyleSheet } from "react-native";
+import { useState, useEffect } from "react";
+import { StyleSheet, View, Text } from "react-native";
 import Tabs from "./src/components/Tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import data from "./src/utils/data";
-import { getSavedQuizes } from "./src/utils/savedQuizes";
-import { AsyncStorage } from "react-native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function App() {
-  let savedQuizes = getSavedQuizes();
-  const savedQuizLength = Object.keys(savedQuizes).length;
-  if (savedQuizLength === 0) {
-    const keys = Object.keys(data.quizes);
-    for (let i = 0; i < keys.length; i++) {
-      savedQuizes[keys[i]] = [];
+  const initializeLocalStorage = async () => {
+    try {
+      const localBookmark = await AsyncStorage.getItem("bookmarkedItems");
+      if (!localBookmark) {
+        AsyncStorage.setItem("bookmarkedItems", JSON.stringify({}));
+        console.log("LocalStorage initialized.");
+      } else {
+        console.log("LocalStorage already initialized.");
+      }
+    } catch (error) {
+      console.log("Error initializing LocalStorage:", error);
     }
-  }
-  console.log(`Saved Quizes: `, savedQuizes);
+  };
+  initializeLocalStorage();
 
   return (
     <NavigationContainer style={styles.container}>
@@ -26,5 +31,10 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  loadingContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
 });

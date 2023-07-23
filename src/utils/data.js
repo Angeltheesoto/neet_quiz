@@ -6,10 +6,10 @@ const data = {
           {
             question: "What is a react component?",
             options: [
-              "flexGrow describes how any space within a container should be distributed among its children along the main axis. After laying out its children, its children along the main axis. After laying out its children, flexGrow describes how any space within a container should be distributed among its children along the main axis. After laying out its children, its children along the main axis. After laying out its children,",
-              "flexGrow describes how any space within a container should be distributed among its children along the main axis. After laying out its children, its children along the main axis. After laying out its children, flexGrow describes how any space within a container should be distributed among its children along the main axis. After laying out its children, its children along the main axis. After laying out its children,",
-              "flexGrow describes how any space within a container should be distributed among its children along the main axis. After laying out its children, its children along the main axis. After laying out its children, flexGrow describes how any space within a container should be distributed among its children along the main axis. After laying out its children, its children along the main axis. After laying out its children,",
-              "flexGrow describes how any space within a container should be distributed among its children along the main axis. After laying out its children, its children along the main axis. After laying out its children, flexGrow describes how any space within a container should be distributed among its children along the main axis. After laying out its children, its children along the main axis. After laying out its children,",
+              "A blank blank ...",
+              "The blank blank ...",
+              "What a blank blank ...",
+              "Blank the blank ...",
             ],
             correctAnswer: "0",
           },
@@ -44,6 +44,7 @@ const data = {
             correctAnswer: "1",
           },
         ],
+        saved: false,
       },
       "15 react questions": {
         questions: [
@@ -68,6 +69,7 @@ const data = {
             correctAnswer: "2",
           },
         ],
+        saved: false,
       },
       // "20 react questions": {},
       // "25 react questions": {},
@@ -111,6 +113,7 @@ const data = {
             correctAnswer: "3",
           },
         ],
+        saved: false,
       },
       "15 nodejs questions": {
         questions: [
@@ -135,20 +138,69 @@ const data = {
             correctAnswer: "2",
           },
         ],
+        saved: false,
       },
     },
     django: {
-      "10 django questions": {},
-      "15 django questions": {},
+      "10 django questions": {
+        questions: [],
+        saved: false,
+      },
+      "15 django questions": {
+        questions: [],
+        saved: false,
+      },
     },
-    vue: { "10 vue questions": {}, "15 vue questions": {} },
-    angular: { "10 angular questions": {}, "15 angular questions": {} },
+    vue: {
+      "10 vue questions": {
+        questions: [],
+        saved: false,
+      },
+      "15 vue questions": {
+        questions: [],
+        saved: false,
+      },
+    },
+    angular: {
+      "10 angular questions": {
+        questions: [],
+        saved: false,
+      },
+      "15 angular questions": {
+        questions: [],
+        saved: false,
+      },
+    },
     other: {
-      "10 django questions": {},
-      "15 django questions": {},
+      "10 django questions": {
+        questions: [],
+        saved: false,
+      },
+      "15 django questions": {
+        questions: [],
+        saved: false,
+      },
     },
-    something: { "10 vue questions": {}, "15 vue questions": {} },
-    else: { "10 angular questions": {}, "15 angular questions": {} },
+    something: {
+      "10 vue questions": {
+        questions: [],
+        saved: false,
+      },
+      "15 vue questions": {
+        questions: [],
+        saved: false,
+      },
+    },
+    else: {
+      "10 angular questions": {
+        questions: [],
+        saved: false,
+      },
+      "15 angular questions": {
+        questions: [],
+        saved: false,
+      },
+    },
   },
 };
 
