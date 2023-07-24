@@ -21,7 +21,7 @@ const ListItem = ({ title, genre }) => {
       }
 
       await AsyncStorage.setItem("bookmarkedItems", JSON.stringify(data));
-      console.log("Title added to genre:", genre, "Title: ", title);
+      // console.log("Title added to genre:", genre, "Title: ", title);
     } catch (err) {
       console.log("could not save item", err);
     }
@@ -36,12 +36,12 @@ const ListItem = ({ title, genre }) => {
       if (data[genre]) {
         data[genre] = data[genre].filter((title) => title !== titleToRemove);
         await AsyncStorage.setItem("bookmarkedItems", JSON.stringify(data));
-        console.log(
-          "Title removed from genre:",
-          genre,
-          "Title: ",
-          titleToRemove
-        );
+        // console.log(
+        //   "Title removed from genre:",
+        //   genre,
+        //   "Title: ",
+        //   titleToRemove
+        // );
       } else {
         console.log("Genre not found:", genre);
       }
@@ -55,8 +55,8 @@ const ListItem = ({ title, genre }) => {
     try {
       const itemValue = await AsyncStorage.getItem(itemName);
       if (itemValue !== null) {
-        // console.log(`Contents of "${itemName}":`, JSON.parse(itemValue));
         setSavedQuiz((prev) => (prev = JSON.parse(itemValue)));
+        // console.log(`setSavedQuiz "${itemName}":`, JSON.parse(itemValue));
       } else {
         console.log(`"${itemName}" does not exist in AsyncStorage.`);
       }
@@ -67,16 +67,32 @@ const ListItem = ({ title, genre }) => {
 
   // !Handles actions for adding and removing quizzes from localstorage
   const handleSave = async () => {
+    // if (isSaved) {
+    //   setIsSaved((prevIsSaved) => !prevIsSaved);
+    //   removeItem(genre, title);
+    //   console.log("removed", title, genre);
+    // } else {
+    //   setIsSaved((prevIsSaved) => !prevIsSaved);
+    //   saveItem(genre, title);
+    //   console.log("added", title, genre);
+    // }
+
     if (isSaved) {
-      setIsSaved(false);
       removeItem(genre, title);
-      // console.log("removed", title, genre);
+      console.log("removed", title, genre);
     } else {
-      setIsSaved(true);
       saveItem(genre, title);
-      // console.log("added", title, genre);
+      console.log("added", title, genre);
     }
     saveLocalStorageItem("bookmarkedItems");
+  };
+
+  const handleQuizIsSaved = () => {
+    if (savedQuiz && savedQuiz[genre] && savedQuiz[genre].includes(title)) {
+      setIsSaved((prevIsSaved) => (prevIsSaved = true));
+    } else {
+      setIsSaved((prevIsSaved) => (prevIsSaved = false));
+    }
   };
 
   // !Deletes localStorage
@@ -92,13 +108,14 @@ const ListItem = ({ title, genre }) => {
 
   useEffect(() => {
     saveLocalStorageItem("bookmarkedItems");
+    handleQuizIsSaved();
   }, [savedQuiz]);
   // console.log("savedQuiz:", savedQuiz);
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{title}</Text>
-      <TouchableOpacity onPress={handleSave} style={styles.test}>
+      <TouchableOpacity onPress={handleSave}>
         {savedQuiz && savedQuiz[genre] && savedQuiz[genre].includes(title) ? (
           <Ionicons name="md-bookmark" size={26} color="black" />
         ) : (
@@ -122,10 +139,6 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: "bold",
-  },
-  test: {
-    borderWidth: 3,
-    borderColor: "red",
   },
 });
 
