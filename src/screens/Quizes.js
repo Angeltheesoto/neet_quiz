@@ -175,7 +175,7 @@ const Quizes = () => {
   // !Fetch local storage data
   useEffect(() => {
     fetchLocalStorageData();
-  }, []);
+  }, [savedQuiz]);
 
   return (
     <SafeAreaView styles={styles.container}>

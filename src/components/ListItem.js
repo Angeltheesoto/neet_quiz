@@ -80,14 +80,14 @@ const ListItem = ({ title, genre }) => {
   };
 
   // !Deletes localStorage
-  // const clearLocalStorageItem = async (itemName) => {
-  //   try {
-  //     await AsyncStorage.removeItem(itemName);
-  //     console.log(`Removed item ${itemName}`);
-  //   } catch (err) {
-  //     console.log(err);
-  //   }
-  // };
+  const clearLocalStorageItem = async (itemName) => {
+    try {
+      await AsyncStorage.removeItem(itemName);
+      console.log(`Removed item ${itemName}`);
+    } catch (err) {
+      console.log(err);
+    }
+  };
   // clearLocalStorageItem("bookmarkedItems");
 
   useEffect(() => {
@@ -98,7 +98,7 @@ const ListItem = ({ title, genre }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{title}</Text>
-      <TouchableOpacity onPress={handleSave}>
+      <TouchableOpacity onPress={handleSave} style={styles.test}>
         {savedQuiz && savedQuiz[genre] && savedQuiz[genre].includes(title) ? (
           <Ionicons name="md-bookmark" size={26} color="black" />
         ) : (
@@ -122,6 +122,10 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: "bold",
+  },
+  test: {
+    borderWidth: 3,
+    borderColor: "red",
   },
 });
 
