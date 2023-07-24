@@ -1,13 +1,8 @@
 import React from "react";
-import { View, Text } from "react-native";
-import globalStyles from "../styles/globalStyles";
+import Quizes from "./Quizes";
 
 const Saved = () => {
-  return (
-    <View style={globalStyles.container}>
-      <Text>Saved</Text>
-    </View>
-  );
+  return <Quizes />;
 };
 
 export default Saved;

@@ -4,6 +4,8 @@ import ListItem from "../components/ListItem";
 import data from "../utils/data";
 import GenreItem from "../components/GenreItem";
 import QuestionItem from "../components/QuestionItem";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useNavigationState } from "@react-navigation/native";
 
 const Quizes = () => {
   const [genre, setGenre] = useState("react");
@@ -13,6 +15,11 @@ const Quizes = () => {
   const [idCount, setIdCount] = useState(0);
   const [quizLength, setQuizLength] = useState(0);
   const [isEnd, setIsEnd] = useState(false);
+  const [savedQuiz, setSavedQuiz] = useState(null);
+
+  const navigationState = useNavigationState((state) => state);
+  const currentRouteName = navigationState.routes[navigationState.index].name;
+  // console.log(currentRouteName);
 
   // !Resets everything when you choose a new genre
   const handleGenreSelect = (gen) => {
@@ -53,21 +60,49 @@ const Quizes = () => {
     </TouchableOpacity>
   );
 
+  // !Gets local storage data to display saved quizes.
+  const fetchLocalStorageData = async () => {
+    const data = await AsyncStorage.getItem("bookmarkedItems");
+    if (data) {
+      setSavedQuiz(JSON.parse(data));
+    }
+  };
+  // console.log(savedQuiz);
+
   // !Displays all title comp. if genre is chosen.
   const renderQuizList = () => {
     if (genre) {
       const quizTitles = data.quizes[genre];
       const quizKeys = Object.keys(quizTitles);
-      return (
-        <FlatList
-          data={quizKeys}
-          renderItem={renderQuizItem}
-          keyExtractor={(item) => item}
-          contentContainerStyle={styles.quizListContainer}
-        />
-      );
+      const savedQuizTitles = () => {
+        if (savedQuiz) {
+          return savedQuiz[genre];
+        }
+        return undefined;
+      };
+      // console.log(savedQuizTitles());
+      if (currentRouteName === "Quizes") {
+        return (
+          <FlatList
+            data={quizKeys}
+            renderItem={renderQuizItem}
+            keyExtractor={(item) => item}
+            contentContainerStyle={styles.quizListContainer}
+          />
+        );
+      } else if (currentRouteName === "Saved") {
+        return (
+          <FlatList
+            data={savedQuizTitles()}
+            renderItem={renderQuizItem}
+            keyExtractor={(item) => item}
+            contentContainerStyle={styles.quizListContainer}
+          />
+        );
+      } else {
+        return null;
+      }
     }
-
     return null;
   };
 
@@ -118,10 +153,6 @@ const Quizes = () => {
     }
   };
 
-  // !WORKING ON SAVEDQUIZES ----->
-  // console.log(data.quizes.react["10 react questions"].saved);
-  // !WORKING ON SAVEDQUIZES ----->
-
   useEffect(() => {
     const updateQuizQuestions = async () => {
       handleQuizQuestions();
@@ -140,6 +171,11 @@ const Quizes = () => {
       updateQuizQuestions();
     }
   }, [selectedQuiz]);
+
+  // !Fetch local storage data
+  useEffect(() => {
+    fetchLocalStorageData();
+  }, []);
 
   return (
     <SafeAreaView styles={styles.container}>

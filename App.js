@@ -1,8 +1,7 @@
-import { useState, useEffect } from "react";
-import { StyleSheet, View, Text } from "react-native";
+import react from "react";
+import { StyleSheet } from "react-native";
 import Tabs from "./src/components/Tabs";
 import { NavigationContainer } from "@react-navigation/native";
-import data from "./src/utils/data";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function App() {

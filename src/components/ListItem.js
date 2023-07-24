@@ -6,9 +6,9 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const ListItem = ({ title, genre }) => {
   const [isSaved, setIsSaved] = useState(null);
-  const [bookmarkedItems, setBookmarkedItems] = useState([]);
   const [savedQuiz, setSavedQuiz] = useState(null);
 
+  // !Saves quiz to localStorage
   const saveItem = async (genre, title) => {
     try {
       const existingData = await AsyncStorage.getItem("bookmarkedItems");
@@ -27,6 +27,7 @@ const ListItem = ({ title, genre }) => {
     }
   };
 
+  // !Removes quiz from localStorage
   const removeItem = async (genre, titleToRemove) => {
     try {
       const existingData = await AsyncStorage.getItem("bookmarkedItems");
@@ -49,6 +50,7 @@ const ListItem = ({ title, genre }) => {
     }
   };
 
+  // !Saves localStorage data into savedQuiz state
   const saveLocalStorageItem = async (itemName) => {
     try {
       const itemValue = await AsyncStorage.getItem(itemName);
@@ -63,6 +65,7 @@ const ListItem = ({ title, genre }) => {
     }
   };
 
+  // !Handles actions for adding and removing quizzes from localstorage
   const handleSave = async () => {
     if (isSaved) {
       setIsSaved(false);
@@ -76,6 +79,7 @@ const ListItem = ({ title, genre }) => {
     saveLocalStorageItem("bookmarkedItems");
   };
 
+  // !Deletes localStorage
   // const clearLocalStorageItem = async (itemName) => {
   //   try {
   //     await AsyncStorage.removeItem(itemName);
@@ -88,20 +92,13 @@ const ListItem = ({ title, genre }) => {
 
   useEffect(() => {
     saveLocalStorageItem("bookmarkedItems");
-  }, []);
-
-  console.log("savedQuiz:", savedQuiz);
+  }, [savedQuiz]);
+  // console.log("savedQuiz:", savedQuiz);
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{title}</Text>
       <TouchableOpacity onPress={handleSave}>
-        {/* {isSaved ? (
-          <Ionicons name="md-bookmark" size={26} color="black" />
-        ) : (
-          <Ionicons name="md-bookmark-outline" size={26} color="black" />
-        )} */}
-
         {savedQuiz && savedQuiz[genre] && savedQuiz[genre].includes(title) ? (
           <Ionicons name="md-bookmark" size={26} color="black" />
         ) : (
