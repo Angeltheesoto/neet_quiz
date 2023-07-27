@@ -14,4 +14,24 @@ const globalStyles = StyleSheet.create({
   },
 });
 
-export default globalStyles;
+const lightTheme = StyleSheet.create({
+  container: {
+    color: "gray",
+    backgroundColor: "white",
+  },
+  text: {
+    color: "#1e1e1e",
+  },
+});
+
+const darkTheme = StyleSheet.create({
+  container: {
+    color: "white",
+    backgroundColor: "#1e1e1e",
+  },
+  text: {
+    color: "white",
+  },
+});
+
+export { globalStyles, lightTheme, darkTheme };

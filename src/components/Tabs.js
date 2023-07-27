@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Quizes from "../screens/Quizes";
 import Saved from "../screens/Saved";
 import Settings from "../screens/Settings";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { MaterialIcons } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
-import { StyleSheet } from "react-native";
 
 const Tab = createBottomTabNavigator();
 
@@ -29,7 +28,7 @@ const Tabs = () => {
       }}
     >
       <Tab.Screen
-        name={"Quizes"}
+        name={"Quizzes"}
         options={{
           tabBarIcon: ({ focused }) => (
             <Ionicons
@@ -74,5 +73,4 @@ const Tabs = () => {
   );
 };
 
-const styles = StyleSheet.create({});
 export default Tabs;

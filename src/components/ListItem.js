@@ -67,22 +67,12 @@ const ListItem = ({ title, genre }) => {
 
   // !Handles actions for adding and removing quizzes from localstorage
   const handleSave = async () => {
-    // if (isSaved) {
-    //   setIsSaved((prevIsSaved) => !prevIsSaved);
-    //   removeItem(genre, title);
-    //   console.log("removed", title, genre);
-    // } else {
-    //   setIsSaved((prevIsSaved) => !prevIsSaved);
-    //   saveItem(genre, title);
-    //   console.log("added", title, genre);
-    // }
-
     if (isSaved) {
       removeItem(genre, title);
-      console.log("removed", title, genre);
+      // console.log("removed", title, genre);
     } else {
       saveItem(genre, title);
-      console.log("added", title, genre);
+      // console.log("added", title, genre);
     }
     saveLocalStorageItem("bookmarkedItems");
   };
@@ -110,7 +100,9 @@ const ListItem = ({ title, genre }) => {
     saveLocalStorageItem("bookmarkedItems");
     handleQuizIsSaved();
   }, [savedQuiz]);
-  // console.log("savedQuiz:", savedQuiz);
+  // *console.log("savedQuiz:", savedQuiz);
+
+  // !!!WORK ON RENDERING INSTANTLY!!!
 
   return (
     <View style={styles.container}>

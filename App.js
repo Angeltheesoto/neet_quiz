@@ -1,4 +1,3 @@
-import react from "react";
 import { StyleSheet } from "react-native";
 import Tabs from "./src/components/Tabs";
 import { NavigationContainer } from "@react-navigation/native";
@@ -10,9 +9,10 @@ export default function App() {
       const localBookmark = await AsyncStorage.getItem("bookmarkedItems");
       if (!localBookmark) {
         AsyncStorage.setItem("bookmarkedItems", JSON.stringify({}));
-        console.log("LocalStorage initialized.");
+        // console.log("LocalStorage initialized.");
       } else {
-        console.log("LocalStorage already initialized.");
+        // console.log("LocalStorage already initialized.");
+        null;
       }
     } catch (error) {
       console.log("Error initializing LocalStorage:", error);

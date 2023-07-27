@@ -6,6 +6,7 @@ import GenreItem from "../components/GenreItem";
 import QuestionItem from "../components/QuestionItem";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useNavigationState } from "@react-navigation/native";
+import { Text } from "react-native";
 
 const Quizes = () => {
   const [genre, setGenre] = useState("react");
@@ -67,7 +68,7 @@ const Quizes = () => {
       setSavedQuiz(JSON.parse(data));
     }
   };
-  // console.log(savedQuiz);
+  // *console.log(savedQuiz);
 
   // !Displays all title comp. if genre is chosen.
   const renderQuizList = () => {
@@ -81,7 +82,7 @@ const Quizes = () => {
         return undefined;
       };
       // console.log(savedQuizTitles());
-      if (currentRouteName === "Quizes") {
+      if (currentRouteName === "Quizzes") {
         return (
           <FlatList
             data={quizKeys}
@@ -91,14 +92,18 @@ const Quizes = () => {
           />
         );
       } else if (currentRouteName === "Saved") {
-        return (
-          <FlatList
-            data={savedQuizTitles()}
-            renderItem={renderQuizItem}
-            keyExtractor={(item) => item}
-            contentContainerStyle={styles.quizListContainer}
-          />
-        );
+        if (savedQuizTitles() == undefined) {
+          return <Text style={styles.savedQuizText}>No saved quizzes</Text>;
+        } else {
+          return (
+            <FlatList
+              data={savedQuizTitles()}
+              renderItem={renderQuizItem}
+              keyExtractor={(item) => item}
+              contentContainerStyle={styles.quizListContainer}
+            />
+          );
+        }
       } else {
         return null;
       }
@@ -204,12 +209,19 @@ const styles = {
   },
 
   quizListContainer: {
+    minHeight: "100%",
     backgroundColor: "white",
     padding: 10,
-    // paddingBottom: 50,
     paddingBottom: "110%",
     // borderWidth: 3,
     // borderColor: "red",
+  },
+  savedQuizText: {
+    textAlign: "center",
+    marginTop: 50,
+    fontSize: 30,
+    fontWeight: "bold",
+    color: "gray",
   },
 };
 
