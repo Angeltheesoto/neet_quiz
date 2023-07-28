@@ -1,29 +1,31 @@
-import React from "react";
+import React, { useContext } from "react";
 import Quizes from "../screens/Quizes";
 import Saved from "../screens/Saved";
 import Settings from "../screens/Settings";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { MaterialIcons } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
+import MyContext from "../contexts/MyContext";
 
 const Tab = createBottomTabNavigator();
 
 const Tabs = () => {
+  const { theme } = useContext(MyContext);
   return (
     <Tab.Navigator
       screenOptions={{
-        headerStyle: {
-          backgroundColor: "white",
-        },
-        headerTitleStyle: {
-          color: "black",
-        },
+        headerStyle: theme
+          ? { backgroundColor: "white" }
+          : { backgroundColor: "#1e1e1e" },
+        // {backgroundColor: "white"},
+        headerTitleStyle: theme ? { color: "black" } : { color: "white" },
         tabBarShowLabel: false,
         tabBarStyle: [
           {
             display: "flex",
           },
           null,
+          theme ? { backgroundColor: "white" } : { backgroundColor: "#1e1e1e" },
         ],
       }}
     >
@@ -34,7 +36,7 @@ const Tabs = () => {
             <Ionicons
               name="book"
               size={25}
-              color={focused ? "black" : "gray"}
+              color={focused ? (theme ? "black" : "white") : "gray"}
             />
           ),
         }}
@@ -48,7 +50,7 @@ const Tabs = () => {
             <Ionicons
               name="bookmark"
               size={25}
-              color={focused ? "black" : "gray"}
+              color={focused ? (theme ? "black" : "white") : "gray"}
             />
           ),
         }}
@@ -62,7 +64,7 @@ const Tabs = () => {
             <MaterialIcons
               name="settings"
               size={25}
-              color={focused ? "black" : "gray"}
+              color={focused ? (theme ? "black" : "white") : "gray"}
             />
           ),
         }}

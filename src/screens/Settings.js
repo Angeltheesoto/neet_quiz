@@ -47,7 +47,7 @@ const Settings = () => {
   const aboutContent = () => {
     return (
       <View>
-        <Text>
+        <Text style={isLight ? lightTheme.text : darkTheme.text}>
           NEETQuiz is a quiz app meticulously crafted by developers to empower
           software engineers and developers in honing their skills and
           knowledge. Geared towards improving your technical interview skills,

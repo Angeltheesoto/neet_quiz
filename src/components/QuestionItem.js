@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import {
   ScrollView,
   View,
@@ -7,6 +7,8 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { FontAwesome5 } from "@expo/vector-icons";
+import { darkTheme, lightTheme } from "../styles/globalStyles";
+import MyContext from "../contexts/MyContext";
 
 const QuestionItem = ({
   question,
@@ -31,6 +33,8 @@ const QuestionItem = ({
   });
   // *console.log(currentQuiz);
 
+  const { theme } = useContext(MyContext);
+
   // !Keeps track of quiz progress.
   const handleCheck = (index) => {
     if (index != null) {
@@ -51,7 +55,11 @@ const QuestionItem = ({
   const renderQuiz = () => {
     return (
       <>
-        <Text style={styles.titleText}>{question}</Text>
+        <Text
+          style={[styles.titleText, theme ? lightTheme.text : darkTheme.text]}
+        >
+          {question}
+        </Text>
         <View>
           {options?.map((option, index) => (
             <TouchableOpacity
@@ -73,16 +81,28 @@ const QuestionItem = ({
           ))}
         </View>
         {currentQuiz[questionNum]?.isReveal ? (
-          <Text style={styles.answerText}>
+          <Text style={[styles.answerText, theme ? null : darkTheme.text]}>
             {currentQuiz[questionNum]?.isCorrect ? "Correct!" : "Wrong!"}
           </Text>
         ) : null}
         <View style={styles.buttonContainer}>
-          <TouchableOpacity onPress={handleGoBack} style={styles.buttonStyle}>
-            <Text>Back</Text>
+          <TouchableOpacity
+            onPress={handleGoBack}
+            style={[
+              styles.buttonStyle,
+              theme ? null : darkTheme.buttonContainer,
+            ]}
+          >
+            <Text style={theme ? null : darkTheme.text}>Back</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={handleNext} style={styles.buttonStyle}>
-            <Text>Next</Text>
+          <TouchableOpacity
+            onPress={handleNext}
+            style={[
+              styles.buttonStyle,
+              theme ? null : darkTheme.buttonContainer,
+            ]}
+          >
+            <Text style={theme ? null : darkTheme.text}>Next</Text>
           </TouchableOpacity>
         </View>
       </>
@@ -107,9 +127,18 @@ const QuestionItem = ({
   };
 
   return (
-    <ScrollView style={styles.container}>
-      <Text style={styles.quizName}>
-        <FontAwesome5 name="question-circle" size={25} color="black" />{" "}
+    <ScrollView
+      style={[
+        styles.container,
+        theme ? lightTheme.background : darkTheme.background,
+      ]}
+    >
+      <Text style={[styles.quizName, theme ? null : darkTheme.buttonContainer]}>
+        <FontAwesome5
+          name="question-circle"
+          size={25}
+          color={theme ? "black" : "white"}
+        />{" "}
         {quizName}
       </Text>
       {isEnd ? renderQuizEnd() : renderQuiz()}
@@ -119,7 +148,6 @@ const QuestionItem = ({
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "white",
     paddingHorizontal: 20,
     marginBottom: 50,
     paddingBottom: "100%",

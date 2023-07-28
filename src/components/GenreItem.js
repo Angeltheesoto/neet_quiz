@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   View,
   TouchableOpacity,
@@ -6,19 +6,39 @@ import {
   ScrollView,
   StyleSheet,
 } from "react-native";
+import { lightTheme, darkTheme } from "../styles/globalStyles";
+import MyContext from "../contexts/MyContext";
 
 const GenreItem = ({ item, index, handleGenreSelect, genre }) => {
+  const { theme } = useContext(MyContext);
   return (
-    <ScrollView horizontal={true}>
+    <ScrollView horizontal={true} style={styles.genreItems}>
       <TouchableOpacity
         onPress={() => handleGenreSelect(item)}
-        style={[styles.genreContainer, index === 0 && { marginLeft: 10 }]}
+        style={[
+          styles.genreContainer,
+          theme ? lightTheme.background : darkTheme.background,
+        ]}
       >
         <View
-          style={genre === item ? styles.genreItemActive : styles.genreItem}
+          style={
+            genre === item
+              ? theme
+                ? styles.genreItemActive
+                : darkTheme.genreItemActive
+              : theme
+              ? styles.genreItem
+              : darkTheme.genreItem
+          }
         >
           <Text
-            style={genre === item ? styles.genreTextActive : styles.genreText}
+            style={
+              genre === item
+                ? styles.genreTextActive
+                : theme
+                ? styles.genreText
+                : darkTheme.genreText
+            }
           >
             {item}
           </Text>
@@ -33,13 +53,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#eee",
     padding: 10,
     borderRadius: 5,
-    marginRight: 10,
   },
   genreItemActive: {
     backgroundColor: "gray",
     padding: 10,
     borderRadius: 5,
-    marginRight: 10,
   },
   genreText: {
     fontWeight: "bold",
@@ -50,6 +68,11 @@ const styles = StyleSheet.create({
   },
   genreContainer: {
     flex: 1,
+    // borderWidth: 1,
+    // borderColor: "red",
+  },
+  genreItems: {
+    marginRight: 10,
     // borderWidth: 1,
     // borderColor: "red",
   },

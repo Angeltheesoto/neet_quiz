@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { TouchableOpacity } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { darkTheme, lightTheme } from "../styles/globalStyles";
+import MyContext from "../contexts/MyContext";
 
 const ListItem = ({ title, genre }) => {
   const [isSaved, setIsSaved] = useState(null);
   const [savedQuiz, setSavedQuiz] = useState(null);
+  const { theme } = useContext(MyContext);
 
   // !Saves quiz to localStorage
   const saveItem = async (genre, title) => {
@@ -105,8 +108,10 @@ const ListItem = ({ title, genre }) => {
   // !!!WORK ON RENDERING INSTANTLY!!!
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>{title}</Text>
+    <View
+      style={[styles.container, theme ? null : { backgroundColor: "gray" }]}
+    >
+      <Text style={[styles.title, theme ? null : darkTheme.text]}>{title}</Text>
       <TouchableOpacity onPress={handleSave}>
         {savedQuiz && savedQuiz[genre] && savedQuiz[genre].includes(title) ? (
           <Ionicons name="md-bookmark" size={26} color="black" />

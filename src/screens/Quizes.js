@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { FlatList, SafeAreaView, TouchableOpacity } from "react-native";
+import React, { useEffect, useState, useContext } from "react";
+import { Text, FlatList, SafeAreaView, TouchableOpacity } from "react-native";
 import ListItem from "../components/ListItem";
 import data from "../utils/data";
 import GenreItem from "../components/GenreItem";
 import QuestionItem from "../components/QuestionItem";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useNavigationState } from "@react-navigation/native";
-import { Text } from "react-native";
+import { darkTheme, lightTheme } from "../styles/globalStyles";
+import MyContext from "../contexts/MyContext";
 
 const Quizes = () => {
   const [genre, setGenre] = useState("react");
@@ -21,6 +22,8 @@ const Quizes = () => {
   const navigationState = useNavigationState((state) => state);
   const currentRouteName = navigationState.routes[navigationState.index].name;
   // console.log(currentRouteName);
+
+  const { theme } = useContext(MyContext);
 
   // !Resets everything when you choose a new genre
   const handleGenreSelect = (gen) => {
@@ -88,19 +91,34 @@ const Quizes = () => {
             data={quizKeys}
             renderItem={renderQuizItem}
             keyExtractor={(item) => item}
-            contentContainerStyle={styles.quizListContainer}
+            contentContainerStyle={[
+              styles.quizListContainer,
+              theme ? lightTheme.background : darkTheme.background,
+            ]}
           />
         );
       } else if (currentRouteName === "Saved") {
         if (savedQuizTitles() == undefined) {
-          return <Text style={styles.savedQuizText}>No saved quizzes</Text>;
+          return (
+            <Text
+              style={[
+                styles.savedQuizText,
+                theme ? null : darkTheme.background,
+              ]}
+            >
+              No saved quizzes
+            </Text>
+          );
         } else {
           return (
             <FlatList
               data={savedQuizTitles()}
               renderItem={renderQuizItem}
               keyExtractor={(item) => item}
-              contentContainerStyle={styles.quizListContainer}
+              contentContainerStyle={[
+                styles.quizListContainer,
+                theme ? lightTheme.background : darkTheme.background,
+              ]}
             />
           );
         }
@@ -190,7 +208,10 @@ const Quizes = () => {
         horizontal
         showsHorizontalScrollIndicator={false}
         keyExtractor={(item) => item}
-        contentContainerStyle={styles.genreListContainer}
+        style={[
+          styles.genreContainer,
+          theme ? lightTheme.background : darkTheme.background,
+        ]}
       />
       {selectedQuizQuestions ? renderQuizQuestions() : renderQuizList()}
     </SafeAreaView>
@@ -201,27 +222,28 @@ const styles = {
   container: {
     flex: 1,
   },
-  genreListContainer: {
-    paddingTop: 5,
-    paddingBottom: 5,
-    backgroundColor: "white",
-    minHeight: 55,
-  },
-
   quizListContainer: {
     minHeight: "100%",
-    backgroundColor: "white",
     padding: 10,
     paddingBottom: "110%",
-    // borderWidth: 3,
+    // borderWidth: 1,
     // borderColor: "red",
   },
   savedQuizText: {
     textAlign: "center",
-    marginTop: 50,
+    paddingTop: 50,
+    paddingBottom: "200%",
     fontSize: 30,
     fontWeight: "bold",
     color: "gray",
+  },
+  genreContainer: {
+    minHeight: 50,
+    paddingHorizontal: 10,
+    backgroundColor: "white",
+    paddingTop: 5,
+    // borderWidth: 1,
+    // borderColor: "red",
   },
 };
 
