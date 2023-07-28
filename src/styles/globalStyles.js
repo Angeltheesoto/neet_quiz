@@ -18,6 +18,8 @@ const lightTheme = StyleSheet.create({
   container: {
     color: "gray",
     backgroundColor: "white",
+    minHeight: "100%",
+    paddingHorizontal: 10,
   },
   text: {
     color: "#1e1e1e",
@@ -28,6 +30,8 @@ const darkTheme = StyleSheet.create({
   container: {
     color: "white",
     backgroundColor: "#1e1e1e",
+    minHeight: "100%",
+    paddingHorizontal: 10,
   },
   text: {
     color: "white",

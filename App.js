@@ -2,8 +2,16 @@ import { StyleSheet } from "react-native";
 import Tabs from "./src/components/Tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import MyContext from "./src/contexts/MyContext";
+import { useEffect, useState } from "react";
 
 export default function App() {
+  const [theme, setTheme] = useState(true);
+
+  const toggleTheme = (isLight) => {
+    setTheme(isLight);
+  };
+
   const initializeLocalStorage = async () => {
     try {
       const localBookmark = await AsyncStorage.getItem("bookmarkedItems");
@@ -14,16 +22,29 @@ export default function App() {
         // console.log("LocalStorage already initialized.");
         null;
       }
+
+      const localTheme = await AsyncStorage.getItem("theme");
+      if (!localTheme) {
+        AsyncStorage.setItem("theme", JSON.stringify(theme));
+      } else {
+        const parsedTheme = JSON.parse(localTheme);
+        setTheme(parsedTheme);
+      }
     } catch (error) {
       console.log("Error initializing LocalStorage:", error);
     }
   };
-  initializeLocalStorage();
+
+  useEffect(() => {
+    initializeLocalStorage();
+  }, []);
 
   return (
-    <NavigationContainer style={styles.container}>
-      <Tabs />
-    </NavigationContainer>
+    <MyContext.Provider value={{ theme, toggleTheme }}>
+      <NavigationContainer style={styles.container}>
+        <Tabs />
+      </NavigationContainer>
+    </MyContext.Provider>
   );
 }
 

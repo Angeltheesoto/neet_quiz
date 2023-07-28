@@ -38,8 +38,7 @@ const styles = StyleSheet.create({
     borderBottomColor: "lightgray",
   },
   lastItemContainer: {
-    borderBottomWidth: 3,
-    borderBottomColor: "white",
+    borderBottomWidth: 0,
   },
   title: {
     fontSize: 20,

@@ -1,18 +1,21 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import SettingItem from "../components/SettingItem";
 import { Ionicons } from "@expo/vector-icons";
 import { lightTheme, darkTheme } from "../styles/globalStyles";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import MyContext from "../contexts/MyContext";
 
 const Settings = () => {
   const [isLight, setIsLight] = useState(true);
+  const { theme, toggleTheme } = useContext(MyContext);
 
   const onPressRadioButton = () => {
     setIsLight((prev) => !prev);
+    toggleTheme(!isLight);
   };
-  // *console.log(isLight ? "light" : "dark", isLight);
 
-  const themeChildren = () => {
+  const themeContent = () => {
     return (
       <View style={styles.radioContainer}>
         <TouchableOpacity onPress={onPressRadioButton} disabled={isLight}>
@@ -41,26 +44,50 @@ const Settings = () => {
     );
   };
 
+  const aboutContent = () => {
+    return (
+      <View>
+        <Text>
+          NEETQuiz is a quiz app meticulously crafted by developers to empower
+          software engineers and developers in honing their skills and
+          knowledge. Geared towards improving your technical interview skills,
+          this app serves as an indispensable tool for aspirants seeking success
+          in the ever-evolving world of software development.
+        </Text>
+      </View>
+    );
+  };
+
+  useEffect(() => {
+    const setLocalTheme = async (value) => {
+      try {
+        await AsyncStorage.setItem("theme", value.toString());
+        // const theme = await AsyncStorage.getItem("theme");
+        // console.log("Local theme set successfully!", theme);
+      } catch (err) {
+        console.log("Error setting local theme: ", err);
+      }
+    };
+    if (theme === false) {
+      setLocalTheme(false);
+      setIsLight(false);
+    } else {
+      setLocalTheme(isLight);
+    }
+  }, [isLight]);
+  // *console.log("context message: ", theme, isLight);
+
   return (
     <View style={isLight ? lightTheme.container : darkTheme.container}>
       <View style={styles.settingItemContainer}>
-        <SettingItem title={"Theme"} children={themeChildren()} />
-        <SettingItem title={"title"} children={themeChildren()} />
-        <SettingItem title={"something"} children={themeChildren()} />
-        <SettingItem title={"else"} children={themeChildren()} />
-        <SettingItem title={"here"} isLast={true} children={themeChildren()} />
+        <SettingItem title={"Theme"} children={themeContent()} />
+        <SettingItem title={"About"} children={aboutContent()} isLast={true} />
       </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "white",
-    paddingTop: 10,
-  },
-
   settingItemContainer: {
     borderRadius: 30,
     overflow: "hidden",
