@@ -79,10 +79,15 @@ const Quizes = () => {
       const quizTitles = data.quizes[genre];
       const quizKeys = Object.keys(quizTitles);
       const savedQuizTitles = () => {
-        if (savedQuiz) {
-          return savedQuiz[genre];
+        if (savedQuiz && savedQuiz[genre]) {
+          if (savedQuiz[genre].length === 0) {
+            return undefined;
+          } else {
+            return savedQuiz[genre];
+          }
+        } else {
+          return undefined;
         }
-        return undefined;
       };
       // console.log(savedQuizTitles());
       if (currentRouteName === "Quizzes") {
@@ -98,7 +103,7 @@ const Quizes = () => {
           />
         );
       } else if (currentRouteName === "Saved") {
-        if (savedQuizTitles() == undefined) {
+        if (savedQuizTitles() === undefined) {
           return (
             <Text
               style={[
@@ -128,6 +133,7 @@ const Quizes = () => {
     }
     return null;
   };
+  // *console.log(savedQuiz[genre].length == 0);
 
   // !Displays our chosen quiz and passes all props.
   const renderQuizQuestions = () => {
@@ -150,6 +156,7 @@ const Quizes = () => {
             lengthOfQuiz={lengthOfQuiz}
             quizName={selectedQuiz}
             isEnd={isEnd}
+            idCount={idCount}
           />
         );
       }

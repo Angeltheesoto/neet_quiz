@@ -20,6 +20,7 @@ const QuestionItem = ({
   lengthOfQuiz,
   quizName,
   isEnd,
+  idCount,
 }) => {
   const [totalCorrect, setTotalCorrect] = useState(0);
   const [currentQuiz, setCurrentQuiz] = useState(() => {
@@ -93,7 +94,9 @@ const QuestionItem = ({
               theme ? null : darkTheme.buttonContainer,
             ]}
           >
-            <Text style={theme ? null : darkTheme.text}>Back</Text>
+            <Text style={theme ? null : darkTheme.text}>
+              {idCount == 0 ? "Exit Quiz" : "Back"}
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={handleNext}
@@ -113,14 +116,23 @@ const QuestionItem = ({
   const renderQuizEnd = () => {
     return (
       <View style={styles.quizEndContainer}>
-        <Text style={styles.titleText}>You Finished!</Text>
+        <Text style={[styles.titleText, theme ? null : darkTheme.text]}>
+          You Finished!
+        </Text>
         <Text
-          style={styles.titleText}
+          style={[styles.titleText, theme ? null : darkTheme.text]}
         >{`Total: ${totalCorrect} / ${lengthOfQuiz}`}</Text>
-        <View style={styles.percentageContainer}>
-          <Text style={styles.percentageText}>{`${
-            (totalCorrect / lengthOfQuiz) * 100
-          }%`}</Text>
+        <View
+          style={[
+            styles.percentageContainer,
+            totalCorrect > lengthOfQuiz / 2
+              ? { borderColor: "green" }
+              : { borderColor: "red" },
+          ]}
+        >
+          <Text
+            style={[styles.percentageText, theme ? null : darkTheme.text]}
+          >{`${(totalCorrect / lengthOfQuiz) * 100}%`}</Text>
         </View>
       </View>
     );
@@ -151,9 +163,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     marginBottom: 50,
     paddingBottom: "100%",
-
-    // borderWidth: 1,
-    // borderColor: "red",
   },
   titleText: {
     fontSize: 30,
@@ -228,7 +237,7 @@ const styles = StyleSheet.create({
     height: 200,
     borderRadius: 100,
     borderWidth: 3,
-    borderColor: "red",
+    borderColor: "white",
     justifyContent: "center",
     alignItems: "center",
   },

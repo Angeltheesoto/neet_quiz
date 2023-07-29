@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { TouchableOpacity } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { darkTheme, lightTheme } from "../styles/globalStyles";
+import { darkTheme } from "../styles/globalStyles";
 import MyContext from "../contexts/MyContext";
 
 const ListItem = ({ title, genre }) => {
@@ -114,9 +114,17 @@ const ListItem = ({ title, genre }) => {
       <Text style={[styles.title, theme ? null : darkTheme.text]}>{title}</Text>
       <TouchableOpacity onPress={handleSave}>
         {savedQuiz && savedQuiz[genre] && savedQuiz[genre].includes(title) ? (
-          <Ionicons name="md-bookmark" size={26} color="black" />
+          <Ionicons
+            name="md-bookmark"
+            size={26}
+            color={theme ? "black" : "white"}
+          />
         ) : (
-          <Ionicons name="md-bookmark-outline" size={26} color="black" />
+          <Ionicons
+            name="md-bookmark-outline"
+            size={26}
+            color={theme ? "black" : "white"}
+          />
         )}
       </TouchableOpacity>
     </View>

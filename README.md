@@ -45,4 +45,9 @@
             }
         }
     }
+
+    ?Things to add to app:
+        1. Take quiz again button & exit button
+        2. Delete all saved quizzes.
+        3.
  -->
