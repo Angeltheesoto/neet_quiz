@@ -10,7 +10,7 @@ import { darkTheme, lightTheme } from "../styles/globalStyles";
 import MyContext from "../contexts/MyContext";
 
 const Quizes = () => {
-  const [genre, setGenre] = useState("react");
+  const [genre, setGenre] = useState("javascript");
   const [selectedQuiz, setSelectedQuiz] = useState(null);
   const [selectedQuizQuestions, setSelectedQuizQuestions] = useState(null);
 
