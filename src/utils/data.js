@@ -9908,60 +9908,2929 @@ const data = {
     },
     vue: {
       "10 beginner vue questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is Vue.js?",
+            options: [
+              "A back-end framework for building web applications.",
+              "A database management system.",
+              "A front-end JavaScript framework for building user interfaces.",
+              "A programming language for server-side development.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What are the key features of Vue.js?",
+            options: [
+              "Two-way data binding, virtual DOM, and dependency tracking.",
+              "Asynchronous programming, file handling, and component-based architecture.",
+              "Server-side rendering, code splitting, and hot module replacement.",
+              "Form validation, database querying, and RESTful API integration.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the Vue instance?",
+            options: [
+              "The root component of a Vue.js application.",
+              "A class representing a Vue component.",
+              "A JavaScript object that serves as the root of a Vue application and contains data, methods, computed properties, and more.",
+              "A predefined global object provided by Vue.js for managing application state.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "How do you perform data binding in Vue.js?",
+            options: [
+              "Using the v-bind directive (or simply ':') to bind data from the Vue instance to the DOM.",
+              "By writing JavaScript code to manually update the DOM elements.",
+              "Using the v-model directive to create two-way data binding between form inputs and Vue instance data.",
+              "By defining a watcher function to observe changes in data and updating the DOM accordingly.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What are components in Vue.js?",
+            options: [
+              "Components are elements of the Vue.js template that render HTML content.",
+              "Components are functions used to manipulate data in Vue.js.",
+              "Components are reusable and self-contained blocks of Vue.js code that can be composed to build complex UIs.",
+              "Components are built-in UI elements provided by Vue.js for common use cases.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the Vue.js template syntax?",
+            options: [
+              "Vue.js templates use JSX (JavaScript XML) syntax for defining components.",
+              "Vue.js templates use Handlebars-like syntax, where directives are denoted by '@' symbol.",
+              "Vue.js templates use Angular-like syntax with square brackets.",
+              "Vue.js templates use HTML-like syntax with directives denoted by 'v-' prefix, such as v-if, v-for, v-bind, and v-on.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "What does the 'v-for' directive do in Vue.js?",
+            options: [
+              "It performs conditional rendering based on the truthiness of a data property.",
+              "It binds data from the Vue instance to the DOM.",
+              "It creates a loop to iterate over an array or an object and render content for each item.",
+              "It performs two-way data binding between form inputs and Vue instance data.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "How do you handle user events in Vue.js?",
+            options: [
+              "By using the 'v-model' directive to bind form inputs to data properties.",
+              "By defining custom event listeners with the 'v-on' directive (or simply '@').",
+              "By using the 'v-for' directive to loop over data and render content.",
+              "By defining computed properties to handle user interactions.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What are computed properties in Vue.js?",
+            options: [
+              "Computed properties are used to perform asynchronous tasks in Vue.js.",
+              "Computed properties are data properties used to store form input values.",
+              "Computed properties are functions that calculate and cache data based on other data properties, allowing for reactive updates.",
+              "Computed properties are used to perform API calls to the server and update the DOM accordingly.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "How do you conditionally render content in Vue.js?",
+            options: [
+              "By using the 'v-for' directive to create loops.",
+              "By defining custom event listeners with the 'v-on' directive.",
+              "By using the 'v-if', 'v-else-if', and 'v-else' directives to conditionally render content based on a data property's value.",
+              "By using the 'v-model' directive for two-way data binding.",
+            ],
+            correctAnswer: "3",
+          },
+        ],
       },
       "15 beginner vue questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is Vue.js?",
+            options: [
+              "A back-end framework for building web applications.",
+              "A database management system.",
+              "A front-end JavaScript framework for building user interfaces.",
+              "A programming language for server-side development.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What are the key features of Vue.js?",
+            options: [
+              "Two-way data binding, virtual DOM, and dependency tracking.",
+              "Asynchronous programming, file handling, and component-based architecture.",
+              "Server-side rendering, code splitting, and hot module replacement.",
+              "Form validation, database querying, and RESTful API integration.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the Vue instance?",
+            options: [
+              "The root component of a Vue.js application.",
+              "A class representing a Vue component.",
+              "A JavaScript object that serves as the root of a Vue application and contains data, methods, computed properties, and more.",
+              "A predefined global object provided by Vue.js for managing application state.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "How do you perform data binding in Vue.js?",
+            options: [
+              "Using the v-bind directive (or simply ':') to bind data from the Vue instance to the DOM.",
+              "By writing JavaScript code to manually update the DOM elements.",
+              "Using the v-model directive to create two-way data binding between form inputs and Vue instance data.",
+              "By defining a watcher function to observe changes in data and updating the DOM accordingly.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What are components in Vue.js?",
+            options: [
+              "Components are elements of the Vue.js template that render HTML content.",
+              "Components are functions used to manipulate data in Vue.js.",
+              "Components are reusable and self-contained blocks of Vue.js code that can be composed to build complex UIs.",
+              "Components are built-in UI elements provided by Vue.js for common use cases.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the Vue.js template syntax?",
+            options: [
+              "Vue.js templates use JSX (JavaScript XML) syntax for defining components.",
+              "Vue.js templates use Handlebars-like syntax, where directives are denoted by '@' symbol.",
+              "Vue.js templates use Angular-like syntax with square brackets.",
+              "Vue.js templates use HTML-like syntax with directives denoted by 'v-' prefix, such as v-if, v-for, v-bind, and v-on.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "What does the 'v-for' directive do in Vue.js?",
+            options: [
+              "It performs conditional rendering based on the truthiness of a data property.",
+              "It binds data from the Vue instance to the DOM.",
+              "It creates a loop to iterate over an array or an object and render content for each item.",
+              "It performs two-way data binding between form inputs and Vue instance data.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "How do you handle user events in Vue.js?",
+            options: [
+              "By using the 'v-model' directive to bind form inputs to data properties.",
+              "By defining custom event listeners with the 'v-on' directive (or simply '@').",
+              "By using the 'v-for' directive to loop over data and render content.",
+              "By defining computed properties to handle user interactions.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What are computed properties in Vue.js?",
+            options: [
+              "Computed properties are used to perform asynchronous tasks in Vue.js.",
+              "Computed properties are data properties used to store form input values.",
+              "Computed properties are functions that calculate and cache data based on other data properties, allowing for reactive updates.",
+              "Computed properties are used to perform API calls to the server and update the DOM accordingly.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "How do you conditionally render content in Vue.js?",
+            options: [
+              "By using the 'v-for' directive to create loops.",
+              "By defining custom event listeners with the 'v-on' directive.",
+              "By using the 'v-if', 'v-else-if', and 'v-else' directives to conditionally render content based on a data property's value.",
+              "By using the 'v-model' directive for two-way data binding.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the purpose of the 'v-bind' directive in Vue.js?",
+            options: [
+              "To bind an HTML attribute to a data property in the Vue instance.",
+              "To define a custom event listener in the Vue instance.",
+              "To create a loop in the Vue template.",
+              "To conditionally render content in the Vue template.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "How can you pass data from a parent component to a child component in Vue.js?",
+            options: [
+              "By using the 'v-bind' directive in the parent and the 'v-model' directive in the child.",
+              "By using props to pass data from the parent to the child component.",
+              "By using the 'v-on' directive in the parent and the 'v-bind' directive in the child.",
+              "By using the 'v-emit' directive to emit data from the parent to the child component.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the purpose of the 'v-on' (or '@') directive in Vue.js?",
+            options: [
+              "To bind an HTML attribute to a data property in the Vue instance.",
+              "To define a custom event listener in the Vue instance.",
+              "To create a loop in the Vue template.",
+              "To conditionally render content in the Vue template.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the Vue.js directive used for iterating over an array?",
+            options: ["v-for", "v-bind", "v-model", "v-on"],
+            correctAnswer: "1",
+          },
+          {
+            question: "Which of the following is a lifecycle hook in Vue.js?",
+            options: ["v-init", "v-create", "created", "v-render"],
+            correctAnswer: "3",
+          },
+        ],
       },
       "20 beginner vue questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is Vue.js?",
+            options: [
+              "A back-end framework for building web applications.",
+              "A database management system.",
+              "A front-end JavaScript framework for building user interfaces.",
+              "A programming language for server-side development.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What are the key features of Vue.js?",
+            options: [
+              "Two-way data binding, virtual DOM, and dependency tracking.",
+              "Asynchronous programming, file handling, and component-based architecture.",
+              "Server-side rendering, code splitting, and hot module replacement.",
+              "Form validation, database querying, and RESTful API integration.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the Vue instance?",
+            options: [
+              "The root component of a Vue.js application.",
+              "A class representing a Vue component.",
+              "A JavaScript object that serves as the root of a Vue application and contains data, methods, computed properties, and more.",
+              "A predefined global object provided by Vue.js for managing application state.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "How do you perform data binding in Vue.js?",
+            options: [
+              "Using the v-bind directive (or simply ':') to bind data from the Vue instance to the DOM.",
+              "By writing JavaScript code to manually update the DOM elements.",
+              "Using the v-model directive to create two-way data binding between form inputs and Vue instance data.",
+              "By defining a watcher function to observe changes in data and updating the DOM accordingly.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What are components in Vue.js?",
+            options: [
+              "Components are elements of the Vue.js template that render HTML content.",
+              "Components are functions used to manipulate data in Vue.js.",
+              "Components are reusable and self-contained blocks of Vue.js code that can be composed to build complex UIs.",
+              "Components are built-in UI elements provided by Vue.js for common use cases.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the Vue.js template syntax?",
+            options: [
+              "Vue.js templates use JSX (JavaScript XML) syntax for defining components.",
+              "Vue.js templates use Handlebars-like syntax, where directives are denoted by '@' symbol.",
+              "Vue.js templates use Angular-like syntax with square brackets.",
+              "Vue.js templates use HTML-like syntax with directives denoted by 'v-' prefix, such as v-if, v-for, v-bind, and v-on.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "What does the 'v-for' directive do in Vue.js?",
+            options: [
+              "It performs conditional rendering based on the truthiness of a data property.",
+              "It binds data from the Vue instance to the DOM.",
+              "It creates a loop to iterate over an array or an object and render content for each item.",
+              "It performs two-way data binding between form inputs and Vue instance data.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "How do you handle user events in Vue.js?",
+            options: [
+              "By using the 'v-model' directive to bind form inputs to data properties.",
+              "By defining custom event listeners with the 'v-on' directive (or simply '@').",
+              "By using the 'v-for' directive to loop over data and render content.",
+              "By defining computed properties to handle user interactions.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What are computed properties in Vue.js?",
+            options: [
+              "Computed properties are used to perform asynchronous tasks in Vue.js.",
+              "Computed properties are data properties used to store form input values.",
+              "Computed properties are functions that calculate and cache data based on other data properties, allowing for reactive updates.",
+              "Computed properties are used to perform API calls to the server and update the DOM accordingly.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "How do you conditionally render content in Vue.js?",
+            options: [
+              "By using the 'v-for' directive to create loops.",
+              "By defining custom event listeners with the 'v-on' directive.",
+              "By using the 'v-if', 'v-else-if', and 'v-else' directives to conditionally render content based on a data property's value.",
+              "By using the 'v-model' directive for two-way data binding.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the purpose of the 'v-bind' directive in Vue.js?",
+            options: [
+              "To bind an HTML attribute to a data property in the Vue instance.",
+              "To define a custom event listener in the Vue instance.",
+              "To create a loop in the Vue template.",
+              "To conditionally render content in the Vue template.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "How can you pass data from a parent component to a child component in Vue.js?",
+            options: [
+              "By using the 'v-bind' directive in the parent and the 'v-model' directive in the child.",
+              "By using props to pass data from the parent to the child component.",
+              "By using the 'v-on' directive in the parent and the 'v-bind' directive in the child.",
+              "By using the 'v-emit' directive to emit data from the parent to the child component.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the purpose of the 'v-on' (or '@') directive in Vue.js?",
+            options: [
+              "To bind an HTML attribute to a data property in the Vue instance.",
+              "To define a custom event listener in the Vue instance.",
+              "To create a loop in the Vue template.",
+              "To conditionally render content in the Vue template.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the Vue.js directive used for iterating over an array?",
+            options: ["v-for", "v-bind", "v-model", "v-on"],
+            correctAnswer: "1",
+          },
+          {
+            question: "Which of the following is a lifecycle hook in Vue.js?",
+            options: ["v-init", "v-create", "created", "v-render"],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of the 'v-if' directive in Vue.js?",
+            options: [
+              "To create a loop in the Vue template.",
+              "To bind an HTML attribute to a data property in the Vue instance.",
+              "To conditionally render content based on a data property's value.",
+              "To define a custom event listener in the Vue instance.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the Vue.js directive used for two-way data binding?",
+            options: ["v-for", "v-bind", "v-model", "v-on"],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the purpose of the 'v-show' directive in Vue.js?",
+            options: [
+              "To bind an HTML attribute to a data property in the Vue instance.",
+              "To define a custom event listener in the Vue instance.",
+              "To conditionally render content based on a data property's value.",
+              "To create a loop in the Vue template.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the Vue.js directive used for event handling?",
+            options: ["v-for", "v-bind", "v-model", "v-on"],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the purpose of the 'v-html' directive in Vue.js?",
+            options: [
+              "To create a loop in the Vue template.",
+              "To bind an HTML attribute to a data property in the Vue instance.",
+              "To conditionally render content based on a data property's value.",
+              "To render HTML content dynamically from a data property, but with potential security risks.",
+            ],
+            correctAnswer: "4",
+          },
+        ],
       },
       "10 intermed vue questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What are Vue.js directives, and how are they different from components?",
+            options: [
+              "Directives are used for two-way data binding, while components are used for one-way data flow.",
+              "Directives are used for defining custom HTML elements, while components are used for manipulating the DOM.",
+              "Directives are used for adding behavior to existing DOM elements, while components are self-contained and reusable blocks of UI with their own behavior and template.",
+              "Directives and components are the same; they are interchangeable terms in Vue.js.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "Explain the purpose of Vuex in Vue.js applications.",
+            options: [
+              "Vuex is a form validation library used in Vue.js applications.",
+              "Vuex is a state management pattern and library used to manage application-level state in Vue.js applications.",
+              "Vuex is a library for routing and navigation in Vue.js applications.",
+              "Vuex is a utility library for handling HTTP requests and AJAX in Vue.js applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the role of mixins in Vue.js, and how do they facilitate code reuse?",
+            options: [
+              "Mixins are used to define custom directives in Vue.js applications.",
+              "Mixins are used to create one-way data flow between parent and child components in Vue.js applications.",
+              "Mixins are used to combine and reuse component options, such as data, methods, computed properties, and lifecycle hooks, among multiple components.",
+              "Mixins are used to manage the routing and navigation between pages in Vue.js applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of Vue.js Single File Components (SFCs) and their benefits.",
+            options: [
+              "SFCs are used to define multiple components in a single file, reducing the number of files in a Vue.js application.",
+              "SFCs are used to combine HTML, CSS, and JavaScript code for a component in a single file, improving code organization and readability.",
+              "SFCs are used to define components that can be loaded asynchronously, reducing the initial loading time of the application.",
+              "SFCs are used to manage application state and data flow between components in Vue.js applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are dynamic components in Vue.js, and how are they used?",
+            options: [
+              "Dynamic components are components that are loaded from external sources, such as CDNs.",
+              "Dynamic components are components that can change their structure and behavior at runtime.",
+              "Dynamic components are components with no fixed template and can be rendered based on a data property.",
+              "Dynamic components are components that can be created and destroyed dynamically at runtime using JavaScript.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the purpose of the 'provide' and 'inject' options in Vue.js.",
+            options: [
+              "The 'provide' option is used to inject services and dependencies into child components, while the 'inject' option is used to provide data and services to parent components.",
+              "The 'provide' option is used to pass data and services from parent components to child components, while the 'inject' option is used to receive the provided data and services in child components.",
+              "The 'provide' option is used to create a reactive data flow between components, while the 'inject' option is used to handle event communication.",
+              "The 'provide' and 'inject' options are no longer supported in the latest version of Vue.js.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is Vue Router, and how is it used to implement client-side routing in Vue.js applications?",
+            options: [
+              "Vue Router is a state management library used to handle complex data flows in Vue.js applications.",
+              "Vue Router is a library for handling asynchronous tasks and API calls in Vue.js applications.",
+              "Vue Router is a utility for handling form validation and user input in Vue.js applications.",
+              "Vue Router is a routing library that allows developers to define and manage client-side routes in Vue.js applications, enabling the creation of single-page applications (SPAs).",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is Vue.js watch property, and how is it used to respond to data changes?",
+            options: [
+              "The watch property is used to create custom directives in Vue.js applications.",
+              "The watch property is used to define asynchronous tasks and event listeners in Vue.js applications.",
+              "The watch property is used to observe changes in data properties and trigger callback functions when the data changes, allowing developers to respond to the changes and perform actions accordingly.",
+              "The watch property is used to define computed properties that update dynamically based on data changes.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of slots in Vue.js and how they facilitate content distribution in components.",
+            options: [
+              "Slots are used to define custom event listeners in Vue.js applications.",
+              "Slots are used to handle form submissions and user interactions in Vue.js applications.",
+              "Slots are used to define the layout and structure of a component in Vue.js applications.",
+              "Slots are placeholders in the component template that allow content to be distributed from the parent component, enabling developers to inject custom content into a component's template.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is server-side rendering (SSR) in Vue.js, and what are its advantages?",
+            options: [
+              "Server-side rendering is a technique for executing JavaScript code on the server side in Vue.js applications.",
+              "Server-side rendering is a technique for converting HTML templates to JavaScript code in Vue.js applications.",
+              "Server-side rendering is a technique that renders Vue.js components on the server and sends pre-rendered HTML to the client, improving initial load time and SEO-friendliness.",
+              "Server-side rendering is a technique for caching data on the server side in Vue.js applications.",
+            ],
+            correctAnswer: "3",
+          },
+        ],
       },
       "15 intermed vue questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What are Vue.js directives, and how are they different from components?",
+            options: [
+              "Directives are used for two-way data binding, while components are used for one-way data flow.",
+              "Directives are used for defining custom HTML elements, while components are used for manipulating the DOM.",
+              "Directives are used for adding behavior to existing DOM elements, while components are self-contained and reusable blocks of UI with their own behavior and template.",
+              "Directives and components are the same; they are interchangeable terms in Vue.js.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "Explain the purpose of Vuex in Vue.js applications.",
+            options: [
+              "Vuex is a form validation library used in Vue.js applications.",
+              "Vuex is a state management pattern and library used to manage application-level state in Vue.js applications.",
+              "Vuex is a library for routing and navigation in Vue.js applications.",
+              "Vuex is a utility library for handling HTTP requests and AJAX in Vue.js applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the role of mixins in Vue.js, and how do they facilitate code reuse?",
+            options: [
+              "Mixins are used to define custom directives in Vue.js applications.",
+              "Mixins are used to create one-way data flow between parent and child components in Vue.js applications.",
+              "Mixins are used to combine and reuse component options, such as data, methods, computed properties, and lifecycle hooks, among multiple components.",
+              "Mixins are used to manage the routing and navigation between pages in Vue.js applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of Vue.js Single File Components (SFCs) and their benefits.",
+            options: [
+              "SFCs are used to define multiple components in a single file, reducing the number of files in a Vue.js application.",
+              "SFCs are used to combine HTML, CSS, and JavaScript code for a component in a single file, improving code organization and readability.",
+              "SFCs are used to define components that can be loaded asynchronously, reducing the initial loading time of the application.",
+              "SFCs are used to manage application state and data flow between components in Vue.js applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are dynamic components in Vue.js, and how are they used?",
+            options: [
+              "Dynamic components are components that are loaded from external sources, such as CDNs.",
+              "Dynamic components are components that can change their structure and behavior at runtime.",
+              "Dynamic components are components with no fixed template and can be rendered based on a data property.",
+              "Dynamic components are components that can be created and destroyed dynamically at runtime using JavaScript.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the purpose of the 'provide' and 'inject' options in Vue.js.",
+            options: [
+              "The 'provide' option is used to inject services and dependencies into child components, while the 'inject' option is used to provide data and services to parent components.",
+              "The 'provide' option is used to pass data and services from parent components to child components, while the 'inject' option is used to receive the provided data and services in child components.",
+              "The 'provide' option is used to create a reactive data flow between components, while the 'inject' option is used to handle event communication.",
+              "The 'provide' and 'inject' options are no longer supported in the latest version of Vue.js.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is Vue Router, and how is it used to implement client-side routing in Vue.js applications?",
+            options: [
+              "Vue Router is a state management library used to handle complex data flows in Vue.js applications.",
+              "Vue Router is a library for handling asynchronous tasks and API calls in Vue.js applications.",
+              "Vue Router is a utility for handling form validation and user input in Vue.js applications.",
+              "Vue Router is a routing library that allows developers to define and manage client-side routes in Vue.js applications, enabling the creation of single-page applications (SPAs).",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is Vue.js watch property, and how is it used to respond to data changes?",
+            options: [
+              "The watch property is used to create custom directives in Vue.js applications.",
+              "The watch property is used to define asynchronous tasks and event listeners in Vue.js applications.",
+              "The watch property is used to observe changes in data properties and trigger callback functions when the data changes, allowing developers to respond to the changes and perform actions accordingly.",
+              "The watch property is used to define computed properties that update dynamically based on data changes.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of slots in Vue.js and how they facilitate content distribution in components.",
+            options: [
+              "Slots are used to define custom event listeners in Vue.js applications.",
+              "Slots are used to handle form submissions and user interactions in Vue.js applications.",
+              "Slots are used to define the layout and structure of a component in Vue.js applications.",
+              "Slots are placeholders in the component template that allow content to be distributed from the parent component, enabling developers to inject custom content into a component's template.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is server-side rendering (SSR) in Vue.js, and what are its advantages?",
+            options: [
+              "Server-side rendering is a technique for executing JavaScript code on the server side in Vue.js applications.",
+              "Server-side rendering is a technique for converting HTML templates to JavaScript code in Vue.js applications.",
+              "Server-side rendering is a technique that renders Vue.js components on the server and sends pre-rendered HTML to the client, improving initial load time and SEO-friendliness.",
+              "Server-side rendering is a technique for caching data on the server side in Vue.js applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What are Vue.js mixins, and how are they used in component development?",
+            options: [
+              "Mixins are used to define custom event listeners in Vue.js applications.",
+              "Mixins are used to handle form submissions and user interactions in Vue.js applications.",
+              "Mixins are used to combine and reuse component options, such as data, methods, computed properties, and lifecycle hooks, among multiple components.",
+              "Mixins are used to manage the routing and navigation between pages in Vue.js applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the purpose of the Vue.js transition system, and how can you use it for animations?",
+            options: [
+              "The Vue.js transition system is used to manage component state and data flow in animations.",
+              "The Vue.js transition system is used to create dynamic components at runtime.",
+              "The Vue.js transition system is used to animate the entering, leaving, and updating of elements in the DOM.",
+              "The Vue.js transition system is used to define custom directives for handling animations in Vue.js applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How can you optimize the performance of Vue.js applications?",
+            options: [
+              "By using the 'v-for' directive to create loops in templates.",
+              "By minimizing the use of computed properties and watchers.",
+              "By avoiding the use of Single File Components (SFCs) and using inline templates.",
+              "By using complex nested components to improve code readability.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is Vue.js SSR (Server-Side Rendering), and what are its benefits?",
+            options: [
+              "SSR is a technique for rendering the client-side of a Vue.js application on the server and sending it to the client, which improves SEO and initial page load time.",
+              "SSR is a technique for caching data on the server side to improve application performance.",
+              "SSR is a technique for creating custom directives in Vue.js applications.",
+              "SSR is a technique for handling asynchronous tasks and API calls in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "How can you handle errors and perform error handling in Vue.js applications?",
+            options: [
+              "By using the 'v-if' directive to conditionally render error messages.",
+              "By using the 'v-else' directive to conditionally render success messages.",
+              "By using try-catch blocks in JavaScript code to handle errors.",
+              "By using error boundaries and error handling methods provided by Vue.js, such as the 'errorCaptured' hook.",
+            ],
+            correctAnswer: "4",
+          },
+        ],
       },
       "20 intermed vue questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What are Vue.js directives, and how are they different from components?",
+            options: [
+              "Directives are used for two-way data binding, while components are used for one-way data flow.",
+              "Directives are used for defining custom HTML elements, while components are used for manipulating the DOM.",
+              "Directives are used for adding behavior to existing DOM elements, while components are self-contained and reusable blocks of UI with their own behavior and template.",
+              "Directives and components are the same; they are interchangeable terms in Vue.js.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "Explain the purpose of Vuex in Vue.js applications.",
+            options: [
+              "Vuex is a form validation library used in Vue.js applications.",
+              "Vuex is a state management pattern and library used to manage application-level state in Vue.js applications.",
+              "Vuex is a library for routing and navigation in Vue.js applications.",
+              "Vuex is a utility library for handling HTTP requests and AJAX in Vue.js applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the role of mixins in Vue.js, and how do they facilitate code reuse?",
+            options: [
+              "Mixins are used to define custom directives in Vue.js applications.",
+              "Mixins are used to create one-way data flow between parent and child components in Vue.js applications.",
+              "Mixins are used to combine and reuse component options, such as data, methods, computed properties, and lifecycle hooks, among multiple components.",
+              "Mixins are used to manage the routing and navigation between pages in Vue.js applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of Vue.js Single File Components (SFCs) and their benefits.",
+            options: [
+              "SFCs are used to define multiple components in a single file, reducing the number of files in a Vue.js application.",
+              "SFCs are used to combine HTML, CSS, and JavaScript code for a component in a single file, improving code organization and readability.",
+              "SFCs are used to define components that can be loaded asynchronously, reducing the initial loading time of the application.",
+              "SFCs are used to manage application state and data flow between components in Vue.js applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are dynamic components in Vue.js, and how are they used?",
+            options: [
+              "Dynamic components are components that are loaded from external sources, such as CDNs.",
+              "Dynamic components are components that can change their structure and behavior at runtime.",
+              "Dynamic components are components with no fixed template and can be rendered based on a data property.",
+              "Dynamic components are components that can be created and destroyed dynamically at runtime using JavaScript.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the purpose of the 'provide' and 'inject' options in Vue.js.",
+            options: [
+              "The 'provide' option is used to inject services and dependencies into child components, while the 'inject' option is used to provide data and services to parent components.",
+              "The 'provide' option is used to pass data and services from parent components to child components, while the 'inject' option is used to receive the provided data and services in child components.",
+              "The 'provide' option is used to create a reactive data flow between components, while the 'inject' option is used to handle event communication.",
+              "The 'provide' and 'inject' options are no longer supported in the latest version of Vue.js.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is Vue Router, and how is it used to implement client-side routing in Vue.js applications?",
+            options: [
+              "Vue Router is a state management library used to handle complex data flows in Vue.js applications.",
+              "Vue Router is a library for handling asynchronous tasks and API calls in Vue.js applications.",
+              "Vue Router is a utility for handling form validation and user input in Vue.js applications.",
+              "Vue Router is a routing library that allows developers to define and manage client-side routes in Vue.js applications, enabling the creation of single-page applications (SPAs).",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is Vue.js watch property, and how is it used to respond to data changes?",
+            options: [
+              "The watch property is used to create custom directives in Vue.js applications.",
+              "The watch property is used to define asynchronous tasks and event listeners in Vue.js applications.",
+              "The watch property is used to observe changes in data properties and trigger callback functions when the data changes, allowing developers to respond to the changes and perform actions accordingly.",
+              "The watch property is used to define computed properties that update dynamically based on data changes.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of lazy loading in Vue.js and how it can enhance the performance of an application.",
+            options: [
+              "Lazy loading is a technique for deferring the loading of non-essential resources, such as images and fonts, to improve initial page load time.",
+              "Lazy loading is a technique for delaying the execution of JavaScript code until it is needed, reducing the initial loading time of the application.",
+              "Lazy loading is a technique for loading only the components that are currently visible in the viewport, improving the performance of the application when navigating between routes.",
+              "Lazy loading is a technique for minimizing the use of third-party libraries and external dependencies in Vue.js applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How can you optimize the performance of Vue.js applications?",
+            options: [
+              "By using the 'v-for' directive to create loops in templates.",
+              "By minimizing the use of computed properties and watchers.",
+              "By avoiding the use of Single File Components (SFCs) and using inline templates.",
+              "By using complex nested components to improve code readability.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is Vue.js SSR (Server-Side Rendering), and what are its benefits?",
+            options: [
+              "SSR is a technique for rendering the client-side of a Vue.js application on the server and sending it to the client, which improves SEO and initial page load time.",
+              "SSR is a technique for caching data on the server side to improve application performance.",
+              "SSR is a technique for creating custom directives in Vue.js applications.",
+              "SSR is a technique for handling asynchronous tasks and API calls in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "How can you handle errors and perform error handling in Vue.js applications?",
+            options: [
+              "By using the 'v-if' directive to conditionally render error messages.",
+              "By using the 'v-else' directive to conditionally render success messages.",
+              "By using try-catch blocks in JavaScript code to handle errors.",
+              "By using error boundaries and error handling methods provided by Vue.js, such as the 'errorCaptured' hook.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are the key features of Vue.js that make it stand out among other frontend frameworks?",
+            options: [
+              "Vue.js offers built-in support for server-side rendering and static site generation.",
+              "Vue.js provides a flexible and intuitive template syntax for easy HTML binding.",
+              "Vue.js provides a built-in state management solution called Vuex.",
+              "Vue.js allows seamless integration of third-party libraries and other frontend frameworks.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the concept of scoped styles in Vue.js and why they are beneficial for component styling.",
+            options: [
+              "Scoped styles are used to define global CSS styles that apply to all components in the Vue.js application.",
+              "Scoped styles are used to define inline styles within each component's template.",
+              "Scoped styles are used to encapsulate component-specific CSS styles, preventing them from affecting other components.",
+              "Scoped styles are used to define animations and transitions for Vue.js components.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the purpose of the 'key' attribute in Vue.js, and how does it improve the efficiency of rendering lists?",
+            options: [
+              "The 'key' attribute is used to define unique identifiers for elements in the DOM, which helps Vue.js efficiently update and re-render list elements.",
+              "The 'key' attribute is used to define custom event listeners in Vue.js applications.",
+              "The 'key' attribute is used to handle user input and form validations in Vue.js applications.",
+              "The 'key' attribute is used to define custom directives in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of lazy loading in Vue.js and how it can enhance the performance of an application.",
+            options: [
+              "Lazy loading is a technique for deferring the loading of non-essential resources, such as images and fonts, to improve initial page load time.",
+              "Lazy loading is a technique for delaying the execution of JavaScript code until it is needed, reducing the initial loading time of the application.",
+              "Lazy loading is a technique for loading only the components that are currently visible in the viewport, improving the performance of the application when navigating between routes.",
+              "Lazy loading is a technique for minimizing the use of third-party libraries and external dependencies in Vue.js applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What are dynamic imports in Vue.js, and how are they used to improve code splitting and load time?",
+            options: [
+              "Dynamic imports are used to create dynamic components in Vue.js applications.",
+              "Dynamic imports are used to handle asynchronous tasks and API calls in Vue.js applications.",
+              "Dynamic imports are used to split the application code into smaller chunks, loading only the necessary components and resources when needed, which improves load time.",
+              "Dynamic imports are used to define custom directives for handling code splitting and load time optimization in Vue.js applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What are the key features of Vue.js that make it stand out among other frontend frameworks?",
+            options: [
+              "Vue.js offers built-in support for server-side rendering and static site generation.",
+              "Vue.js provides a flexible and intuitive template syntax for easy HTML binding.",
+              "Vue.js provides a built-in state management solution called Vuex.",
+              "Vue.js allows seamless integration of third-party libraries and other frontend frameworks.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the concept of scoped styles in Vue.js and why they are beneficial for component styling.",
+            options: [
+              "Scoped styles are used to define global CSS styles that apply to all components in the Vue.js application.",
+              "Scoped styles are used to define inline styles within each component's template.",
+              "Scoped styles are used to encapsulate component-specific CSS styles, preventing them from affecting other components.",
+              "Scoped styles are used to define animations and transitions for Vue.js components.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the purpose of the 'key' attribute in Vue.js, and how does it improve the efficiency of rendering lists?",
+            options: [
+              "The 'key' attribute is used to define unique identifiers for elements in the DOM, which helps Vue.js efficiently update and re-render list elements.",
+              "The 'key' attribute is used to define custom event listeners in Vue.js applications.",
+              "The 'key' attribute is used to handle user input and form validations in Vue.js applications.",
+              "The 'key' attribute is used to define custom directives in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+        ],
       },
       "10 advanced vue questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain the concept of Vue.js reactivity system and how it enables automatic UI updates.",
+            options: [
+              "The Vue.js reactivity system uses two-way data binding to automatically update the UI when data changes.",
+              "The Vue.js reactivity system uses one-way data flow to propagate changes from parent components to child components.",
+              "The Vue.js reactivity system tracks dependencies between data properties and the template, allowing it to detect changes and trigger automatic UI updates.",
+              "The Vue.js reactivity system relies on manual event handling to update the UI when data changes.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the Virtual DOM, and how does Vue.js leverage it for efficient UI rendering?",
+            options: [
+              "The Virtual DOM is a virtual representation of the actual DOM, and Vue.js uses it to directly manipulate the DOM for faster rendering.",
+              "The Virtual DOM is an abstract representation of the actual DOM, and Vue.js uses it to efficiently diff changes and update only the necessary parts of the actual DOM.",
+              "The Virtual DOM is an optimization technique that allows Vue.js to render components without using the actual DOM.",
+              "The Virtual DOM is a technique for handling asynchronous tasks and API calls in Vue.js applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the purpose of Vue.js custom directives and provide an example of when you might need to create one.",
+            options: [
+              "Custom directives are used to handle user input and form validations in Vue.js applications.",
+              "Custom directives are used to define dynamic components in Vue.js applications.",
+              "Custom directives are used to encapsulate component-specific CSS styles and behavior.",
+              "Custom directives are used to extend Vue.js' capabilities by directly manipulating the DOM or adding additional behavior to elements.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are server-side events (SSE) in the context of Vue.js, and how can you implement them?",
+            options: [
+              "SSE is a technique for handling server-to-client communication over a single HTTP connection, and it can be implemented in Vue.js using the built-in 'v-on' directive.",
+              "SSE is a built-in feature of Vue.js for handling real-time data updates from the server to the client.",
+              "SSE is a technique for handling client-to-server communication in Vue.js applications.",
+              "SSE is a technique for server-side rendering in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the role of render functions in Vue.js and how they differ from template-based syntax.",
+            options: [
+              "Render functions are used in Vue.js to create dynamic components at runtime, while template-based syntax is used to define static components.",
+              "Render functions are used to create reactive data flow between components, while template-based syntax is used for two-way data binding.",
+              "Render functions provide a more programmatic approach to defining the DOM structure and logic in Vue.js applications, while template-based syntax provides a more declarative approach.",
+              "Render functions are used to define complex animations and transitions in Vue.js applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the purpose of the Vue.js error handling mechanism, and how can you create custom error boundaries?",
+            options: [
+              "The Vue.js error handling mechanism is used to catch and handle errors that occur during component rendering or lifecycle hooks.",
+              "The Vue.js error handling mechanism is used to handle network errors and API calls in Vue.js applications.",
+              "Custom error boundaries in Vue.js are used to define custom event listeners for error handling.",
+              "Custom error boundaries in Vue.js are used to define custom CSS styles for error messages.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of functional components in Vue.js and when they should be used.",
+            options: [
+              "Functional components are used to improve rendering performance by avoiding unnecessary re-renders.",
+              "Functional components are used to handle user interactions and form validations in Vue.js applications.",
+              "Functional components are used to define dynamic components in Vue.js applications.",
+              "Functional components are used to define custom event listeners in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are Vue.js mixins, and what are the potential drawbacks of using them extensively?",
+            options: [
+              "Vue.js mixins are used to create reactive data flow between components.",
+              "Vue.js mixins are used to combine and reuse component options among multiple components.",
+              "Using Vue.js mixins extensively can lead to complex and hard-to-maintain code, as it may introduce naming conflicts and unintended side effects.",
+              "Using Vue.js mixins extensively can result in slower rendering performance due to the overhead of combining multiple mixins.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of renderless components in Vue.js and how they are used.",
+            options: [
+              "Renderless components are components without any template and are used to encapsulate complex logic and data manipulation in Vue.js applications.",
+              "Renderless components are components that render raw HTML without any Vue.js directives.",
+              "Renderless components are used to define complex animations and transitions in Vue.js applications.",
+              "Renderless components are used to handle user input and form validations in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "How does Vue.js support server-side rendering (SSR), and what are the benefits of using SSR in a Vue.js application?",
+            options: [
+              "Vue.js provides built-in support for SSR using the 'vue-server-renderer' package, which allows rendering Vue components on the server and sending pre-rendered HTML to the client, improving initial page load time and SEO-friendliness.",
+              "Vue.js SSR is achieved through third-party libraries and plugins that enable server-side rendering of Vue components.",
+              "SSR in Vue.js is not supported, and developers need to use other frontend frameworks for server-side rendering.",
+              "SSR in Vue.js is achieved by using the 'v-on' directive to handle server-side events.",
+            ],
+            correctAnswer: "1",
+          },
+        ],
       },
       "15 advanced vue questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain the concept of Vue.js reactivity system and how it enables automatic UI updates.",
+            options: [
+              "The Vue.js reactivity system uses two-way data binding to automatically update the UI when data changes.",
+              "The Vue.js reactivity system uses one-way data flow to propagate changes from parent components to child components.",
+              "The Vue.js reactivity system tracks dependencies between data properties and the template, allowing it to detect changes and trigger automatic UI updates.",
+              "The Vue.js reactivity system relies on manual event handling to update the UI when data changes.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the Virtual DOM, and how does Vue.js leverage it for efficient UI rendering?",
+            options: [
+              "The Virtual DOM is a virtual representation of the actual DOM, and Vue.js uses it to directly manipulate the DOM for faster rendering.",
+              "The Virtual DOM is an abstract representation of the actual DOM, and Vue.js uses it to efficiently diff changes and update only the necessary parts of the actual DOM.",
+              "The Virtual DOM is an optimization technique that allows Vue.js to render components without using the actual DOM.",
+              "The Virtual DOM is a technique for handling asynchronous tasks and API calls in Vue.js applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the purpose of Vue.js custom directives and provide an example of when you might need to create one.",
+            options: [
+              "Custom directives are used to handle user input and form validations in Vue.js applications.",
+              "Custom directives are used to define dynamic components in Vue.js applications.",
+              "Custom directives are used to encapsulate component-specific CSS styles and behavior.",
+              "Custom directives are used to extend Vue.js' capabilities by directly manipulating the DOM or adding additional behavior to elements.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are server-side events (SSE) in the context of Vue.js, and how can you implement them?",
+            options: [
+              "SSE is a technique for handling server-to-client communication over a single HTTP connection, and it can be implemented in Vue.js using the built-in 'v-on' directive.",
+              "SSE is a built-in feature of Vue.js for handling real-time data updates from the server to the client.",
+              "SSE is a technique for handling client-to-server communication in Vue.js applications.",
+              "SSE is a technique for server-side rendering in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of functional components in Vue.js and when they should be used.",
+            options: [
+              "Functional components are used to improve rendering performance by avoiding unnecessary re-renders.",
+              "Functional components are used to handle user interactions and form validations in Vue.js applications.",
+              "Functional components are used to define dynamic components in Vue.js applications.",
+              "Functional components are used to define custom event listeners in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are Vue.js mixins, and what are the potential drawbacks of using them extensively?",
+            options: [
+              "Vue.js mixins are used to create reactive data flow between components.",
+              "Vue.js mixins are used to combine and reuse component options among multiple components.",
+              "Using Vue.js mixins extensively can lead to complex and hard-to-maintain code, as it may introduce naming conflicts and unintended side effects.",
+              "Using Vue.js mixins extensively can result in slower rendering performance due to the overhead of combining multiple mixins.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of render functions in Vue.js and how they differ from template-based syntax.",
+            options: [
+              "Render functions are used in Vue.js to create dynamic components at runtime, while template-based syntax is used to define static components.",
+              "Render functions are used to create reactive data flow between components, while template-based syntax is used for two-way data binding.",
+              "Render functions provide a more programmatic approach to defining the DOM structure and logic in Vue.js applications, while template-based syntax provides a more declarative approach.",
+              "Render functions are used to define complex animations and transitions in Vue.js applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the purpose of the Vue.js error handling mechanism, and how can you create custom error boundaries?",
+            options: [
+              "The Vue.js error handling mechanism is used to catch and handle errors that occur during component rendering or lifecycle hooks.",
+              "The Vue.js error handling mechanism is used to handle network errors and API calls in Vue.js applications.",
+              "Custom error boundaries in Vue.js are used to define custom event listeners for error handling.",
+              "Custom error boundaries in Vue.js are used to define custom CSS styles for error messages.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are server-side events (SSE) in the context of Vue.js, and how can you implement them?",
+            options: [
+              "SSE is a technique for handling server-to-client communication over a single HTTP connection, and it can be implemented in Vue.js using the built-in 'v-on' directive.",
+              "SSE is a built-in feature of Vue.js for handling real-time data updates from the server to the client.",
+              "SSE is a technique for handling client-to-server communication in Vue.js applications.",
+              "SSE is a technique for server-side rendering in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of functional components in Vue.js and when they should be used.",
+            options: [
+              "Functional components are used to improve rendering performance by avoiding unnecessary re-renders.",
+              "Functional components are used to handle user interactions and form validations in Vue.js applications.",
+              "Functional components are used to define dynamic components in Vue.js applications.",
+              "Functional components are used to define custom event listeners in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are Vue.js mixins, and what are the potential drawbacks of using them extensively?",
+            options: [
+              "Vue.js mixins are used to create reactive data flow between components.",
+              "Vue.js mixins are used to combine and reuse component options among multiple components.",
+              "Using Vue.js mixins extensively can lead to complex and hard-to-maintain code, as it may introduce naming conflicts and unintended side effects.",
+              "Using Vue.js mixins extensively can result in slower rendering performance due to the overhead of combining multiple mixins.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of render functions in Vue.js and how they differ from template-based syntax.",
+            options: [
+              "Render functions are used in Vue.js to create dynamic components at runtime, while template-based syntax is used to define static components.",
+              "Render functions are used to create reactive data flow between components, while template-based syntax is used for two-way data binding.",
+              "Render functions provide a more programmatic approach to defining the DOM structure and logic in Vue.js applications, while template-based syntax provides a more declarative approach.",
+              "Render functions are used to define complex animations and transitions in Vue.js applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the purpose of the Vue.js error handling mechanism, and how can you create custom error boundaries?",
+            options: [
+              "The Vue.js error handling mechanism is used to catch and handle errors that occur during component rendering or lifecycle hooks.",
+              "The Vue.js error handling mechanism is used to handle network errors and API calls in Vue.js applications.",
+              "Custom error boundaries in Vue.js are used to define custom event listeners for error handling.",
+              "Custom error boundaries in Vue.js are used to define custom CSS styles for error messages.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are server-side events (SSE) in the context of Vue.js, and how can you implement them?",
+            options: [
+              "SSE is a technique for handling server-to-client communication over a single HTTP connection, and it can be implemented in Vue.js using the built-in 'v-on' directive.",
+              "SSE is a built-in feature of Vue.js for handling real-time data updates from the server to the client.",
+              "SSE is a technique for handling client-to-server communication in Vue.js applications.",
+              "SSE is a technique for server-side rendering in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of functional components in Vue.js and when they should be used.",
+            options: [
+              "Functional components are used to improve rendering performance by avoiding unnecessary re-renders.",
+              "Functional components are used to handle user interactions and form validations in Vue.js applications.",
+              "Functional components are used to define dynamic components in Vue.js applications.",
+              "Functional components are used to define custom event listeners in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+        ],
       },
       "20 advanced vue questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain the concept of Vue.js reactivity system and how it enables automatic UI updates.",
+            options: [
+              "The Vue.js reactivity system uses two-way data binding to automatically update the UI when data changes.",
+              "The Vue.js reactivity system uses one-way data flow to propagate changes from parent components to child components.",
+              "The Vue.js reactivity system tracks dependencies between data properties and the template, allowing it to detect changes and trigger automatic UI updates.",
+              "The Vue.js reactivity system relies on manual event handling to update the UI when data changes.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the Virtual DOM, and how does Vue.js leverage it for efficient UI rendering?",
+            options: [
+              "The Virtual DOM is a virtual representation of the actual DOM, and Vue.js uses it to directly manipulate the DOM for faster rendering.",
+              "The Virtual DOM is an abstract representation of the actual DOM, and Vue.js uses it to efficiently diff changes and update only the necessary parts of the actual DOM.",
+              "The Virtual DOM is an optimization technique that allows Vue.js to render components without using the actual DOM.",
+              "The Virtual DOM is a technique for handling asynchronous tasks and API calls in Vue.js applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the purpose of Vue.js custom directives and provide an example of when you might need to create one.",
+            options: [
+              "Custom directives are used to handle user input and form validations in Vue.js applications.",
+              "Custom directives are used to define dynamic components in Vue.js applications.",
+              "Custom directives are used to encapsulate component-specific CSS styles and behavior.",
+              "Custom directives are used to extend Vue.js' capabilities by directly manipulating the DOM or adding additional behavior to elements.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are server-side events (SSE) in the context of Vue.js, and how can you implement them?",
+            options: [
+              "SSE is a technique for handling server-to-client communication over a single HTTP connection, and it can be implemented in Vue.js using the built-in 'v-on' directive.",
+              "SSE is a built-in feature of Vue.js for handling real-time data updates from the server to the client.",
+              "SSE is a technique for handling client-to-server communication in Vue.js applications.",
+              "SSE is a technique for server-side rendering in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of functional components in Vue.js and when they should be used.",
+            options: [
+              "Functional components are used to improve rendering performance by avoiding unnecessary re-renders.",
+              "Functional components are used to handle user interactions and form validations in Vue.js applications.",
+              "Functional components are used to define dynamic components in Vue.js applications.",
+              "Functional components are used to define custom event listeners in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are Vue.js mixins, and what are the potential drawbacks of using them extensively?",
+            options: [
+              "Vue.js mixins are used to create reactive data flow between components.",
+              "Vue.js mixins are used to combine and reuse component options among multiple components.",
+              "Using Vue.js mixins extensively can lead to complex and hard-to-maintain code, as it may introduce naming conflicts and unintended side effects.",
+              "Using Vue.js mixins extensively can result in slower rendering performance due to the overhead of combining multiple mixins.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of render functions in Vue.js and how they differ from template-based syntax.",
+            options: [
+              "Render functions are used in Vue.js to create dynamic components at runtime, while template-based syntax is used to define static components.",
+              "Render functions are used to create reactive data flow between components, while template-based syntax is used for two-way data binding.",
+              "Render functions provide a more programmatic approach to defining the DOM structure and logic in Vue.js applications, while template-based syntax provides a more declarative approach.",
+              "Render functions are used to define complex animations and transitions in Vue.js applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the purpose of the Vue.js error handling mechanism, and how can you create custom error boundaries?",
+            options: [
+              "The Vue.js error handling mechanism is used to catch and handle errors that occur during component rendering or lifecycle hooks.",
+              "The Vue.js error handling mechanism is used to handle network errors and API calls in Vue.js applications.",
+              "Custom error boundaries in Vue.js are used to define custom event listeners for error handling.",
+              "Custom error boundaries in Vue.js are used to define custom CSS styles for.js using the built-in 'v-on' directive.",
+              "SSE is a built-in feature of Vue.js for handling real-time data updates from the server to the client.",
+              "SSE is a technique for handling client-to-server communication in Vue.js applications.",
+              "SSE is a technique for server-side rendering in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of functional components in Vue.js and when they should be used.",
+            options: [
+              "Functional components are used to improve rendering performance by avoiding unnecessary re-renders.",
+              "Functional components are used to handle user interactions and form validations in Vue.js applications.",
+              "Functional components are used to define dynamic components in Vue.js applications.",
+              "Functional components are used to define custom event listeners in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are Vue.js mixins, and what are the potential drawbacks of using them extensively?",
+            options: [
+              "Vue.js mixins are used to create reactive data flow between components.",
+              "Vue.js mixins are used to combine and reuse component options among multiple components.",
+              "Using Vue.js mixins extensively can lead to complex and hard-to-maintain code, as it may introduce naming conflicts and unintended side effects.",
+              "Using Vue.js mixins extensively can result in slower rendering performance due to the overhead of combining multiple mixins.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of render functions in Vue.js and how they differ from template-based syntax.",
+            options: [
+              "Render functions are used in Vue.js to create dynamic components at runtime, while template-based syntax is used to define static components.",
+              "Render functions are used to create reactive data flow between components, while template-based syntax is used for two-way data binding.",
+              "Render functions provide a more programmatic approach to defining the DOM structure and logic in Vue.js applications, while template-based syntax provides a more declarative approach.",
+              "Render functions are used to define complex animations and transitions in Vue.js applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the purpose of the Vue.js error handling mechanism, and how can you create custom error boundaries?",
+            options: [
+              "The Vue.js error handling mechanism is used to catch and handle errors that occur during component rendering or lifecycle hooks.",
+              "The Vue.js error handling mechanism is used to handle network errors and API calls in Vue.js applications.",
+              "Custom error boundaries in Vue.js are used to define custom event listeners for error handling.",
+              "Custom error boundaries in Vue.js are used to define custom CSS styles for error messages.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are server-side events (SSE) in the context of Vue.js, and how can you implement them?",
+            options: [
+              "SSE is a technique for handling server-to-client communication over a single HTTP connection, and it can be implemented in Vue.js using the built-in 'v-on' directive.",
+              "SSE is a built-in feature of Vue.js for handling real-time data updates from the server to the client.",
+              "SSE is a technique for handling client-to-server communication in Vue.js applications.",
+              "SSE is a technique for server-side rendering in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of functional components in Vue.js and when they should be used.",
+            options: [
+              "Functional components are used to improve rendering performance by avoiding unnecessary re-renders.",
+              "Functional components are used to handle user interactions and form validations in Vue.js applications.",
+              "Functional components are used to define dynamic components in Vue.js applications.",
+              "Functional components are used to define custom event listeners in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are Vue.js mixins, and what are the potential drawbacks of using them extensively?",
+            options: [
+              "Vue.js mixins are used to create reactive data flow between components.",
+              "Vue.js mixins are used to combine and reuse component options among multiple components.",
+              "Using Vue.js mixins extensively can lead to complex and hard-to-maintain code, as it may introduce naming conflicts and unintended side effects.",
+              "Using Vue.js mixins extensively can result in slower rendering performance due to the overhead of combining multiple mixins.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of render functions in Vue.js and how they differ from template-based syntax.",
+            options: [
+              "Render functions are used in Vue.js to create dynamic components at runtime, while template-based syntax is used to define static components.",
+              "Render functions are used to create reactive data flow between components, while template-based syntax is used for two-way data binding.",
+              "Render functions provide a more programmatic approach to defining the DOM structure and logic in Vue.js applications, while template-based syntax provides a more declarative approach.",
+              "Render functions are used to define complex animations and transitions in Vue.js applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the purpose of the Vue.js error handling mechanism, and how can you create custom error boundaries?",
+            options: [
+              "The Vue.js error handling mechanism is used to catch and handle errors that occur during component rendering or lifecycle hooks.",
+              "The Vue.js error handling mechanism is used to handle network errors and API calls in Vue.js applications.",
+              "Custom error boundaries in Vue.js are used to define custom event listeners for error handling.",
+              "Custom error boundaries in Vue.js are used to define custom CSS styles for error messages.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are server-side events (SSE) in the context of Vue.js, and how can you implement them?",
+            options: [
+              "SSE is a technique for handling server-to-client communication over a single HTTP connection, and it can be implemented in Vue.js using the built-in 'v-on' directive.",
+              "SSE is a built-in feature of Vue.js for handling real-time data updates from the server to the client.",
+              "SSE is a technique for handling client-to-server communication in Vue.js applications.",
+              "SSE is a technique for server-side rendering in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of functional components in Vue.js and when they should be used.",
+            options: [
+              "Functional components are used to improve rendering performance by avoiding unnecessary re-renders.",
+              "Functional components are used to handle user interactions and form validations in Vue.js applications.",
+              "Functional components are used to define dynamic components in Vue.js applications.",
+              "Functional components are used to define custom event listeners in Vue.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of Vue.js transitions and animations, and how can you implement them in your components?",
+            options: [
+              "Vue.js transitions and animations are used to handle network requests and data fetching in components.",
+              "Vue.js transitions and animations are used to handle user interactions and form validations in components.",
+              "Vue.js transitions are used to define enter/leave transitions when elements are added or removed from the DOM, while animations are used to animate the transition between different states of a component.",
+              "Vue.js transitions and animations are achieved by using third-party libraries and plugins.",
+            ],
+            correctAnswer: "3",
+          },
+        ],
       },
     },
     nodejs: {
       "10 beginner nodejs questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is Node.js?",
+            options: [
+              "Node.js is a front-end JavaScript framework.",
+              "Node.js is a back-end JavaScript runtime environment.",
+              "Node.js is a database management system.",
+              "Node.js is a markup language for creating web pages.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What does the term 'non-blocking' mean in Node.js?",
+            options: [
+              "Non-blocking refers to the ability of Node.js to execute multiple threads simultaneously.",
+              "Non-blocking means Node.js can handle blocking operations asynchronously, allowing the program to continue executing other tasks while waiting for I/O operations to complete.",
+              "Non-blocking refers to the lack of error handling in Node.js applications.",
+              "Non-blocking means Node.js is a single-threaded environment.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "How can you include external modules in a Node.js application?",
+            options: [
+              "Node.js automatically includes all necessary modules without any additional steps.",
+              "You need to manually copy and paste the module code into your Node.js application.",
+              "You can include external modules using the 'require()' function and specifying the module name.",
+              "External modules are automatically downloaded from the internet when your Node.js application runs for the first time.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the role of the 'package.json' file in a Node.js project?",
+            options: [
+              "The 'package.json' file contains the source code of your Node.js application.",
+              "The 'package.json' file is used for version control of your Node.js project.",
+              "The 'package.json' file lists all the dependencies and metadata of your Node.js application.",
+              "The 'package.json' file is required to install Node.js itself on your system.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How can you install external modules in a Node.js project?",
+            options: [
+              "You need to manually download the module files and place them in a specific folder in your project.",
+              "You can install external modules using the 'npm install' command followed by the module name.",
+              "Node.js automatically installs all necessary modules when you run the application for the first time.",
+              "You can only use the built-in modules that come with Node.js; external modules cannot be installed.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the role of the 'fs' module in Node.js?",
+            options: [
+              "The 'fs' module is used for handling network-related tasks in Node.js applications.",
+              "The 'fs' module is used for creating and managing databases in Node.js applications.",
+              "The 'fs' module is used for working with the file system, allowing you to read and write files in your Node.js application.",
+              "The 'fs' module is used for handling front-end rendering in Node.js applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of the 'http' module in Node.js?",
+            options: [
+              "The 'http' module is used for handling HTTP requests and responses in Node.js applications.",
+              "The 'http' module is used for encrypting and decrypting data in Node.js applications.",
+              "The 'http' module is used for managing user authentication and authorization in Node.js applications.",
+              "The 'http' module is used for handling front-end rendering in Node.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "How can you create a simple HTTP server in Node.js?",
+            options: [
+              "Node.js does not support HTTP servers; it is designed for client-side applications only.",
+              "You can create an HTTP server using the 'createServer()' method from the 'http' module.",
+              "An HTTP server is automatically created when you run a Node.js application.",
+              "You need to use a third-party library to create an HTTP server in Node.js.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the role of the 'npm' command in Node.js?",
+            options: [
+              "The 'npm' command is used for managing your Node.js installation on your computer.",
+              "The 'npm' command is used for running Node.js applications.",
+              "The 'npm' command is used for installing and managing external modules in your Node.js projects.",
+              "The 'npm' command is used for creating new Node.js projects from scratch.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "How can you start a Node.js application?",
+            options: [
+              "Node.js applications start automatically when you turn on your computer.",
+              "You need to use a web browser to access the Node.js application URL.",
+              "You can start a Node.js application by running the 'node' command followed by the application file name.",
+              "Node.js applications start by clicking on the application icon on your desktop.",
+            ],
+            correctAnswer: "3",
+          },
+        ],
       },
       "15 beginner nodejs questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is Node.js primarily used for?",
+            options: [
+              "Building complex front-end user interfaces.",
+              "Handling back-end server logic and network operations.",
+              "Creating interactive graphics and animations.",
+              "Managing databases and data storage.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "How do you print output to the console in Node.js?",
+            options: [
+              "Using the 'log()' method from the 'console' object.",
+              "Using the 'print()' function from the 'util' module.",
+              "Node.js does not have a built-in method for printing output to the console.",
+              "Using the 'echo()' function from the 'fs' module.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What command do you use to initialize a new Node.js project and create a 'package.json' file?",
+            options: ["npm create", "npm init", "node create", "node init"],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Which module do you use to work with file paths in Node.js?",
+            options: ["fs", "path", "file", "util"],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "How do you include an external module in a Node.js file?",
+            options: [
+              "Using the 'include' keyword followed by the module name.",
+              "Using the 'require()' function and specifying the module name.",
+              "Node.js automatically includes all necessary modules; no additional steps are required.",
+              "Using the 'add()' function from the 'module' object.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the purpose of the 'module.exports' object in Node.js?",
+            options: [
+              "It defines the main entry point for the Node.js application.",
+              "It contains the configuration settings for the Node.js project.",
+              "It exports functions, objects, or values from a module to make them accessible to other parts of the application.",
+              "Node.js does not use 'module.exports'; it relies on global variables.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the function of the 'npm install' command?",
+            options: [
+              "It installs Node.js on your computer.",
+              "It installs external modules specified in the 'package.json' file.",
+              "It installs a new version of the 'npm' package manager.",
+              "It installs all available npm packages globally.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the purpose of the 'process.argv' property in Node.js?",
+            options: [
+              "It contains the command-line arguments passed to the Node.js process.",
+              "It stores the current date and time in the Node.js application.",
+              "It holds the environment variables used in the Node.js application.",
+              "Node.js does not have a 'process.argv' property.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "How do you create a basic HTTP server in Node.js using the 'http' module?",
+            options: [
+              "Using the 'createServer()' method from the 'http' module and passing a callback function.",
+              "Using the 'serve()' method from the 'http' module and specifying the file to serve.",
+              "Node.js does not support HTTP servers; it is designed for other types of applications.",
+              "Using the 'start()' method from the 'http' module and specifying the server port.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "How can you handle incoming HTTP requests in a Node.js server?",
+            options: [
+              "Node.js automatically handles incoming requests; no additional steps are required.",
+              "You can use the 'get()' method from the 'http' module to handle GET requests.",
+              "You can use the 'handle()' method from the 'http' module to handle all incoming requests.",
+              "You can use the 'on()' method from the 'http' module to register a request listener.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Which method is used to read data from a file in Node.js?",
+            options: ["readFile()", "openFile()", "read()", "fetch()"],
+            correctAnswer: "1",
+          },
+          {
+            question: "What does the 'npm start' command do?",
+            options: [
+              "It installs all the dependencies required for the Node.js project.",
+              "It runs the Node.js application using the 'start' script defined in 'package.json'.",
+              "It starts the Node.js package manager.",
+              "It starts the Node.js server on a specified port.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "How can you handle errors in a Node.js application?",
+            options: [
+              "Node.js does not support error handling; errors are automatically handled by the operating system.",
+              "You can use the 'try...catch' statement to catch and handle errors.",
+              "You can use the 'handleError()' function from the 'util' module.",
+              "You can use the 'error()' method from the 'process' object to log errors to the console.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of the 'npm run' command?",
+            options: [
+              "It installs all the dependencies required for the Node.js project.",
+              "It runs a script defined in the 'scripts' section of the 'package.json' file.",
+              "It installs the 'npm' package manager.",
+              "It starts the Node.js server on a specified port.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "How can you execute a JavaScript file in Node.js?",
+            options: [
+              "You cannot execute JavaScript files in Node.js; it only supports modules.",
+              "Using the 'execute()' method from the 'fs' module.",
+              "Using the 'run()' function from the 'child_process' module.",
+              "You can execute a JavaScript file by running the 'node' command followed by the file name.",
+            ],
+            correctAnswer: "4",
+          },
+        ],
       },
       "20 beginner nodejs questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is Node.js primarily used for?",
+            options: [
+              "Building complex front-end user interfaces.",
+              "Handling back-end server logic and network operations.",
+              "Creating interactive graphics and animations.",
+              "Managing databases and data storage.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "How do you print output to the console in Node.js?",
+            options: [
+              "Using the 'log()' method from the 'console' object.",
+              "Using the 'print()' function from the 'util' module.",
+              "Node.js does not have a built-in method for printing output to the console.",
+              "Using the 'echo()' function from the 'fs' module.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What command do you use to initialize a new Node.js project and create a 'package.json' file?",
+            options: ["npm create", "npm init", "node create", "node init"],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Which module do you use to work with file paths in Node.js?",
+            options: ["fs", "path", "file", "util"],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "How do you include an external module in a Node.js file?",
+            options: [
+              "Using the 'include' keyword followed by the module name.",
+              "Using the 'require()' function and specifying the module name.",
+              "Node.js automatically includes all necessary modules; no additional steps are required.",
+              "Using the 'add()' function from the 'module' object.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the purpose of the 'module.exports' object in Node.js?",
+            options: [
+              "It defines the main entry point for the Node.js application.",
+              "It contains the configuration settings for the Node.js project.",
+              "It exports functions, objects, or values from a module to make them accessible to other parts of the application.",
+              "Node.js does not use 'module.exports'; it relies on global variables.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the function of the 'npm install' command?",
+            options: [
+              "It installs Node.js on your computer.",
+              "It installs external modules specified in the 'package.json' file.",
+              "It installs a new version of the 'npm' package manager.",
+              "It installs all available npm packages globally.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the purpose of the 'process.argv' property in Node.js?",
+            options: [
+              "It contains the command-line arguments passed to the Node.js process.",
+              "It stores the current date and time in the Node.js application.",
+              "It holds the environment variables used in the Node.js application.",
+              "Node.js does not have a 'process.argv' property.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "How do you create a basic HTTP server in Node.js using the 'http' module?",
+            options: [
+              "Using the 'createServer()' method from the 'http' module and passing a callback function.",
+              "Using the 'serve()' method from the 'http' module and specifying the file to serve.",
+              "Node.js does not support HTTP servers; it is designed for other types of applications.",
+              "Using the 'start()' method from the 'http' module and specifying the server port.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "How can you handle incoming HTTP requests in a Node.js server?",
+            options: [
+              "Node.js automatically handles incoming requests; no additional steps are required.",
+              "You can use the 'get()' method from the 'http' module to handle GET requests.",
+              "You can use the 'handle()' method from the 'http' module to handle all incoming requests.",
+              "You can use the 'on()' method from the 'http' module to register a request listener.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Which method is used to read data from a file in Node.js?",
+            options: ["readFile()", "openFile()", "read()", "fetch()"],
+            correctAnswer: "1",
+          },
+          {
+            question: "What does the 'npm start' command do?",
+            options: [
+              "It installs all the dependencies required for the Node.js project.",
+              "It runs the Node.js application using the 'start' script defined in 'package.json'.",
+              "It starts the Node.js package manager.",
+              "It starts the Node.js server on a specified port.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "How can you handle errors in a Node.js application?",
+            options: [
+              "Node.js does not support error handling; errors are automatically handled by the operating system.",
+              "You can use the 'try...catch' statement to catch and handle errors.",
+              "You can use the 'handleError()' function from the 'util' module.",
+              "You can use the 'error()' method from the 'process' object to log errors to the console.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of the 'npm run' command?",
+            options: [
+              "It installs all the dependencies required for the Node.js project.",
+              "It runs a script defined in the 'scripts' section of the 'package.json' file.",
+              "It installs the 'npm' package manager.",
+              "It starts the Node.js server on a specified port.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "How can you execute a JavaScript file in Node.js?",
+            options: [
+              "You cannot execute JavaScript files in Node.js; it only supports modules.",
+              "Using the 'execute()' method from the 'fs' module.",
+              "Using the 'run()' function from the 'child_process' module.",
+              "You can execute a JavaScript file by running the 'node' command followed by the file name.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "What is the purpose of the 'events' module in Node.js?",
+            options: [
+              "The 'events' module is used to create complex animations and transitions in Node.js applications.",
+              "The 'events' module is used to handle user interactions and form validations in Node.js applications.",
+              "The 'events' module is used for working with the file system in Node.js applications.",
+              "The 'events' module is used to handle and respond to events in Node.js applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "What is the role of the 'fs' module in Node.js?",
+            options: [
+              "The 'fs' module is used for handling network-related tasks in Node.js applications.",
+              "The 'fs' module is used for creating and managing databases in Node.js applications.",
+              "The 'fs' module is used for working with the file system, allowing you to read and write files in your Node.js application.",
+              "The 'fs' module is used for handling front-end rendering in Node.js applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How can you install external modules in a Node.js project?",
+            options: [
+              "You need to manually download the module files and place them in a specific folder in your project.",
+              "You can install external modules using the 'npm install' command followed by the module name.",
+              "Node.js automatically installs all necessary modules when you run the application for the first time.",
+              "You can only use the built-in modules that come with Node.js; external modules cannot be installed.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of the 'http' module in Node.js?",
+            options: [
+              "The 'http' module is used for handling HTTP requests and responses in Node.js applications.",
+              "The 'http' module is used for encrypting and decrypting data in Node.js applications.",
+              "The 'http' module is used for managing user authentication and authorization in Node.js applications.",
+              "The 'http' module is used for handling front-end rendering in Node.js applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "How can you create a simple HTTP server in Node.js?",
+            options: [
+              "Node.js does not support HTTP servers; it is designed for client-side applications only.",
+              "You can create an HTTP server using the 'createServer()' method from the 'http' module.",
+              "An HTTP server is automatically created when you run a Node.js application.",
+              "You need to use a third-party library to create an HTTP server in Node.js.",
+            ],
+            correctAnswer: "2",
+          },
+        ],
       },
       "10 intermed nodejs questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What is the purpose of the 'async/await' syntax in Node.js, and how does it work?",
+            options: [
+              "The 'async/await' syntax is used for defining asynchronous functions in Node.js, and it allows you to write asynchronous code that looks similar to synchronous code.",
+              "The 'async/await' syntax is used for defining synchronous functions in Node.js, and it ensures that the function execution is blocking.",
+              "The 'async/await' syntax is used for defining middleware functions in Node.js applications.",
+              "Node.js does not support 'async/await' syntax; it uses traditional callbacks for asynchronous operations.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of middleware in Node.js, and how can you use it in your applications?",
+            options: [
+              "Middleware in Node.js refers to the software components that interact with the operating system, and it is not directly used in applications.",
+              "Middleware in Node.js is a way to create database schemas and models for data persistence.",
+              "Middleware in Node.js is a series of functions that are executed in the request-response cycle, and it is used to perform tasks such as authentication, logging, and error handling.",
+              "Middleware in Node.js is used for defining the UI components in applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the 'EventEmitter' class in Node.js, and how can you use it to implement custom events?",
+            options: [
+              "The 'EventEmitter' class in Node.js is used to handle HTTP events in web applications.",
+              "The 'EventEmitter' class in Node.js is used to create animations and transitions in applications.",
+              "The 'EventEmitter' class in Node.js is used for working with file streams and handling asynchronous events.",
+              "The 'EventEmitter' class in Node.js is used for handling user interface events in front-end applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the role of the 'cluster' module in Node.js, and how can you use it to improve performance?",
+            options: [
+              "The 'cluster' module in Node.js is used for creating clusters of virtual machines to distribute the load of a Node.js application.",
+              "The 'cluster' module in Node.js is used for creating child processes to handle multiple requests concurrently, improving the application's performance.",
+              "The 'cluster' module in Node.js is used for creating network clusters to manage the communication between different Node.js applications.",
+              "The 'cluster' module in Node.js is used for creating encrypted clusters to secure sensitive data in applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the concept of streams in Node.js, and how can you use them for handling large datasets?",
+            options: [
+              "Streams in Node.js are used for creating animations and transitions in web applications.",
+              "Streams in Node.js are used for handling network requests and responses in real-time.",
+              "Streams in Node.js are used for reading and writing large datasets in chunks, reducing memory consumption and improving performance.",
+              "Streams in Node.js are used for handling user interactions in front-end applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What are promises in Node.js, and how do they differ from callbacks?",
+            options: [
+              "Promises in Node.js are used for handling file system operations, while callbacks are used for handling network requests.",
+              "Promises in Node.js are a way to handle asynchronous operations and provide a cleaner and more structured approach than using callbacks.",
+              "Promises in Node.js are used for creating animations and transitions in web applications, while callbacks are used for handling user interactions.",
+              "Promises in Node.js are a legacy feature, and callbacks are the modern way to handle asynchronous operations.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the concept of the 'Buffer' class in Node.js, and how can you use it for handling binary data?",
+            options: [
+              "The 'Buffer' class in Node.js is used for encrypting and decrypting binary data in web applications.",
+              "The 'Buffer' class in Node.js is used for handling user input and validating form data.",
+              "The 'Buffer' class in Node.js is used for working with file streams and handling binary data efficiently.",
+              "The 'Buffer' class in Node.js is used for defining the structure of binary data in databases.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What are the differences between the 'require()' function and the 'import' statement in Node.js?",
+            options: [
+              "The 'require()' function and the 'import' statement are interchangeable and can be used interchangeably in Node.js applications.",
+              "The 'require()' function is used for importing CommonJS modules in Node.js, while the 'import' statement is used for importing ES6 modules.",
+              "The 'require()' function is used for importing built-in Node.js modules, while the 'import' statement is used for external modules.",
+              "Node.js does not support the 'import' statement; it only uses the 'require()' function for importing modules.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the purpose of the 'crypto' module in Node.js, and how can you use it for data encryption and decryption?",
+            options: [
+              "The 'crypto' module in Node.js is used for creating secure communication channels between servers and clients in real-time.",
+              "The 'crypto' module in Node.js is used for creating complex animations and transitions.",
+              "The 'crypto' module in Node.js is used for generating random numbers for applications.",
+              "The 'crypto' module in Node.js is used for cryptographic operations such as data encryption and decryption.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of 'middleware chaining' in Node.js, and how can you implement it to apply multiple middleware to a route?",
+            options: [
+              "Middleware chaining in Node.js refers to the process of connecting different middleware functions to form a chain of tasks.",
+              "Middleware chaining in Node.js is a technique used for creating animations and transitions in applications.",
+              "Middleware chaining in Node.js is a way to connect multiple databases to an application.",
+              "Node.js does not support 'middleware chaining'; each middleware needs to be applied separately to a route.",
+            ],
+            correctAnswer: "1",
+          },
+        ],
       },
       "15 intermed nodejs questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain the purpose of the 'fs.promises' module in Node.js, and how does it differ from the traditional 'fs' module?",
+            options: [
+              "The 'fs.promises' module in Node.js is used for handling network-related tasks, while the traditional 'fs' module is used for file system operations.",
+              "The 'fs.promises' module in Node.js is a modern alternative to the callback-based 'fs' module, providing promise-based APIs for file system operations.",
+              "The 'fs.promises' module in Node.js is used for encrypting and decrypting data, while the traditional 'fs' module is used for reading and writing files.",
+              "The 'fs.promises' module in Node.js is used for handling user interface interactions, while the traditional 'fs' module is used for server-side operations.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the purpose of the 'os' module in Node.js, and how can you use it to gather system information?",
+            options: [
+              "The 'os' module in Node.js is used for creating complex animations and transitions in web applications.",
+              "The 'os' module in Node.js is used for handling user authentication and authorization in applications.",
+              "The 'os' module in Node.js is used for working with the file system and managing file operations.",
+              "The 'os' module in Node.js provides functions to gather system information such as CPU architecture, memory, and network interfaces.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of 'middleware' in the context of Express.js, and how can you use it to enhance your web applications?",
+            options: [
+              "Middleware in Express.js refers to the CSS styles used for enhancing the visual appearance of web applications.",
+              "Middleware in Express.js is a set of functions that are executed in the request-response cycle, allowing you to perform tasks such as logging, authentication, and error handling.",
+              "Middleware in Express.js is used for handling client-side JavaScript code in web applications.",
+              "Express.js does not support middleware; it relies on traditional callback functions for handling requests.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "How can you manage environment-specific configurations in a Node.js application, and why is it important?",
+            options: [
+              "Environment-specific configurations in a Node.js application are managed by manually changing the configuration files based on the environment.",
+              "Environment-specific configurations are not necessary in Node.js applications; the same configuration works for all environments.",
+              "Environment-specific configurations are managed using external modules, such as 'dotenv', to load environment variables based on the current environment (e.g., development, production).",
+              "Environment-specific configurations are managed by creating separate applications for each environment, each with its own configuration.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of 'error handling middleware' in Express.js, and how can you use it to handle errors in your web applications?",
+            options: [
+              "Error handling middleware in Express.js is used for creating complex error messages in web applications.",
+              "Error handling middleware in Express.js is a way to handle errors that occur during the request-response cycle, allowing you to centralize error handling logic and provide a consistent response to clients.",
+              "Error handling middleware in Express.js is used for handling errors that occur in the front-end code of web applications.",
+              "Express.js does not support error handling middleware; you need to handle errors using traditional try...catch blocks in your route handlers.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the purpose of the 'path' module in Node.js, and how can you use it for handling file paths in a cross-platform manner?",
+            options: [
+              "The 'path' module in Node.js is used for creating complex animations and transitions in web applications.",
+              "The 'path' module in Node.js is used for handling network requests and responses in real-time.",
+              "The 'path' module in Node.js is used for working with the file system and handling file paths, ensuring they are correct and formatted consistently across different operating systems.",
+              "The 'path' module in Node.js is used for handling user interactions in front-end applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What are streams in Node.js, and how do they differ from traditional file reading and writing operations?",
+            options: [
+              "Streams in Node.js are used for creating complex animations and transitions in web applications.",
+              "Streams in Node.js are a way to handle network requests and responses more efficiently than traditional file operations.",
+              "Streams in Node.js are used for handling user interactions in front-end applications.",
+              "Streams in Node.js are used for reading and writing data in chunks, making it more memory-efficient for handling large datasets compared to traditional file reading and writing operations.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of 'child processes' in Node.js, and how can you use them to execute external applications or scripts?",
+            options: [
+              "Child processes in Node.js refer to the CSS styles applied to the child elements in the DOM.",
+              "Child processes in Node.js are used for creating animations and transitions in web applications.",
+              "Child processes in Node.js are used for handling parallel operations and executing external applications or scripts, allowing you to perform tasks concurrently.",
+              "Node.js does not support child processes; it is a single-threaded environment.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the purpose of the 'cluster' module in Node.js, and how can you use it to improve the performance of your applications?",
+            options: [
+              "The 'cluster' module in Node.js is used for creating clusters of virtual machines to distribute the load of a Node.js application.",
+              "The 'cluster' module in Node.js is used for creating child processes to handle multiple requests concurrently, improving the application's performance.",
+              "The 'cluster' module in Node.js is used for creating network clusters to manage the communication between different Node.js applications.",
+              "The 'cluster' module in Node.js is used for creating encrypted clusters to secure sensitive data in applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the concept of 'cookie-parser' middleware in Express.js, and how can you use it to handle cookies in your web applications?",
+            options: [
+              "The 'cookie-parser' middleware in Express.js is used for managing CSS styles for web applications.",
+              "The 'cookie-parser' middleware in Express.js is used for handling client-side JavaScript code in web applications.",
+              "The 'cookie-parser' middleware in Express.js is used for handling user authentication and authorization.",
+              "The 'cookie-parser' middleware in Express.js is used for parsing and handling HTTP cookies in web applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the 'npm audit' command in Node.js, and why is it essential to use it in your projects?",
+            options: [
+              "The 'npm audit' command in Node.js is used for auditing the performance of your Node.js applications.",
+              "The 'npm audit' command is not a valid command in Node.js; it is used for other package managers.",
+              "The 'npm audit' command in Node.js is used for analyzing and identifying security vulnerabilities in your project's dependencies, helping you to keep your application secure.",
+              "The 'npm audit' command in Node.js is used for optimizing the network performance of your applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of 'Object Destructuring' in JavaScript, and how can you use it in Node.js?",
+            options: [
+              "Object Destructuring in JavaScript is a technique used for destructuring the DOM elements in web applications.",
+              "Object Destructuring in JavaScript is a way to simplify the syntax for working with objects, allowing you to extract multiple properties from an object into individual variables.",
+              "Object Destructuring in JavaScript is a way to create animations and transitions in web applications.",
+              "Object Destructuring is not supported in Node.js; it is a browser-only feature.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are 'async iterators' in Node.js, and how can you use them for handling asynchronous operations?",
+            options: [
+              "Async iterators in Node.js are used for handling network requests and responses asynchronously.",
+              "Async iterators in Node.js are a feature to handle synchronous operations more efficiently.",
+              "Async iterators in Node.js allow you to iterate over asynchronous data sources, such as streams, making it easier to handle asynchronous data in a synchronous manner.",
+              "Async iterators are not supported in Node.js; it is a feature available only in modern browsers.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of 'gzip compression' in Node.js, and how can you implement it to improve the performance of your web applications?",
+            options: [
+              "Gzip compression in Node.js refers to the process of compressing images and multimedia files to reduce their size.",
+              "Gzip compression in Node.js is a way to compress and decompress data during network transmission, reducing the size of HTTP responses and improving application performance.",
+              "Gzip compression in Node.js is used for creating animated graphics and illustrations in web applications.",
+              "Node.js does not support gzip compression; it is a feature available only in web servers.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are the advantages of using a 'task runner' like 'gulp' or 'grunt' in a Node.js project?",
+            options: [
+              "Task runners like 'gulp' or 'grunt' are not used in Node.js projects; they are only used in front-end development.",
+              "Task runners like 'gulp' or 'grunt' are used for creating animations and transitions in web applications.",
+              "Task runners like 'gulp' or 'grunt' provide a convenient way to automate repetitive tasks, such as minification, compilation, and testing, making the development process more efficient.",
+              "Task runners like 'gulp' or 'grunt' are used for handling back-end logic in Node.js applications.",
+            ],
+            correctAnswer: "3",
+          },
+        ],
       },
       "20 intermed nodejs questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain the concept of 'middleware' in the context of Express.js, and how can you use it to enhance your web applications?",
+            options: [
+              "Middleware in Express.js refers to the CSS styles used for enhancing the visual appearance of web applications.",
+              "Middleware in Express.js is a set of functions that are executed in the request-response cycle, allowing you to perform tasks such as logging, authentication, and error handling.",
+              "Middleware in Express.js is used for handling client-side JavaScript code in web applications.",
+              "Express.js does not support middleware; it relies on traditional callback functions for handling requests.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the purpose of the 'path' module in Node.js, and how can you use it for handling file paths in a cross-platform manner?",
+            options: [
+              "The 'path' module in Node.js is used for creating complex animations and transitions in web applications.",
+              "The 'path' module in Node.js is used for handling network requests and responses in real-time.",
+              "The 'path' module in Node.js is used for working with the file system and handling file paths, ensuring they are correct and formatted consistently across different operating systems.",
+              "The 'path' module in Node.js is used for handling user interactions in front-end applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What are streams in Node.js, and how do they differ from traditional file reading and writing operations?",
+            options: [
+              "Streams in Node.js are used for creating complex animations and transitions in web applications.",
+              "Streams in Node.js are a way to handle network requests and responses more efficiently than traditional file operations.",
+              "Streams in Node.js are used for handling user interactions in front-end applications.",
+              "Streams in Node.js are used for reading and writing data in chunks, making it more memory-efficient for handling large datasets compared to traditional file reading and writing operations.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of 'child processes' in Node.js, and how can you use them to execute external applications or scripts?",
+            options: [
+              "Child processes in Node.js refer to the CSS styles applied to the child elements in the DOM.",
+              "Child processes in Node.js are used for creating animations and transitions in web applications.",
+              "Child processes in Node.js are used for handling parallel operations and executing external applications or scripts, allowing you to perform tasks concurrently.",
+              "Node.js does not support child processes; it is a single-threaded environment.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the purpose of the 'cluster' module in Node.js, and how can you use it to improve the performance of your applications?",
+            options: [
+              "The 'cluster' module in Node.js is used for creating clusters of virtual machines to distribute the load of a Node.js application.",
+              "The 'cluster' module in Node.js is used for creating child processes to handle multiple requests concurrently, improving the application's performance.",
+              "The 'cluster' module in Node.js is used for creating network clusters to manage the communication between different Node.js applications.",
+              "The 'cluster' module in Node.js is used for creating encrypted clusters to secure sensitive data in applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the concept of 'cookie-parser' middleware in Express.js, and how can you use it to handle cookies in your web applications?",
+            options: [
+              "The 'cookie-parser' middleware in Express.js is used for managing CSS styles for web applications.",
+              "The 'cookie-parser' middleware in Express.js is used for handling client-side JavaScript code in web applications.",
+              "The 'cookie-parser' middleware in Express.js is used for handling user authentication and authorization.",
+              "The 'cookie-parser' middleware in Express.js is used for parsing and handling HTTP cookies in web applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the 'npm audit' command in Node.js, and why is it essential to use it in your projects?",
+            options: [
+              "The 'npm audit' command in Node.js is used for auditing the performance of your Node.js applications.",
+              "The 'npm audit' command is not a valid command in Node.js; it is used for other package managers.",
+              "The 'npm audit' command in Node.js is used for analyzing and identifying security vulnerabilities in your project's dependencies, helping you to keep your application secure.",
+              "The 'npm audit' command in Node.js is used for optimizing the network performance of your applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of 'Object Destructuring' in JavaScript, and how can you use it in Node.js?",
+            options: [
+              "Object Destructuring in JavaScript is a technique used for destructuring the DOM elements in web applications.",
+              "Object Destructuring in JavaScript is a way to simplify the syntax for working with objects, allowing you to extract multiple properties from an object into individual variables.",
+              "Object Destructuring in JavaScript is a way to create animations and transitions in web applications.",
+              "Object Destructuring is not supported in Node.js; it is a browser-only feature.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are 'async iterators' in Node.js, and how can you use them for handling asynchronous operations?",
+            options: [
+              "Async iterators in Node.js are used for handling network requests and responses asynchronously.",
+              "Async iterators in Node.js are a feature to handle synchronous operations more efficiently.",
+              "Async iterators in Node.js allow you to iterate over asynchronous data sources, such as streams, making it easier to handle asynchronous data in a synchronous manner.",
+              "Async iterators are not supported in Node.js; it is a feature available only in modern browsers.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of 'gzip compression' in Node.js, and how can you implement it to improve the performance of your web applications?",
+            options: [
+              "Gzip compression in Node.js refers to the process of compressing images and multimedia files to reduce their size.",
+              "Gzip compression in Node.js is a way to compress and decompress data during network transmission, reducing the size of HTTP responses and improving application performance.",
+              "Gzip compression in Node.js is used for creating animated graphics and illustrations in web applications.",
+              "Node.js does not support gzip compression; it is a feature available only in web servers.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are the advantages of using a 'task runner' like 'gulp' or 'grunt' in a Node.js project?",
+            options: [
+              "Task runners like 'gulp' or 'grunt' are not used in Node.js projects; they are only used in front-end development.",
+              "Task runners like 'gulp' or 'grunt' are used for creating animations and transitions in web applications.",
+              "Task runners like 'gulp' or 'grunt' provide a convenient way to automate repetitive tasks, such as minification, compilation, and testing, making the development process more efficient.",
+              "Task runners like 'gulp' or 'grunt' are used for handling back-end logic in Node.js applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the purpose of the 'crypto' module in Node.js, and how can you use it for data encryption and decryption?",
+            options: [
+              "The 'crypto' module in Node.js is used for creating secure communication channels between servers and clients in real-time.",
+              "The 'crypto' module in Node.js is used for generating random numbers for applications.",
+              "The 'crypto' module in Node.js is used for cryptographic operations such as data encryption and decryption.",
+              "The 'crypto' module in Node.js is used for creating complex animations and transitions.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of 'Buffer' in Node.js, and how can you use it for handling binary data?",
+            options: [
+              "The 'Buffer' in Node.js is used for encrypting and decrypting binary data in web applications.",
+              "The 'Buffer' in Node.js is used for handling user input and validating form data.",
+              "The 'Buffer' in Node.js is used for working with file streams and handling binary data efficiently.",
+              "The 'Buffer' in Node.js is used for defining the structure of binary data in databases.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How can you use the 'async/await' syntax in Node.js, and what are the benefits of using it for handling asynchronous operations?",
+            options: [
+              "The 'async/await' syntax in Node.js is used for defining asynchronous functions, and it allows you to write asynchronous code that looks similar to synchronous code.",
+              "The 'async/await' syntax in Node.js is used for defining synchronous functions, and it ensures that the function execution is blocking.",
+              "The 'async/await' syntax in Node.js is used for defining middleware functions in applications.",
+              "Node.js does not support 'async/await' syntax; it uses traditional callbacks for asynchronous operations.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is the role of the 'os' module in Node.js, and how can you use it to gather system information?",
+            options: [
+              "The 'os' module in Node.js is used for creating complex animations and transitions in web applications.",
+              "The 'os' module in Node.js is used for handling user authentication and authorization in applications.",
+              "The 'os' module in Node.js is used for working with the file system and managing file operations.",
+              "The 'os' module in Node.js provides functions to gather system information such as CPU architecture, memory, and network interfaces.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of 'middleware chaining' in Node.js, and how can you implement it to apply multiple middleware to a route?",
+            options: [
+              "Middleware chaining in Node.js refers to the process of connecting different middleware functions to form a chain of tasks.",
+              "Middleware chaining in Node.js is a technique used for creating animations and transitions in applications.",
+              "Middleware chaining in Node.js is a way to connect multiple databases to an application.",
+              "Node.js does not support 'middleware chaining'; each middleware needs to be applied separately to a route.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are the differences between the 'require()' function and the 'import' statement in Node.js?",
+            options: [
+              "The 'require()' function and the 'import' statement are interchangeable and can be used interchangeably in Node.js applications.",
+              "The 'require()' function is used for importing CommonJS modules in Node.js, while the 'import' statement is used for importing ES6 modules.",
+              "The 'require()' function is used for importing built-in Node.js modules, while the 'import' statement is used for external modules.",
+              "Node.js does not support the 'import' statement; it only uses the 'require()' function for importing modules.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the purpose of the 'perf_hooks' module in Node.js, and how can you use it to measure the performance of your applications?",
+            options: [
+              "The 'perf_hooks' module in Node.js is used for creating complex animations and transitions in web applications.",
+              "The 'perf_hooks' module in Node.js is used for tracking user interactions and measuring user engagement in applications.",
+              "The 'perf_hooks' module in Node.js provides functions to measure the execution time of your code and identify performance bottlenecks in your applications.",
+              "The 'perf_hooks' module in Node.js is used for managing user authentication and authorization.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How can you handle file uploads in a Node.js application, and what is the purpose of libraries like 'multer'?",
+            options: [
+              "Node.js does not support file uploads; it is designed for server-side logic only.",
+              "You can handle file uploads in Node.js by using the 'fs' module to read and write files manually.",
+              "To handle file uploads in Node.js, you can use the 'multer' library, which simplifies the process of handling multipart/form-data, allowing you to upload files to your server easily.",
+              "File uploads in Node.js are handled automatically by the 'http' module, so you don't need any additional libraries.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of 'event emitters' in Node.js, and how can you use them to handle and respond to events?",
+            options: [
+              "Event emitters in Node.js are used for creating animations and transitions in web applications.",
+              "Event emitters in Node.js are used for handling user interactions and form validations in web applications.",
+              "Event emitters in Node.js are used for working with the file system and handling asynchronous events.",
+              "Event emitters in Node.js are used for managing HTTP events in web applications.",
+            ],
+            correctAnswer: "3",
+          },
+        ],
       },
       "10 advanced nodejs questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain the concept of the event loop in Node.js, and how does it enable non-blocking I/O operations?",
+            options: [
+              "The event loop in Node.js is a way to manage animation events and transitions in web applications.",
+              "The event loop in Node.js is a mechanism that allows you to run tasks asynchronously, without blocking the main execution thread, enabling efficient handling of I/O operations and improving application performance.",
+              "The event loop in Node.js is a process for managing database connections in real-time applications.",
+              "The event loop in Node.js is used for handling authentication and authorization events in applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is 'V8' in the context of Node.js, and how does it contribute to the execution of JavaScript code?",
+            options: [
+              "'V8' is a templating engine used in Node.js for server-side rendering of web pages.",
+              "'V8' is a utility library in Node.js for handling various utility functions.",
+              "'V8' is the JavaScript engine developed by Google, used in Node.js to execute JavaScript code, and it compiles JavaScript code to machine code for faster execution.",
+              "'V8' is a version control system used for managing code repositories in Node.js projects.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of 'libuv' in Node.js, and how does it facilitate asynchronous I/O operations?",
+            options: [
+              "'libuv' is a UI framework used in Node.js for building user interfaces in web applications.",
+              "'libuv' is a built-in module in Node.js that provides low-level I/O functionality, enabling asynchronous operations by handling the event loop and executing tasks outside the main thread.",
+              "'libuv' is a package manager used in Node.js for managing external dependencies.",
+              "'libuv' is a template engine used in Node.js for server-side rendering.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is 'Worker Threads' in Node.js, and how can you use them to run JavaScript code in separate threads?",
+            options: [
+              "'Worker Threads' in Node.js is a way to create animations and transitions using multiple threads in web applications.",
+              "'Worker Threads' in Node.js is a set of utility functions for managing threads in a multithreaded environment.",
+              "'Worker Threads' in Node.js allow you to create separate threads to execute JavaScript code in parallel, improving the performance of CPU-intensive tasks.",
+              "'Worker Threads' in Node.js is a way to manage WebSocket connections for real-time communication in web applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the purpose of the 'N-API' (Node.js API) in Node.js, and how does it enhance the stability of native addons?",
+            options: [
+              "The 'N-API' in Node.js is a utility library for creating complex animations and transitions in web applications.",
+              "The 'N-API' in Node.js is used for handling network-related tasks in real-time applications.",
+              "The 'N-API' in Node.js is an API that provides a stable and consistent interface for native addons, ensuring that they are compatible with different Node.js versions, and reducing the risk of breaking changes.",
+              "The 'N-API' in Node.js is a set of utility functions for working with the file system and managing file operations.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is 'async_hooks' in Node.js, and how can you use it to track asynchronous operations and their contexts?",
+            options: [
+              "'async_hooks' in Node.js is a way to manage asynchronous CSS styles in web applications.",
+              "'async_hooks' in Node.js is a utility library for handling asynchronous network operations.",
+              "'async_hooks' in Node.js is a set of hooks that allow you to track the lifetime of asynchronous operations, monitor their performance, and associate contextual data with them.",
+              "'async_hooks' in Node.js is a feature for managing user interactions and events in applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of 'heap memory' and 'stack memory' in the context of Node.js, and how do they affect memory management?",
+            options: [
+              "'Heap memory' and 'stack memory' are not relevant to Node.js; they are concepts used in lower-level programming languages.",
+              "'Heap memory' in Node.js refers to the memory used for storing objects and closures, while 'stack memory' is used for storing function call frames and local variables.",
+              "'Heap memory' and 'stack memory' in Node.js are terms used interchangeably to refer to the overall memory available for the application.",
+              "'Heap memory' in Node.js refers to the memory used for handling network requests and responses, while 'stack memory' is used for managing WebSocket connections.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is 'Docker' in the context of Node.js, and how can you use it for containerization and deployment of Node.js applications?",
+            options: [
+              "'Docker' is a version control system used in Node.js projects for managing code repositories.",
+              "'Docker' is a utility library in Node.js for handling different utility functions.",
+              "'Docker' in Node.js is a containerization platform that allows you to package your Node.js applications and their dependencies into containers, making them portable and easy to deploy across different environments.",
+              "'Docker' in Node.js is a templating engine used for server-side rendering of web pages.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of 'memory leaks' in Node.js, and how can you identify and prevent them?",
+            options: [
+              "'Memory leaks' in Node.js refer to the usage of excessive memory for storing large datasets, leading to a lack of available memory for other operations.",
+              "'Memory leaks' in Node.js are caused by faulty animations and transitions in web applications.",
+              "'Memory leaks' in Node.js are not a concern; Node.js has built-in garbage collection that automatically handles memory management.",
+              "'Memory leaks' in Node.js are caused by bugs in the JavaScript code, leading to unreleased memory that is no longer needed, and it can lead to a gradual loss of available memory and application crashes.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is 'PM2' in the context of Node.js, and how can you use it for process management and production deployment?",
+            options: [
+              "'PM2' is a JavaScript runtime used in Node.js for executing JavaScript code outside of the browser environment.",
+              "'PM2' is a utility library in Node.js for handling process management and executing external scripts.",
+              "'PM2' in Node.js is a process manager that allows you to manage and monitor Node.js applications, enabling features like automatic restarts, load balancing, and log management.",
+              "'PM2' in Node.js is a package manager used for managing external dependencies in Node.js projects.",
+            ],
+            correctAnswer: "3",
+          },
+        ],
       },
       "15 advanced nodejs questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain the concept of 'C++ Addons' in Node.js, and how can you use them to extend the functionality of your applications?",
+            options: [
+              "'C++ Addons' in Node.js are utility libraries for handling C++ code in web applications.",
+              "'C++ Addons' in Node.js are a set of utility functions for interacting with external C++ libraries.",
+              "'C++ Addons' in Node.js allow you to write and integrate C++ code with your Node.js applications, enabling you to achieve performance improvements and access low-level system resources.",
+              "'C++ Addons' in Node.js are used for managing external dependencies in your projects.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the 'pmx' module in Node.js, and how can you use it for advanced process monitoring and management?",
+            options: [
+              "'pmx' is a utility library in Node.js for handling process management and executing external scripts.",
+              "'pmx' in Node.js is a process manager similar to 'PM2', providing features like process monitoring, automatic restarts, and load balancing.",
+              "'pmx' is a templating engine used for server-side rendering of web pages in Node.js.",
+              "'pmx' in Node.js is a module for managing package dependencies and versioning.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the concept of 'Vulnerability Scanning' in Node.js, and why is it essential to incorporate it into your application's development process?",
+            options: [
+              "'Vulnerability Scanning' in Node.js is a technique used for scanning and identifying potential security vulnerabilities in your application's code and dependencies, helping you to proactively address security risks.",
+              "'Vulnerability Scanning' in Node.js is used for handling user authentication and authorization in real-time applications.",
+              "'Vulnerability Scanning' in Node.js is a utility library for handling CSS styles in web applications.",
+              "'Vulnerability Scanning' in Node.js is used for creating complex animations and transitions in web applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of 'streaming compression' in Node.js, and how can you use it to compress and decompress data efficiently?",
+            options: [
+              "'Streaming compression' in Node.js is used for managing client-server communication in real-time applications.",
+              "'Streaming compression' in Node.js is a way to manage complex animations and transitions in web applications.",
+              "'Streaming compression' in Node.js allows you to compress and decompress data on-the-fly while reading or writing streams, reducing memory usage and improving performance.",
+              "'Streaming compression' in Node.js is a technique for managing WebSocket connections.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the purpose of the 'dtrace-provider' module in Node.js, and how can you use it to trace and profile your applications?",
+            options: [
+              "'dtrace-provider' is a utility library in Node.js for handling trace-related tasks in web applications.",
+              "'dtrace-provider' is a module for creating complex animations and transitions in Node.js applications.",
+              "'dtrace-provider' in Node.js is used for managing user authentication and authorization in real-time applications.",
+              "'dtrace-provider' in Node.js is a module for providing support for DTrace, a dynamic tracing framework for analyzing and troubleshooting applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of 'Zone.js' in Node.js, and how can you use it for managing asynchronous operations and tracking execution contexts?",
+            options: [
+              "'Zone.js' in Node.js is a way to create animations and transitions in web applications.",
+              "'Zone.js' in Node.js is a utility library for handling zone-specific tasks in web applications.",
+              "'Zone.js' in Node.js is a package manager used for managing external dependencies in your projects.",
+              "'Zone.js' in Node.js is a library that allows you to create and manage execution contexts, enabling you to track asynchronous operations and handle errors more effectively.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are 'cluster messaging' and 'inter-process communication (IPC)' in Node.js, and how can you use them for communication between multiple Node.js processes?",
+            options: [
+              "'Cluster messaging' and 'IPC' are techniques for handling WebSocket connections in Node.js.",
+              "'Cluster messaging' and 'IPC' are used for handling network requests and responses in real-time applications.",
+              "'Cluster messaging' and 'IPC' are used for creating complex animations and transitions in web applications.",
+              "'Cluster messaging' and 'IPC' in Node.js allow you to communicate between multiple Node.js processes, enabling efficient sharing of data and workload distribution.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of 'snapshotting' in the context of V8 engine and Node.js, and how does it impact application startup time?",
+            options: [
+              "'Snapshotting' in Node.js is a way to handle memory snapshots in real-time applications.",
+              "'Snapshotting' in Node.js is a utility library for creating complex animations and transitions in web applications.",
+              "'Snapshotting' in Node.js refers to the process of converting JavaScript code to machine code and saving it as a snapshot, which can be used to speed up application startup time by avoiding the need to recompile the code each time the application starts.",
+              "'Snapshotting' in Node.js is used for optimizing database queries in applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is 'async_hooks' in Node.js, and how can you use it to track asynchronous operations and their contexts?",
+            options: [
+              "'async_hooks' in Node.js is a way to manage asynchronous CSS styles in web applications.",
+              "'async_hooks' in Node.js is a utility library for handling asynchronous network operations.",
+              "'async_hooks' in Node.js is a set of hooks that allow you to track the lifetime of asynchronous operations, monitor their performance, and associate contextual data with them.",
+              "'async_hooks' in Node.js is a feature for managing user interactions and events in applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is 'Node.js C++ API' (N-API), and how can you use it to create and distribute native addons that are compatible with different Node.js versions?",
+            options: [
+              "'Node.js C++ API' is a utility library for handling C++ code in Node.js applications.",
+              "'Node.js C++ API' is a feature for managing database connections in real-time applications.",
+              "'Node.js C++ API' is a version control system used in Node.js projects for managing code repositories.",
+              "'Node.js C++ API' allows you to write native addons using C++ that are compatible with different Node.js versions, reducing the need to recompile addons for each Node.js release.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of 'dtrace-provider' module in Node.js, and how can you use it to trace and profile your applications?",
+            options: [
+              "'dtrace-provider' is a utility library in Node.js for handling trace-related tasks in web applications.",
+              "'dtrace-provider' is a module for creating complex animations and transitions in Node.js applications.",
+              "'dtrace-provider' in Node.js is used for managing user authentication and authorization in real-time applications.",
+              "'dtrace-provider' in Node.js is a module for providing support for DTrace, a dynamic tracing framework for analyzing and troubleshooting applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are 'ES Modules' in Node.js, and how do they differ from CommonJS modules?",
+            options: [
+              "'ES Modules' in Node.js is a set of utility functions for working with the file system and managing file operations.",
+              "'ES Modules' in Node.js are a way to create complex animations and transitions in web applications.",
+              "'ES Modules' are the latest standard for working with modules in JavaScript, providing a more standardized syntax for module imports and exports compared to CommonJS modules.",
+              "'ES Modules' in Node.js is a feature for managing user interactions and events in applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of 'N-API' (Node.js API), and how does it enhance the stability of native addons?",
+            options: [
+              "The 'N-API' in Node.js is a utility library for creating complex animations and transitions in web applications.",
+              "The 'N-API' in Node.js is used for handling network-related tasks in real-time applications.",
+              "The 'N-API' in Node.js is an API that provides a stable and consistent interface for native addons, ensuring that they are compatible with different Node.js versions, and reducing the risk of breaking changes.",
+              "The 'N-API' in Node.js is a set of utility functions for working with the file system and managing file operations.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What are the 'V8 Heap Statistics' in Node.js, and how can you use them to monitor memory usage and optimize your applications?",
+            options: [
+              "The 'V8 Heap Statistics' in Node.js are a set of utility functions for managing heap memory in web applications.",
+              "The 'V8 Heap Statistics' in Node.js are used for handling network requests and responses in real-time applications.",
+              "The 'V8 Heap Statistics' in Node.js provide insights into the memory usage of your application's V8 engine, allowing you to identify memory leaks and optimize memory management.",
+              "The 'V8 Heap Statistics' in Node.js are a feature for managing user interactions and events in applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of 'zone.js' in Node.js, and how can you use it for managing asynchronous operations and tracking execution contexts?",
+            options: [
+              "'Zone.js' in Node.js is a way to manage animations and transitions in web applications.",
+              "'Zone.js' in Node.js is a utility library for handling zone-specific tasks in web applications.",
+              "'Zone.js' in Node.js is a package manager used for managing external dependencies in your projects.",
+              "'Zone.js' in Node.js is a library that allows you to create and manage execution contexts, enabling you to track asynchronous operations and handle errors more effectively.",
+            ],
+            correctAnswer: "4",
+          },
+        ],
       },
       "20 advanced nodejs questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What is 'N-API' (Node.js API), and how does it improve the stability of native addons across different Node.js versions?",
+            options: [
+              "'N-API' in Node.js is a utility library for handling C++ code in web applications.",
+              "'N-API' in Node.js is a set of utility functions for working with the file system and managing file operations.",
+              "'N-API' in Node.js is an API that provides a stable and consistent interface for native addons, allowing them to be compatible with different Node.js versions without the need for recompilation.",
+              "'N-API' in Node.js is a feature for managing user interactions and events in applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is 'Node.js C++ Addons', and how can you use them to extend the functionality of your Node.js applications?",
+            options: [
+              "'Node.js C++ Addons' are utility libraries for handling C++ code in Node.js applications.",
+              "'Node.js C++ Addons' are a set of utility functions for working with the file system and managing file operations.",
+              "'Node.js C++ Addons' allow you to write and integrate C++ code with your Node.js applications, enabling you to achieve performance improvements and access low-level system resources.",
+              "'Node.js C++ Addons' are used for managing external dependencies in your Node.js projects.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of 'V8 Engine' in Node.js, and how does it contribute to the execution of JavaScript code?",
+            options: [
+              "'V8 Engine' is a templating engine used in Node.js for server-side rendering of web pages.",
+              "'V8 Engine' is a utility library in Node.js for handling various utility functions.",
+              "'V8 Engine' is the JavaScript engine developed by Google, used in Node.js to execute JavaScript code, and it compiles JavaScript code to machine code for faster execution.",
+              "'V8 Engine' is a version control system used in Node.js projects for managing code repositories.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What are 'Worker Threads' in Node.js, and how can you use them to run JavaScript code in separate threads?",
+            options: [
+              "'Worker Threads' in Node.js is a way to create animations and transitions using multiple threads in web applications.",
+              "'Worker Threads' in Node.js is a set of utility functions for managing threads in a multithreaded environment.",
+              "'Worker Threads' in Node.js allow you to create separate threads to execute JavaScript code in parallel, improving the performance of CPU-intensive tasks.",
+              "'Worker Threads' in Node.js is a way to manage WebSocket connections for real-time communication in web applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the purpose of the 'dtrace-provider' module in Node.js, and how can you use it to trace and profile your applications?",
+            options: [
+              "'dtrace-provider' is a utility library in Node.js for handling trace-related tasks in web applications.",
+              "'dtrace-provider' is a module for creating complex animations and transitions in Node.js applications.",
+              "'dtrace-provider' in Node.js is used for managing user authentication and authorization in real-time applications.",
+              "'dtrace-provider' in Node.js is a module for providing support for DTrace, a dynamic tracing framework for analyzing and troubleshooting applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is 'async_hooks' in Node.js, and how can you use it to track asynchronous operations and their contexts?",
+            options: [
+              "'async_hooks' in Node.js is a way to manage asynchronous CSS styles in web applications.",
+              "'async_hooks' in Node.js is a utility library for handling asynchronous network operations.",
+              "'async_hooks' in Node.js is a set of hooks that allow you to track the lifetime of asynchronous operations, monitor their performance, and associate contextual data with them.",
+              "'async_hooks' in Node.js is a feature for managing user interactions and events in applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of 'snapshotting' in the context of V8 engine and Node.js, and how does it impact application startup time?",
+            options: [
+              "'Snapshotting' in Node.js is a way to handle memory snapshots in real-time applications.",
+              "'Snapshotting' in Node.js is a utility library for creating complex animations and transitions in web applications.",
+              "'Snapshotting' in Node.js refers to the process of converting JavaScript code to machine code and saving it as a snapshot, which can be used to speed up application startup time by avoiding the need to recompile the code each time the application starts.",
+              "'Snapshotting' in Node.js is used for optimizing database queries in applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of 'Node.js C++ API' (N-API), and how can you use it to create and distribute native addons that are compatible with different Node.js versions?",
+            options: [
+              "'Node.js C++ API' is a utility library for handling C++ code in Node.js applications.",
+              "'Node.js C++ API' is a feature for managing database connections in real-time applications.",
+              "'Node.js C++ API' is a version control system used in Node.js projects for managing code repositories.",
+              "'Node.js C++ API' allows you to write native addons using C++ that are compatible with different Node.js versions, reducing the need to recompile addons for each Node.js release.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the purpose of the 'V8 Heap Statistics' in Node.js, and how can you use them to monitor memory usage and optimize your applications?",
+            options: [
+              "The 'V8 Heap Statistics' in Node.js are a set of utility functions for managing heap memory in web applications.",
+              "The 'V8 Heap Statistics' in Node.js are used for handling network requests and responses in real-time applications.",
+              "The 'V8 Heap Statistics' in Node.js provide insights into the memory usage of your application's V8 engine, allowing you to identify memory leaks and optimize memory management.",
+              "The 'V8 Heap Statistics' in Node.js are a feature for managing user interactions and events in applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of 'zone.js' in Node.js, and how can you use it for managing asynchronous operations and tracking execution contexts?",
+            options: [
+              "'zone.js' in Node.js is a way to manage animations and transitions in web applications.",
+              "'zone.js' in Node.js is a utility library for handling zone-specific tasks in web applications.",
+              "'zone.js' in Node.js is a package manager used for managing external dependencies in your projects.",
+              "'zone.js' in Node.js is a library that allows you to create and manage execution contexts, enabling you to track asynchronous operations and handle errors more effectively.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of 'N-API' (Node.js API), and how does it improve the stability of native addons across different Node.js versions?",
+            options: [
+              "'N-API' in Node.js is a utility library for handling C++ code in web applications.",
+              "'N-API' in Node.js is a set of utility functions for working with the file system and managing file operations.",
+              "'N-API' in Node.js is an API that provides a stable and consistent interface for native addons, allowing them to be compatible with different Node.js versions without the need for recompilation.",
+              "'N-API' in Node.js is a feature for managing user interactions and events in applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is 'Node.js C++ Addons', and how can you use them to extend the functionality of your Node.js applications?",
+            options: [
+              "'Node.js C++ Addons' are utility libraries for handling C++ code in Node.js applications.",
+              "'Node.js C++ Addons' are a set of utility functions for working with the file system and managing file operations.",
+              "'Node.js C++ Addons' allow you to write and integrate C++ code with your Node.js applications, enabling you to achieve performance improvements and access low-level system resources.",
+              "'Node.js C++ Addons' are used for managing external dependencies in your Node.js projects.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of 'V8 Engine' in Node.js, and how does it contribute to the execution of JavaScript code?",
+            options: [
+              "'V8 Engine' is a templating engine used in Node.js for server-side rendering of web pages.",
+              "'V8 Engine' is a utility library in Node.js for handling various utility functions.",
+              "'V8 Engine' is the JavaScript engine developed by Google, used in Node.js to execute JavaScript code, and it compiles JavaScript code to machine code for faster execution.",
+              "'V8 Engine' is a version control system used in Node.js projects for managing code repositories.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What are 'Worker Threads' in Node.js, and how can you use them to run JavaScript code in separate threads?",
+            options: [
+              "'Worker Threads' in Node.js is a way to create animations and transitions using multiple threads in web applications.",
+              "'Worker Threads' in Node.js is a set of utility functions for managing threads in a multithreaded environment.",
+              "'Worker Threads' in Node.js allow you to create separate threads to execute JavaScript code in parallel, improving the performance of CPU-intensive tasks.",
+              "'Worker Threads' in Node.js is a way to manage WebSocket connections for real-time communication in web applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the purpose of the 'dtrace-provider' module in Node.js, and how can you use it to trace and profile your applications?",
+            options: [
+              "'dtrace-provider' is a utility library in Node.js for handling trace-related tasks in web applications.",
+              "'dtrace-provider' is a module for creating complex animations and transitions in Node.js applications.",
+              "'dtrace-provider' in Node.js is used for managing user authentication and authorization in real-time applications.",
+              "'dtrace-provider' in Node.js is a module for providing support for DTrace, a dynamic tracing framework for analyzing and troubleshooting applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is 'async_hooks' in Node.js, and how can you use it to track asynchronous operations and their contexts?",
+            options: [
+              "'async_hooks' in Node.js is a way to manage asynchronous CSS styles in web applications.",
+              "'async_hooks' in Node.js is a utility library for handling asynchronous network operations.",
+              "'async_hooks' in Node.js is a set of hooks that allow you to track the lifetime of asynchronous operations, monitor their performance, and associate contextual data with them.",
+              "'async_hooks' in Node.js is a feature for managing user interactions and events in applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of 'snapshotting' in the context of V8 engine and Node.js, and how does it impact application startup time?",
+            options: [
+              "'Snapshotting' in Node.js is a way to handle memory snapshots in real-time applications.",
+              "'Snapshotting' in Node.js is a utility library for creating complex animations and transitions in web applications.",
+              "'Snapshotting' in Node.js refers to the process of converting JavaScript code to machine code and saving it as a snapshot, which can be used to speed up application startup time by avoiding the need to recompile the code each time the application starts.",
+              "'Snapshotting' in Node.js is used for optimizing database queries in applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of 'Node.js C++ API' (N-API), and how can you use it to create and distribute native addons that are compatible with different Node.js versions?",
+            options: [
+              "'Node.js C++ API' is a utility library for handling C++ code in Node.js applications.",
+              "'Node.js C++ API' is a feature for managing database connections in real-time applications.",
+              "'Node.js C++ API' is a version control system used in Node.js projects for managing code repositories.",
+              "'Node.js C++ API' allows you to write native addons using C++ that are compatible with different Node.js versions, reducing the need to recompile addons for each Node.js release.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the purpose of the 'V8 Heap Statistics' in Node.js, and how can you use them to monitor memory usage and optimize your applications?",
+            options: [
+              "The 'V8 Heap Statistics' in Node.js are a set of utility functions for managing heap memory in web applications.",
+              "The 'V8 Heap Statistics' in Node.js are used for handling network requests and responses in real-time applications.",
+              "The 'V8 Heap Statistics' in Node.js provide insights into the memory usage of your application's V8 engine, allowing you to identify memory leaks and optimize memory management.",
+              "The 'V8 Heap Statistics' in Node.js are a feature for managing user interactions and events in applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of 'zone.js' in Node.js, and how can you use it for managing asynchronous operations and tracking execution contexts?",
+            options: [
+              "'zone.js' in Node.js is a way to manage animations and transitions in web applications.",
+              "'zone.js' in Node.js is a utility library for handling zone-specific tasks in web applications.",
+              "'zone.js' in Node.js is a package manager used for managing external dependencies in your projects.",
+              "'zone.js' in Node.js is a library that allows you to create and manage execution contexts, enabling you to track asynchronous operations and handle errors more effectively.",
+            ],
+            correctAnswer: "4",
+          },
+        ],
       },
     },
     django: {
