@@ -49,5 +49,5 @@
     ?Things to add to app:
         1. Take quiz again button & exit button
         2. Delete all saved quizzes.
-        3.
+        3. Display the question number your on in each quiz question.
  -->
