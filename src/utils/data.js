@@ -4158,118 +4158,5752 @@ const data = {
     },
     "C#": {
       "10 beginner C# questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is C#?",
+            options: [
+              "A programming language for building websites",
+              "A programming language for building mobile apps",
+              "A programming language for building desktop applications",
+              "A programming language for building machine learning models",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the entry point for a C# console application?",
+            options: ["Main", "Start", "Begin", "EntryPoint"],
+            correctAnswer: "0",
+          },
+          {
+            question: "How do you declare a variable in C#?",
+            options: [
+              "var myVar = 10;",
+              "int myVar = 10;",
+              "string myVar = 'Hello';",
+              "variable myVar = 10;",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is the correct syntax for a single-line comment in C#?",
+            options: [
+              "// This is a comment",
+              "/* This is a comment */",
+              "' This is a comment",
+              "# This is a comment",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "Which data type is used to store whole numbers in C#?",
+            options: ["float", "double", "int", "string"],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of the 'using' statement in C#?",
+            options: [
+              "To include a namespace in the program",
+              "To declare a variable",
+              "To create an instance of a class",
+              "To define a loop",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "How do you create a new instance of a class in C#?",
+            options: [
+              "new MyClass;",
+              "MyClass()",
+              "new MyClass()",
+              "create MyClass;",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the correct way to define a method in C#?",
+            options: [
+              "function MyMethod() {}",
+              "def MyMethod():",
+              "void MyMethod() {}",
+              "public void MyMethod() {}",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of the 'if' statement in C#?",
+            options: [
+              "To create a loop",
+              "To define a method",
+              "To handle exceptions",
+              "To make decisions based on conditions",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the C# equivalent of the 'println' statement in Java?",
+            options: [
+              "Console.Write",
+              "Console.Print",
+              "Console.WriteLine",
+              "Console.Display",
+            ],
+            correctAnswer: "2",
+          },
+        ],
       },
       "15 beginner C# questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is C#?",
+            options: [
+              "A programming language for building websites",
+              "A programming language for building mobile apps",
+              "A programming language for building desktop applications",
+              "A programming language for building machine learning models",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the entry point for a C# console application?",
+            options: ["Main", "Start", "Begin", "EntryPoint"],
+            correctAnswer: "0",
+          },
+          {
+            question: "How do you declare a variable in C#?",
+            options: [
+              "var myVar = 10;",
+              "int myVar = 10;",
+              "string myVar = 'Hello';",
+              "variable myVar = 10;",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is the correct syntax for a single-line comment in C#?",
+            options: [
+              "// This is a comment",
+              "/* This is a comment */",
+              "' This is a comment",
+              "# This is a comment",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "Which data type is used to store whole numbers in C#?",
+            options: ["float", "double", "int", "string"],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of the 'using' statement in C#?",
+            options: [
+              "To include a namespace in the program",
+              "To declare a variable",
+              "To create an instance of a class",
+              "To define a loop",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "How do you create a new instance of a class in C#?",
+            options: [
+              "new MyClass;",
+              "MyClass()",
+              "new MyClass()",
+              "create MyClass;",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the correct way to define a method in C#?",
+            options: [
+              "function MyMethod() {}",
+              "def MyMethod():",
+              "void MyMethod() {}",
+              "public void MyMethod() {}",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of the 'if' statement in C#?",
+            options: [
+              "To create a loop",
+              "To define a method",
+              "To handle exceptions",
+              "To make decisions based on conditions",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the C# equivalent of the 'println' statement in Java?",
+            options: [
+              "Console.Write",
+              "Console.Print",
+              "Console.WriteLine",
+              "Console.Display",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "Which keyword is used to define a class in C#?",
+            options: ["function", "def", "class", "void"],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of the 'foreach' loop in C#?",
+            options: [
+              "To create a conditional loop",
+              "To iterate over elements in an array or collection",
+              "To define a method",
+              "To handle exceptions",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What does the 'static' keyword mean in C#?",
+            options: [
+              "It indicates that a method can be called without creating an instance of the class.",
+              "It indicates that a method can only be called within the class where it is defined.",
+              "It indicates that a method is only accessible to other classes in the same namespace.",
+              "It indicates that a method is accessible from any assembly.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is the purpose of the 'StringBuilder' class in C#?",
+            options: [
+              "To create graphical user interfaces in C# applications.",
+              "To manage external resources such as files and database connections.",
+              "To manipulate strings efficiently by reducing memory overhead.",
+              "To handle exceptions in C# applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "How do you define a constant variable in C#?",
+            options: [
+              "const int myVar = 10;",
+              "int myVar = const 10;",
+              "constant int myVar = 10;",
+              "int myVar = 10; constant;",
+            ],
+            correctAnswer: "0",
+          },
+        ],
       },
       "20 beginner C# questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is C#?",
+            options: [
+              "A programming language for building websites",
+              "A programming language for building mobile apps",
+              "A programming language for building desktop applications",
+              "A programming language for building machine learning models",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the entry point for a C# console application?",
+            options: ["Main", "Start", "Begin", "EntryPoint"],
+            correctAnswer: "0",
+          },
+          {
+            question: "How do you declare a variable in C#?",
+            options: [
+              "var myVar = 10;",
+              "int myVar = 10;",
+              "string myVar = 'Hello';",
+              "variable myVar = 10;",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is the correct syntax for a single-line comment in C#?",
+            options: [
+              "// This is a comment",
+              "/* This is a comment */",
+              "' This is a comment",
+              "# This is a comment",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "Which data type is used to store whole numbers in C#?",
+            options: ["float", "double", "int", "string"],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of the 'using' statement in C#?",
+            options: [
+              "To include a namespace in the program",
+              "To declare a variable",
+              "To create an instance of a class",
+              "To define a loop",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "How do you create a new instance of a class in C#?",
+            options: [
+              "new MyClass;",
+              "MyClass()",
+              "new MyClass()",
+              "create MyClass;",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the correct way to define a method in C#?",
+            options: [
+              "function MyMethod() {}",
+              "def MyMethod():",
+              "void MyMethod() {}",
+              "public void MyMethod() {}",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of the 'if' statement in C#?",
+            options: [
+              "To create a loop",
+              "To define a method",
+              "To handle exceptions",
+              "To make decisions based on conditions",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the C# equivalent of the 'println' statement in Java?",
+            options: [
+              "Console.Write",
+              "Console.Print",
+              "Console.WriteLine",
+              "Console.Display",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "Which keyword is used to define a class in C#?",
+            options: ["function", "def", "class", "void"],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of the 'foreach' loop in C#?",
+            options: [
+              "To create a conditional loop",
+              "To iterate over elements in an array or collection",
+              "To define a method",
+              "To handle exceptions",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What does the 'static' keyword mean in C#?",
+            options: [
+              "It indicates that a method can be called without creating an instance of the class.",
+              "It indicates that a method can only be called within the class where it is defined.",
+              "It indicates that a method is only accessible to other classes in the same namespace.",
+              "It indicates that a method is accessible from any assembly.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is the purpose of the 'StringBuilder' class in C#?",
+            options: [
+              "To create graphical user interfaces in C# applications.",
+              "To manage external resources such as files and database connections.",
+              "To manipulate strings efficiently by reducing memory overhead.",
+              "To handle exceptions in C# applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "How do you define a constant variable in C#?",
+            options: [
+              "const int myVar = 10;",
+              "int myVar = const 10;",
+              "constant int myVar = 10;",
+              "int myVar = 10; constant;",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is the purpose of the 'switch' statement in C#?",
+            options: [
+              "To create a conditional loop",
+              "To define a method",
+              "To handle exceptions",
+              "To make decisions based on multiple conditions",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the C# equivalent of the 'for' loop in other programming languages?",
+            options: ["foreach", "do-while", "while", "for"],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of the 'try-catch' block in C#?",
+            options: [
+              "To create a conditional loop",
+              "To define a method",
+              "To handle exceptions",
+              "To make decisions based on conditions",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "Which operator is used for concatenating strings in C#?",
+            options: ["+", "-", "*", "/"],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the purpose of the 'return' keyword in a method?",
+            options: [
+              "To terminate the program",
+              "To define a loop",
+              "To indicate the end of the method",
+              "To pass a value back from the method",
+            ],
+            correctAnswer: "3",
+          },
+        ],
       },
       "10 intermed C# questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What are access modifiers in C#?",
+            options: [
+              "Keywords used to define the data type of a variable",
+              "Keywords used to control the access level of classes, methods, and properties",
+              "Keywords used to define loop conditions",
+              "Keywords used to handle exceptions",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is the difference between 'ref' and 'out' parameters in C#?",
+            options: [
+              "'ref' parameters must be initialized before passing them to a method, while 'out' parameters do not need to be initialized.",
+              "'out' parameters are used for passing data into a method, while 'ref' parameters are used for returning data from a method.",
+              "'ref' parameters are used for passing data into a method, while 'out' parameters are used for returning data from a method.",
+              "'out' parameters can be modified inside the method, while 'ref' parameters cannot be modified.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the purpose of the 'using' statement with IDisposable objects in C#?",
+            options: [
+              "To create instances of IDisposable objects",
+              "To dispose of IDisposable objects automatically when they go out of scope",
+              "To handle exceptions in C# applications",
+              "To create aliases for namespaces",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "Explain the concept of boxing and unboxing in C#.",
+            options: [
+              "Boxing is the process of converting a value type to a reference type, and unboxing is the process of converting a reference type back to a value type.",
+              "Boxing is the process of converting a reference type to a value type, and unboxing is the process of converting a value type back to a reference type.",
+              "Boxing is the process of converting a value type to a string, and unboxing is the process of converting a string back to a value type.",
+              "Boxing is the process of converting a value type to an object, and unboxing is the process of converting an object back to a value type.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is the purpose of the 'lock' statement in C#?",
+            options: [
+              "To create a conditional loop",
+              "To define a method",
+              "To handle exceptions",
+              "To synchronize access to shared resources in a multithreaded environment",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the C# equivalent of an interface in Java?",
+            options: ["Abstract class", "Enum", "Delegate", "Interface"],
+            correctAnswer: "3",
+          },
+          {
+            question: "Explain the concept of delegates and events in C#.",
+            options: [
+              "Delegates are used for handling exceptions, and events are used for defining custom data types.",
+              "Delegates are used for creating instances of classes, and events are used for handling user interactions in GUI applications.",
+              "Delegates are used for passing methods as arguments to other methods, and events are used for notifying subscribers when an action occurs.",
+              "Delegates and events are used interchangeably in C#.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the purpose of the 'async' and 'await' keywords in C#?",
+            options: [
+              "To define a method as a background task",
+              "To handle exceptions in C# applications",
+              "To create and manage threads in C# applications",
+              "To simplify asynchronous programming and make it look like synchronous code",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the differences between abstract classes and interfaces in C#.",
+            options: [
+              "Abstract classes can have method implementations, while interfaces cannot.",
+              "Interfaces can have fields, while abstract classes cannot.",
+              "Abstract classes support multiple inheritance, while interfaces do not.",
+              "Interfaces can be instantiated directly, while abstract classes cannot.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the purpose of LINQ (Language-Integrated Query) in C#?",
+            options: [
+              "To create graphical user interfaces in C# applications",
+              "To handle exceptions in C# applications",
+              "To define custom data types",
+              "To provide a uniform way of querying data from various data sources such as arrays, collections, databases, and XML",
+            ],
+            correctAnswer: "3",
+          },
+        ],
       },
       "15 intermed C# questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What are access modifiers in C#?",
+            options: [
+              "Keywords used to define the data type of a variable",
+              "Keywords used to control the access level of classes, methods, and properties",
+              "Keywords used to define loop conditions",
+              "Keywords used to handle exceptions",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is the difference between 'ref' and 'out' parameters in C#?",
+            options: [
+              "'ref' parameters must be initialized before passing them to a method, while 'out' parameters do not need to be initialized.",
+              "'out' parameters are used for passing data into a method, while 'ref' parameters are used for returning data from a method.",
+              "'ref' parameters are used for passing data into a method, while 'out' parameters are used for returning data from a method.",
+              "'out' parameters can be modified inside the method, while 'ref' parameters cannot be modified.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the purpose of the 'using' statement with IDisposable objects in C#?",
+            options: [
+              "To create instances of IDisposable objects",
+              "To dispose of IDisposable objects automatically when they go out of scope",
+              "To handle exceptions in C# applications",
+              "To create aliases for namespaces",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "Explain the concept of boxing and unboxing in C#.",
+            options: [
+              "Boxing is the process of converting a value type to a reference type, and unboxing is the process of converting a reference type back to a value type.",
+              "Boxing is the process of converting a reference type to a value type, and unboxing is the process of converting a value type back to a reference type.",
+              "Boxing is the process of converting a value type to a string, and unboxing is the process of converting a string back to a value type.",
+              "Boxing is the process of converting a value type to an object, and unboxing is the process of converting an object back to a value type.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is the purpose of the 'lock' statement in C#?",
+            options: [
+              "To create a conditional loop",
+              "To define a method",
+              "To handle exceptions",
+              "To synchronize access to shared resources in a multithreaded environment",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the C# equivalent of an interface in Java?",
+            options: ["Abstract class", "Enum", "Delegate", "Interface"],
+            correctAnswer: "3",
+          },
+          {
+            question: "Explain the concept of delegates and events in C#.",
+            options: [
+              "Delegates are used for handling exceptions, and events are used for defining custom data types.",
+              "Delegates are used for creating instances of classes, and events are used for handling user interactions in GUI applications.",
+              "Delegates are used for passing methods as arguments to other methods, and events are used for notifying subscribers when an action occurs.",
+              "Delegates and events are used interchangeably in C#.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the purpose of the 'async' and 'await' keywords in C#?",
+            options: [
+              "To define a method as a background task",
+              "To handle exceptions in C# applications",
+              "To create and manage threads in C# applications",
+              "To simplify asynchronous programming and make it look like synchronous code",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the differences between abstract classes and interfaces in C#.",
+            options: [
+              "Abstract classes can have method implementations, while interfaces cannot.",
+              "Interfaces can have fields, while abstract classes cannot.",
+              "Abstract classes support multiple inheritance, while interfaces do not.",
+              "Interfaces can be instantiated directly, while abstract classes cannot.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the purpose of LINQ (Language-Integrated Query) in C#?",
+            options: [
+              "To create graphical user interfaces in C# applications",
+              "To handle exceptions in C# applications",
+              "To define custom data types",
+              "To provide a uniform way of querying data from various data sources such as arrays, collections, databases, and XML",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the 'yield' keyword used for in C#?",
+            options: [
+              "To exit from a loop or method",
+              "To return a value from a method",
+              "To define a custom attribute",
+              "To create an iterator in a method",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the difference between value types and reference types in C#.",
+            options: [
+              "Value types are stored on the heap, while reference types are stored on the stack.",
+              "Value types are immutable, while reference types are mutable.",
+              "Value types are passed by reference, while reference types are passed by value.",
+              "Value types are stored on the stack, while reference types are stored on the heap.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of the 'using' directive in C#?",
+            options: [
+              "To create instances of classes",
+              "To handle exceptions",
+              "To include namespaces in the program",
+              "To define loop conditions",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the C# equivalent of the 'foreach' loop in other programming languages?",
+            options: ["foreach", "do-while", "while", "for"],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is the purpose of the 'try-catch' block in C#?",
+            options: [
+              "To create a conditional loop",
+              "To define a method",
+              "To handle exceptions",
+              "To make decisions based on conditions",
+            ],
+            correctAnswer: "2",
+          },
+        ],
       },
       "20 intermed C# questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What are access modifiers in C#?",
+            options: [
+              "Keywords used to define the data type of a variable",
+              "Keywords used to control the access level of classes, methods, and properties",
+              "Keywords used to define loop conditions",
+              "Keywords used to handle exceptions",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is the difference between 'ref' and 'out' parameters in C#?",
+            options: [
+              "'ref' parameters must be initialized before passing them to a method, while 'out' parameters do not need to be initialized.",
+              "'out' parameters are used for passing data into a method, while 'ref' parameters are used for returning data from a method.",
+              "'ref' parameters are used for passing data into a method, while 'out' parameters are used for returning data from a method.",
+              "'out' parameters can be modified inside the method, while 'ref' parameters cannot be modified.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the purpose of the 'using' statement with IDisposable objects in C#?",
+            options: [
+              "To create instances of IDisposable objects",
+              "To dispose of IDisposable objects automatically when they go out of scope",
+              "To handle exceptions in C# applications",
+              "To create aliases for namespaces",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "Explain the concept of boxing and unboxing in C#.",
+            options: [
+              "Boxing is the process of converting a value type to a reference type, and unboxing is the process of converting a reference type back to a value type.",
+              "Boxing is the process of converting a reference type to a value type, and unboxing is the process of converting a value type back to a reference type.",
+              "Boxing is the process of converting a value type to a string, and unboxing is the process of converting a string back to a value type.",
+              "Boxing is the process of converting a value type to an object, and unboxing is the process of converting an object back to a value type.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is the purpose of the 'lock' statement in C#?",
+            options: [
+              "To create a conditional loop",
+              "To define a method",
+              "To handle exceptions",
+              "To synchronize access to shared resources in a multithreaded environment",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the C# equivalent of an interface in Java?",
+            options: ["Abstract class", "Enum", "Delegate", "Interface"],
+            correctAnswer: "3",
+          },
+          {
+            question: "Explain the concept of delegates and events in C#.",
+            options: [
+              "Delegates are used for handling exceptions, and events are used for defining custom data types.",
+              "Delegates are used for creating instances of classes, and events are used for handling user interactions in GUI applications.",
+              "Delegates are used for passing methods as arguments to other methods, and events are used for notifying subscribers when an action occurs.",
+              "Delegates and events are used interchangeably in C#.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the purpose of the 'async' and 'await' keywords in C#?",
+            options: [
+              "To define a method as a background task",
+              "To handle exceptions in C# applications",
+              "To create and manage threads in C# applications",
+              "To simplify asynchronous programming and make it look like synchronous code",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the differences between abstract classes and interfaces in C#.",
+            options: [
+              "Abstract classes can have method implementations, while interfaces cannot.",
+              "Interfaces can have fields, while abstract classes cannot.",
+              "Abstract classes support multiple inheritance, while interfaces do not.",
+              "Interfaces can be instantiated directly, while abstract classes cannot.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the purpose of LINQ (Language-Integrated Query) in C#?",
+            options: [
+              "To create graphical user interfaces in C# applications",
+              "To handle exceptions in C# applications",
+              "To define custom data types",
+              "To provide a uniform way of querying data from various data sources such as arrays, collections, databases, and XML",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the 'yield' keyword used for in C#?",
+            options: [
+              "To exit from a loop or method",
+              "To return a value from a method",
+              "To define a custom attribute",
+              "To create an iterator in a method",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the difference between value types and reference types in C#.",
+            options: [
+              "Value types are stored on the heap, while reference types are stored on the stack.",
+              "Value types are immutable, while reference types are mutable.",
+              "Value types are passed by reference, while reference types are passed by value.",
+              "Value types are stored on the stack, while reference types are stored on the heap.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of the 'using' directive in C#?",
+            options: [
+              "To create instances of classes",
+              "To handle exceptions",
+              "To include namespaces in the program",
+              "To define loop conditions",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the C# equivalent of the 'foreach' loop in other programming languages?",
+            options: ["foreach", "do-while", "while", "for"],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is the purpose of the 'try-catch' block in C#?",
+            options: [
+              "To create a conditional loop",
+              "To define a method",
+              "To handle exceptions",
+              "To make decisions based on conditions",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "How can you handle multiple exceptions in a single 'catch' block in C#?",
+            options: [
+              "By using a comma-separated list of exception types",
+              "By nesting 'try-catch' blocks",
+              "By using the 'finally' block",
+              "By using the 'catch-all' exception",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is the purpose of the 'static' keyword in C#?",
+            options: [
+              "To indicate that a method can be called without creating an instance of the class",
+              "To create multiple instances of a class",
+              "To specify the data type of a variable",
+              "To make a method accessible from other classes in the same namespace",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What are indexers in C#?",
+            options: [
+              "Methods used to get and set the values of private fields in a class",
+              "Properties that allow objects to be accessed using an index",
+              "Classes used to manage database connections",
+              "Constructors used to create instances of a class",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the purpose of the 'using' statement in C#?",
+            options: [
+              "To handle exceptions in C# applications",
+              "To create and manage threads in C# applications",
+              "To define loop conditions",
+              "To manage resources such as files and database connections",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is a nullable value type in C#?",
+            options: [
+              "A value type that cannot be assigned a value",
+              "A value type that can be assigned a value of 'null'",
+              "A reference type that cannot be assigned a value",
+              "A reference type that can be assigned a value of 'null'",
+            ],
+            correctAnswer: "1",
+          },
+        ],
       },
       "10 advanced C# questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What is the purpose of delegates and events in C#? Provide an example of how to use them.",
+            options: [
+              "Delegates and events are used for asynchronous programming in C#.",
+              "Delegates and events are used for creating custom data types.",
+              "Delegates and events are used for defining callback mechanisms and handling event notifications.",
+              "Delegates and events are used for managing database connections in C#.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the concept of Generics in C#. Provide a practical example of using Generics in a class or method.",
+            options: [
+              "Generics are used for creating random data in C# applications.",
+              "Generics allow you to create collections and methods that can work with various data types, ensuring type safety.",
+              "Generics are used for handling exceptions in C# applications.",
+              "Generics are used for creating instances of classes with multiple constructors.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are extension methods in C#? How do they enhance the capabilities of existing types?",
+            options: [
+              "Extension methods are methods that extend the capabilities of classes by adding new fields and properties.",
+              "Extension methods are static methods that provide additional functionality to existing classes without modifying their source code.",
+              "Extension methods are used to override the behavior of existing methods in C#.",
+              "Extension methods are used for creating custom attributes in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the difference between async/await and ContinueWith in C# for asynchronous programming.",
+            options: [
+              "Both async/await and ContinueWith are used for handling exceptions in C#.",
+              "async/await is used for asynchronous programming and provides a more readable and structured way to write asynchronous code, while ContinueWith is used for continuation-style asynchronous programming.",
+              "async/await and ContinueWith are two different names for the same concept in C#.",
+              "Both async/await and ContinueWith are used for defining custom events in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is the 'using' statement in C# used for when working with resources like files or database connections?",
+            options: [
+              "The 'using' statement is used for handling exceptions related to resource management.",
+              "The 'using' statement ensures that resources are automatically disposed of or released after their scope is exited.",
+              "The 'using' statement is used for defining custom attributes in C#.",
+              "The 'using' statement is used for creating instances of classes in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of Asynchronous Streams in C# 8.0. How do they differ from regular synchronous streams?",
+            options: [
+              "Asynchronous Streams allow you to write asynchronous code that streams data sequentially without blocking the main thread.",
+              "Asynchronous Streams are used for managing database connections in C#.",
+              "Asynchronous Streams and regular synchronous streams are two terms for the same concept in C#.",
+              "Asynchronous Streams are used for creating random data in C# applications.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What are the benefits of using Memory-Mapped Files in C# for file I/O operations?",
+            options: [
+              "Memory-Mapped Files are used for handling exceptions in C# applications.",
+              "Memory-Mapped Files provide a way to load large files into memory and access them using pointers for faster I/O operations.",
+              "Memory-Mapped Files are used for defining custom events in C#.",
+              "Memory-Mapped Files are used for creating instances of classes in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of Garbage Collection in C#. How does it help manage memory?",
+            options: [
+              "Garbage Collection is a process of creating new objects and managing memory in C# applications.",
+              "Garbage Collection is a process of releasing unused memory and reclaiming it for reuse.",
+              "Garbage Collection is a process of handling exceptions in C# applications.",
+              "Garbage Collection is a process of creating dynamic data structures in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are Anonymous Types in C#? Provide an example of when and how to use them.",
+            options: [
+              "Anonymous Types are used for defining custom data types in C#.",
+              "Anonymous Types are types without a name, and they are used to create objects with read-only properties quickly.",
+              "Anonymous Types are used for handling exceptions in C# applications.",
+              "Anonymous Types are used for creating instances of classes in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of Expression Trees in C#. How are they used, and what are their benefits?",
+            options: [
+              "Expression Trees are used for handling exceptions in C# applications.",
+              "Expression Trees are used for creating custom attributes in C#.",
+              "Expression Trees are used to represent executable code as data, which is helpful in scenarios like building LINQ queries dynamically.",
+              "Expression Trees are used for defining custom events in C#.",
+            ],
+            correctAnswer: "2",
+          },
+        ],
       },
       "15 advanced C# questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What is the purpose of delegates and events in C#? Provide an example of how to use them.",
+            options: [
+              "Delegates and events are used for asynchronous programming in C#.",
+              "Delegates and events are used for creating custom data types.",
+              "Delegates and events are used for defining callback mechanisms and handling event notifications.",
+              "Delegates and events are used for managing database connections in C#.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the concept of Generics in C#. Provide a practical example of using Generics in a class or method.",
+            options: [
+              "Generics are used for creating random data in C# applications.",
+              "Generics allow you to create collections and methods that can work with various data types, ensuring type safety.",
+              "Generics are used for handling exceptions in C# applications.",
+              "Generics are used for creating instances of classes with multiple constructors.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are extension methods in C#? How do they enhance the capabilities of existing types?",
+            options: [
+              "Extension methods are methods that extend the capabilities of classes by adding new fields and properties.",
+              "Extension methods are static methods that provide additional functionality to existing classes without modifying their source code.",
+              "Extension methods are used to override the behavior of existing methods in C#.",
+              "Extension methods are used for creating custom attributes in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the difference between async/await and ContinueWith in C# for asynchronous programming.",
+            options: [
+              "Both async/await and ContinueWith are used for handling exceptions in C#.",
+              "async/await is used for asynchronous programming and provides a more readable and structured way to write asynchronous code, while ContinueWith is used for continuation-style asynchronous programming.",
+              "async/await and ContinueWith are two different names for the same concept in C#.",
+              "Both async/await and ContinueWith are used for defining custom events in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is the 'using' statement in C# used for when working with resources like files or database connections?",
+            options: [
+              "The 'using' statement is used for handling exceptions related to resource management.",
+              "The 'using' statement ensures that resources are automatically disposed of or released after their scope is exited.",
+              "The 'using' statement is used for defining custom attributes in C#.",
+              "The 'using' statement is used for creating instances of classes in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of Asynchronous Streams in C# 8.0. How do they differ from regular synchronous streams?",
+            options: [
+              "Asynchronous Streams allow you to write asynchronous code that streams data sequentially without blocking the main thread.",
+              "Asynchronous Streams are used for managing database connections in C#.",
+              "Asynchronous Streams and regular synchronous streams are two terms for the same concept in C#.",
+              "Asynchronous Streams are used for creating random data in C# applications.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What are the benefits of using Memory-Mapped Files in C# for file I/O operations?",
+            options: [
+              "Memory-Mapped Files are used for handling exceptions in C# applications.",
+              "Memory-Mapped Files provide a way to load large files into memory and access them using pointers for faster I/O operations.",
+              "Memory-Mapped Files are used for defining custom events in C#.",
+              "Memory-Mapped Files are used for creating instances of classes in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of Garbage Collection in C#. How does it help manage memory?",
+            options: [
+              "Garbage Collection is a process of creating new objects and managing memory in C# applications.",
+              "Garbage Collection is a process of releasing unused memory and reclaiming it for reuse.",
+              "Garbage Collection is a process of handling exceptions in C# applications.",
+              "Garbage Collection is a process of creating dynamic data structures in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are Anonymous Types in C#? Provide an example of when and how to use them.",
+            options: [
+              "Anonymous Types are used for defining custom data types in C#.",
+              "Anonymous Types are types without a name, and they are used to create objects with read-only properties quickly.",
+              "Anonymous Types are used for handling exceptions in C# applications.",
+              "Anonymous Types are used for creating instances of classes in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of Expression Trees in C#. How are they used, and what are their benefits?",
+            options: [
+              "Expression Trees are used for handling exceptions in C# applications.",
+              "Expression Trees are used for creating custom attributes in C#.",
+              "Expression Trees are used to represent executable code as data, which is helpful in scenarios like building LINQ queries dynamically.",
+              "Expression Trees are used for defining custom events in C#.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the difference between 'readonly' and 'const' fields in C#? When should each be used?",
+            options: [
+              "'readonly' fields can be assigned a value only at runtime, while 'const' fields must be assigned a value at compile-time.",
+              "'readonly' fields are used for defining custom events in C#, while 'const' fields are used for handling exceptions.",
+              "'readonly' fields are used for creating instances of classes in C#, while 'const' fields are used for defining custom data types.",
+              "'readonly' fields and 'const' fields are interchangeable in C#.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Explain the concept of Indexers in C#. Provide an example of when and how to use them.",
+            options: [
+              "Indexers are used for handling exceptions in C# applications.",
+              "Indexers are properties that allow objects to be accessed using an index, similar to arrays.",
+              "Indexers are used for defining custom events in C#.",
+              "Indexers are used for creating instances of classes in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is the 'using static' directive in C#? How does it enhance code readability?",
+            options: [
+              "The 'using static' directive is used for handling exceptions in C# applications.",
+              "The 'using static' directive is used to include namespaces in the program.",
+              "The 'using static' directive is used to create instances of classes in C#.",
+              "The 'using static' directive allows you to access static members of a class without specifying the class name.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of Asynchronous Programming Patterns in C#. How do they differ from traditional asynchronous approaches?",
+            options: [
+              "Asynchronous Programming Patterns are used for defining custom data types in C#.",
+              "Asynchronous Programming Patterns are patterns used for creating custom attributes in C#.",
+              "Asynchronous Programming Patterns are used to handle exceptions in C# applications.",
+              "Asynchronous Programming Patterns are higher-level abstractions that simplify asynchronous programming and provide better readability and maintainability.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the purpose of Reflection in C#? Provide an example of when and how to use it.",
+            options: [
+              "Reflection is used for handling exceptions in C# applications.",
+              "Reflection is a technique that allows you to inspect and manipulate assemblies, types, and members at runtime.",
+              "Reflection is used for creating instances of classes in C#.",
+              "Reflection is used for defining custom events in C#.",
+            ],
+            correctAnswer: "1",
+          },
+        ],
       },
       "20 advanced C# questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What is the purpose of delegates and events in C#? Provide an example of how to use them.",
+            options: [
+              "Delegates and events are used for asynchronous programming in C#.",
+              "Delegates and events are used for creating custom data types.",
+              "Delegates and events are used for defining callback mechanisms and handling event notifications.",
+              "Delegates and events are used for managing database connections in C#.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the concept of Generics in C#. Provide a practical example of using Generics in a class or method.",
+            options: [
+              "Generics are used for creating random data in C# applications.",
+              "Generics allow you to create collections and methods that can work with various data types, ensuring type safety.",
+              "Generics are used for handling exceptions in C# applications.",
+              "Generics are used for creating instances of classes with multiple constructors.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are extension methods in C#? How do they enhance the capabilities of existing types?",
+            options: [
+              "Extension methods are methods that extend the capabilities of classes by adding new fields and properties.",
+              "Extension methods are static methods that provide additional functionality to existing classes without modifying their source code.",
+              "Extension methods are used to override the behavior of existing methods in C#.",
+              "Extension methods are used for creating custom attributes in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the difference between async/await and ContinueWith in C# for asynchronous programming.",
+            options: [
+              "Both async/await and ContinueWith are used for handling exceptions in C#.",
+              "async/await is used for asynchronous programming and provides a more readable and structured way to write asynchronous code, while ContinueWith is used for continuation-style asynchronous programming.",
+              "async/await and ContinueWith are two different names for the same concept in C#.",
+              "Both async/await and ContinueWith are used for defining custom events in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is the 'using' statement in C# used for when working with resources like files or database connections?",
+            options: [
+              "The 'using' statement is used for handling exceptions related to resource management.",
+              "The 'using' statement ensures that resources are automatically disposed of or released after their scope is exited.",
+              "The 'using' statement is used for defining custom attributes in C#.",
+              "The 'using' statement is used for creating instances of classes in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of Asynchronous Streams in C# 8.0. How do they differ from regular synchronous streams?",
+            options: [
+              "Asynchronous Streams allow you to write asynchronous code that streams data sequentially without blocking the main thread.",
+              "Asynchronous Streams are used for managing database connections in C#.",
+              "Asynchronous Streams and regular synchronous streams are two terms for the same concept in C#.",
+              "Asynchronous Streams are used for creating random data in C# applications.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What are the benefits of using Memory-Mapped Files in C# for file I/O operations?",
+            options: [
+              "Memory-Mapped Files are used for handling exceptions in C# applications.",
+              "Memory-Mapped Files provide a way to load large files into memory and access them using pointers for faster I/O operations.",
+              "Memory-Mapped Files are used for defining custom events in C#.",
+              "Memory-Mapped Files are used for creating instances of classes in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of Garbage Collection in C#. How does it help manage memory?",
+            options: [
+              "Garbage Collection is a process of creating new objects and managing memory in C# applications.",
+              "Garbage Collection is a process of releasing unused memory and reclaiming it for reuse.",
+              "Garbage Collection is a process of handling exceptions in C# applications.",
+              "Garbage Collection is a process of creating dynamic data structures in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are Anonymous Types in C#? Provide an example of when and how to use them.",
+            options: [
+              "Anonymous Types are used for defining custom data types in C#.",
+              "Anonymous Types are types without a name, and they are used to create objects with read-only properties quickly.",
+              "Anonymous Types are used for handling exceptions in C# applications.",
+              "Anonymous Types are used for creating instances of classes in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of Expression Trees in C#. How are they used, and what are their benefits?",
+            options: [
+              "Expression Trees are used for handling exceptions in C# applications.",
+              "Expression Trees are used for creating custom attributes in C#.",
+              "Expression Trees are used to represent executable code as data, which is helpful in scenarios like building LINQ queries dynamically.",
+              "Expression Trees are used for defining custom events in C#.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the difference between 'readonly' and 'const' fields in C#? When should each be used?",
+            options: [
+              "'readonly' fields can be assigned a value only at runtime, while 'const' fields must be assigned a value at compile-time.",
+              "'readonly' fields are used for defining custom events in C#, while 'const' fields are used for handling exceptions.",
+              "'readonly' fields are used for creating instances of classes in C#, while 'const' fields are used for defining custom data types.",
+              "'readonly' fields and 'const' fields are interchangeable in C#.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Explain the concept of Indexers in C#. Provide an example of when and how to use them.",
+            options: [
+              "Indexers are used for handling exceptions in C# applications.",
+              "Indexers are properties that allow objects to be accessed using an index, similar to arrays.",
+              "Indexers are used for defining custom events in C#.",
+              "Indexers are used for creating instances of classes in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is the 'using static' directive in C#? How does it enhance code readability?",
+            options: [
+              "The 'using static' directive is used for handling exceptions in C# applications.",
+              "The 'using static' directive is used to include namespaces in the program.",
+              "The 'using static' directive is used to create instances of classes in C#.",
+              "The 'using static' directive allows you to access static members of a class without specifying the class name.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of Asynchronous Programming Patterns in C#. How do they differ from traditional asynchronous approaches?",
+            options: [
+              "Asynchronous Programming Patterns are used for defining custom data types in C#.",
+              "Asynchronous Programming Patterns are patterns used for creating custom attributes in C#.",
+              "Asynchronous Programming Patterns are used to handle exceptions in C# applications.",
+              "Asynchronous Programming Patterns are higher-level abstractions that simplify asynchronous programming and provide better readability and maintainability.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the purpose of Reflection in C#? Provide an example of when and how to use it.",
+            options: [
+              "Reflection is used for handling exceptions in C# applications.",
+              "Reflection is a technique that allows you to inspect and manipulate assemblies, types, and members at runtime.",
+              "Reflection is used for creating instances of classes in C#.",
+              "Reflection is used for defining custom events in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of Attributes in C#. How can you define custom attributes, and what are their practical uses?",
+            options: [
+              "Attributes are used for handling exceptions in C# applications.",
+              "Attributes allow you to add metadata to types and members in C#.",
+              "Attributes are used for creating instances of classes in C#.",
+              "Attributes are used for defining custom data types in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is the purpose of the 'lock' keyword in C#? How does it help in managing thread synchronization?",
+            options: [
+              "The 'lock' keyword is used for handling exceptions in C# applications.",
+              "The 'lock' keyword is used to define a critical section of code, ensuring that only one thread can access it at a time.",
+              "The 'lock' keyword is used for creating instances of classes in C#.",
+              "The 'lock' keyword is used for defining custom events in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of Parallel Programming in C#. How does it leverage multi-core processors for improved performance?",
+            options: [
+              "Parallel Programming is used for handling exceptions in C# applications.",
+              "Parallel Programming allows you to execute multiple tasks concurrently, utilizing the power of multi-core processors for increased performance.",
+              "Parallel Programming is used for creating instances of classes in C#.",
+              "Parallel Programming is used for defining custom data types in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is the purpose of the 'yield' keyword in C#? How does it relate to iterator methods and deferred execution?",
+            options: [
+              "The 'yield' keyword is used for handling exceptions in C# applications.",
+              "The 'yield' keyword is used to define iterator methods that allow you to generate sequences of values lazily and efficiently.",
+              "The 'yield' keyword is used for creating instances of classes in C#.",
+              "The 'yield' keyword is used for defining custom events in C#.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of Asynchronous and Parallel Programming in C#. What are the similarities and differences between the two?",
+            options: [
+              "Asynchronous Programming and Parallel Programming are two different names for the same concept in C#.",
+              "Asynchronous Programming is used for handling exceptions in C# applications, while Parallel Programming is used for creating instances of classes.",
+              "Asynchronous Programming allows you to write non-blocking code that efficiently utilizes resources, while Parallel Programming allows you to execute multiple tasks concurrently for improved performance.",
+              "Asynchronous Programming is used for defining custom data types in C#, while Parallel Programming is used for creating custom attributes.",
+            ],
+            correctAnswer: "2",
+          },
+        ],
       },
     },
     "C++": {
       "10 beginner C++ questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is C++?",
+            options: [
+              "A programming language for building websites.",
+              "A markup language for defining the structure of web pages.",
+              "A programming language used for system-level development and general-purpose programming.",
+              "A scripting language commonly used in web development.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "How do you declare a variable in C++?",
+            options: [
+              "var myVariable;",
+              "variable myVariable;",
+              "int myVariable;",
+              "myVariable = 10;",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of the 'cout' statement in C++?",
+            options: [
+              "To declare a constant variable.",
+              "To display output on the console.",
+              "To get user input from the console.",
+              "To define a function in C++.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the correct syntax for a 'for' loop in C++?",
+            options: [
+              "for (int i = 0; i < 5; i++) { }",
+              "for (int i = 0; i < 5; i--) { }",
+              "for (i = 0; i < 5; i++) { }",
+              "for (i = 0; i < 5; i--) { }",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is the keyword used to define a function in C++?",
+            options: ["method", "function", "void", "func"],
+            correctAnswer: "2",
+          },
+          {
+            question: "How do you access the elements of an array in C++?",
+            options: [
+              "Using the dot notation.",
+              "By specifying the index in square brackets.",
+              "By using the arrow notation.",
+              "By using the 'at' method.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the 'if' statement used for in C++?",
+            options: [
+              "To create a loop.",
+              "To define a function.",
+              "To declare variables.",
+              "To make decisions based on conditions.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of the 'cin' statement in C++?",
+            options: [
+              "To display output on the console.",
+              "To get user input from the console.",
+              "To declare a constant variable.",
+              "To define a function in C++.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the difference between '++i' and 'i++'?",
+            options: [
+              "'++i' increments the value of 'i' before using it in an expression, while 'i++' increments the value after using it.",
+              "'++i' is used to increment floating-point numbers, and 'i++' is used for integers.",
+              "'++i' is used in 'for' loops, and 'i++' is used in 'while' loops.",
+              "There is no difference; both can be used interchangeably.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the purpose of 'return' statement in a function?",
+            options: [
+              "To exit the program.",
+              "To output a value from the function.",
+              "To declare a variable.",
+              "To define a function in C++.",
+            ],
+            correctAnswer: "1",
+          },
+        ],
       },
       "15 beginner C++ questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is C++?",
+            options: [
+              "A programming language for building websites.",
+              "A markup language for defining the structure of web pages.",
+              "A programming language used for system-level development and general-purpose programming.",
+              "A scripting language commonly used in web development.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "How do you declare a variable in C++?",
+            options: [
+              "var myVariable;",
+              "variable myVariable;",
+              "int myVariable;",
+              "myVariable = 10;",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of the 'cout' statement in C++?",
+            options: [
+              "To declare a constant variable.",
+              "To display output on the console.",
+              "To get user input from the console.",
+              "To define a function in C++.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the correct syntax for a 'for' loop in C++?",
+            options: [
+              "for (int i = 0; i < 5; i++) { }",
+              "for (int i = 0; i < 5; i--) { }",
+              "for (i = 0; i < 5; i++) { }",
+              "for (i = 0; i < 5; i--) { }",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is the keyword used to define a function in C++?",
+            options: ["method", "function", "void", "func"],
+            correctAnswer: "2",
+          },
+          {
+            question: "How do you access the elements of an array in C++?",
+            options: [
+              "Using the dot notation.",
+              "By specifying the index in square brackets.",
+              "By using the arrow notation.",
+              "By using the 'at' method.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the 'if' statement used for in C++?",
+            options: [
+              "To create a loop.",
+              "To define a function.",
+              "To declare variables.",
+              "To make decisions based on conditions.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of the 'cin' statement in C++?",
+            options: [
+              "To display output on the console.",
+              "To get user input from the console.",
+              "To declare a constant variable.",
+              "To define a function in C++.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the difference between '++i' and 'i++'?",
+            options: [
+              "'++i' increments the value of 'i' before using it in an expression, while 'i++' increments the value after using it.",
+              "'++i' is used to increment floating-point numbers, and 'i++' is used for integers.",
+              "'++i' is used in 'for' loops, and 'i++' is used in 'while' loops.",
+              "There is no difference; both can be used interchangeably.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the purpose of 'return' statement in a function?",
+            options: [
+              "To exit the program.",
+              "To output a value from the function.",
+              "To declare a variable.",
+              "To define a function in C++.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What are header files in C++ used for?",
+            options: [
+              "To declare global variables.",
+              "To include external libraries.",
+              "To define the main function.",
+              "To handle exceptions in C++.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the syntax for defining a class in C++?",
+            options: [
+              "class MyClass { }",
+              "function MyClass() { }",
+              "def class MyClass: { }",
+              "public class MyClass: { }",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is the 'new' keyword used for in C++?",
+            options: [
+              "To create an instance of a class.",
+              "To declare a constant variable.",
+              "To display output on the console.",
+              "To define a function in C++.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "How do you pass arguments to a function in C++?",
+            options: [
+              "By specifying them in square brackets.",
+              "By using the 'args' keyword.",
+              "By enclosing them in parentheses and separated by commas.",
+              "By using the 'parameters' keyword.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of the 'nullptr' keyword in C++?",
+            options: [
+              "To define a null pointer.",
+              "To declare a constant variable.",
+              "To define the main function.",
+              "To handle exceptions in C++.",
+            ],
+            correctAnswer: "0",
+          },
+        ],
       },
       "20 beginner C++ questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is C++?",
+            options: [
+              "A programming language for building websites.",
+              "A markup language for defining the structure of web pages.",
+              "A programming language used for system-level development and general-purpose programming.",
+              "A scripting language commonly used in web development.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "How do you declare a variable in C++?",
+            options: [
+              "var myVariable;",
+              "variable myVariable;",
+              "int myVariable;",
+              "myVariable = 10;",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of the 'cout' statement in C++?",
+            options: [
+              "To declare a constant variable.",
+              "To display output on the console.",
+              "To get user input from the console.",
+              "To define a function in C++.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the correct syntax for a 'for' loop in C++?",
+            options: [
+              "for (int i = 0; i < 5; i++) { }",
+              "for (int i = 0; i < 5; i--) { }",
+              "for (i = 0; i < 5; i++) { }",
+              "for (i = 0; i < 5; i--) { }",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is the keyword used to define a function in C++?",
+            options: ["method", "function", "void", "func"],
+            correctAnswer: "2",
+          },
+          {
+            question: "How do you access the elements of an array in C++?",
+            options: [
+              "Using the dot notation.",
+              "By specifying the index in square brackets.",
+              "By using the arrow notation.",
+              "By using the 'at' method.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the 'if' statement used for in C++?",
+            options: [
+              "To create a loop.",
+              "To define a function.",
+              "To declare variables.",
+              "To make decisions based on conditions.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of the 'cin' statement in C++?",
+            options: [
+              "To display output on the console.",
+              "To get user input from the console.",
+              "To declare a constant variable.",
+              "To define a function in C++.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the difference between '++i' and 'i++'?",
+            options: [
+              "'++i' increments the value of 'i' before using it in an expression, while 'i++' increments the value after using it.",
+              "'++i' is used to increment floating-point numbers, and 'i++' is used for integers.",
+              "'++i' is used in 'for' loops, and 'i++' is used in 'while' loops.",
+              "There is no difference; both can be used interchangeably.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the purpose of 'return' statement in a function?",
+            options: [
+              "To exit the program.",
+              "To output a value from the function.",
+              "To declare a variable.",
+              "To define a function in C++.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What are header files in C++ used for?",
+            options: [
+              "To declare global variables.",
+              "To include external libraries.",
+              "To define the main function.",
+              "To handle exceptions in C++.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the syntax for defining a class in C++?",
+            options: [
+              "class MyClass { }",
+              "function MyClass() { }",
+              "def class MyClass: { }",
+              "public class MyClass: { }",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is the 'new' keyword used for in C++?",
+            options: [
+              "To create an instance of a class.",
+              "To declare a constant variable.",
+              "To display output on the console.",
+              "To define a function in C++.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "How do you pass arguments to a function in C++?",
+            options: [
+              "By specifying them in square brackets.",
+              "By using the 'args' keyword.",
+              "By enclosing them in parentheses and separated by commas.",
+              "By using the 'parameters' keyword.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of the 'nullptr' keyword in C++?",
+            options: [
+              "To define a null pointer.",
+              "To declare a constant variable.",
+              "To define the main function.",
+              "To handle exceptions in C++.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is the syntax for a single-line comment in C++?",
+            options: [
+              "// This is a comment",
+              "/* This is a comment */",
+              "# This is a comment",
+              "-- This is a comment",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is the purpose of the 'const' keyword in C++?",
+            options: [
+              "To define a constant variable.",
+              "To make a variable read-only.",
+              "To create a loop.",
+              "To define a function in C++.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the role of the 'std' namespace in C++?",
+            options: [
+              "To define standard input and output.",
+              "To create namespaces for custom classes.",
+              "To handle exceptions in C++.",
+              "To access mathematical functions.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Which of the following is used to get the address of a variable in C++?",
+            options: ["addr", "&", "*", "pointer"],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the purpose of the 'switch' statement in C++?",
+            options: [
+              "To define a class.",
+              "To declare variables.",
+              "To create a loop.",
+              "To make decisions based on multiple conditions.",
+            ],
+            correctAnswer: "3",
+          },
+        ],
       },
       "10 intermed C++ questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What are constructors and destructors in C++? How are they different?",
+            options: [
+              "Constructors are used to create objects, while destructors are used to destroy objects.",
+              "Constructors are used to destroy objects, while destructors are used to create objects.",
+              "Both constructors and destructors are used to create objects.",
+              "Both constructors and destructors are used to destroy objects.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Explain the concept of operator overloading in C++. Provide an example of how you can overload an operator.",
+            options: [
+              "Operator overloading allows you to define new operators in C++.",
+              "Operator overloading is used to concatenate strings.",
+              "Operator overloading allows you to redefine the behavior of an existing operator for user-defined data types.",
+              "Operator overloading is used to perform type casting.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is a copy constructor in C++? When is it called?",
+            options: [
+              "A copy constructor creates a duplicate of an object. It is called when an object is passed by value or returned by value from a function.",
+              "A copy constructor destroys an object. It is called when an object goes out of scope.",
+              "A copy constructor is used to copy the contents of one file into another. It is called when working with file operations.",
+              "A copy constructor is used to copy data from one array to another. It is called when using arrays.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is dynamic memory allocation in C++? How do you allocate and deallocate memory dynamically?",
+            options: [
+              "Dynamic memory allocation is a technique used for allocating memory to variables at compile-time. Memory is allocated using the 'malloc()' function and deallocated using the 'free()' function.",
+              "Dynamic memory allocation is a technique used for allocating memory to variables at runtime. Memory is allocated using the 'allocate()' function and deallocated using the 'deallocate()' function.",
+              "Dynamic memory allocation is a technique used for allocating memory to variables at compile-time. Memory is allocated using the 'new' operator and deallocated using the 'delete' operator.",
+              "Dynamic memory allocation is a technique used for allocating memory to variables at runtime. Memory is allocated using the 'alloc()' function and deallocated using the 'dealloc()' function.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the 'const' keyword used for in C++?",
+            options: [
+              "To define a constant variable.",
+              "To make a variable read-only.",
+              "To create a loop.",
+              "To define a function in C++.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of inheritance in C++. Provide an example of a base class and a derived class.",
+            options: [
+              "Inheritance is a way to create multiple instances of a class. It allows you to define multiple constructors for a class.",
+              "Inheritance is a way to hide the implementation details of a class. It allows you to define private members in a class.",
+              "Inheritance is a way to create a new class from an existing class. The new class (derived class) inherits properties and behaviors from the existing class (base class).",
+              "Inheritance is a way to combine multiple classes into a single class. It allows you to define multiple methods with the same name in a class.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are virtual functions in C++? How are they different from normal member functions?",
+            options: [
+              "Virtual functions are used to create objects that are not tied to a specific class. They are different from normal member functions in that they cannot be called using the 'dot' operator.",
+              "Virtual functions are used to create instances of an abstract class. They are different from normal member functions in that they cannot have a body.",
+              "Virtual functions are used to achieve runtime polymorphism. They are different from normal member functions in that their behavior is determined at runtime based on the actual type of the object.",
+              "Virtual functions are used to create static objects that are shared among all instances of a class. They are different from normal member functions in that they cannot access private members.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is function overloading in C++? Provide an example of how you can overload a function.",
+            options: [
+              "Function overloading is a technique used to define multiple functions with the same name but different return types. It allows you to use the same function name for different purposes.",
+              "Function overloading is a technique used to define multiple functions with the same name but different parameters. It allows you to use the same function name for different argument types.",
+              "Function overloading is a technique used to define multiple functions with the same name but different access specifiers. It allows you to use the same function name for different levels of access.",
+              "Function overloading is a technique used to define multiple functions with the same name but different implementations. It allows you to use the same function name for different behaviors.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is a reference variable in C++? How is it different from a pointer?",
+            options: [
+              "A reference variable is a variable that refers to the memory address of another variable. It is different from a pointer in that it cannot be reassigned to refer to a different variable after initialization.",
+              "A reference variable is a variable that holds the value of another variable. It is different from a pointer in that it cannot be used to perform arithmetic operations.",
+              "A reference variable is a variable that stores the memory address of another variable. It is different from a pointer in that it does not require dereferencing to access the value of the variable it refers to.",
+              "A reference variable is a variable that can hold multiple values. It is different from a pointer in that it can be used to point to an array of values.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Explain the concept of function templates in C++. Provide an example of how you can define a function template.",
+            options: [
+              "Function templates are used to create generic functions that can work with different data types. They allow you to define a single function that can handle multiple data types without having to write separate functions for each type.",
+              "Function templates are used to create functions with variable numbers of arguments. They allow you to pass a variable number of arguments to a function without specifying their types.",
+              "Function templates are used to create functions with default arguments. They allow you to provide default values for function parameters.",
+              "Function templates are used to create functions with multiple return statements. They allow you to return different values based on different conditions.",
+            ],
+            correctAnswer: "0",
+          },
+        ],
       },
       "15 intermed C++ questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What are constructors and destructors in C++? How are they different?",
+            options: [
+              "Constructors are used to create objects, while destructors are used to destroy objects.",
+              "Constructors are used to destroy objects, while destructors are used to create objects.",
+              "Both constructors and destructors are used to create objects.",
+              "Both constructors and destructors are used to destroy objects.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Explain the concept of operator overloading in C++. Provide an example of how you can overload an operator.",
+            options: [
+              "Operator overloading allows you to define new operators in C++.",
+              "Operator overloading is used to concatenate strings.",
+              "Operator overloading allows you to redefine the behavior of an existing operator for user-defined data types.",
+              "Operator overloading is used to perform type casting.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is a copy constructor in C++? When is it called?",
+            options: [
+              "A copy constructor creates a duplicate of an object. It is called when an object is passed by value or returned by value from a function.",
+              "A copy constructor destroys an object. It is called when an object goes out of scope.",
+              "A copy constructor is used to copy the contents of one file into another. It is called when working with file operations.",
+              "A copy constructor is used to copy data from one array to another. It is called when using arrays.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is dynamic memory allocation in C++? How do you allocate and deallocate memory dynamically?",
+            options: [
+              "Dynamic memory allocation is a technique used for allocating memory to variables at compile-time. Memory is allocated using the 'malloc()' function and deallocated using the 'free()' function.",
+              "Dynamic memory allocation is a technique used for allocating memory to variables at runtime. Memory is allocated using the 'allocate()' function and deallocated using the 'deallocate()' function.",
+              "Dynamic memory allocation is a technique used for allocating memory to variables at compile-time. Memory is allocated using the 'new' operator and deallocated using the 'delete' operator.",
+              "Dynamic memory allocation is a technique used for allocating memory to variables at runtime. Memory is allocated using the 'alloc()' function and deallocated using the 'dealloc()' function.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the 'const' keyword used for in C++?",
+            options: [
+              "To define a constant variable.",
+              "To make a variable read-only.",
+              "To create a loop.",
+              "To define a function in C++.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of inheritance in C++. Provide an example of a base class and a derived class.",
+            options: [
+              "Inheritance is a way to create multiple instances of a class. It allows you to define multiple constructors for a class.",
+              "Inheritance is a way to hide the implementation details of a class. It allows you to define private members in a class.",
+              "Inheritance is a way to create a new class from an existing class. The new class (derived class) inherits properties and behaviors from the existing class (base class).",
+              "Inheritance is a way to combine multiple classes into a single class. It allows you to define multiple methods with the same name in a class.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are virtual functions in C++? How are they different from normal member functions?",
+            options: [
+              "Virtual functions are used to create objects that are not tied to a specific class. They are different from normal member functions in that they cannot be called using the 'dot' operator.",
+              "Virtual functions are used to create instances of an abstract class. They are different from normal member functions in that they cannot have a body.",
+              "Virtual functions are used to achieve runtime polymorphism. They are different from normal member functions in that their behavior is determined at runtime based on the actual type of the object.",
+              "Virtual functions are used to create static objects that are shared among all instances of a class. They are different from normal member functions in that they cannot access private members.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is function overloading in C++? Provide an example of how you can overload a function.",
+            options: [
+              "Function overloading is a technique used to define multiple functions with the same name but different return types. It allows you to use the same function name for different purposes.",
+              "Function overloading is a technique used to define multiple functions with the same name but different parameters. It allows you to use the same function name for different argument types.",
+              "Function overloading is a technique used to define multiple functions with the same name but different access specifiers. It allows you to use the same function name for different levels of access.",
+              "Function overloading is a technique used to define multiple functions with the same name but different implementations. It allows you to use the same function name for different behaviors.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is a reference variable in C++? How is it different from a pointer?",
+            options: [
+              "A reference variable is a variable that refers to the memory address of another variable. It is different from a pointer in that it cannot be reassigned to refer to a different variable after initialization.",
+              "A reference variable is a variable that holds the value of another variable. It is different from a pointer in that it cannot be used to perform arithmetic operations.",
+              "A reference variable is a variable that stores the memory address of another variable. It is different from a pointer in that it does not require dereferencing to access the value of the variable it refers to.",
+              "A reference variable is a variable that can hold multiple values. It is different from a pointer in that it can be used to point to an array of values.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Explain the concept of function templates in C++. Provide an example of how you can define a function template.",
+            options: [
+              "Function templates are used to create generic functions that can work with different data types. They allow you to define a single function that can handle multiple data types without having to write separate functions for each type.",
+              "Function templates are used to create functions with variable numbers of arguments. They allow you to pass a variable number of arguments to a function without specifying their types.",
+              "Function templates are used to create functions with default arguments. They allow you to provide default values for function parameters.",
+              "Function templates are used to create functions with multiple return statements. They allow you to return different values based on different conditions.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is a lambda function in C++? Provide an example of how you can define and use a lambda function.",
+            options: [
+              "A lambda function is a function defined using the 'lambda' keyword. It is used to create short, anonymous functions.",
+              "A lambda function is a function with no return type. It is used to define functions that do not return a value.",
+              "A lambda function is a function with multiple return statements. It is used to return different values based on different conditions.",
+              "A lambda function is a function that can be called without using parentheses. It is used to define functions with no parameters.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What are smart pointers in C++? How do they help in memory management?",
+            options: [
+              "Smart pointers are pointers that automatically deallocate memory when they go out of scope. They help prevent memory leaks and manage memory efficiently.",
+              "Smart pointers are pointers that can point to multiple memory locations at once. They help in accessing multiple objects simultaneously.",
+              "Smart pointers are pointers that automatically increase their reference count when used in multiple functions. They help in managing function calls.",
+              "Smart pointers are pointers that are automatically initialized to null. They help in preventing segmentation faults.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the 'std::vector' container in C++? How do you use it to store and manipulate data?",
+            options: [
+              "std::vector is a container that stores a fixed-size collection of elements. It is used to perform mathematical operations on arrays.",
+              "std::vector is a container that stores a dynamic-size collection of elements. It is used to store and manipulate data efficiently.",
+              "std::vector is a container that stores a two-dimensional collection of elements. It is used to create matrices and perform matrix operations.",
+              "std::vector is a container that stores key-value pairs. It is used to create associative arrays.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of polymorphism in C++. Provide an example of how you can achieve polymorphism using virtual functions.",
+            options: [
+              "Polymorphism is a technique used to create multiple instances of a class. It allows you to define multiple constructors for a class.",
+              "Polymorphism is a technique used to hide the implementation details of a class. It allows you to define private members in a class.",
+              "Polymorphism is a technique used to create a new class from an existing class. The new class (derived class) inherits properties and behaviors from the existing class (base class).",
+              "Polymorphism is a technique used to create objects of different classes with a common interface. It allows you to achieve runtime polymorphism using virtual functions.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is an abstract class in C++? How do you define and use abstract classes?",
+            options: [
+              "An abstract class is a class that cannot be instantiated. It is used to define common properties and behaviors that must be implemented by its derived classes.",
+              "An abstract class is a class with multiple constructors. It is used to create objects with different initializations.",
+              "An abstract class is a class that contains only pure virtual functions. It is used to define interfaces for its derived classes.",
+              "An abstract class is a class with a private constructor. It is used to prevent the creation of objects of that class.",
+            ],
+            correctAnswer: "0",
+          },
+        ],
       },
       "20 intermed C++ questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What are constructors and destructors in C++? How are they different?",
+            options: [
+              "Constructors are used to create objects, while destructors are used to destroy objects.",
+              "Constructors are used to destroy objects, while destructors are used to create objects.",
+              "Both constructors and destructors are used to create objects.",
+              "Both constructors and destructors are used to destroy objects.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Explain the concept of operator overloading in C++. Provide an example of how you can overload an operator.",
+            options: [
+              "Operator overloading allows you to define new operators in C++.",
+              "Operator overloading is used to concatenate strings.",
+              "Operator overloading allows you to redefine the behavior of an existing operator for user-defined data types.",
+              "Operator overloading is used to perform type casting.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is a copy constructor in C++? When is it called?",
+            options: [
+              "A copy constructor creates a duplicate of an object. It is called when an object is passed by value or returned by value from a function.",
+              "A copy constructor destroys an object. It is called when an object goes out of scope.",
+              "A copy constructor is used to copy the contents of one file into another. It is called when working with file operations.",
+              "A copy constructor is used to copy data from one array to another. It is called when using arrays.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is dynamic memory allocation in C++? How do you allocate and deallocate memory dynamically?",
+            options: [
+              "Dynamic memory allocation is a technique used for allocating memory to variables at compile-time. Memory is allocated using the 'malloc()' function and deallocated using the 'free()' function.",
+              "Dynamic memory allocation is a technique used for allocating memory to variables at runtime. Memory is allocated using the 'allocate()' function and deallocated using the 'deallocate()' function.",
+              "Dynamic memory allocation is a technique used for allocating memory to variables at compile-time. Memory is allocated using the 'new' operator and deallocated using the 'delete' operator.",
+              "Dynamic memory allocation is a technique used for allocating memory to variables at runtime. Memory is allocated using the 'alloc()' function and deallocated using the 'dealloc()' function.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the 'const' keyword used for in C++?",
+            options: [
+              "To define a constant variable.",
+              "To make a variable read-only.",
+              "To create a loop.",
+              "To define a function in C++.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of inheritance in C++. Provide an example of a base class and a derived class.",
+            options: [
+              "Inheritance is a way to create multiple instances of a class. It allows you to define multiple constructors for a class.",
+              "Inheritance is a way to hide the implementation details of a class. It allows you to define private members in a class.",
+              "Inheritance is a way to create a new class from an existing class. The new class (derived class) inherits properties and behaviors from the existing class (base class).",
+              "Inheritance is a way to combine multiple classes into a single class. It allows you to define multiple methods with the same name in a class.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are virtual functions in C++? How are they different from normal member functions?",
+            options: [
+              "Virtual functions are used to create objects that are not tied to a specific class. They are different from normal member functions in that they cannot be called using the 'dot' operator.",
+              "Virtual functions are used to create instances of an abstract class. They are different from normal member functions in that they cannot have a body.",
+              "Virtual functions are used to achieve runtime polymorphism. They are different from normal member functions in that their behavior is determined at runtime based on the actual type of the object.",
+              "Virtual functions are used to create static objects that are shared among all instances of a class. They are different from normal member functions in that they cannot access private members.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is function overloading in C++? Provide an example of how you can overload a function.",
+            options: [
+              "Function overloading is a technique used to define multiple functions with the same name but different return types. It allows you to use the same function name for different purposes.",
+              "Function overloading is a technique used to define multiple functions with the same name but different parameters. It allows you to use the same function name for different argument types.",
+              "Function overloading is a technique used to define multiple functions with the same name but different access specifiers. It allows you to use the same function name for different levels of access.",
+              "Function overloading is a technique used to define multiple functions with the same name but different implementations. It allows you to use the same function name for different behaviors.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is a reference variable in C++? How is it different from a pointer?",
+            options: [
+              "A reference variable is a variable that refers to the memory address of another variable. It is different from a pointer in that it cannot be reassigned to refer to a different variable after initialization.",
+              "A reference variable is a variable that holds the value of another variable. It is different from a pointer in that it cannot be used to perform arithmetic operations.",
+              "A reference variable is a variable that stores the memory address of another variable. It is different from a pointer in that it does not require dereferencing to access the value of the variable it refers to.",
+              "A reference variable is a variable that can hold multiple values. It is different from a pointer in that it can be used to point to an array of values.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Explain the concept of function templates in C++. Provide an example of how you can define a function template.",
+            options: [
+              "Function templates are used to create generic functions that can work with different data types. They allow you to define a single function that can handle multiple data types without having to write separate functions for each type.",
+              "Function templates are used to create functions with variable numbers of arguments. They allow you to pass a variable number of arguments to a function without specifying their types.",
+              "Function templates are used to create functions with default arguments. They allow you to provide default values for function parameters.",
+              "Function templates are used to create functions with multiple return statements. They allow you to return different values based on different conditions.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is a lambda function in C++? Provide an example of how you can define and use a lambda function.",
+            options: [
+              "A lambda function is a function defined using the 'lambda' keyword. It is used to create short, anonymous functions.",
+              "A lambda function is a function with no return type. It is used to define functions that do not return a value.",
+              "A lambda function is a function with multiple return statements. It is used to return different values based on different conditions.",
+              "A lambda function is a function that can be called without using parentheses. It is used to define functions with no parameters.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What are smart pointers in C++? How do they help in memory management?",
+            options: [
+              "Smart pointers are pointers that automatically deallocate memory when they go out of scope. They help prevent memory leaks and manage memory efficiently.",
+              "Smart pointers are pointers that can point to multiple memory locations at once. They help in accessing multiple objects simultaneously.",
+              "Smart pointers are pointers that automatically increase their reference count when used in multiple functions. They help in managing function calls.",
+              "Smart pointers are pointers that are automatically initialized to null. They help in preventing segmentation faults.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the 'std::vector' container in C++? How do you use it to store and manipulate data?",
+            options: [
+              "std::vector is a container that stores a fixed-size collection of elements. It is used to perform mathematical operations on arrays.",
+              "std::vector is a container that stores a dynamic-size collection of elements. It is used to store and manipulate data efficiently.",
+              "std::vector is a container that stores a two-dimensional collection of elements. It is used to create matrices and perform matrix operations.",
+              "std::vector is a container that stores key-value pairs. It is used to create associative arrays.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of polymorphism in C++. Provide an example of how you can achieve polymorphism using virtual functions.",
+            options: [
+              "Polymorphism is a technique used to create multiple instances of a class. It allows you to define multiple constructors for a class.",
+              "Polymorphism is a technique used to hide the implementation details of a class. It allows you to define private members in a class.",
+              "Polymorphism is a technique used to create a new class from an existing class. The new class (derived class) inherits properties and behaviors from the existing class (base class).",
+              "Polymorphism is a technique used to create objects of different classes with a common interface. It allows you to achieve runtime polymorphism using virtual functions.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is an abstract class in C++? How do you define and use abstract classes?",
+            options: [
+              "An abstract class is a class that cannot be instantiated. It is used to define common properties and behaviors that must be implemented by its derived classes.",
+              "An abstract class is a class with multiple constructors. It is used to create objects with different initializations.",
+              "An abstract class is a class that contains only pure virtual functions. It is used to define interfaces for its derived classes.",
+              "An abstract class is a class with a private constructor. It is used to prevent the creation of objects of that class.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Explain the concept of namespaces in C++. Provide an example of how you can use namespaces.",
+            options: [
+              "Namespaces are used to create a separate scope for variables and functions. They allow you to avoid naming conflicts between different parts of a program.",
+              "Namespaces are used to define classes with the same name but different implementations. They allow you to create multiple versions of a class.",
+              "Namespaces are used to create global variables that can be accessed from any part of the program. They allow you to define shared data.",
+              "Namespaces are used to create macros that can be used throughout the program. They allow you to define common constants.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the role of 'const' in function declarations and definitions in C++?",
+            options: [
+              "The 'const' keyword in function declarations is used to specify that the function does not modify the objects it operates on. In function definitions, it is used to indicate that the function does not modify the object's data members.",
+              "The 'const' keyword in function declarations is used to specify that the function modifies the objects it operates on. In function definitions, it is used to indicate that the function modifies the object's data members.",
+              "The 'const' keyword in function declarations is used to specify that the function can be called with constant objects only. In function definitions, it is used to indicate that the function can be called with non-constant objects only.",
+              "The 'const' keyword in function declarations is used to specify that the function cannot be called with constant objects. In function definitions, it is used to indicate that the function cannot be called with non-constant objects.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the difference between pass by value and pass by reference in function parameters?",
+            options: [
+              "Pass by value makes a copy of the actual arguments passed to the function, while pass by reference does not make a copy and directly operates on the original objects.",
+              "Pass by value allows you to modify the original objects passed to the function, while pass by reference does not allow any modifications.",
+              "Pass by value is faster and more memory-efficient than pass by reference.",
+              "Pass by value is used for primitive data types, while pass by reference is used for user-defined data types.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the role of the 'const' keyword in member functions of a class?",
+            options: [
+              "The 'const' keyword in member functions indicates that the member function cannot modify the object's data members.",
+              "The 'const' keyword in member functions indicates that the member function cannot be called with constant objects.",
+              "The 'const' keyword in member functions indicates that the member function can only be called with constant objects.",
+              "The 'const' keyword in member functions indicates that the member function cannot be called with non-constant objects.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What are templates in C++? How do they help in creating generic functions and classes?",
+            options: [
+              "Templates are used to create multiple instances of a class. They allow you to define multiple constructors for a class.",
+              "Templates are used to create functions with variable numbers of arguments. They allow you to pass a variable number of arguments to a function without specifying their types.",
+              "Templates are used to create functions and classes that can work with different data types. They allow you to define a single function or class that can handle multiple data types without having to write separate functions or classes for each type.",
+              "Templates are used to create functions with default arguments. They allow you to provide default values for function parameters.",
+            ],
+            correctAnswer: "2",
+          },
+        ],
       },
       "10 advanced C++ questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What is move semantics in C++? How does it differ from copy semantics?",
+            options: [
+              "Move semantics is a technique used to move the data from one object to another without creating a copy. It is more efficient than copy semantics, which involves creating a duplicate of the data.",
+              "Move semantics is a technique used to copy the data from one object to another. It is similar to copy semantics, but it is used for large data structures.",
+              "Move semantics is a technique used to copy the data from one object to another without creating a copy. It is more efficient than copy semantics, which involves creating a duplicate of the data.",
+              "Move semantics is a technique used to transfer the ownership of the data from one object to another. It is used for complex data structures.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are variadic templates in C++? Provide an example of how you can define a variadic template function.",
+            options: [
+              "Variadic templates are used to create functions with multiple return values. They allow you to return multiple values from a single function.",
+              "Variadic templates are used to create functions with variable numbers of arguments. They allow you to pass a variable number of arguments to a function.",
+              "Variadic templates are used to create functions with default arguments. They allow you to provide default values for function parameters.",
+              "Variadic templates are used to create functions with multiple template parameters. They allow you to define functions with multiple data types.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of templates specialization in C++. Provide an example of how you can specialize a template function.",
+            options: [
+              "Templates specialization is a technique used to create multiple instances of a template function with different return types. It allows you to define multiple versions of a function for different data types.",
+              "Templates specialization is a technique used to create a generic template function that can work with different data types. It allows you to define a single function that can handle multiple data types without having to write separate functions for each type.",
+              "Templates specialization is a technique used to define a specific implementation of a template function for a particular data type. It allows you to override the default behavior of the generic template function for that data type.",
+              "Templates specialization is a technique used to define default values for the template parameters. It allows you to provide default arguments for template functions.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is RAII (Resource Acquisition Is Initialization) in C++? How does it help in managing resources?",
+            options: [
+              "RAII is a design pattern used to initialize resources when they are acquired and release them when they are no longer needed. It helps in automatic memory management and prevents resource leaks.",
+              "RAII is a design pattern used to handle exceptions in C++. It helps in handling errors and preventing program crashes.",
+              "RAII is a design pattern used to implement polymorphism in C++. It helps in creating multiple instances of a class.",
+              "RAII is a design pattern used to manage multi-threading in C++. It helps in synchronizing threads and avoiding race conditions.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What are lambda capture expressions in C++? Provide an example of how you can capture variables in a lambda function.",
+            options: [
+              "Lambda capture expressions are used to define the return type of a lambda function. They allow you to specify the data type of the values returned by the lambda function.",
+              "Lambda capture expressions are used to define the input parameters of a lambda function. They allow you to specify the data types of the arguments passed to the lambda function.",
+              "Lambda capture expressions are used to capture variables from the surrounding scope into the lambda function. They allow you to access and modify variables from the enclosing function.",
+              "Lambda capture expressions are used to define the access specifiers of a lambda function. They allow you to specify the visibility of the lambda function.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the 'std::unique_ptr' container in C++? How does it differ from 'std::shared_ptr'?",
+            options: [
+              "std::unique_ptr is a smart pointer that allows multiple pointers to share ownership of the same dynamically allocated object. It is more efficient than std::shared_ptr, which creates a deep copy of the object for each shared pointer.",
+              "std::unique_ptr is a smart pointer that allows only one pointer to own the dynamically allocated object. It is more efficient than std::shared_ptr, which allows multiple shared pointers to own the object.",
+              "std::unique_ptr is a container that stores a fixed-size collection of elements. It is used to perform mathematical operations on arrays.",
+              "std::unique_ptr is a container that stores a dynamic-size collection of elements. It is used to store and manipulate data efficiently.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of SFINAE (Substitution Failure Is Not An Error) in C++. How is it used in template programming?",
+            options: [
+              "SFINAE is a mechanism used to control the substitution of template parameters in C++. It allows the compiler to ignore errors in template substitution and continue with other possible substitutions.",
+              "SFINAE is a mechanism used to prevent the substitution of template parameters in C++. It allows the compiler to stop template substitution and report an error if there is a mismatch in template arguments.",
+              "SFINAE is a mechanism used to handle exceptions in template programming. It allows the programmer to define multiple catch blocks for different exception types.",
+              "SFINAE is a mechanism used to handle multiple inheritance in C++. It allows the programmer to define virtual base classes.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What are user-defined literals in C++? Provide an example of how you can define a user-defined literal.",
+            options: [
+              "User-defined literals are used to define custom data types in C++. They allow the programmer to create new data types with specific behaviors.",
+              "User-defined literals are used to extend the built-in types in C++. They allow the programmer to define new operators for existing data types.",
+              "User-defined literals are used to define new literal suffixes in C++. They allow the programmer to create new ways of representing literal values.",
+              "User-defined literals are used to override the default behavior of existing literal suffixes in C++. They allow the programmer to modify the meaning of standard literals.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is perfect forwarding in C++? How does it differ from normal function forwarding?",
+            options: [
+              "Perfect forwarding is a technique used to forward function arguments from one function to another without creating copies. It is more efficient than normal function forwarding, which involves creating copies of the arguments.",
+              "Perfect forwarding is a technique used to forward function arguments from one function to another using the 'forward()' function. It is similar to normal function forwarding, but it is used for template functions.",
+              "Perfect forwarding is a technique used to forward function arguments from one function to another using the 'forward()' function. It is more efficient than normal function forwarding, which involves using the 'copy()' function.",
+              "Perfect forwarding is a technique used to forward function arguments from one function to another without using any helper functions. It is similar to normal function forwarding, but it is used for template functions.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What are variadic templates in C++? Provide an example of how you can define a variadic template function.",
+            options: [
+              "Variadic templates are used to create functions with multiple return values. They allow you to return multiple values from a single function.",
+              "Variadic templates are used to create functions with variable numbers of arguments. They allow you to pass a variable number of arguments to a function.",
+              "Variadic templates are used to create functions with default arguments. They allow you to provide default values for function parameters.",
+              "Variadic templates are used to create functions with multiple template parameters. They allow you to define functions with multiple data types.",
+            ],
+            correctAnswer: "1",
+          },
+        ],
       },
       "15 advanced C++ questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain the PIMPL (Pointer to Implementation) idiom in C++. What are the benefits of using it?",
+            options: [
+              "PIMPL is a design pattern used to create smart pointers in C++. It allows you to manage the memory of objects automatically.",
+              "PIMPL is a design pattern used to implement encapsulation in C++. It allows you to hide the implementation details of a class.",
+              "PIMPL is a design pattern used to create interfaces in C++. It allows you to define abstract base classes.",
+              "PIMPL is a design pattern used to handle exceptions in C++. It allows you to catch and handle errors.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are variadic templates in C++? Provide an example of how you can define a variadic template function.",
+            options: [
+              "Variadic templates are used to create functions with multiple return values. They allow you to return multiple values from a single function.",
+              "Variadic templates are used to create functions with variable numbers of arguments. They allow you to pass a variable number of arguments to a function.",
+              "Variadic templates are used to create functions with default arguments. They allow you to provide default values for function parameters.",
+              "Variadic templates are used to create functions with multiple template parameters. They allow you to define functions with multiple data types.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of 'constexpr' in C++. When and how is it used?",
+            options: [
+              "The 'constexpr' specifier is used to indicate that a function can be called with constant expressions. It helps in optimizing performance and reducing runtime overhead.",
+              "The 'constexpr' specifier is used to define constant variables in C++. It indicates that the value of the variable cannot be changed after initialization.",
+              "The 'constexpr' specifier is used to define constant functions in C++. It indicates that the function cannot modify the object it operates on.",
+              "The 'constexpr' specifier is used to define constant pointers in C++. It indicates that the pointer cannot be reassigned to point to another memory location.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What are C++ concepts? How do they improve template programming?",
+            options: [
+              "Concepts are used to define the visibility of class members in C++. They help in managing access control in classes.",
+              "Concepts are used to define the return type of a function in C++. They help in specifying the data type of the value returned by a function.",
+              "Concepts are used to define constraints on template parameters in C++. They help in specifying requirements for template arguments, making template errors more readable and manageable.",
+              "Concepts are used to define the inheritance hierarchy in C++. They help in creating multiple inheritance.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the role of the 'volatile' keyword in C++? When and why is it used?",
+            options: [
+              "The 'volatile' keyword is used to define constant variables in C++. It indicates that the value of the variable cannot be changed after initialization.",
+              "The 'volatile' keyword is used to define variables that can be accessed from different threads in C++. It indicates that the variable can be modified by external factors and should not be optimized by the compiler.",
+              "The 'volatile' keyword is used to define global variables in C++. It indicates that the variable can be accessed and modified from any part of the program.",
+              "The 'volatile' keyword is used to define constant functions in C++. It indicates that the function cannot modify the object it operates on.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are C++ lambdas and how are they used? Provide an example of a lambda function.",
+            options: [
+              "C++ lambdas are used to create short, anonymous functions.",
+              "C++ lambdas are used to create functions with multiple return values. They allow you to return multiple values from a single function.",
+              "C++ lambdas are used to create functions with variable numbers of arguments. They allow you to pass a variable number of arguments to a function.",
+              "C++ lambdas are used to create functions with default arguments. They allow you to provide default values for function parameters.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What are the 'std::shared_ptr' and 'std::weak_ptr' containers in C++? How do they handle memory management?",
+            options: [
+              "std::shared_ptr is a smart pointer that allows multiple pointers to share ownership of the same dynamically allocated object. It keeps a reference count of the number of shared pointers pointing to the object. When the reference count becomes zero, the object is deleted. std::weak_ptr is a smart pointer that allows you to create a non-owning reference to an object managed by std::shared_ptr. It does not increase the reference count, and it is used to prevent circular references.",
+              "std::shared_ptr is a smart pointer that allows only one pointer to own the dynamically allocated object. It keeps a reference count of the number of shared pointers pointing to the object. When the reference count becomes zero, the object is deleted. std::weak_ptr is a smart pointer that allows you to create a non-owning reference to an object managed by std::shared_ptr. It does not increase the reference count, and it is used to prevent memory leaks.",
+              "std::shared_ptr is a container that stores a fixed-size collection of elements. It is used to perform mathematical operations on arrays.",
+              "std::shared_ptr is a container that stores a dynamic-size collection of elements. It is used to store and manipulate data efficiently.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What are 'const' member functions in C++? How do they ensure the const-correctness of objects?",
+            options: [
+              "Const member functions are functions that can be called on constant objects. They are used to indicate that the function will not modify the object's state. By using const member functions, you ensure that constant objects can only call member functions that do not modify the object.",
+              "Const member functions are functions that are defined with the 'const' keyword in their signature. They are used to indicate that the function is constant and cannot be modified.",
+              "Const member functions are functions that can be called on any object. They are used to indicate that the function can be called on both constant and non-constant objects.",
+              "Const member functions are functions that can be called on constant objects. They are used to indicate that the function will modify the object's state, but only for constant objects.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Explain the 'explicit' keyword in C++. How and where is it used?",
+            options: [
+              "The 'explicit' keyword is used to define explicit constructors in C++. It prevents implicit type conversions and ensures that objects are constructed only when explicitly specified.",
+              "The 'explicit' keyword is used to define constant variables in C++. It indicates that the value of the variable cannot be changed after initialization.",
+              "The 'explicit' keyword is used to define constant functions in C++. It indicates that the function cannot modify the object it operates on.",
+              "The 'explicit' keyword is used to define the access specifiers of class members in C++. It helps in controlling the visibility of class members.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Explain the role of 'friend' functions and 'friend' classes in C++. How are they used and when should they be employed?",
+            options: [
+              "Friend functions and friend classes are used to define constant variables in C++. They indicate that the value of the variable cannot be changed after initialization.",
+              "Friend functions and friend classes are used to define constant functions in C++. They indicate that the function cannot modify the object it operates on.",
+              "Friend functions and friend classes are used to define the access specifiers of class members in C++. They help in controlling the visibility of class members.",
+              "Friend functions and friend classes are used to provide access to private and protected members of a class to specific external functions or classes. They are useful in situations where a function or class needs access to private or protected data of another class without violating encapsulation.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the use of 'std::initializer_list' in C++. How is it used to initialize objects?",
+            options: [
+              "std::initializer_list is a container used to store a fixed-size collection of elements. It is used to perform mathematical operations on arrays.",
+              "std::initializer_list is a container used to store a dynamic-size collection of elements. It is used to store and manipulate data efficiently.",
+              "std::initializer_list is a feature used to initialize objects with a list of values. It allows you to pass a list of arguments to a constructor or a function.",
+              "std::initializer_list is a feature used to initialize arrays with a list of values. It allows you to create an array with a specific set of elements.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the difference between 'std::async' and 'std::thread' in C++. When and why would you use each?",
+            options: [
+              "std::async is used to execute a function asynchronously and return a future object representing the result. It is more efficient than std::thread, which creates a new thread for the function. std::async is preferred when the result of the function is needed.",
+              "std::async is used to create a new thread and execute a function in that thread. It is more efficient than std::thread, which creates a new thread for the function. std::thread is preferred when the result of the function is not needed.",
+              "std::async is used to execute a function asynchronously and return a future object representing the result. It is less efficient than std::thread, which creates a new thread for the function. std::thread is preferred when the result of the function is needed.",
+              "std::async is used to create a new thread and execute a function in that thread. It is less efficient than std::thread, which creates a new thread for the function. std::thread is preferred when the result of the function is not needed.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the 'std::function' class in C++? How is it used to store and invoke functions?",
+            options: [
+              "std::function is a class used to define constant functions in C++. It indicates that the function cannot modify the object it operates on.",
+              "std::function is a class used to define constant variables in C++. It indicates that the value of the variable cannot be changed after initialization.",
+              "std::function is a class used to store any callable object in C++. It can hold function pointers, lambda functions, and other callable objects. It provides a unified interface for calling different types of functions.",
+              "std::function is a class used to define the return type of a function in C++. It helps in specifying the data type of the value returned by a function.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the concept of CRTP (Curiously Recurring Template Pattern) in C++. How and where is it commonly used?",
+            options: [
+              "CRTP is a design pattern used to implement polymorphism in C++. It allows you to create multiple instances of a class. It is commonly used for managing object lifetimes.",
+              "CRTP is a design pattern used to implement static polymorphism in C++. It allows you to define multiple implementations of a function based on different data types. It is commonly used in template programming.",
+              "CRTP is a design pattern used to implement inheritance in C++. It allows you to create a new class from an existing class. It is commonly used for code reuse.",
+              "CRTP is a design pattern used to implement the factory pattern in C++. It allows you to create objects without specifying their exact classes. It is commonly used in object-oriented programming.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is the 'std::filesystem' library in C++17? How does it simplify file and directory manipulation?",
+            options: [
+              "std::filesystem is a library used to define the visibility of class members in C++. It helps in managing access control in classes.",
+              "std::filesystem is a library used to define the return type of a function in C++. It helps in specifying the data type of the value returned by a function.",
+              "std::filesystem is a library used to define constraints on template parameters in C++. It helps in specifying requirements for template arguments, making template errors more readable and manageable.",
+              "std::filesystem is a library used to perform file and directory operations in C++. It provides classes and functions to manipulate files, directories, and paths in a platform-independent manner.",
+            ],
+            correctAnswer: "3",
+          },
+        ],
       },
       "20 advanced C++ questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain the RAII (Resource Acquisition Is Initialization) idiom in C++. How does it help in managing resources and avoiding memory leaks?",
+            options: [
+              "The RAII idiom is a design pattern in C++ that associates the lifetime of a resource with the lifetime of an object. Resources, such as memory allocations or file handles, are acquired when the object is constructed and released when the object is destructed. This ensures that resources are properly cleaned up, even in the presence of exceptions or early returns. RAII helps avoid resource leaks and ensures safe and efficient resource management.",
+              "The RAII idiom is a technique in C++ to handle resource management manually. It requires explicit allocation and deallocation of resources using 'new' and 'delete' or 'malloc' and 'free'. While it can avoid memory leaks, it requires careful tracking of resource ownership and can be error-prone.",
+              "The RAII idiom is a C++ feature that automatically manages resource allocation and deallocation. When an object is constructed, it acquires the necessary resources, and when it is destructed, it releases them. This automatic resource management ensures that resources are always cleaned up properly, even in the presence of exceptions or early returns.",
+              "The RAII idiom is a design pattern in C++ that encourages manual resource management using 'new' and 'delete' or 'malloc' and 'free'. It is an alternative to garbage collection and helps avoid memory leaks.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What are move semantics in C++? How do they differ from copy semantics, and when should you use them?",
+            options: [
+              "Move semantics in C++ allow you to efficiently transfer the ownership of resources from one object to another. Instead of making a deep copy, move semantics enable the transfer of internal data, such as dynamically allocated memory, from one object to another. Move semantics use rvalue references ('&&') to indicate movable objects and move constructors/assignment operators to perform the transfer. Move semantics are more efficient than copy semantics for large objects or resources that are expensive to copy. They are particularly useful when dealing with temporary objects or in scenarios where you want to avoid unnecessary copying.",
+              "Move semantics in C++ are a technique to copy objects from one location in memory to another. They are similar to copy constructors and copy assignment operators but use rvalue references ('&&'). Move semantics are preferred when you want to make a deep copy of an object.",
+              "Move semantics in C++ are a feature that allows you to perform bitwise copying of objects. Unlike copy semantics, move semantics transfer the bitwise representation of objects from one location in memory to another. Move semantics use lvalue references ('&') to indicate movable objects.",
+              "Move semantics in C++ are a technique used to convert objects from one type to another. They use the 'static_cast' operator to perform type conversions. Move semantics are preferred when you want to change the type of an object.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Describe the use of 'std::unique_ptr' and 'std::shared_ptr' in C++. When and why would you prefer one over the other?",
+            options: [
+              "Both 'std::unique_ptr' and 'std::shared_ptr' are smart pointers in C++ that help manage the ownership of dynamically allocated objects. 'std::unique_ptr' is used when a single object should have exclusive ownership, and it is automatically destructed when the 'unique_ptr' goes out of scope. 'std::shared_ptr', on the other hand, is used when multiple objects need to share ownership of the same resource. The 'shared_ptr' keeps track of the number of shared references and automatically deallocates the resource when the last 'shared_ptr' goes out of scope. Use 'std::unique_ptr' when you want exclusive ownership and 'std::shared_ptr' when you need shared ownership to prevent premature deallocation and resource leaks.",
+              "'std::unique_ptr' and 'std::shared_ptr' are both used to define constant variables in C++. They indicate that the value of the variable cannot be changed after initialization.",
+              "'std::unique_ptr' and 'std::shared_ptr' are both used to define constant functions in C++. They indicate that the function cannot modify the object it operates on.",
+              "'std::unique_ptr' and 'std::shared_ptr' are both used to define the visibility of class members in C++. They help in managing access control in classes.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the 'std::optional' class in C++17? How does it help in handling values that might not exist?",
+            options: [
+              "The 'std::optional' class in C++17 is a container that can hold an optional value. It is used when a value might not be present, representing the absence of a value. 'std::optional' behaves similar to a nullable value or an 'Optional' type found in other languages. It provides a type-safe way to indicate that a value may or may not exist, and it avoids the use of null pointers or special sentinel values. By using 'std::optional', you can explicitly handle cases where a value is missing and avoid undefined behavior caused by accessing null pointers.",
+              "The 'std::optional' class in C++17 is a container used to store a fixed-size collection of elements. It is used to perform mathematical operations on arrays.",
+              "The 'std::optional' class in C++17 is a type trait used in template metaprogramming to check if a given type is arithmetic (integral or floating-point).",
+              "The 'std::optional' class in C++17 is a container used to represent a set of elements with no specific order and no duplicates. It is used to store and manipulate sets of data.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Explain the concept of perfect forwarding in C++ and how it is used in template functions.",
+            options: [
+              "Perfect forwarding is a feature in C++ that allows passing arguments to another function while preserving their value category (lvalue or rvalue) and const-qualification. It is accomplished using forwarding references, which are declared using 'auto&&'. Perfect forwarding is commonly used in template functions to forward arguments to other functions, avoiding unnecessary copies and maintaining the original type and const-qualification of the arguments. This feature is especially useful in generic programming when you want to propagate arguments through multiple function calls without losing their original characteristics.",
+              "Perfect forwarding is a technique in C++ that ensures all function arguments are of the same type. It is used to avoid overloading functions with multiple argument types.",
+              "Perfect forwarding is a design pattern in C++ that allows you to forward function calls to other objects. It is commonly used in delegation scenarios.",
+              "Perfect forwarding is a feature in C++ that enables you to forward exceptions from one function to another. It ensures that exceptions are propagated through the call stack properly.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What are variadic templates in C++? Provide an example of how you can define a variadic template function.",
+            options: [
+              "Variadic templates in C++ allow you to define functions or classes that can accept a variable number of arguments. They are defined using the 'template' keyword followed by 'typename... Args' to represent the variadic parameter pack. Variadic templates are typically processed using recursion or the 'sizeof...(Args)' operator to handle each argument in the pack. For example, a simple variadic template function to calculate the sum of multiple values can be defined as follows:\ncpp\ntemplate<typename... Args>\nint sum(Args... args) {\n return (args + ...);\n}\n\nThis allows the 'sum' function to accept any number of arguments of different types and return their sum.",
+              "Variadic templates in C++ are a technique used to create a list of functions with different signatures. It is commonly used in function overloading.",
+              "Variadic templates in C++ allow you to define a fixed number of function arguments of the same type. They are commonly used in mathematical functions that take multiple parameters.",
+              "Variadic templates in C++ are a feature that allows you to define a fixed number of function arguments of different types. It is commonly used in generic programming.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Describe the 'constexpr if' statement introduced in C++17. How does it differ from regular 'if' statements, and when should you use it?",
+            options: [
+              "'constexpr if' is a feature introduced in C++17 that allows you to conditionally compile code based on compile-time conditions. It is an extension of the regular 'if' statement and is used in template metaprogramming to enable different code branches based on the properties of template arguments. The primary difference between 'constexpr if' and regular 'if' is that 'constexpr if' evaluates the condition at compile-time, while the regular 'if' evaluates it at runtime. This allows 'constexpr if' to optimize away the code that is not relevant for a specific instantiation of a template function or class, reducing code bloat and improving performance. You should use 'constexpr if' when you want to enable or disable code based on compile-time information, such as the type of template arguments or the values of constexpr variables.",
+              "'constexpr if' is a keyword in C++ that is used to define constants that are computed at compile-time. It is used to improve performance by avoiding runtime computations.",
+              "'constexpr if' is a keyword in C++ that is used to define template functions that can be evaluated at compile-time. It is used to improve template specialization.",
+              "'constexpr if' is a feature in C++ that allows you to define constant functions. It ensures that the functions do not modify the object they operate on.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the purpose of 'std::enable_if' in C++? Provide an example of how it can be used in template functions.",
+            options: [
+              "'std::enable_if' is a type trait introduced in C++11 that is used in template metaprogramming to enable or disable template functions or classes based on certain conditions. It allows you to control template specialization based on the properties of template arguments. 'std::enable_if' is typically used in conjunction with the 'std::enable_if_t' type alias and the 'std::is_xxx' type traits (e.g., 'std::is_integral', 'std::is_floating_point', etc.). For example, consider a template function that performs arithmetic operations only for numeric types (integral or floating-point). You can use 'std::enable_if' to enable the function only for numeric types ('std::is_arithmetic_v' checks if the type 'T' is arithmetic). If the template argument is not numeric, the function will be disabled, and the compiler will generate a substitution failure.\ncpp\n#include <type_traits>\ntemplate<typename T, typename = std::enable_if_t<std::is_arithmetic_v<T>>>\nT add(T a, T b) {\n return a + b;\n}\n",
+              "'std::enable_if' is a C++ feature used to enable or disable the use of inheritance between classes. It allows you to control class hierarchies and access control.",
+              "'std::enable_if' is a C++ feature that is used to enable or disable function overloading. It allows you to specify different versions of a function based on certain conditions.",
+              "'std::enable_if' is a C++ feature used to enable or disable member functions in a class. It allows you to control the availability of member functions based on template arguments.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Explain the 'std::apply' function in C++17. How does it simplify the application of a function to a tuple of arguments?",
+            options: [
+              "'std::apply' is a utility function introduced in C++17 that allows you to apply a function to a tuple of arguments. It simplifies the process of unpacking the elements of a tuple and passing them as individual arguments to a function. The 'std::apply' function takes a function and a tuple as arguments and invokes the function with the unpacked elements of the tuple. This is particularly useful when you have a function that takes multiple arguments, and you want to call it with a tuple of arguments instead. 'std::apply' eliminates the need for manually unpacking the tuple and calling the function with each element, making the code more concise and readable.",
+              "'std::apply' is a C++ feature used to apply operator overloads to user-defined types. It allows you to customize the behavior of operators for your own classes.",
+              "'std::apply' is a C++ feature that applies a specific function to each element of a container, such as a vector or an array. It allows you to perform the same operation on each element of the container.",
+              "'std::apply' is a C++ feature that applies a function to a range of elements. It allows you to perform bulk operations on containers.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Discuss the use of 'std::launder' in C++17 and how it helps in dealing with type-based aliasing optimizations.",
+            options: [
+              "'std::launder' is a function introduced in C++17 that helps in dealing with type-based aliasing optimizations. Type-based aliasing refers to accessing an object through a pointer or reference of a different type. C++11 introduced strict aliasing rules, which allow certain optimizations by assuming that objects of different types do not alias (i.e., point to the same memory location). However, in some cases, aliasing optimizations can lead to incorrect behavior, especially when working with low-level memory manipulations, such as in custom allocators or when dealing with unions. 'std::launder' is used to ensure that the compiler does not make any incorrect assumptions about type-based aliasing. By using 'std::launder', you can guarantee that the pointer obtained from a pointer cast points to a valid object of the new type, avoiding potential bugs caused by incorrect aliasing optimizations.",
+              "'std::launder' is a C++ feature that allows you to specify the alignment of a variable in memory. It is used to improve memory access performance.",
+              "'std::launder' is a C++ feature that allows you to specify the padding of a struct or class. It is used to optimize memory layout and reduce memory waste.",
+              "'std::launder' is a C++ feature that allows you to specify the size of a dynamic array. It is used to ensure that the correct amount of memory is allocated for the array.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What are user-defined literals in C++? Provide an example of how you can define and use a user-defined literal.",
+            options: [
+              'User-defined literals in C++ allow you to create custom literal suffixes to represent values of user-defined types. By overloading the \'operator""\' for your class, you can define how literals with specific suffixes are converted into instances of your class. For example, you can create a user-defined literal for representing distances in meters, as follows: class Distance { public: explicit Distance(double meters) : meters_(meters) {} double getMeters() const { return meters_; } }; Distance operator""_m(long double value) { return Distance(static_cast<double>(value)); } Distance operator""_m(unsigned long long value) { return Distance(static_cast<double>(value)); } int main() { Distance d1 = 10.5_m; // 10.5 meters Distance d2 = 2000_m; // 2000 meters return 0; }',
+              "User-defined literals in C++ are a technique used to define constant variables in a class. They allow you to specify that the value of the variable cannot be changed after initialization.",
+              "User-defined literals in C++ are a feature that allows you to define custom functions to be used as literal suffixes. They are used to perform specific operations on literal values.",
+              "User-defined literals in C++ are a feature that allows you to create custom literal prefixes to represent values in binary, octal, or hexadecimal format.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Describe the concept of SFINAE (Substitution Failure Is Not An Error) in C++. How is it used in template metaprogramming?",
+            options: [
+              "SFINAE (Substitution Failure Is Not An Error) is a principle in C++ template metaprogramming that allows a function or class template to fail substitution during the template instantiation without producing a compilation error. If a particular specialization of a template results in a substitution failure, the compiler will try to find an alternative specialization that can be used instead. This allows the compiler to select the best-matching template specialization based on the properties of the template arguments. SFINAE is often used in conjunction with 'std::enable_if' or 'decltype' to enable or disable template functions or classes based on the characteristics of the template arguments. By using SFINAE, you can create more flexible and versatile template code that adapts to different types and properties.",
+              "SFINAE (Substitution Failure Is Not An Error) is a feature in C++ that allows you to use static_cast or dynamic_cast to perform type conversions between related classes.",
+              "SFINAE (Substitution Failure Is Not An Error) is a C++ feature that allows you to declare multiple variables with the same name but different types. It is used to perform type overloading.",
+              "SFINAE (Substitution Failure Is Not An Error) is a C++ feature that allows you to create custom error messages in templates. It is used to provide more informative error messages for template-related issues.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Explain the 'std::variant' container in C++. How does it differ from 'std::any' and 'std::optional'?",
+            options: [
+              "'std::variant' is a C++17 feature that represents a type-safe union of types. It can hold values of different types, but only one value can be active at any given time. The 'std::variant' behaves like a discriminated union and provides a safe and type-checked way to handle multiple types. You can access the value stored in a 'std::variant' using 'std::visit' or 'std::get', and the compiler ensures that you handle all possible types correctly. On the other hand, 'std::any' is a container introduced in C++17 that can hold any type of value, similar to a type-erased container. Unlike 'std::variant', 'std::any' does not enforce type safety at compile time, and you need to use 'std::any_cast' to retrieve the stored value. Additionally, 'std::optional' is a container that holds an optional value of a specific type, representing the presence or absence of a value. Unlike 'std::variant', 'std::optional' can only hold values of a single type, but it provides a convenient way to handle optional values.",
+              "'std::variant' is a C++ feature used to create a variant of a function, allowing it to accept different types of arguments. It is used in function overloading.",
+              "'std::variant' is a C++ feature used to create an alias for a specific type. It is used to improve code readability.",
+              "'std::variant' is a C++ feature that allows you to specify the alignment of a variable in memory. It is used to improve memory access performance.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the role of 'std::string_view' in C++17? How does it differ from 'std::string'?",
+            options: [
+              "'std::string_view' is a non-owning view class introduced in C++17 that represents a view into a sequence of characters. It is designed to efficiently handle read-only access to strings without the need for memory allocation and deallocation. Unlike 'std::string', which owns its underlying buffer and can be modified, 'std::string_view' does not own the data it points to and is read-only. It provides a lightweight way to access and manipulate substrings or portions of strings without copying the data. Since 'std::string_view' is just a view, you need to ensure that the underlying data remains valid during the lifetime of the view. 'std::string_view' is particularly useful when you want to pass string data to functions without incurring the cost of copying and when you need substring operations without modifying the original string.",
+              "'std::string_view' is a C++ feature that provides additional operations for working with 'std::string' objects. It is used to concatenate, compare, and manipulate 'std::string' instances.",
+              "'std::string_view' is a C++ feature that allows you to define custom literal suffixes for 'std::string' objects. It is used to create user-defined string literals.",
+              "'std::string_view' is a C++ feature that provides additional memory management functionalities for 'std::string' objects. It is used to optimize memory allocation and deallocation.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the use of the 'std::transform' algorithm in C++? Provide an example of how it can be used with custom functions.",
+            options: [
+              "'std::transform' is a C++ algorithm that applies a given function to each element of a range and stores the result in another range. It is commonly used for element-wise transformations of containers, such as vectors or arrays. The 'std::transform' function takes four parameters: the beginning and ending iterators of the source range, the beginning iterator of the destination range, and the unary or binary function to be applied to the elements. For example, consider transforming a vector of integers to a vector of their squares:\ncpp\n#include <algorithm>\n#include <iostream>\n#include <vector>\n\nint square(int x) {\n return x * x;\n}\n\nint main() {\n std::vector<int> source = {1, 2, 3, 4, 5};\n std::vector<int> destination;\n destination.resize(source.size());\n std::transform(source.begin(), source.end(), destination.begin(), square);\n for (int value : destination) {\n std::cout << value << ' ';\n }\n return 0;\n}\n",
+              "'std::transform' is a C++ feature used to transform the access control of class members. It allows you to change the visibility of class members at runtime.",
+              "'std::transform' is a C++ feature used to define custom iterators for containers. It allows you to create custom ways to iterate over the elements of a container.",
+              "'std::transform' is a C++ feature that allows you to apply a specific function to a range of elements. It is used to perform bulk operations on containers.",
+            ],
+            correctAnswer: "0",
+          },
+        ],
       },
     },
     react: {
       "10 beginner react questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is React?",
+            options: [
+              "A programming language",
+              "A JavaScript library for building user interfaces",
+              "A database management system",
+              "A web browser",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is JSX in React?",
+            options: [
+              "JavaScript Expressions",
+              "JavaScript XML",
+              "JavaScript Syntax Extension",
+              "JavaScript Style Extension",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "How do you create a React component?",
+            options: [
+              "Using the 'this.create()' method",
+              "By directly calling the component's class name",
+              "Using the 'ReactDOM.create()' function",
+              "By using the 'React.createElement()' function",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How can you render a React component within another component?",
+            options: [
+              "Using the 'this.render()' method",
+              "By directly calling the component's class name",
+              "Using the 'ReactDOM.render()' function",
+              "By using the 'React.createElement()' function",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of 'props' in React?",
+            options: [
+              "To manage internal component state",
+              "To store configuration settings for Webpack",
+              "To pass data from a parent component to a child component",
+              "To define the structure of a Redux store",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "How do you handle user events in React?",
+            options: [
+              "By using the 'event' object directly in the component's render method",
+              "By attaching event listeners directly to the DOM elements",
+              "By using React's synthetic event system and providing event handlers",
+              "By using the 'onClick' prop for the component",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the role of 'state' in React components?",
+            options: [
+              "To manage internal component state",
+              "To handle routing in a single-page application",
+              "To create reusable components",
+              "To define the structure of a Redux store",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the significance of the 'key' attribute in React lists?",
+            options: [
+              "To specify a unique identifier for a component",
+              "To create a reference to the DOM element",
+              "To apply special styling to list items",
+              "To enable communication between sibling components",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What are React hooks, and how do they differ from class components?",
+            options: [
+              "Hooks are functions that enable communication between different components",
+              "Hooks are objects that manage routing in a React application",
+              "Hooks are a way to add HTML comments in JSX code",
+              "Hooks are functions that add stateful logic to functional components",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "How do you conditionally render content in React?",
+            options: [
+              "By using the 'if-else' statement within the 'render' method",
+              "By using the 'switch' statement within the 'render' method",
+              "By using the 'React.createElement()' function with conditional expressions",
+              "By using JavaScript's ternary operator within the 'render' method",
+            ],
+            correctAnswer: "3",
+          },
+        ],
       },
       "15 beginner react questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is the purpose of propTypes in React?",
+            options: [
+              "To define the data types of a component's state",
+              "To create conditional components",
+              "To validate the data types of props received by a component",
+              "To define the structure of a component's virtual DOM",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the virtual DOM in React?",
+            options: [
+              "A representation of the actual DOM",
+              "A component hierarchy",
+              "A way to manage CSS styles",
+              "A file that contains component definitions",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "How do you conditionally render content in React?",
+            options: [
+              "By using the 'if/else' statement in the JSX",
+              "By using the 'render' method of components",
+              "By using the 'display' CSS property",
+              "By using ternary operators or '&&' in JSX",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "How do you handle events in React?",
+            options: [
+              "By using 'eventListeners'",
+              "By using 'this.on(event, handler)'",
+              "By defining event handling methods like 'handleClick()'",
+              "By using 'event.preventDefault()'",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is React Router used for?",
+            options: [
+              "To manage the state in React applications",
+              "To create routes for server-side rendering",
+              "To create a navigation system in React applications",
+              "To interact with the server through AJAX requests",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How can you prevent a component from rendering in React?",
+            options: [
+              "By setting the 'hidden' attribute",
+              "By using 'display: none' in CSS",
+              "By returning 'null' from the component's render method",
+              "By using the 'disabled' prop",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of JSX in React?",
+            options: [
+              "A templating engine",
+              "A styling language",
+              "A syntax extension for JavaScript to write HTML-like code",
+              "A data storage format",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How do you pass data from a parent component to a child component in React?",
+            options: [
+              "By using props",
+              "By using state",
+              "By using refs",
+              "By using setState",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the significance of React Fragments?",
+            options: [
+              "To group multiple components together",
+              "To create a reusable component",
+              "To define the component's lifecycle",
+              "To wrap multiple elements without adding an extra node to the DOM",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "What is the purpose of the 'key' prop in React lists?",
+            options: [
+              "To uniquely identify elements in the list",
+              "To apply styles to the list items",
+              "To create a new array from the list",
+              "To map the list items to a new structure",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What function is used to change the state in React?",
+            options: [
+              "this.setState()",
+              "this.changeState()",
+              "this.state()",
+              "setState()",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is React?",
+            options: [
+              "A markup language for creating web pages",
+              "A back-end programming language",
+              "A front-end JavaScript library for building user interfaces",
+              "A database management system",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "How do you create a new React app using create-react-app?",
+            options: [
+              "npm create-react-app my-app",
+              "npm init react-app my-app",
+              "create-react-app my-app",
+              "react new my-app",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What lifecycle method is used to fetch data in React?",
+            options: [
+              "componentDidUpdate",
+              "componentWillUnmount",
+              "componentDidMount",
+              "componentWillUpdate",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of the 'useState' hook in React?",
+            options: [
+              "To use external libraries in React",
+              "To manage the state of functional components",
+              "To define the structure of the component's state",
+              "To create custom hooks",
+            ],
+            correctAnswer: "2",
+          },
+        ],
       },
       "20 beginner react questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is React?",
+            options: [
+              "A markup language for creating web pages",
+              "A back-end programming language",
+              "A front-end JavaScript library for building user interfaces",
+              "A database management system",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is JSX in React?",
+            options: [
+              "A templating engine",
+              "A styling language",
+              "A syntax extension for JavaScript to write HTML-like code",
+              "A data storage format",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How do you create a new React app using create-react-app?",
+            options: [
+              "npm create-react-app my-app",
+              "npm init react-app my-app",
+              "create-react-app my-app",
+              "react new my-app",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the virtual DOM in React?",
+            options: [
+              "A representation of the actual DOM",
+              "A component hierarchy",
+              "A way to manage CSS styles",
+              "A file that contains component definitions",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What lifecycle method is used to fetch data in React?",
+            options: [
+              "componentDidUpdate",
+              "componentWillUnmount",
+              "componentDidMount",
+              "componentWillUpdate",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What function is used to change the state in React?",
+            options: [
+              "this.setState()",
+              "this.changeState()",
+              "this.state()",
+              "setState()",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the purpose of the 'key' prop in React lists?",
+            options: [
+              "To uniquely identify elements in the list",
+              "To apply styles to the list items",
+              "To create a new array from the list",
+              "To map the list items to a new structure",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "How do you pass data from a parent component to a child component in React?",
+            options: [
+              "By using props",
+              "By using state",
+              "By using refs",
+              "By using setState",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the significance of React Fragments?",
+            options: [
+              "To group multiple components together",
+              "To create a reusable component",
+              "To define the component's lifecycle",
+              "To wrap multiple elements without adding an extra node to the DOM",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "How can you prevent a component from rendering in React?",
+            options: [
+              "By setting the 'hidden' attribute",
+              "By using 'display: none' in CSS",
+              "By returning 'null' from the component's render method",
+              "By using the 'disabled' prop",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of propTypes in React?",
+            options: [
+              "To define the data types of a component's state",
+              "To create conditional components",
+              "To validate the data types of props received by a component",
+              "To define the structure of a component's virtual DOM",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "How do you handle events in React?",
+            options: [
+              "By using 'eventListeners'",
+              "By using 'this.on(event, handler)'",
+              "By defining event handling methods like 'handleClick()'",
+              "By using 'event.preventDefault()'",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of the 'useState' hook in React?",
+            options: [
+              "To use external libraries in React",
+              "To manage the state of functional components",
+              "To define the structure of the component's state",
+              "To create custom hooks",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "How do you conditionally render content in React?",
+            options: [
+              "By using the 'if/else' statement in the JSX",
+              "By using the 'render' method of components",
+              "By using the 'display' CSS property",
+              "By using ternary operators or '&&' in JSX",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "What is React Router used for?",
+            options: [
+              "To manage the state in React applications",
+              "To create routes for server-side rendering",
+              "To create a navigation system in React applications",
+              "To interact with the server through AJAX requests",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the role of the 'render' method in a React component?",
+            options: [
+              "To fetch data from an API",
+              "To render the component's JSX content",
+              "To update the component's state",
+              "To define the component's lifecycle methods",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "How do you perform component cleanup in React?",
+            options: [
+              "By using the 'cleanup()' method",
+              "By setting the component's state to null",
+              "By using the 'componentWillUnmount()' method",
+              "By using the 'useEffect()' hook with a cleanup function",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "What are React refs used for?",
+            options: [
+              "To store references to DOM elements or React components",
+              "To define the structure of a React component",
+              "To add styling to React components",
+              "To create custom React hooks",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "How do you make an HTTP request in React?",
+            options: [
+              "By using the 'fetch()' method",
+              "By using the 'axios' library",
+              "By using the 'http()' function",
+              "By using the 'AJAX()' method",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of the 'useEffect' hook in React?",
+            options: [
+              "To use external JavaScript libraries",
+              "To manage state in functional components",
+              "To perform side effects in functional components",
+              "To create custom hooks",
+            ],
+            correctAnswer: "3",
+          },
+        ],
       },
       "10 intermed react questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What are React hooks, and how do they differ from class components?",
+            options: [
+              "React hooks are used for creating custom React components.",
+              "React hooks are functions that let you use state and other React features in functional components.",
+              "React hooks are a new way of defining class components in React.",
+              "React hooks are used for adding animations to React components.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the significance of the 'useReducer' hook in React?",
+            options: [
+              "It is used to manage component state with complex logic.",
+              "It allows you to fetch data from APIs in React.",
+              "It is used for handling form validation in React.",
+              "It enables the use of Redux in React applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the differences between React function components and class components.",
+            options: [
+              "Function components have better performance than class components.",
+              "Class components support lifecycle methods, while function components do not.",
+              "Function components use hooks, while class components use Redux.",
+              "Class components are only used for legacy React applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is React context, and how is it used?",
+            options: [
+              "React context is a feature that enables passing data through the component tree without having to pass props manually at every level.",
+              "React context is a global state management system for React applications.",
+              "React context is a way to define the structure of the component's state.",
+              "React context is a new way to define component lifecycle methods.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What are React portals, and how are they used?",
+            options: [
+              "React portals are used for creating modals and popovers in React applications.",
+              "React portals are used to create nested components.",
+              "React portals are used to manage state in complex React applications.",
+              "React portals are used for integrating external JavaScript libraries with React components.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "How does React handle form input elements, and what are controlled components?",
+            options: [
+              "React automatically manages form inputs using native DOM events.",
+              "React uses the 'onInput' event for form inputs.",
+              "Controlled components in React are form elements that are controlled by React state, allowing React to manage their values.",
+              "React uses the 'onChange' event for form inputs.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of code splitting in React and why it is beneficial.",
+            options: [
+              "Code splitting is a technique to split the CSS code from the JavaScript code in React applications.",
+              "Code splitting allows React components to be split into multiple smaller chunks, loaded on-demand, which reduces initial loading time.",
+              "Code splitting is a way to split JavaScript code into multiple files for better organization.",
+              "Code splitting allows React components to be split into multiple smaller chunks, preloaded with the main bundle to improve performance.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is server-side rendering (SSR) in React, and what are its advantages?",
+            options: [
+              "SSR is a way to render React components on the server side before sending them to the client, improving SEO and initial load time.",
+              "SSR is a technique to execute React components on the server to handle server-side logic.",
+              "SSR allows React components to be rendered without using the virtual DOM.",
+              "SSR is a way to execute React components on both the server and the client for faster rendering.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "How do you optimize performance in React applications?",
+            options: [
+              "By using third-party libraries for state management.",
+              "By using pure components and memoization techniques.",
+              "By increasing the size of the virtual DOM.",
+              "By using anonymous functions for event handling in JSX.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the purpose of the 'useMemo' and 'useCallback' hooks in React.",
+            options: [
+              "Both hooks are used to perform asynchronous operations in React components.",
+              "The 'useMemo' hook is used to memoize expensive calculations, and 'useCallback' is used to memoize event handlers to prevent unnecessary re-renders.",
+              "The 'useMemo' hook is used for form validation, and 'useCallback' is used for handling animations.",
+              "The 'useMemo' hook is used to create custom hooks, and 'useCallback' is used to define component lifecycle methods.",
+            ],
+            correctAnswer: "2",
+          },
+        ],
       },
       "15 intermed react questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What are React hooks, and how do they differ from class components?",
+            options: [
+              "React hooks are used for creating custom React components.",
+              "React hooks are functions that let you use state and other React features in functional components.",
+              "React hooks are a new way of defining class components in React.",
+              "React hooks are used for adding animations to React components.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the significance of the 'useReducer' hook in React?",
+            options: [
+              "It is used to manage component state with complex logic.",
+              "It allows you to fetch data from APIs in React.",
+              "It is used for handling form validation in React.",
+              "It enables the use of Redux in React applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the differences between React function components and class components.",
+            options: [
+              "Function components have better performance than class components.",
+              "Class components support lifecycle methods, while function components do not.",
+              "Function components use hooks, while class components use Redux.",
+              "Class components are only used for legacy React applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is React context, and how is it used?",
+            options: [
+              "React context is a feature that enables passing data through the component tree without having to pass props manually at every level.",
+              "React context is a global state management system for React applications.",
+              "React context is a way to define the structure of the component's state.",
+              "React context is a new way to define component lifecycle methods.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What are React portals, and how are they used?",
+            options: [
+              "React portals are used for creating modals and popovers in React applications.",
+              "React portals are used to create nested components.",
+              "React portals are used to manage state in complex React applications.",
+              "React portals are used for integrating external JavaScript libraries with React components.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "How does React handle form input elements, and what are controlled components?",
+            options: [
+              "React automatically manages form inputs using native DOM events.",
+              "React uses the 'onInput' event for form inputs.",
+              "Controlled components in React are form elements that are controlled by React state, allowing React to manage their values.",
+              "React uses the 'onChange' event for form inputs.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of code splitting in React and why it is beneficial.",
+            options: [
+              "Code splitting is a technique to split the CSS code from the JavaScript code in React applications.",
+              "Code splitting allows React components to be split into multiple smaller chunks, loaded on-demand, which reduces initial loading time.",
+              "Code splitting is a way to split JavaScript code into multiple files for better organization.",
+              "Code splitting allows React components to be split into multiple smaller chunks, preloaded with the main bundle to improve performance.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is server-side rendering (SSR) in React, and what are its advantages?",
+            options: [
+              "SSR is a way to render React components on the server side before sending them to the client, improving SEO and initial load time.",
+              "SSR is a technique to execute React components on the server to handle server-side logic.",
+              "SSR allows React components to be rendered without using the virtual DOM.",
+              "SSR is a way to execute React components on both the server and the client for faster rendering.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "How do you optimize performance in React applications?",
+            options: [
+              "By using third-party libraries for state management.",
+              "By using pure components and memoization techniques.",
+              "By increasing the size of the virtual DOM.",
+              "By using anonymous functions for event handling in JSX.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the purpose of the 'useMemo' and 'useCallback' hooks in React.",
+            options: [
+              "Both hooks are used to perform asynchronous operations in React components.",
+              "The 'useMemo' hook is used to memoize expensive calculations, and 'useCallback' is used to memoize event handlers to prevent unnecessary re-renders.",
+              "The 'useMemo' hook is used for form validation, and 'useCallback' is used for handling animations.",
+              "The 'useMemo' hook is used to create custom hooks, and 'useCallback' is used to define component lifecycle methods.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of the 'useEffect' hook in React?",
+            options: [
+              "To use external JavaScript libraries",
+              "To manage state in functional components",
+              "To perform side effects in functional components",
+              "To create custom hooks",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the role of React Router in a single-page application?",
+            options: [
+              "To handle AJAX requests in React components",
+              "To manage state and props in React components",
+              "To create navigation links in React components",
+              "To handle client-side routing and enable navigation between different views in a single-page application",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Higher-Order Components (HOCs) in React.",
+            options: [
+              "HOCs are components that render other components",
+              "HOCs are used to implement Redux in React applications",
+              "HOCs are components that encapsulate other components and enhance their behavior",
+              "HOCs are components that handle form validation in React applications",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What are React Error Boundaries, and how do they help handle errors in React applications?",
+            options: [
+              "React Error Boundaries are components that handle AJAX errors in React applications",
+              "React Error Boundaries are components that wrap other components and catch errors that occur in their child components, preventing the entire application from crashing",
+              "React Error Boundaries are components that handle Redux errors in React applications",
+              "React Error Boundaries are components that handle form validation errors in React applications",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "How can you optimize the performance of React applications for mobile devices?",
+            options: [
+              "By using larger images and media files",
+              "By avoiding the use of responsive design",
+              "By using React Native instead of React for mobile development",
+              "By implementing lazy loading and optimizing image sizes",
+            ],
+            correctAnswer: "4",
+          },
+        ],
       },
       "20 intermed react questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What are React hooks, and how do they differ from class components?",
+            options: [
+              "React hooks are used for creating custom React components.",
+              "React hooks are functions that let you use state and other React features in functional components.",
+              "React hooks are a new way of defining class components in React.",
+              "React hooks are used for adding animations to React components.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the significance of the 'useReducer' hook in React?",
+            options: [
+              "It is used to manage component state with complex logic.",
+              "It allows you to fetch data from APIs in React.",
+              "It is used for handling form validation in React.",
+              "It enables the use of Redux in React applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the differences between React function components and class components.",
+            options: [
+              "Function components have better performance than class components.",
+              "Class components support lifecycle methods, while function components do not.",
+              "Function components use hooks, while class components use Redux.",
+              "Class components are only used for legacy React applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is React context, and how is it used?",
+            options: [
+              "React context is a feature that enables passing data through the component tree without having to pass props manually at every level.",
+              "React context is a global state management system for React applications.",
+              "React context is a way to define the structure of the component's state.",
+              "React context is a new way to define component lifecycle methods.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What are React portals, and how are they used?",
+            options: [
+              "React portals are used for creating modals and popovers in React applications.",
+              "React portals are used to create nested components.",
+              "React portals are used to manage state in complex React applications.",
+              "React portals are used for integrating external JavaScript libraries with React components.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "How does React handle form input elements, and what are controlled components?",
+            options: [
+              "React automatically manages form inputs using native DOM events.",
+              "React uses the 'onInput' event for form inputs.",
+              "Controlled components in React are form elements that are controlled by React state, allowing React to manage their values.",
+              "React uses the 'onChange' event for form inputs.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of code splitting in React and why it is beneficial.",
+            options: [
+              "Code splitting is a technique to split the CSS code from the JavaScript code in React applications.",
+              "Code splitting allows React components to be split into multiple smaller chunks, loaded on-demand, which reduces initial loading time.",
+              "Code splitting is a way to split JavaScript code into multiple files for better organization.",
+              "Code splitting allows React components to be split into multiple smaller chunks, preloaded with the main bundle to improve performance.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is server-side rendering (SSR) in React, and what are its advantages?",
+            options: [
+              "SSR is a way to render React components on the server side before sending them to the client, improving SEO and initial load time.",
+              "SSR is a technique to execute React components on the server to handle server-side logic.",
+              "SSR allows React components to be rendered without using the virtual DOM.",
+              "SSR is a way to execute React components on both the server and the client for faster rendering.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "How do you optimize performance in React applications?",
+            options: [
+              "By using third-party libraries for state management.",
+              "By using pure components and memoization techniques.",
+              "By increasing the size of the virtual DOM.",
+              "By using anonymous functions for event handling in JSX.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the purpose of the 'useMemo' and 'useCallback' hooks in React.",
+            options: [
+              "Both hooks are used to perform asynchronous operations in React components.",
+              "The 'useMemo' hook is used to memoize expensive calculations, and 'useCallback' is used to memoize event handlers to prevent unnecessary re-renders.",
+              "The 'useMemo' hook is used for form validation, and 'useCallback' is used for handling animations.",
+              "The 'useMemo' hook is used to create custom hooks, and 'useCallback' is used to define component lifecycle methods.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of the 'useEffect' hook in React?",
+            options: [
+              "To use external JavaScript libraries",
+              "To manage state in functional components",
+              "To perform side effects in functional components",
+              "To create custom hooks",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the role of React Router in a single-page application?",
+            options: [
+              "To handle AJAX requests in React components",
+              "To manage state and props in React components",
+              "To create navigation links in React components",
+              "To handle client-side routing and enable navigation between different views in a single-page application",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Higher-Order Components (HOCs) in React.",
+            options: [
+              "HOCs are components that render other components",
+              "HOCs are used to implement Redux in React applications",
+              "HOCs are components that encapsulate other components and enhance their behavior",
+              "HOCs are components that handle form validation in React applications",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What are React Error Boundaries, and how do they help handle errors in React applications?",
+            options: [
+              "React Error Boundaries are components that handle AJAX errors in React applications",
+              "React Error Boundaries are components that wrap other components and catch errors that occur in their child components, preventing the entire application from crashing",
+              "React Error Boundaries are components that handle Redux errors in React applications",
+              "React Error Boundaries are components that handle form validation errors in React applications",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "How can you optimize the performance of React applications for mobile devices?",
+            options: [
+              "By using larger images and media files",
+              "By avoiding the use of responsive design",
+              "By using React Native instead of React for mobile development",
+              "By implementing lazy loading and optimizing image sizes",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is React.memo() and how does it optimize functional components?",
+            options: [
+              "React.memo() is a method for creating custom React components.",
+              "React.memo() is a Higher-Order Component used to handle errors in functional components.",
+              "React.memo() is a method that memoizes functional components, preventing unnecessary re-renders when the component's props don't change.",
+              "React.memo() is a method used to implement React context in functional components.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What are the benefits of using React fragments?",
+            options: [
+              "React fragments allow for more flexibility in defining component state.",
+              "React fragments improve performance by reducing the number of DOM elements.",
+              "React fragments provide a way to handle AJAX requests in React components.",
+              "React fragments are used to encapsulate React components.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the concept of lazy loading in React and how it can improve performance.",
+            options: [
+              "Lazy loading is a technique to load external JavaScript libraries on demand in React applications.",
+              "Lazy loading allows React components to load only when they are needed, reducing the initial load time and improving performance.",
+              "Lazy loading is a method to load images in React components asynchronously.",
+              "Lazy loading is a way to handle errors in React components.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the role of the 'useContext' hook in React?",
+            options: [
+              "The 'useContext' hook is used for handling form validation in React components.",
+              "The 'useContext' hook is used to fetch data from APIs in React components.",
+              "The 'useContext' hook is used to manage global state in React applications through the React context API.",
+              "The 'useContext' hook is used to create custom hooks in React components.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What are React refs, and in what scenarios are they commonly used?",
+            options: [
+              "React refs are used for managing component state in React applications.",
+              "React refs are a way to define component lifecycle methods in functional components.",
+              "React refs are used to store references to DOM elements or React components, especially when imperative operations are needed.",
+              "React refs are used to handle navigation in React applications.",
+            ],
+            correctAnswer: "3",
+          },
+        ],
       },
       "10 advanced react questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain how React Fiber reconciler improves performance in React applications.",
+            options: [
+              "React Fiber uses a more efficient algorithm for rendering virtual DOM to real DOM.",
+              "React Fiber replaces class components with functional components for better performance.",
+              "React Fiber optimizes Redux state management in React applications.",
+              "React Fiber improves form handling in React applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are React custom hooks, and how can they be used to share logic between components?",
+            options: [
+              "React custom hooks are a way to create custom lifecycle methods in class components.",
+              "React custom hooks are used to handle errors in React components.",
+              "React custom hooks are functions that allow the sharing of stateful logic between components without using higher-order components or render props.",
+              "React custom hooks are used to integrate external JavaScript libraries with React components.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of React Suspense and how it can be used for lazy loading and data fetching.",
+            options: [
+              "React Suspense is a way to handle AJAX requests in React applications.",
+              "React Suspense is a new way to define component lifecycle methods in React.",
+              "React Suspense is used for error handling in React applications.",
+              "React Suspense is a feature that allows components to wait for something, like data fetching or lazy loading, before rendering.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the role of React.memo() and React.PureComponent, and when should you use them?",
+            options: [
+              "React.memo() is used to create memoized components, and React.PureComponent is used to create pure components. They should be used when you want to optimize the performance of functional and class components, respectively.",
+              "React.memo() is used to create pure components, and React.PureComponent is used to create memoized components. They should be used when you want to optimize the performance of functional and class components, respectively.",
+              "React.memo() and React.PureComponent are used interchangeably for optimizing the performance of functional components.",
+              "React.memo() and React.PureComponent are used to handle errors in functional and class components, respectively.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is server-side rendering (SSR) in React, and what are its limitations?",
+            options: [
+              "SSR is a technique to render React components on the server side before sending them to the client, improving SEO and initial load time. Its limitations include complex setup, server overhead, and potential inconsistency with client-side rendering.",
+              "SSR is a method to execute React components on the server to handle server-side logic. Its limitations include limited support for client-side interactions and slower initial load times.",
+              "SSR is a way to render React components without using the virtual DOM. Its limitations include the inability to handle dynamic content and server resource limitations.",
+              "SSR is a way to execute React components on both the server and the client for faster rendering. Its limitations include the complexity of handling client-side routing and maintaining consistent state.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the purpose of React forwardRef and how it can be used to access the DOM nodes of child components.",
+            options: [
+              "React forwardRef is used to pass data from parent components to child components without the need for explicit prop passing. It allows accessing the DOM nodes of child components through the use of refs.",
+              "React forwardRef is used for handling form validation in React components. It allows accessing the DOM nodes of form elements.",
+              "React forwardRef is used to manage the state of class components in React applications. It allows accessing the DOM nodes of class components.",
+              "React forwardRef is a method to handle AJAX requests in React components.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are React render props, and how can they be used to share logic between components?",
+            options: [
+              "React render props are used to create custom lifecycle methods in class components.",
+              "React render props are functions that allow the sharing of stateful logic between components by passing a function as a prop to a child component.",
+              "React render props are a way to handle errors in React components.",
+              "React render props are used to integrate external JavaScript libraries with React components.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the concept of React concurrent mode and how it can improve the user experience.",
+            options: [
+              "React concurrent mode is a new way to define component lifecycle methods in React.",
+              "React concurrent mode allows components to run in parallel, improving the user experience by ensuring smooth interactions and preventing blocking of the main thread.",
+              "React concurrent mode is used for error handling in React applications.",
+              "React concurrent mode is a feature that allows components to wait for something, like data fetching or lazy loading, before rendering.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are the benefits of using React's Context API for state management, and how does it compare to other state management solutions like Redux?",
+            options: [
+              "React's Context API provides a simple way to manage global state without the need for external libraries like Redux. However, Redux is still preferred for more complex state management scenarios and larger applications.",
+              "React's Context API is more performant than Redux for state management. Redux is preferred only for smaller applications.",
+              "React's Context API provides better compatibility with third-party libraries compared to Redux. Redux is preferred only for managing local component state.",
+              "React's Context API and Redux are interchangeable for state management, and developers can choose either based on personal preference.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of React portals and provide real-world use cases where they are beneficial.",
+            options: [
+              "React portals are a way to pass data from parent components to child components without the need for explicit prop passing. They are beneficial for sharing state between deeply nested components.",
+              "React portals are used to handle AJAX requests in React components.",
+              "React portals are a technique to manage state in complex React applications.",
+              "React portals are used for rendering child components outside the DOM hierarchy of the parent component. They are beneficial for creating modals, tooltips, and other UI elements that need to be rendered outside the main DOM structure.",
+            ],
+            correctAnswer: "4",
+          },
+        ],
       },
       "15 advanced react questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain how React Fiber reconciler improves performance in React applications.",
+            options: [
+              "React Fiber uses a more efficient algorithm for rendering virtual DOM to real DOM.",
+              "React Fiber replaces class components with functional components for better performance.",
+              "React Fiber optimizes Redux state management in React applications.",
+              "React Fiber improves form handling in React applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are React custom hooks, and how can they be used to share logic between components?",
+            options: [
+              "React custom hooks are a way to create custom lifecycle methods in class components.",
+              "React custom hooks are used to handle errors in React components.",
+              "React custom hooks are functions that allow the sharing of stateful logic between components without using higher-order components or render props.",
+              "React custom hooks are used to integrate external JavaScript libraries with React components.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of React Suspense and how it can be used for lazy loading and data fetching.",
+            options: [
+              "React Suspense is a way to handle AJAX requests in React applications.",
+              "React Suspense is a new way to define component lifecycle methods in React.",
+              "React Suspense is used for error handling in React applications.",
+              "React Suspense is a feature that allows components to wait for something, like data fetching or lazy loading, before rendering.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the role of React.memo() and React.PureComponent, and when should you use them?",
+            options: [
+              "React.memo() is used to create memoized components, and React.PureComponent is used to create pure components. They should be used when you want to optimize the performance of functional and class components, respectively.",
+              "React.memo() is used to create pure components, and React.PureComponent is used to create memoized components. They should be used when you want to optimize the performance of functional and class components, respectively.",
+              "React.memo() and React.PureComponent are used interchangeably for optimizing the performance of functional components.",
+              "React.memo() and React.PureComponent are used to handle errors in functional and class components, respectively.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is server-side rendering (SSR) in React, and what are its limitations?",
+            options: [
+              "SSR is a technique to render React components on the server side before sending them to the client, improving SEO and initial load time. Its limitations include complex setup, server overhead, and potential inconsistency with client-side rendering.",
+              "SSR is a method to execute React components on the server to handle server-side logic. Its limitations include limited support for client-side interactions and slower initial load times.",
+              "SSR is a way to render React components without using the virtual DOM. Its limitations include the inability to handle dynamic content and server resource limitations.",
+              "SSR is a way to execute React components on both the server and the client for faster rendering. Its limitations include the complexity of handling client-side routing and maintaining consistent state.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the purpose of React forwardRef and how it can be used to access the DOM nodes of child components.",
+            options: [
+              "React forwardRef is used to pass data from parent components to child components without the need for explicit prop passing. It allows accessing the DOM nodes of child components through the use of refs.",
+              "React forwardRef is used for handling form validation in React components. It allows accessing the DOM nodes of form elements.",
+              "React forwardRef is used to manage the state of class components in React applications. It allows accessing the DOM nodes of class components.",
+              "React forwardRef is a method to handle AJAX requests in React components.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are React render props, and how can they be used to share logic between components?",
+            options: [
+              "React render props are used to create custom lifecycle methods in class components.",
+              "React render props are functions that allow the sharing of stateful logic between components by passing a function as a prop to a child component.",
+              "React render props are a way to handle errors in React components.",
+              "React render props are used to integrate external JavaScript libraries with React components.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the concept of React concurrent mode and how it can improve the user experience.",
+            options: [
+              "React concurrent mode is a new way to define component lifecycle methods in React.",
+              "React concurrent mode allows components to run in parallel, improving the user experience by ensuring smooth interactions and preventing blocking of the main thread.",
+              "React concurrent mode is used for error handling in React applications.",
+              "React concurrent mode is a feature that allows components to wait for something, like data fetching or lazy loading, before rendering.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are the benefits of using React's Context API for state management, and how does it compare to other state management solutions like Redux?",
+            options: [
+              "React's Context API provides a simple way to manage global state without the need for external libraries like Redux. However, Redux is still preferred for more complex state management scenarios and larger applications.",
+              "React's Context API is more performant than Redux for state management. Redux is preferred only for smaller applications.",
+              "React's Context API provides better compatibility with third-party libraries compared to Redux. Redux is preferred only for managing local component state.",
+              "React's Context API and Redux are interchangeable for state management, and developers can choose either based on personal preference.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of React portals and provide real-world use cases where they are beneficial.",
+            options: [
+              "React portals are a way to pass data from parent components to child components without the need for explicit prop passing. They are beneficial for sharing state between deeply nested components.",
+              "React portals are used to handle AJAX requests in React components.",
+              "React portals are a technique to manage state in complex React applications.",
+              "React portals are used for rendering child components outside the DOM hierarchy of the parent component. They are beneficial for creating modals, tooltips, and other UI elements that need to be rendered outside the main DOM structure.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the use of React's Error Boundaries and how they can prevent application crashes.",
+            options: [
+              "React's Error Boundaries are used to handle AJAX errors in React applications.",
+              "React's Error Boundaries are components that wrap other components to catch JavaScript errors that occur in their child components, preventing the entire application from crashing.",
+              "React's Error Boundaries are used to implement client-side routing in React applications.",
+              "React's Error Boundaries are used to manage the state of class components in React applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are React Hooks Rules of Use and how do they help in writing cleaner and more maintainable code?",
+            options: [
+              "React Hooks Rules of Use are a set of guidelines that suggest using hooks for all state management and avoiding class components altogether.",
+              "React Hooks Rules of Use are a set of rules to follow while creating custom hooks to ensure they don't have side effects.",
+              "React Hooks Rules of Use recommend using hooks only in functional components and not using them inside loops or conditions.",
+              "React Hooks Rules of Use are a set of rules for using hooks in React applications that help to write cleaner and more maintainable code.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of React event handling and synthetic events.",
+            options: [
+              "React event handling is a technique to handle server-side logic in React applications.",
+              "Synthetic events are native browser events that are wrapped by React to handle user interactions in a cross-browser compatible way.",
+              "React event handling is a way to handle asynchronous operations in React components.",
+              "Synthetic events are custom events created by React to manage state in functional components.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the role of React contextType and how is it used to consume context in class components?",
+            options: [
+              "React contextType is a method to create context in functional components.",
+              "React contextType is a method to handle errors in React applications.",
+              "React contextType is used to consume context in class components by specifying the context object the component should subscribe to.",
+              "React contextType is used to create global state in class components.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain how React memoization works and how it can optimize functional components.",
+            options: [
+              "React memoization is a technique to handle AJAX requests in functional components.",
+              "React memoization is used to handle errors in React components.",
+              "React memoization is a caching mechanism used to store the results of expensive calculations in functional components, preventing unnecessary re-computations and re-renders.",
+              "React memoization is used to manage state in functional components.",
+            ],
+            correctAnswer: "3",
+          },
+        ],
       },
       "20 advanced react questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain how React Fiber reconciler improves performance in React applications.",
+            options: [
+              "React Fiber uses a more efficient algorithm for rendering virtual DOM to real DOM.",
+              "React Fiber replaces class components with functional components for better performance.",
+              "React Fiber optimizes Redux state management in React applications.",
+              "React Fiber improves form handling in React applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are React custom hooks, and how can they be used to share logic between components?",
+            options: [
+              "React custom hooks are a way to create custom lifecycle methods in class components.",
+              "React custom hooks are used to handle errors in React components.",
+              "React custom hooks are functions that allow the sharing of stateful logic between components without using higher-order components or render props.",
+              "React custom hooks are used to integrate external JavaScript libraries with React components.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of React Suspense and how it can be used for lazy loading and data fetching.",
+            options: [
+              "React Suspense is a way to handle AJAX requests in React applications.",
+              "React Suspense is a new way to define component lifecycle methods in React.",
+              "React Suspense is used for error handling in React applications.",
+              "React Suspense is a feature that allows components to wait for something, like data fetching or lazy loading, before rendering.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the role of React.memo() and React.PureComponent, and when should you use them?",
+            options: [
+              "React.memo() is used to create memoized components, and React.PureComponent is used to create pure components. They should be used when you want to optimize the performance of functional and class components, respectively.",
+              "React.memo() is used to create pure components, and React.PureComponent is used to create memoized components. They should be used when you want to optimize the performance of functional and class components, respectively.",
+              "React.memo() and React.PureComponent are used interchangeably for optimizing the performance of functional components.",
+              "React.memo() and React.PureComponent are used to handle errors in functional and class components, respectively.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is server-side rendering (SSR) in React, and what are its limitations?",
+            options: [
+              "SSR is a technique to render React components on the server side before sending them to the client, improving SEO and initial load time. Its limitations include complex setup, server overhead, and potential inconsistency with client-side rendering.",
+              "SSR is a method to execute React components on the server to handle server-side logic. Its limitations include limited support for client-side interactions and slower initial load times.",
+              "SSR is a way to render React components without using the virtual DOM. Its limitations include the inability to handle dynamic content and server resource limitations.",
+              "SSR is a way to execute React components on both the server and the client for faster rendering. Its limitations include the complexity of handling client-side routing and maintaining consistent state.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the purpose of React forwardRef and how it can be used to access the DOM nodes of child components.",
+            options: [
+              "React forwardRef is used to pass data from parent components to child components without the need for explicit prop passing. It allows accessing the DOM nodes of child components through the use of refs.",
+              "React forwardRef is used for handling form validation in React components. It allows accessing the DOM nodes of form elements.",
+              "React forwardRef is used to manage the state of class components in React applications. It allows accessing the DOM nodes of class components.",
+              "React forwardRef is a method to handle AJAX requests in React components.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are React render props, and how can they be used to share logic between components?",
+            options: [
+              "React render props are used to create custom lifecycle methods in class components.",
+              "React render props are functions that allow the sharing of stateful logic between components by passing a function as a prop to a child component.",
+              "React render props are a way to handle errors in React components.",
+              "React render props are used to integrate external JavaScript libraries with React components.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the concept of React concurrent mode and how it can improve the user experience.",
+            options: [
+              "React concurrent mode is a new way to define component lifecycle methods in React.",
+              "React concurrent mode allows components to run in parallel, improving the user experience by ensuring smooth interactions and preventing blocking of the main thread.",
+              "React concurrent mode is used for error handling in React applications.",
+              "React concurrent mode is a feature that allows components to wait for something, like data fetching or lazy loading, before rendering.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are the benefits of using React's Context API for state management, and how does it compare to other state management solutions like Redux?",
+            options: [
+              "React's Context API provides a simple way to manage global state without the need for external libraries like Redux. However, Redux is still preferred for more complex state management scenarios and larger applications.",
+              "React's Context API is more performant than Redux for state management. Redux is preferred only for smaller applications.",
+              "React's Context API provides better compatibility with third-party libraries compared to Redux. Redux is preferred only for managing local component state.",
+              "React's Context API and Redux are interchangeable for state management, and developers can choose either based on personal preference.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of React portals and provide real-world use cases where they are beneficial.",
+            options: [
+              "React portals are a way to pass data from parent components to child components without the need for explicit prop passing. They are beneficial for sharing state between deeply nested components.",
+              "React portals are used to handle AJAX requests in React components.",
+              "React portals are a technique to manage state in complex React applications.",
+              "React portals are used for rendering child components outside the DOM hierarchy of the parent component. They are beneficial for creating modals, tooltips, and other UI elements that need to be rendered outside the main DOM structure.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the use of React's Error Boundaries and how they can prevent application crashes.",
+            options: [
+              "React's Error Boundaries are used to handle AJAX errors in React applications.",
+              "React's Error Boundaries are components that wrap other components to catch JavaScript errors that occur in their child components, preventing the entire application from crashing.",
+              "React's Error Boundaries are used to implement client-side routing in React applications.",
+              "React's Error Boundaries are used to manage the state of class components in React applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are React Hooks Rules of Use and how do they help in writing cleaner and more maintainable code?",
+            options: [
+              "React Hooks Rules of Use are a set of guidelines that suggest using hooks for all state management and avoiding class components altogether.",
+              "React Hooks Rules of Use are a set of rules to follow while creating custom hooks to ensure they don't have side effects.",
+              "React Hooks Rules of Use recommend using hooks only in functional components and not using them inside loops or conditions.",
+              "React Hooks Rules of Use are a set of rules for using hooks in React applications that help to write cleaner and more maintainable code.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of React event handling and synthetic events.",
+            options: [
+              "React event handling is a technique to handle server-side logic in React applications.",
+              "Synthetic events are native browser events that are wrapped by React to handle user interactions in a cross-browser compatible way.",
+              "React event handling is a way to handle asynchronous operations in React components.",
+              "Synthetic events are custom events created by React to manage state in functional components.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the role of React contextType and how is it used to consume context in class components?",
+            options: [
+              "React contextType is a method to create context in functional components.",
+              "React contextType is a method to handle errors in React applications.",
+              "React contextType is used to consume context in class components by specifying the context object the component should subscribe to.",
+              "React contextType is used to create global state in class components.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain how React memoization works and how it can optimize functional components.",
+            options: [
+              "React memoization is a technique to handle AJAX requests in functional components.",
+              "React memoization is used to handle errors in React components.",
+              "React memoization is a caching mechanism used to store the results of expensive calculations in functional components, preventing unnecessary re-computations and re-renders.",
+              "React memoization is used to manage state in functional components.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the role of the 'useImperativeHandle' hook in React, and how is it used?",
+            options: [
+              "The 'useImperativeHandle' hook is used for handling form validation in React components.",
+              "The 'useImperativeHandle' hook is used to create custom hooks in React components.",
+              "The 'useImperativeHandle' hook is used to expose certain methods or properties of a child component to its parent component.",
+              "The 'useImperativeHandle' hook is used to create memoized components in React applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of React suspense and error boundaries for handling asynchronous operations.",
+            options: [
+              "React suspense is a technique to handle AJAX requests in React components.",
+              "Error boundaries are used to handle server-side errors in React applications.",
+              "React suspense is used to manage the state of class components.",
+              "Error boundaries and React suspense work together to handle errors that occur during asynchronous operations, like data fetching, in React applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are the benefits of using React fragments, and in what scenarios are they commonly used?",
+            options: [
+              "React fragments allow for more flexibility in defining component state.",
+              "React fragments improve performance by reducing the number of DOM elements.",
+              "React fragments provide a way to handle AJAX requests in React components.",
+              "React fragments are used to encapsulate React components.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the concept of lazy loading in React and how it can improve performance.",
+            options: [
+              "Lazy loading is a technique to load external JavaScript libraries on demand in React applications.",
+              "Lazy loading allows React components to load only when they are needed, reducing the initial load time and improving performance.",
+              "Lazy loading is a method to load images in React components asynchronously.",
+              "Lazy loading is a way to handle errors in React components.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the role of the 'useContext' hook in React?",
+            options: [
+              "The 'useContext' hook is used for handling form validation in React components.",
+              "The 'useContext' hook is used to fetch data from APIs in React components.",
+              "The 'useContext' hook is used to manage global state in React applications through the React context API.",
+              "The 'useContext' hook is used to create custom hooks in React components.",
+            ],
+            correctAnswer: "3",
+          },
+        ],
       },
     },
     angular: {
       "10 beginner angular questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is Angular?",
+            options: [
+              "Angular is a back-end programming language.",
+              "Angular is a front-end framework for building web applications.",
+              "Angular is a database management system.",
+              "Angular is a markup language for creating web pages.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is TypeScript, and why is it used in Angular?",
+            options: [
+              "TypeScript is a scripting language for adding interactivity to web pages.",
+              "TypeScript is a library used for managing state in Angular applications.",
+              "TypeScript is a markup language for creating web pages.",
+              "TypeScript is a superset of JavaScript that adds static typing and other features, making it a more robust language for building Angular applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "What are components in Angular?",
+            options: [
+              "Components are used to define back-end logic in Angular applications.",
+              "Components are used to define the structure and layout of a web page in Angular applications.",
+              "Components are used to create and manage databases in Angular applications.",
+              "Components are used to define custom HTML elements and their behavior in Angular applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is data binding in Angular?",
+            options: [
+              "Data binding is a way to handle errors in Angular applications.",
+              "Data binding is a technique to load external data into Angular applications.",
+              "Data binding is a process of automatically synchronizing data between the model (component) and the view (template) in Angular applications.",
+              "Data binding is a method to handle user input in Angular applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is interpolation in Angular?",
+            options: [
+              "Interpolation is a way to handle server-side logic in Angular applications.",
+              "Interpolation is a technique to manage the state of class components in Angular applications.",
+              "Interpolation is a process of binding data from the component to the view (template) using curly braces {{}} in Angular applications.",
+              "Interpolation is a method to define custom HTML elements in Angular applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is a template in Angular?",
+            options: [
+              "A template is a file that defines the styles for an Angular component.",
+              "A template is a file that contains the business logic for an Angular component.",
+              "A template is a file that defines the structure and layout of the HTML for an Angular component.",
+              "A template is a file that defines the routes and navigation for an Angular application.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of the NgModule in Angular?",
+            options: [
+              "NgModule is used to define back-end services in Angular applications.",
+              "NgModule is used to manage global state in Angular applications.",
+              "NgModule is used to create custom HTML elements in Angular applications.",
+              "NgModule is used to organize and configure the components, directives, pipes, and services that belong to a specific Angular application or feature.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "What is the purpose of the Angular CLI?",
+            options: [
+              "Angular CLI is used to manage databases in Angular applications.",
+              "Angular CLI is used to handle server-side logic in Angular applications.",
+              "Angular CLI is a set of commands that helps with creating, building, and managing Angular projects, components, services, and more.",
+              "Angular CLI is used to define the styles for an Angular component.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What are services in Angular, and how are they used?",
+            options: [
+              "Services are used to define the structure and layout of a web page in Angular applications.",
+              "Services are used to handle errors in Angular applications.",
+              "Services are used to create and manage databases in Angular applications.",
+              "Services are used to encapsulate reusable logic and data that can be shared across different components in Angular applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "How do you create a new Angular component using the Angular CLI?",
+            options: [
+              "Run the command ng new component MyComponent.",
+              "Run the command ng component MyComponent.",
+              "Run the command ng generate component MyComponent.",
+              "Run the command ng create component MyComponent.",
+            ],
+            correctAnswer: "3",
+          },
+        ],
       },
       "15 beginner angular questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is Angular?",
+            options: [
+              "Angular is a back-end programming language.",
+              "Angular is a front-end framework for building web applications.",
+              "Angular is a database management system.",
+              "Angular is a markup language for creating web pages.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is TypeScript, and why is it used in Angular?",
+            options: [
+              "TypeScript is a scripting language for adding interactivity to web pages.",
+              "TypeScript is a library used for managing state in Angular applications.",
+              "TypeScript is a markup language for creating web pages.",
+              "TypeScript is a superset of JavaScript that adds static typing and other features, making it a more robust language for building Angular applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "What are components in Angular?",
+            options: [
+              "Components are used to define back-end logic in Angular applications.",
+              "Components are used to define the structure and layout of a web page in Angular applications.",
+              "Components are used to create and manage databases in Angular applications.",
+              "Components are used to define custom HTML elements and their behavior in Angular applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is data binding in Angular?",
+            options: [
+              "Data binding is a way to handle errors in Angular applications.",
+              "Data binding is a technique to load external data into Angular applications.",
+              "Data binding is a process of automatically synchronizing data between the model (component) and the view (template) in Angular applications.",
+              "Data binding is a method to handle user input in Angular applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is interpolation in Angular?",
+            options: [
+              "Interpolation is a way to handle server-side logic in Angular applications.",
+              "Interpolation is a technique to manage the state of class components in Angular applications.",
+              "Interpolation is a process of binding data from the component to the view (template) using curly braces {{}} in Angular applications.",
+              "Interpolation is a method to define custom HTML elements in Angular applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is a template in Angular?",
+            options: [
+              "A template is a file that defines the styles for an Angular component.",
+              "A template is a file that contains the business logic for an Angular component.",
+              "A template is a file that defines the structure and layout of the HTML for an Angular component.",
+              "A template is a file that defines the routes and navigation for an Angular application.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of the NgModule in Angular?",
+            options: [
+              "NgModule is used to define back-end services in Angular applications.",
+              "NgModule is used to manage global state in Angular applications.",
+              "NgModule is used to create custom HTML elements in Angular applications.",
+              "NgModule is used to organize and configure the components, directives, pipes, and services that belong to a specific Angular application or feature.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "What is the purpose of the Angular CLI?",
+            options: [
+              "Angular CLI is used to manage databases in Angular applications.",
+              "Angular CLI is used to handle server-side logic in Angular applications.",
+              "Angular CLI is a set of commands that helps with creating, building, and managing Angular projects, components, services, and more.",
+              "Angular CLI is used to define the styles for an Angular component.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What are services in Angular, and how are they used?",
+            options: [
+              "Services are used to define the structure and layout of a web page in Angular applications.",
+              "Services are used to handle errors in Angular applications.",
+              "Services are used to create and manage databases in Angular applications.",
+              "Services are used to encapsulate reusable logic and data that can be shared across different components in Angular applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "How do you create a new Angular component using the Angular CLI?",
+            options: [
+              "Run the command ng new component MyComponent.",
+              "Run the command ng component MyComponent.",
+              "Run the command ng generate component MyComponent.",
+              "Run the command ng create component MyComponent.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of directives in Angular?",
+            options: [
+              "Directives are used to handle server-side logic in Angular applications.",
+              "Directives are used to define the structure and layout of the HTML for an Angular component.",
+              "Directives are used to create and manage databases in Angular applications.",
+              "Directives are used to add behavior to elements in the DOM in Angular applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the Angular CLI command to start a local development server and run the application?",
+            options: [
+              "Run the command ng serve.",
+              "Run the command ng start.",
+              "Run the command ng build.",
+              "Run the command ng run.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the purpose of dependency injection in Angular?",
+            options: [
+              "Dependency injection is a technique to handle errors in Angular applications.",
+              "Dependency injection is a way to load external data into Angular applications.",
+              "Dependency injection is a process of passing services or other objects as dependencies to a component, ensuring that the component has access to the required services or objects.",
+              "Dependency injection is a method to define custom HTML elements in Angular applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the Angular CLI command to generate a new service?",
+            options: [
+              "Run the command ng new service MyService.",
+              "Run the command ng generate service MyService.",
+              "Run the command ng create service MyService.",
+              "Run the command ng service MyService.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of the router module in Angular?",
+            options: [
+              "The router module is used to define the styles for an Angular component.",
+              "The router module is used to handle server-side logic in Angular applications.",
+              "The router module is used to create and manage databases in Angular applications.",
+              "The router module is used to manage navigation and define routes for different components in Angular applications.",
+            ],
+            correctAnswer: "4",
+          },
+        ],
       },
       "20 beginner angular questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is Angular?",
+            options: [
+              "Angular is a back-end programming language.",
+              "Angular is a front-end framework for building web applications.",
+              "Angular is a database management system.",
+              "Angular is a markup language for creating web pages.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is TypeScript, and why is it used in Angular?",
+            options: [
+              "TypeScript is a scripting language for adding interactivity to web pages.",
+              "TypeScript is a library used for managing state in Angular applications.",
+              "TypeScript is a markup language for creating web pages.",
+              "TypeScript is a superset of JavaScript that adds static typing and other features, making it a more robust language for building Angular applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "What are components in Angular?",
+            options: [
+              "Components are used to define back-end logic in Angular applications.",
+              "Components are used to define the structure and layout of a web page in Angular applications.",
+              "Components are used to create and manage databases in Angular applications.",
+              "Components are used to define custom HTML elements and their behavior in Angular applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is data binding in Angular?",
+            options: [
+              "Data binding is a way to handle errors in Angular applications.",
+              "Data binding is a technique to load external data into Angular applications.",
+              "Data binding is a process of automatically synchronizing data between the model (component) and the view (template) in Angular applications.",
+              "Data binding is a method to handle user input in Angular applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is interpolation in Angular?",
+            options: [
+              "Interpolation is a way to handle server-side logic in Angular applications.",
+              "Interpolation is a technique to manage the state of class components in Angular applications.",
+              "Interpolation is a process of binding data from the component to the view (template) using curly braces {{}} in Angular applications.",
+              "Interpolation is a method to define custom HTML elements in Angular applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is a template in Angular?",
+            options: [
+              "A template is a file that defines the styles for an Angular component.",
+              "A template is a file that contains the business logic for an Angular component.",
+              "A template is a file that defines the structure and layout of the HTML for an Angular component.",
+              "A template is a file that defines the routes and navigation for an Angular application.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of the NgModule in Angular?",
+            options: [
+              "NgModule is used to define back-end services in Angular applications.",
+              "NgModule is used to manage global state in Angular applications.",
+              "NgModule is used to create custom HTML elements in Angular applications.",
+              "NgModule is used to organize and configure the components, directives, pipes, and services that belong to a specific Angular application or feature.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "What is the purpose of the Angular CLI?",
+            options: [
+              "Angular CLI is used to manage databases in Angular applications.",
+              "Angular CLI is used to handle server-side logic in Angular applications.",
+              "Angular CLI is a set of commands that helps with creating, building, and managing Angular projects, components, services, and more.",
+              "Angular CLI is used to define the styles for an Angular component.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What are services in Angular, and how are they used?",
+            options: [
+              "Services are used to define the structure and layout of a web page in Angular applications.",
+              "Services are used to handle errors in Angular applications.",
+              "Services are used to create and manage databases in Angular applications.",
+              "Services are used to encapsulate reusable logic and data that can be shared across different components in Angular applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "How do you create a new Angular component using the Angular CLI?",
+            options: [
+              "Run the command ng new component MyComponent.",
+              "Run the command ng component MyComponent.",
+              "Run the command ng generate component MyComponent.",
+              "Run the command ng create component MyComponent.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of directives in Angular?",
+            options: [
+              "Directives are used to handle server-side logic in Angular applications.",
+              "Directives are used to define the structure and layout of the HTML for an Angular component.",
+              "Directives are used to create and manage databases in Angular applications.",
+              "Directives are used to add behavior to elements in the DOM in Angular applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the Angular CLI command to start a local development server and run the application?",
+            options: [
+              "Run the command ng serve.",
+              "Run the command ng start.",
+              "Run the command ng build.",
+              "Run the command ng run.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the purpose of dependency injection in Angular?",
+            options: [
+              "Dependency injection is a technique to handle errors in Angular applications.",
+              "Dependency injection is a way to load external data into Angular applications.",
+              "Dependency injection is a process of passing services or other objects as dependencies to a component, ensuring that the component has access to the required services or objects.",
+              "Dependency injection is a method to define custom HTML elements in Angular applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the Angular CLI command to generate a new service?",
+            options: [
+              "Run the command ng new service MyService.",
+              "Run the command ng generate service MyService.",
+              "Run the command ng create service MyService.",
+              "Run the command ng service MyService.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of the router module in Angular?",
+            options: [
+              "The router module is used to define the styles for an Angular component.",
+              "The router module is used to handle server-side logic in Angular applications.",
+              "The router module is used to create and manage databases in Angular applications.",
+              "The router module is used to manage navigation and define routes for different components in Angular applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the Angular CLI command to generate a new module?",
+            options: [
+              "Run the command ng create module MyModule.",
+              "Run the command ng new module MyModule.",
+              "Run the command ng generate module MyModule.",
+              "Run the command ng module MyModule.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the purpose of the 'ngFor' directive in Angular?",
+            options: [
+              "The 'ngFor' directive is used to handle server-side logic in Angular applications.",
+              "The 'ngFor' directive is used to define the structure and layout of the HTML for an Angular component.",
+              "The 'ngFor' directive is used to create and manage databases in Angular applications.",
+              "The 'ngFor' directive is used to repeat a template for each item in an array or iterable collection in Angular applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the Angular CLI command to generate a new component with a specific file extension, for example, 'my-component.ts'?",
+            options: [
+              "Run the command ng generate component my-component --fileext ts.",
+              "Run the command ng generate component my-component.ts.",
+              "Run the command ng generate component my-component --file my-component.ts.",
+              "Run the command ng generate component my-component --extension ts.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the purpose of the 'ngIf' directive in Angular?",
+            options: [
+              "The 'ngIf' directive is used to handle server-side logic in Angular applications.",
+              "The 'ngIf' directive is used to define the structure and layout of the HTML for an Angular component.",
+              "The 'ngIf' directive is used to conditionally add or remove an element from the DOM based on an expression in Angular applications.",
+              "The 'ngIf' directive is used to create and manage databases in Angular applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the purpose of the 'ngModel' directive in Angular?",
+            options: [
+              "The 'ngModel' directive is used to handle server-side logic in Angular applications.",
+              "The 'ngModel' directive is used to define the structure and layout of the HTML for an Angular component.",
+              "The 'ngModel' directive is used to create and manage databases in Angular applications.",
+              "The 'ngModel' directive is used to perform two-way data binding, enabling the synchronization of data between a form control and a component property in Angular applications.",
+            ],
+            correctAnswer: "4",
+          },
+        ],
       },
       "10 intermed angular questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What are Angular modules, and how are they beneficial in organizing an application's features?",
+            options: [
+              "Angular modules are used to handle server-side logic in Angular applications.",
+              "Angular modules are used to manage global state in Angular applications.",
+              "Angular modules are used to create and manage databases in Angular applications.",
+              "Angular modules are used to group related components, services, directives, and other features together, making the application more modular and maintainable.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the difference between template-driven forms and reactive forms in Angular.",
+            options: [
+              "Template-driven forms are used for handling user input in Angular applications, while reactive forms are used to manage global state.",
+              "Template-driven forms are used to handle form validation in Angular applications, while reactive forms are used for data binding.",
+              "Template-driven forms are built using template syntax in the HTML, while reactive forms are built programmatically using TypeScript.",
+              "Template-driven forms and reactive forms both handle form input and validation, but reactive forms provide more control and flexibility, making them suitable for complex scenarios.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is Angular routing, and how does it help in building single-page applications?",
+            options: [
+              "Angular routing is a technique to handle server-side logic in Angular applications.",
+              "Angular routing is a way to create and manage databases in Angular applications.",
+              "Angular routing is used to define the structure and layout of the HTML for an Angular component.",
+              "Angular routing is a mechanism that allows users to navigate between different views or components without reloading the entire page, making it easier to build single-page applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of lazy loading in Angular and how it can improve application performance.",
+            options: [
+              "Lazy loading is a technique to load external JavaScript libraries on demand in Angular applications.",
+              "Lazy loading allows Angular components to load only when they are needed, reducing the initial load time and improving performance.",
+              "Lazy loading is used to handle errors in Angular applications.",
+              "Lazy loading is a way to manage global state in Angular applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are Angular directives, and how do they differ from components?",
+            options: [
+              "Angular directives are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular directives are used to handle server-side logic in Angular applications.",
+              "Angular directives are used to create and manage databases in Angular applications.",
+              "Angular directives are a way to extend HTML with custom behaviors and manipulate the DOM directly, while components are used to create custom HTML elements with their own templates and logic.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular services and how they facilitate communication and data sharing between components.",
+            options: [
+              "Angular services are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular services are used to handle server-side logic in Angular applications.",
+              "Angular services are used to create and manage databases in Angular applications.",
+              "Angular services are singletons that allow components to share data and functionality by providing a centralized way to store and manage application state and business logic.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is dependency injection in Angular, and why is it important?",
+            options: [
+              "Dependency injection is a technique to handle server-side logic in Angular applications.",
+              "Dependency injection is used to define the structure and layout of the HTML for an Angular component.",
+              "Dependency injection is a way to load external data into Angular applications.",
+              "Dependency injection is a design pattern used in Angular to provide components with the services or dependencies they require, making it easier to manage and test application components.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Angular pipes, and how are they used to transform data in templates?",
+            options: [
+              "Angular pipes are used to handle server-side logic in Angular applications.",
+              "Angular pipes are used to create and manage databases in Angular applications.",
+              "Angular pipes are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular pipes are a way to format and transform data in templates by applying functions to the data before displaying it to the user.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular animations and how they can be applied to enhance user experience.",
+            options: [
+              "Angular animations are used to handle server-side logic in Angular applications.",
+              "Angular animations are used to create and manage databases in Angular applications.",
+              "Angular animations are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular animations allow developers to add smooth and visually appealing transitions and effects to elements in Angular applications, enhancing the user experience.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Angular guards, and how do they help in controlling access to routes?",
+            options: [
+              "Angular guards are used to handle server-side logic in Angular applications.",
+              "Angular guards are used to create and manage databases in Angular applications.",
+              "Angular guards are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular guards are used to protect routes and control access to specific routes based on conditions, such as user authentication status or roles.",
+            ],
+            correctAnswer: "4",
+          },
+        ],
       },
       "15 intermed angular questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What are Angular modules, and how are they beneficial in organizing an application's features?",
+            options: [
+              "Angular modules are used to handle server-side logic in Angular applications.",
+              "Angular modules are used to manage global state in Angular applications.",
+              "Angular modules are used to create and manage databases in Angular applications.",
+              "Angular modules are used to group related components, services, directives, and other features together, making the application more modular and maintainable.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the difference between template-driven forms and reactive forms in Angular.",
+            options: [
+              "Template-driven forms are used for handling user input in Angular applications, while reactive forms are used to manage global state.",
+              "Template-driven forms are used to handle form validation in Angular applications, while reactive forms are used for data binding.",
+              "Template-driven forms are built using template syntax in the HTML, while reactive forms are built programmatically using TypeScript.",
+              "Template-driven forms and reactive forms both handle form input and validation, but reactive forms provide more control and flexibility, making them suitable for complex scenarios.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is Angular routing, and how does it help in building single-page applications?",
+            options: [
+              "Angular routing is a technique to handle server-side logic in Angular applications.",
+              "Angular routing is a way to create and manage databases in Angular applications.",
+              "Angular routing is used to define the structure and layout of the HTML for an Angular component.",
+              "Angular routing is a mechanism that allows users to navigate between different views or components without reloading the entire page, making it easier to build single-page applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of lazy loading in Angular and how it can improve application performance.",
+            options: [
+              "Lazy loading is a technique to load external JavaScript libraries on demand in Angular applications.",
+              "Lazy loading allows Angular components to load only when they are needed, reducing the initial load time and improving performance.",
+              "Lazy loading is used to handle errors in Angular applications.",
+              "Lazy loading is a way to manage global state in Angular applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are Angular directives, and how do they differ from components?",
+            options: [
+              "Angular directives are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular directives are used to handle server-side logic in Angular applications.",
+              "Angular directives are used to create and manage databases in Angular applications.",
+              "Angular directives are a way to extend HTML with custom behaviors and manipulate the DOM directly, while components are used to create custom HTML elements with their own templates and logic.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular services and how they facilitate communication and data sharing between components.",
+            options: [
+              "Angular services are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular services are used to handle server-side logic in Angular applications.",
+              "Angular services are used to create and manage databases in Angular applications.",
+              "Angular services are singletons that allow components to share data and functionality by providing a centralized way to store and manage application state and business logic.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is dependency injection in Angular, and why is it important?",
+            options: [
+              "Dependency injection is a technique to handle server-side logic in Angular applications.",
+              "Dependency injection is used to define the structure and layout of the HTML for an Angular component.",
+              "Dependency injection is a way to load external data into Angular applications.",
+              "Dependency injection is a design pattern used in Angular to provide components with the services or dependencies they require, making it easier to manage and test application components.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Angular pipes, and how are they used to transform data in templates?",
+            options: [
+              "Angular pipes are used to handle server-side logic in Angular applications.",
+              "Angular pipes are used to create and manage databases in Angular applications.",
+              "Angular pipes are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular pipes are a way to format and transform data in templates by applying functions to the data before displaying it to the user.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular animations and how they can be applied to enhance user experience.",
+            options: [
+              "Angular animations are used to handle server-side logic in Angular applications.",
+              "Angular animations are used to create and manage databases in Angular applications.",
+              "Angular animations are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular animations allow developers to add smooth and visually appealing transitions and effects to elements in Angular applications, enhancing the user experience.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Angular guards, and how do they help in controlling access to routes?",
+            options: [
+              "Angular guards are used to handle server-side logic in Angular applications.",
+              "Angular guards are used to create and manage databases in Angular applications.",
+              "Angular guards are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular guards are used to protect routes and control access to specific routes based on conditions, such as user authentication status or roles.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular interceptors and how they can be used to modify HTTP requests and responses.",
+            options: [
+              "Angular interceptors are used to handle server-side logic in Angular applications.",
+              "Angular interceptors are used to create and manage databases in Angular applications.",
+              "Angular interceptors are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular interceptors are a way to intercept and modify HTTP requests and responses, allowing developers to add headers, handle errors, or perform other tasks globally for HTTP communication in Angular applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is Angular testing, and what are the different testing techniques available in Angular?",
+            options: [
+              "Angular testing is used to handle server-side logic in Angular applications.",
+              "Angular testing is used to create and manage databases in Angular applications.",
+              "Angular testing is used to define the structure and layout of the HTML for an Angular component.",
+              "Angular testing involves writing unit tests, integration tests, and end-to-end tests to ensure the correctness and functionality of Angular applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular forms validation and the available validators provided by Angular.",
+            options: [
+              "Angular forms validation is used to handle server-side logic in Angular applications.",
+              "Angular forms validation is used to create and manage databases in Angular applications.",
+              "Angular forms validation is used to define the structure and layout of the HTML for an Angular component.",
+              "Angular forms validation allows developers to enforce data integrity by validating user input using built-in and custom validators, such as required, pattern, and min/max length.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is Angular change detection, and how does it help in updating the view with model changes?",
+            options: [
+              "Angular change detection is used to handle server-side logic in Angular applications.",
+              "Angular change detection is used to create and manage databases in Angular applications.",
+              "Angular change detection is used to define the structure and layout of the HTML for an Angular component.",
+              "Angular change detection is the process of automatically updating the view when there are changes in the component's model, ensuring that the view is always in sync with the data.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular decorators and their role in enhancing the behavior of classes and components.",
+            options: [
+              "Angular decorators are used to handle server-side logic in Angular applications.",
+              "Angular decorators are used to create and manage databases in Angular applications.",
+              "Angular decorators are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular decorators are used to add metadata and modify the behavior of classes and components in Angular applications, such as defining component metadata, injecting dependencies, and creating custom decorators.",
+            ],
+            correctAnswer: "4",
+          },
+        ],
       },
       "20 intermed angular questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What are Angular modules, and how are they beneficial in organizing an application's features?",
+            options: [
+              "Angular modules are used to handle server-side logic in Angular applications.",
+              "Angular modules are used to manage global state in Angular applications.",
+              "Angular modules are used to create and manage databases in Angular applications.",
+              "Angular modules are used to group related components, services, directives, and other features together, making the application more modular and maintainable.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the difference between template-driven forms and reactive forms in Angular.",
+            options: [
+              "Template-driven forms are used for handling user input in Angular applications, while reactive forms are used to manage global state.",
+              "Template-driven forms are used to handle form validation in Angular applications, while reactive forms are used for data binding.",
+              "Template-driven forms are built using template syntax in the HTML, while reactive forms are built programmatically using TypeScript.",
+              "Template-driven forms and reactive forms both handle form input and validation, but reactive forms provide more control and flexibility, making them suitable for complex scenarios.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is Angular routing, and how does it help in building single-page applications?",
+            options: [
+              "Angular routing is a technique to handle server-side logic in Angular applications.",
+              "Angular routing is a way to create and manage databases in Angular applications.",
+              "Angular routing is used to define the structure and layout of the HTML for an Angular component.",
+              "Angular routing is a mechanism that allows users to navigate between different views or components without reloading the entire page, making it easier to build single-page applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of lazy loading in Angular and how it can improve application performance.",
+            options: [
+              "Lazy loading is a technique to load external JavaScript libraries on demand in Angular applications.",
+              "Lazy loading allows Angular components to load only when they are needed, reducing the initial load time and improving performance.",
+              "Lazy loading is used to handle errors in Angular applications.",
+              "Lazy loading is a way to manage global state in Angular applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are Angular directives, and how do they differ from components?",
+            options: [
+              "Angular directives are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular directives are used to handle server-side logic in Angular applications.",
+              "Angular directives are used to create and manage databases in Angular applications.",
+              "Angular directives are a way to extend HTML with custom behaviors and manipulate the DOM directly, while components are used to create custom HTML elements with their own templates and logic.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular services and how they facilitate communication and data sharing between components.",
+            options: [
+              "Angular services are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular services are used to handle server-side logic in Angular applications.",
+              "Angular services are used to create and manage databases in Angular applications.",
+              "Angular services are singletons that allow components to share data and functionality by providing a centralized way to store and manage application state and business logic.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is dependency injection in Angular, and why is it important?",
+            options: [
+              "Dependency injection is a technique to handle server-side logic in Angular applications.",
+              "Dependency injection is used to define the structure and layout of the HTML for an Angular component.",
+              "Dependency injection is a way to load external data into Angular applications.",
+              "Dependency injection is a design pattern used in Angular to provide components with the services or dependencies they require, making it easier to manage and test application components.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Angular pipes, and how are they used to transform data in templates?",
+            options: [
+              "Angular pipes are used to handle server-side logic in Angular applications.",
+              "Angular pipes are used to create and manage databases in Angular applications.",
+              "Angular pipes are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular pipes are a way to format and transform data in templates by applying functions to the data before displaying it to the user.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular animations and how they can be applied to enhance user experience.",
+            options: [
+              "Angular animations are used to handle server-side logic in Angular applications.",
+              "Angular animations are used to create and manage databases in Angular applications.",
+              "Angular animations are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular animations allow developers to add smooth and visually appealing transitions and effects to elements in Angular applications, enhancing the user experience.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Angular guards, and how do they help in controlling access to routes?",
+            options: [
+              "Angular guards are used to handle server-side logic in Angular applications.",
+              "Angular guards are used to create and manage databases in Angular applications.",
+              "Angular guards are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular guards are used to protect routes and control access to specific routes based on conditions, such as user authentication status or roles.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular interceptors and how they can be used to modify HTTP requests and responses.",
+            options: [
+              "Angular interceptors are used to handle server-side logic in Angular applications.",
+              "Angular interceptors are used to create and manage databases in Angular applications.",
+              "Angular interceptors are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular interceptors are a way to intercept and modify HTTP requests and responses, allowing developers to add headers, handle errors, or perform other tasks globally for HTTP communication in Angular applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is Angular testing, and what are the different testing techniques available in Angular?",
+            options: [
+              "Angular testing is used to handle server-side logic in Angular applications.",
+              "Angular testing is used to create and manage databases in Angular applications.",
+              "Angular testing is used to define the structure and layout of the HTML for an Angular component.",
+              "Angular testing involves writing unit tests, integration tests, and end-to-end tests to ensure the correctness and functionality of Angular applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular forms validation and the available validators provided by Angular.",
+            options: [
+              "Angular forms validation is used to handle server-side logic in Angular applications.",
+              "Angular forms validation is used to create and manage databases in Angular applications.",
+              "Angular forms validation is used to define the structure and layout of the HTML for an Angular component.",
+              "Angular forms validation allows developers to enforce data integrity by validating user input using built-in and custom validators, such as required, pattern, and min/max length.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is Angular change detection, and how does it help in updating the view with model changes?",
+            options: [
+              "Angular change detection is used to handle server-side logic in Angular applications.",
+              "Angular change detection is used to create and manage databases in Angular applications.",
+              "Angular change detection is used to define the structure and layout of the HTML for an Angular component.",
+              "Angular change detection is the process of automatically updating the view when there are changes in the component's model, ensuring that the view is always in sync with the data.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular decorators and their role in enhancing the behavior of classes and components.",
+            options: [
+              "Angular decorators are used to handle server-side logic in Angular applications.",
+              "Angular decorators are used to create and manage databases in Angular applications.",
+              "Angular decorators are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular decorators are used to add metadata and modify the behavior of classes and components in Angular applications, such as defining component metadata, injecting dependencies, and creating custom decorators.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Angular templates and how do they differ from the DOM templates?",
+            options: [
+              "Angular templates are used to handle server-side logic in Angular applications.",
+              "Angular templates are used to create and manage databases in Angular applications.",
+              "Angular templates are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular templates use a template syntax provided by Angular that extends HTML with directives and data bindings, allowing developers to create dynamic and responsive user interfaces.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular zones and their role in managing change detection.",
+            options: [
+              "Angular zones are used to handle server-side logic in Angular applications.",
+              "Angular zones are used to create and manage databases in Angular applications.",
+              "Angular zones are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular zones are execution contexts that help to manage change detection and update the view when asynchronous tasks, such as HTTP requests or timers, are completed.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the role of the 'ng-container' element in Angular templates?",
+            options: [
+              "The 'ng-container' element is used to handle server-side logic in Angular applications.",
+              "The 'ng-container' element is used to create and manage databases in Angular applications.",
+              "The 'ng-container' element is used to define the structure and layout of the HTML for an Angular component.",
+              "The 'ng-container' element is a non-rendered element that allows developers to group multiple elements without adding an extra wrapper to the DOM, making it useful for structural directives like 'ngIf' or 'ngFor'.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the purpose of the 'ViewChild' and 'ContentChild' decorators in Angular?",
+            options: [
+              "The 'ViewChild' and 'ContentChild' decorators are used to handle server-side logic in Angular applications.",
+              "The 'ViewChild' and 'ContentChild' decorators are used to create and manage databases in Angular applications.",
+              "The 'ViewChild' and 'ContentChild' decorators are used to define the structure and layout of the HTML for an Angular component.",
+              "The 'ViewChild' decorator is used to access a child component or element from a parent component, while the 'ContentChild' decorator is used to access a projected child component or element from a parent component.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Angular schematics, and how can they be used to generate and modify code in an Angular project?",
+            options: [
+              "Angular schematics are used to handle server-side logic in Angular applications.",
+              "Angular schematics are used to create and manage databases in Angular applications.",
+              "Angular schematics are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular schematics are command-line tools provided by the Angular CLI that allow developers to generate and modify code in an Angular project, creating components, services, modules, and more with custom templates and configurations.",
+            ],
+            correctAnswer: "4",
+          },
+        ],
       },
       "10 advanced angular questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain the concept of Angular Ivy and how it differs from the View Engine.",
+            options: [
+              "Angular Ivy is a state management library in Angular applications.",
+              "Angular Ivy is a build tool used to optimize Angular applications.",
+              "Angular Ivy is a rendering engine and compiler in Angular that replaces the View Engine. It offers better performance, smaller bundle sizes, and improved tree shaking.",
+              "Angular Ivy is a reactive programming library used for handling asynchronous data streams in Angular applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is AOT (Ahead-of-Time) compilation in Angular, and why is it beneficial for production builds?",
+            options: [
+              "AOT is a technique to handle server-side logic in Angular applications.",
+              "AOT is a tool used to create and manage databases in Angular applications.",
+              "AOT is a way to define the structure and layout of the HTML for an Angular component.",
+              "AOT compilation compiles Angular templates during the build process, which improves application loading performance and ensures that template errors are caught early.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the Angular Universal concept and its use in server-side rendering (SSR).",
+            options: [
+              "Angular Universal is a way to handle server-side logic in Angular applications.",
+              "Angular Universal is a tool used to create and manage databases in Angular applications.",
+              "Angular Universal is a technique to define the structure and layout of the HTML for an Angular component.",
+              "Angular Universal is a set of tools that allow developers to perform server-side rendering (SSR) of Angular applications, which improves SEO, initial loading speed, and enables applications to be rendered on the server side before being sent to the client.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Angular custom decorators, and how can they be used to enhance code readability and reusability?",
+            options: [
+              "Angular custom decorators are used to handle server-side logic in Angular applications.",
+              "Angular custom decorators are used to create and manage databases in Angular applications.",
+              "Angular custom decorators are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular custom decorators allow developers to create reusable behavior and metadata that can be applied to classes, properties, methods, or parameters, enhancing code readability and providing a way to extend Angular functionality.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the NgRx library and its role in managing state in Angular applications.",
+            options: [
+              "NgRx is a technique to handle server-side logic in Angular applications.",
+              "NgRx is a tool used to create and manage databases in Angular applications.",
+              "NgRx is a way to define the structure and layout of the HTML for an Angular component.",
+              "NgRx is a state management library based on Redux that provides a predictable state container for Angular applications, making it easier to manage and share data across components and services.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the Angular Compiler API, and how can developers use it to programmatically manipulate templates?",
+            options: [
+              "The Angular Compiler API is used to handle server-side logic in Angular applications.",
+              "The Angular Compiler API is used to create and manage databases in Angular applications.",
+              "The Angular Compiler API is used to define the structure and layout of the HTML for an Angular component.",
+              "The Angular Compiler API allows developers to programmatically interact with the Angular template compiler, enabling dynamic template generation, template transformation, and custom template processing at runtime.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular zone-less change detection and its advantages.",
+            options: [
+              "Angular zone-less change detection is used to handle server-side logic in Angular applications.",
+              "Angular zone-less change detection is used to create and manage databases in Angular applications.",
+              "Angular zone-less change detection is used to define the structure and layout of the HTML for an Angular component.",
+              "Angular zone-less change detection eliminates the need for Angular zones and allows developers to manually trigger change detection for specific parts of the application, improving performance and reducing unnecessary change detection cycles.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are dynamic components in Angular, and how can they be created and loaded at runtime?",
+            options: [
+              "Dynamic components are used to handle server-side logic in Angular applications.",
+              "Dynamic components are used to create and manage databases in Angular applications.",
+              "Dynamic components are used to define the structure and layout of the HTML for an Angular component.",
+              "Dynamic components allow developers to create and load components dynamically at runtime, using the ComponentFactoryResolver and ViewContainerRef, which is useful for building flexible and dynamic user interfaces.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the role of Web Workers in Angular applications and how they can improve performance.",
+            options: [
+              "Web Workers are used to handle server-side logic in Angular applications.",
+              "Web Workers are used to create and manage databases in Angular applications.",
+              "Web Workers are used to define the structure and layout of the HTML for an Angular component.",
+              "Web Workers allow developers to run background tasks in separate threads, freeing up the main UI thread and improving application responsiveness and performance.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Angular schematics, and how can they be used to generate and modify code in an Angular project?",
+            options: [
+              "Angular schematics are used to handle server-side logic in Angular applications.",
+              "Angular schematics are used to create and manage databases in Angular applications.",
+              "Angular schematics are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular schematics are command-line tools provided by the Angular CLI that allow developers to generate and modify code in an Angular project, creating components, services, modules, and more with custom templates and configurations.",
+            ],
+            correctAnswer: "4",
+          },
+        ],
       },
       "15 advanced angular questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain the concept of Angular Ivy and how it differs from the View Engine.",
+            options: [
+              "Angular Ivy is a state management library in Angular applications.",
+              "Angular Ivy is a build tool used to optimize Angular applications.",
+              "Angular Ivy is a rendering engine and compiler in Angular that replaces the View Engine. It offers better performance, smaller bundle sizes, and improved tree shaking.",
+              "Angular Ivy is a reactive programming library used for handling asynchronous data streams in Angular applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is AOT (Ahead-of-Time) compilation in Angular, and why is it beneficial for production builds?",
+            options: [
+              "AOT is a technique to handle server-side logic in Angular applications.",
+              "AOT is a tool used to create and manage databases in Angular applications.",
+              "AOT is a way to define the structure and layout of the HTML for an Angular component.",
+              "AOT compilation compiles Angular templates during the build process, which improves application loading performance and ensures that template errors are caught early.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the Angular Universal concept and its use in server-side rendering (SSR).",
+            options: [
+              "Angular Universal is a way to handle server-side logic in Angular applications.",
+              "Angular Universal is a tool used to create and manage databases in Angular applications.",
+              "Angular Universal is a technique to define the structure and layout of the HTML for an Angular component.",
+              "Angular Universal is a set of tools that allow developers to perform server-side rendering (SSR) of Angular applications, which improves SEO, initial loading speed, and enables applications to be rendered on the server side before being sent to the client.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Angular custom decorators, and how can they be used to enhance code readability and reusability?",
+            options: [
+              "Angular custom decorators are used to handle server-side logic in Angular applications.",
+              "Angular custom decorators are used to create and manage databases in Angular applications.",
+              "Angular custom decorators are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular custom decorators allow developers to create reusable behavior and metadata that can be applied to classes, properties, methods, or parameters, enhancing code readability and providing a way to extend Angular functionality.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular state management patterns, and compare the use of NgRx and RxJS Subjects for state management.",
+            options: [
+              "Angular state management patterns are used to handle server-side logic in Angular applications.",
+              "Angular state management patterns are used to create and manage databases in Angular applications.",
+              "Angular state management patterns are used to define the structure and layout of the HTML for an Angular component.",
+              "NgRx is a state management library based on Redux, which follows a centralized, immutable store pattern, while RxJS Subjects provide a more decentralized, observable-based approach for managing state within Angular components.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the Angular Compiler API, and how can developers use it to programmatically manipulate templates?",
+            options: [
+              "The Angular Compiler API is used to handle server-side logic in Angular applications.",
+              "The Angular Compiler API is used to create and manage databases in Angular applications.",
+              "The Angular Compiler API is used to define the structure and layout of the HTML for an Angular component.",
+              "The Angular Compiler API allows developers to programmatically interact with the Angular template compiler, enabling dynamic template generation, template transformation, and custom template processing at runtime.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Angular reactive forms, and how do they differ from template-driven forms?",
+            options: [
+              "Angular reactive forms are used to handle server-side logic in Angular applications.",
+              "Angular reactive forms are used to create and manage databases in Angular applications.",
+              "Angular reactive forms are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular reactive forms provide a more programmatic and flexible approach to form handling, where form controls and validations are defined in the component class using TypeScript, offering better control and testability compared to template-driven forms.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the role of Web Workers in Angular applications and how they can improve performance.",
+            options: [
+              "Web Workers are used to handle server-side logic in Angular applications.",
+              "Web Workers are used to create and manage databases in Angular applications.",
+              "Web Workers are used to define the structure and layout of the HTML for an Angular component.",
+              "Web Workers allow developers to run background tasks in separate threads, freeing up the main UI thread and improving application responsiveness and performance.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are dynamic components in Angular, and how can they be created and loaded at runtime?",
+            options: [
+              "Dynamic components are used to handle server-side logic in Angular applications.",
+              "Dynamic components are used to create and manage databases in Angular applications.",
+              "Dynamic components are used to define the structure and layout of the HTML for an Angular component.",
+              "Dynamic components allow developers to create and load components dynamically at runtime, using the ComponentFactoryResolver and ViewContainerRef, which is useful for building flexible and dynamic user interfaces.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular zone-less change detection and its advantages.",
+            options: [
+              "Angular zone-less change detection is used to handle server-side logic in Angular applications.",
+              "Angular zone-less change detection is used to create and manage databases in Angular applications.",
+              "Angular zone-less change detection is used to define the structure and layout of the HTML for an Angular component.",
+              "Angular zone-less change detection eliminates the need for Angular zones and allows developers to manually trigger change detection for specific parts of the application, improving performance and reducing unnecessary change detection cycles.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular content projection (ng-content) and its use in creating reusable components.",
+            options: [
+              "Angular content projection is used to handle server-side logic in Angular applications.",
+              "Angular content projection is used to create and manage databases in Angular applications.",
+              "Angular content projection is used to define the structure and layout of the HTML for an Angular component.",
+              "Angular content projection allows developers to create reusable components with slots that can be filled with arbitrary content, enabling component customization and reusability.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Angular service workers, and how can they be used to implement Progressive Web Apps (PWAs)?",
+            options: [
+              "Angular service workers are used to handle server-side logic in Angular applications.",
+              "Angular service workers are used to create and manage databases in Angular applications.",
+              "Angular service workers are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular service workers allow developers to cache assets, enable offline access, and provide push notifications, enabling the creation of Progressive Web Apps (PWAs) that offer a better user experience and performance.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular zones and their role in managing change detection.",
+            options: [
+              "Angular zones are used to handle server-side logic in Angular applications.",
+              "Angular zones are used to create and manage databases in Angular applications.",
+              "Angular zones are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular zones are execution contexts that help to manage change detection and update the view when asynchronous tasks, such as HTTP requests or timers, are completed.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is differential loading in Angular, and how does it help in optimizing modern browsers and legacy browsers?",
+            options: [
+              "Differential loading is a technique to handle server-side logic in Angular applications.",
+              "Differential loading is a tool used to create and manage databases in Angular applications.",
+              "Differential loading is a way to define the structure and layout of the HTML for an Angular component.",
+              "Differential loading allows Angular to generate two separate bundles for modern browsers and legacy browsers, serving smaller and more efficient code to modern browsers that support ES2015+ features, while providing a fallback bundle with ES5 for older browsers.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Angular schematics, and how can they be used to generate and modify code in an Angular project?",
+            options: [
+              "Angular schematics are used to handle server-side logic in Angular applications.",
+              "Angular schematics are used to create and manage databases in Angular applications.",
+              "Angular schematics are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular schematics are command-line tools provided by the Angular CLI that allow developers to generate and modify code in an Angular project, creating components, services, modules, and more with custom templates and configurations.",
+            ],
+            correctAnswer: "4",
+          },
+        ],
       },
       "20 advanced angular questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain the concept of Angular Ivy and how it differs from the View Engine.",
+            options: [
+              "Angular Ivy is a state management library in Angular applications.",
+              "Angular Ivy is a build tool used to optimize Angular applications.",
+              "Angular Ivy is a rendering engine and compiler in Angular that replaces the View Engine. It offers better performance, smaller bundle sizes, and improved tree shaking.",
+              "Angular Ivy is a reactive programming library used for handling asynchronous data streams in Angular applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is AOT (Ahead-of-Time) compilation in Angular, and why is it beneficial for production builds?",
+            options: [
+              "AOT is a technique to handle server-side logic in Angular applications.",
+              "AOT is a tool used to create and manage databases in Angular applications.",
+              "AOT is a way to define the structure and layout of the HTML for an Angular component.",
+              "AOT compilation compiles Angular templates during the build process, which improves application loading performance and ensures that template errors are caught early.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the Angular Universal concept and its use in server-side rendering (SSR).",
+            options: [
+              "Angular Universal is a way to handle server-side logic in Angular applications.",
+              "Angular Universal is a tool used to create and manage databases in Angular applications.",
+              "Angular Universal is a technique to define the structure and layout of the HTML for an Angular component.",
+              "Angular Universal is a set of tools that allow developers to perform server-side rendering (SSR) of Angular applications, which improves SEO, initial loading speed, and enables applications to be rendered on the server side before being sent to the client.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Angular custom decorators, and how can they be used to enhance code readability and reusability?",
+            options: [
+              "Angular custom decorators are used to handle server-side logic in Angular applications.",
+              "Angular custom decorators are used to create and manage databases in Angular applications.",
+              "Angular custom decorators are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular custom decorators allow developers to create reusable behavior and metadata that can be applied to classes, properties, methods, or parameters, enhancing code readability and providing a way to extend Angular functionality.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular state management patterns, and compare the use of NgRx and RxJS Subjects for state management.",
+            options: [
+              "Angular state management patterns are used to handle server-side logic in Angular applications.",
+              "Angular state management patterns are used to create and manage databases in Angular applications.",
+              "Angular state management patterns are used to define the structure and layout of the HTML for an Angular component.",
+              "NgRx is a state management library based on Redux, which follows a centralized, immutable store pattern, while RxJS Subjects provide a more decentralized, observable-based approach for managing state within Angular components.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the Angular Compiler API, and how can developers use it to programmatically manipulate templates?",
+            options: [
+              "The Angular Compiler API is used to handle server-side logic in Angular applications.",
+              "The Angular Compiler API is used to create and manage databases in Angular applications.",
+              "The Angular Compiler API is used to define the structure and layout of the HTML for an Angular component.",
+              "The Angular Compiler API allows developers to programmatically interact with the Angular template compiler, enabling dynamic template generation, template transformation, and custom template processing at runtime.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Angular reactive forms, and how do they differ from template-driven forms?",
+            options: [
+              "Angular reactive forms are used to handle server-side logic in Angular applications.",
+              "Angular reactive forms are used to create and manage databases in Angular applications.",
+              "Angular reactive forms are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular reactive forms provide a more programmatic and flexible approach to form handling, where form controls and validations are defined in the component class using TypeScript, offering better control and testability compared to template-driven forms.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the role of Web Workers in Angular applications and how they can improve performance.",
+            options: [
+              "Web Workers are used to handle server-side logic in Angular applications.",
+              "Web Workers are used to create and manage databases in Angular applications.",
+              "Web Workers are used to define the structure and layout of the HTML for an Angular component.",
+              "Web Workers allow developers to run background tasks in separate threads, freeing up the main UI thread and improving application responsiveness and performance.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are dynamic components in Angular, and how can they be created and loaded at runtime?",
+            options: [
+              "Dynamic components are used to handle server-side logic in Angular applications.",
+              "Dynamic components are used to create and manage databases in Angular applications.",
+              "Dynamic components are used to define the structure and layout of the HTML for an Angular component.",
+              "Dynamic components allow developers to create and load components dynamically at runtime, using the ComponentFactoryResolver and ViewContainerRef, which is useful for building flexible and dynamic user interfaces.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular zone-less change detection and its advantages.",
+            options: [
+              "Angular zone-less change detection is used to handle server-side logic in Angular applications.",
+              "Angular zone-less change detection is used to create and manage databases in Angular applications.",
+              "Angular zone-less change detection is used to define the structure and layout of the HTML for an Angular component.",
+              "Angular zone-less change detection eliminates the need for Angular zones and allows developers to manually trigger change detection for specific parts of the application, improving performance and reducing unnecessary change detection cycles.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular content projection (ng-content) and its use in creating reusable components.",
+            options: [
+              "Angular content projection is used to handle server-side logic in Angular applications.",
+              "Angular content projection is used to create and manage databases in Angular applications.",
+              "Angular content projection is used to define the structure and layout of the HTML for an Angular component.",
+              "Angular content projection allows developers to create reusable components with slots that can be filled with arbitrary content, enabling component customization and reusability.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Angular service workers, and how can they be used to implement Progressive Web Apps (PWAs)?",
+            options: [
+              "Angular service workers are used to handle server-side logic in Angular applications.",
+              "Angular service workers are used to create and manage databases in Angular applications.",
+              "Angular service workers are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular service workers allow developers to cache assets, enable offline access, and provide push notifications, enabling the creation of Progressive Web Apps (PWAs) that offer a better user experience and performance.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular zones and their role in managing change detection.",
+            options: [
+              "Angular zones are used to handle server-side logic in Angular applications.",
+              "Angular zones are used to create and manage databases in Angular applications.",
+              "Angular zones are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular zones are execution contexts that help to manage change detection and update the view when asynchronous tasks, such as HTTP requests or timers, are completed.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is differential loading in Angular, and how does it help in optimizing modern browsers and legacy browsers?",
+            options: [
+              "Differential loading is a technique to handle server-side logic in Angular applications.",
+              "Differential loading is a tool used to create and manage databases in Angular applications.",
+              "Differential loading is a way to define the structure and layout of the HTML for an Angular component.",
+              "Differential loading allows Angular to generate two separate bundles for modern browsers and legacy browsers, serving smaller and more efficient code to modern browsers that support ES2015+ features, while providing a fallback bundle with ES5 for older browsers.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Angular schematics, and how can they be used to generate and modify code in an Angular project?",
+            options: [
+              "Angular schematics are used to handle server-side logic in Angular applications.",
+              "Angular schematics are used to create and manage databases in Angular applications.",
+              "Angular schematics are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular schematics are command-line tools provided by the Angular CLI that allow developers to generate and modify code in an Angular project, creating components, services, modules, and more with custom templates and configurations.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular lazy loading and how it can improve application performance.",
+            options: [
+              "Angular lazy loading is used to handle server-side logic in Angular applications.",
+              "Angular lazy loading is used to create and manage databases in Angular applications.",
+              "Angular lazy loading is used to define the structure and layout of the HTML for an Angular component.",
+              "Angular lazy loading allows developers to load modules and components only when they are needed, reducing the initial loading time and optimizing the application performance.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Angular animations, and how can they be used to create smooth and interactive UI transitions?",
+            options: [
+              "Angular animations are used to handle server-side logic in Angular applications.",
+              "Angular animations are used to create and manage databases in Angular applications.",
+              "Angular animations are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular animations provide a way to animate HTML elements and components, creating smooth transitions and interactive UI effects, such as fade-ins, slide-ins, and rotations.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular ChangeDetectionStrategy and how it can impact application performance.",
+            options: [
+              "Angular ChangeDetectionStrategy is used to handle server-side logic in Angular applications.",
+              "Angular ChangeDetectionStrategy is used to create and manage databases in Angular applications.",
+              "Angular ChangeDetectionStrategy is used to define the structure and layout of the HTML for an Angular component.",
+              "Angular ChangeDetectionStrategy allows developers to choose how change detection is triggered and can impact application performance by controlling when and how often change detection runs.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the role of the Angular TestBed, and how is it used in Angular testing?",
+            options: [
+              "The Angular TestBed is used to handle server-side logic in Angular applications.",
+              "The Angular TestBed is used to create and manage databases in Angular applications.",
+              "The Angular TestBed is used to define the structure and layout of the HTML for an Angular component.",
+              "The Angular TestBed provides utilities and methods to configure and create an isolated testing environment for Angular components, services, and modules, allowing developers to write unit tests and perform component testing in an isolated and controlled environment.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Angular micro frontends and how they can be implemented to build scalable applications.",
+            options: [
+              "Angular micro frontends are used to handle server-side logic in Angular applications.",
+              "Angular micro frontends are used to create and manage databases in Angular applications.",
+              "Angular micro frontends are used to define the structure and layout of the HTML for an Angular component.",
+              "Angular micro frontends involve breaking down a large Angular application into smaller, self-contained applications that can be developed, deployed, and maintained independently, enabling better scalability, modularity, and team collaboration.",
+            ],
+            correctAnswer: "4",
+          },
+        ],
       },
     },
     vue: {
