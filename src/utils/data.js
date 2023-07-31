@@ -12835,63 +12835,2923 @@ const data = {
     },
     django: {
       "10 beginner django questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is Django?",
+            options: [
+              "A front-end JavaScript library.",
+              "A Python web framework for building web applications.",
+              "A database management system.",
+              "A server-side scripting language.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the role of Django's ORM (Object-Relational Mapping) in web development?",
+            options: [
+              "It is responsible for handling client-side routing in Django applications.",
+              "It is used for creating and managing databases in Django applications.",
+              "It provides a way to map database tables to Python objects, making it easier to interact with the database using Python code.",
+              "It is a template engine used for rendering dynamic HTML in Django applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How do you define a model in Django, and what is its purpose?",
+            options: [
+              "You define a model using JavaScript to handle client-side interactions.",
+              "You define a model using HTML to create the structure of a web page.",
+              "You define a model using Python code to represent the database schema and data structure, allowing you to interact with the database using Python objects.",
+              "You define a model using CSS to style the appearance of a web page.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is a Django template, and how is it used in web development?",
+            options: [
+              "A Django template is a Python file that defines the URL routes of a Django application.",
+              "A Django template is used to manage database migrations in Django applications.",
+              "A Django template is an HTML file with placeholders for dynamic content that are filled in when the page is rendered.",
+              "A Django template is a JavaScript file that handles the front-end logic of a Django application.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of Django's admin interface?",
+            options: [
+              "The admin interface is used to handle client-side authentication and authorization.",
+              "The admin interface is a template engine used for rendering dynamic HTML in Django applications.",
+              "The admin interface is a built-in feature of Django that provides a graphical interface for managing database records and performing CRUD (Create, Read, Update, Delete) operations.",
+              "The admin interface is a Python package used for handling external API requests in Django applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "How do you create a new Django project?",
+            options: [
+              "You use the 'django startproject' command in the command line.",
+              "You create a new HTML file and save it with a '.project' extension.",
+              "You use the 'django newproject' command in the command line.",
+              "You create a new Python file and save it with a '.project' extension.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the purpose of Django's URL dispatcher?",
+            options: [
+              "The URL dispatcher is responsible for handling client-side routing in Django applications.",
+              "The URL dispatcher is used for managing database migrations in Django applications.",
+              "The URL dispatcher is a template engine used for rendering dynamic HTML in Django applications.",
+              "The URL dispatcher is responsible for mapping URLs to views in Django applications.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is a Django view, and what is its role in web development?",
+            options: [
+              "A Django view is a JavaScript function that handles client-side interactions in a Django application.",
+              "A Django view is a Python function that processes HTTP requests and returns HTTP responses, handling the logic of a web page.",
+              "A Django view is an HTML file that defines the structure of a web page.",
+              "A Django view is a CSS file that styles the appearance of a web page.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "How do you create a new Django app within a project?",
+            options: [
+              "You use the 'django createapp' command in the command line.",
+              "You create a new Python file and save it with an '.app' extension.",
+              "You use the 'django app' command in the command line.",
+              "You use the 'django startapp' command in the command line.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "What is the purpose of Django's settings.py file?",
+            options: [
+              "The settings.py file is used for managing database migrations in Django applications.",
+              "The settings.py file is a JavaScript file that handles front-end configurations in a Django application.",
+              "The settings.py file is a CSS file that styles the appearance of a web page.",
+              "The settings.py file contains various configurations and settings for a Django project, such as database settings, installed apps, and middleware.",
+            ],
+            correctAnswer: "4",
+          },
+        ],
       },
       "15 beginner django questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is Django's primary programming language?",
+            options: ["Java", "Python", "JavaScript", "Ruby"],
+            correctAnswer: "2",
+          },
+          {
+            question: "What does 'MVT' stand for in the context of Django?",
+            options: [
+              "Model-View-Template",
+              "Model-View-Text",
+              "Model-View-Testing",
+              "Model-View-Table",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the purpose of Django's 'models.py' file?",
+            options: [
+              "To define the URL routes of a Django application.",
+              "To handle client-side authentication and authorization.",
+              "To manage database migrations in Django applications.",
+              "To define the database schema and data structure, representing tables and their relationships.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "How do you create a new Django superuser (admin) to access the admin interface?",
+            options: [
+              "By running 'python manage.py createsuperuser' and providing the necessary information.",
+              "By creating a new Python file with specific admin configurations.",
+              "By using the 'django createsuperuser' command in the command line.",
+              "By running 'npm createsuperuser' and providing the necessary information.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the purpose of Django's 'urls.py' file?",
+            options: [
+              "To manage database migrations in Django applications.",
+              "To handle client-side routing in Django applications.",
+              "To define the URL routes of a Django application.",
+              "To render dynamic HTML in Django applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "How do you create a new Django app within a project?",
+            options: [
+              "By using the 'django createapp' command in the command line.",
+              "By creating a new Python file and saving it with an '.app' extension.",
+              "By using the 'django app' command in the command line.",
+              "By using the 'django startapp' command in the command line.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "What is the purpose of Django's 'views.py' file?",
+            options: [
+              "To handle client-side interactions in a Django application using JavaScript.",
+              "To define the structure of a web page using HTML.",
+              "To process HTTP requests and return HTTP responses, handling the logic of a web page.",
+              "To style the appearance of a web page using CSS.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "How do you run a Django development server locally?",
+            options: [
+              "By using the 'npm start' command in the command line.",
+              "By using the 'python runserver' command in the command line.",
+              "By running a specific Python script.",
+              "By using the 'django server' command in the command line.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of Django's 'settings.py' file?",
+            options: [
+              "To manage database migrations in Django applications.",
+              "To handle front-end configurations in a Django application using JavaScript.",
+              "To style the appearance of a web page using CSS.",
+              "To contain various configurations and settings for a Django project, such as database settings, installed apps, and middleware.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "How do you create a new Django project?",
+            options: [
+              "By using the 'django startproject' command in the command line.",
+              "By creating a new HTML file and saving it with a '.project' extension.",
+              "By using the 'django newproject' command in the command line.",
+              "By creating a new Python file and saving it with a '.project' extension.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the purpose of Django's 'forms.py' file?",
+            options: [
+              "To handle front-end form validations using JavaScript.",
+              "To define the structure of a web page using HTML forms.",
+              "To process form data on the client side.",
+              "To define and manage HTML forms and their validations on the server side.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "In Django, what is the purpose of the 'STATIC_ROOT' setting?",
+            options: [
+              "To define the static file directories for JavaScript, CSS, and images.",
+              "To handle client-side routing in Django applications.",
+              "To manage database migrations in Django applications.",
+              "To specify the directory where static files are collected during the deployment process.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "What is the role of Django's 'admin.py' file?",
+            options: [
+              "To handle client-side authentication and authorization.",
+              "To define the URL routes of a Django application.",
+              "To manage database migrations in Django applications.",
+              "To customize the behavior and appearance of the admin interface for specific models.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "How do you define a model field in Django's 'models.py' file?",
+            options: [
+              "By using HTML tags to define the field's type and attributes.",
+              "By using CSS to style the appearance of the field.",
+              "By using JavaScript to handle form validations.",
+              "By using Python code to specify the field's type and additional attributes.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What does the Django template language use to mark placeholders for dynamic content?",
+            options: [
+              "Curly braces ({{ ... }})",
+              "Square brackets ([ ... ])",
+              "Angle brackets (< ... >)",
+              "Double parentheses (( ... ))",
+            ],
+            correctAnswer: "1",
+          },
+        ],
       },
       "20 beginner django questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is Django's primary programming language?",
+            options: ["Java", "Python", "JavaScript", "Ruby"],
+            correctAnswer: "2",
+          },
+          {
+            question: "What does 'MVT' stand for in the context of Django?",
+            options: [
+              "Model-View-Template",
+              "Model-View-Text",
+              "Model-View-Testing",
+              "Model-View-Table",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the purpose of Django's 'models.py' file?",
+            options: [
+              "To define the URL routes of a Django application.",
+              "To handle client-side authentication and authorization.",
+              "To manage database migrations in Django applications.",
+              "To define the database schema and data structure, representing tables and their relationships.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "How do you create a new Django superuser (admin) to access the admin interface?",
+            options: [
+              "By running 'python manage.py createsuperuser' and providing the necessary information.",
+              "By creating a new Python file with specific admin configurations.",
+              "By using the 'django createsuperuser' command in the command line.",
+              "By running 'npm createsuperuser' and providing the necessary information.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the purpose of Django's 'urls.py' file?",
+            options: [
+              "To manage database migrations in Django applications.",
+              "To handle client-side routing in Django applications.",
+              "To define the URL routes of a Django application.",
+              "To render dynamic HTML in Django applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "How do you create a new Django app within a project?",
+            options: [
+              "By using the 'django createapp' command in the command line.",
+              "By creating a new Python file and saving it with an '.app' extension.",
+              "By using the 'django app' command in the command line.",
+              "By using the 'django startapp' command in the command line.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "What is the purpose of Django's 'views.py' file?",
+            options: [
+              "To handle client-side interactions in a Django application using JavaScript.",
+              "To define the structure of a web page using HTML.",
+              "To process HTTP requests and return HTTP responses, handling the logic of a web page.",
+              "To style the appearance of a web page using CSS.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "How do you run a Django development server locally?",
+            options: [
+              "By using the 'npm start' command in the command line.",
+              "By using the 'python runserver' command in the command line.",
+              "By running a specific Python script.",
+              "By using the 'django server' command in the command line.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of Django's 'settings.py' file?",
+            options: [
+              "To manage database migrations in Django applications.",
+              "To handle front-end configurations in a Django application using JavaScript.",
+              "To style the appearance of a web page using CSS.",
+              "To contain various configurations and settings for a Django project, such as database settings, installed apps, and middleware.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "How do you create a new Django project?",
+            options: [
+              "By using the 'django startproject' command in the command line.",
+              "By creating a new HTML file and saving it with a '.project' extension.",
+              "By using the 'django newproject' command in the command line.",
+              "By creating a new Python file and saving it with a '.project' extension.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the purpose of Django's 'forms.py' file?",
+            options: [
+              "To handle front-end form validations using JavaScript.",
+              "To define the structure of a web page using HTML forms.",
+              "To process form data on the client side.",
+              "To define and manage HTML forms and their validations on the server side.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "In Django, what is the purpose of the 'STATIC_ROOT' setting?",
+            options: [
+              "To define the static file directories for JavaScript, CSS, and images.",
+              "To handle client-side routing in Django applications.",
+              "To manage database migrations in Django applications.",
+              "To specify the directory where static files are collected during the deployment process.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "What is the role of Django's 'admin.py' file?",
+            options: [
+              "To handle client-side authentication and authorization.",
+              "To define the URL routes of a Django application.",
+              "To manage database migrations in Django applications.",
+              "To customize the behavior and appearance of the admin interface for specific models.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "How do you define a model field in Django's 'models.py' file?",
+            options: [
+              "By using HTML tags to define the field's type and attributes.",
+              "By using CSS to style the appearance of the field.",
+              "By using JavaScript to handle form validations.",
+              "By using Python code to specify the field's type and additional attributes.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What does the Django template language use to mark placeholders for dynamic content?",
+            options: [
+              "Curly braces ({{ ... }})",
+              "Square brackets ([ ... ])",
+              "Angle brackets (< ... >)",
+              "Double parentheses (( ... ))",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "In Django, how do you define a URL pattern for a view?",
+            options: [
+              "By using the 'path()' function in 'urls.py' and providing the view's URL pattern.",
+              "By using the 'pattern()' function in 'views.py' and specifying the view's URL pattern.",
+              "By using the 'url()' function in 'urls.py' and passing the view's URL pattern.",
+              "By using the 'define_url()' function in 'urls.py' and indicating the view's URL pattern.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the purpose of Django's 'middleware'?",
+            options: [
+              "To manage database migrations in Django applications.",
+              "To handle client-side authentication and authorization.",
+              "To process HTTP requests and responses globally before they reach the views.",
+              "To handle front-end configurations in a Django application using JavaScript.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of Django's 'forms' module?",
+            options: [
+              "To handle front-end form validations using JavaScript.",
+              "To define the structure of a web page using HTML forms.",
+              "To process form data on the client side.",
+              "To define and manage HTML forms and their validations on the server side.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "In Django's admin interface, how do you register a model to be managed?",
+            options: [
+              "By creating a new Python file and saving it with a specific naming convention.",
+              "By using the 'register_model()' function in 'admin.py' and passing the model class as an argument.",
+              "By specifying the model in the 'settings.py' file under the 'admin_models' section.",
+              "By using the 'create_model()' function in 'admin.py' and providing the model's attributes.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of Django's 'HttpResponse' class?",
+            options: [
+              "To handle client-side interactions in a Django application using JavaScript.",
+              "To define the structure of a web page using HTML.",
+              "To process HTTP requests and return HTTP responses from views.",
+              "To style the appearance of a web page using CSS.",
+            ],
+            correctAnswer: "3",
+          },
+        ],
       },
       "10 intermed django questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What is the purpose of Django's 'ForeignKey' field in a model?",
+            options: [
+              "To create a foreign key relationship between two models.",
+              "To define the primary key of a model.",
+              "To specify the URL pattern for a view in 'urls.py'.",
+              "To handle front-end form validations using JavaScript.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are Django signals, and how are they used in web development?",
+            options: [
+              "Django signals are used for handling client-side events in JavaScript.",
+              "Django signals are a way to manage database migrations in Django applications.",
+              "Django signals are used for sending and receiving messages between different components of a Django application.",
+              "Django signals are a mechanism for allowing decoupled applications to get notified when certain actions occur elsewhere in the application.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the purpose of Django's 'get_object_or_404' function?",
+            options: [
+              "To handle client-side routing in Django applications.",
+              "To manage database migrations in Django applications.",
+              "To retrieve an object from the database and raise a 404 error if it doesn't exist.",
+              "To handle front-end form validations using JavaScript.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is Django's 'context' in the context of views and templates?",
+            options: [
+              "Django's 'context' is a JavaScript object that holds data to be passed to the template for rendering.",
+              "Django's 'context' is a way to manage client-side state in Django applications.",
+              "Django's 'context' is a dictionary-like object that holds data to be displayed in a template when rendering a view.",
+              "Django's 'context' is a CSS file that styles the appearance of a web page.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the purpose of Django's 'select_related' method in a queryset?",
+            options: [
+              "To handle front-end form validations using JavaScript.",
+              "To specify the fields to be included in the database query.",
+              "To create a select dropdown list for a form in Django applications.",
+              "To perform a SQL join and retrieve related objects in the same database query to reduce the number of database hits.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the role of Django's 'middleware' in web development?",
+            options: [
+              "To handle front-end configurations in a Django application using JavaScript.",
+              "To manage database migrations in Django applications.",
+              "To process HTTP requests and responses globally before they reach the views.",
+              "To handle client-side interactions in a Django application using JavaScript.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the purpose of Django's 'FormView' and 'CreateView' class-based views.",
+            options: [
+              "Django's 'FormView' is used for handling database migrations, and 'CreateView' is used for creating new models.",
+              "Django's 'FormView' is a class-based view for rendering forms, and 'CreateView' is a class-based view for creating new model instances.",
+              "Django's 'FormView' is used for handling client-side form validations, and 'CreateView' is used for handling form submissions.",
+              "Django's 'FormView' is a class-based view for handling client-side authentication and authorization.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "In Django, what is the purpose of the 'prefetch_related' method in a queryset?",
+            options: [
+              "To handle client-side routing in Django applications.",
+              "To manage database migrations in Django applications.",
+              "To specify the fields to be included in the database query.",
+              "To retrieve related objects along with the main objects in the same database query to optimize database performance.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question: "What is the purpose of Django's 'SessionMiddleware'?",
+            options: [
+              "To handle client-side authentication and authorization.",
+              "To manage database migrations in Django applications.",
+              "To handle front-end configurations in a Django application using JavaScript.",
+              "To enable session management, allowing users to store and retrieve data across requests.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the use of Django's 'StaticFilesStorage' and 'ManifestStaticFilesStorage' in a production environment.",
+            options: [
+              "Django's 'StaticFilesStorage' is used to manage client-side JavaScript files, while 'ManifestStaticFilesStorage' is used for CSS files.",
+              "Django's 'StaticFilesStorage' is used to handle front-end configurations, and 'ManifestStaticFilesStorage' is used for managing database migrations.",
+              "Django's 'StaticFilesStorage' is a middleware for handling static files, and 'ManifestStaticFilesStorage' is used for front-end form validations.",
+              "Django's 'StaticFilesStorage' and 'ManifestStaticFilesStorage' are used to collect and serve static files efficiently in a production environment, with 'ManifestStaticFilesStorage' adding unique hashes to file names for cache-busting purposes.",
+            ],
+            correctAnswer: "4",
+          },
+        ],
       },
       "15 intermed django questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain the purpose of Django's 'ModelForm' and how it is used in web development.",
+            options: [
+              "Django's 'ModelForm' is used for handling front-end form validations using JavaScript.",
+              "Django's 'ModelForm' is a way to manage database migrations in Django applications.",
+              "Django's 'ModelForm' is a form class that is automatically generated from a model and simplifies the process of creating forms for model instances.",
+              "Django's 'ModelForm' is used for client-side authentication and authorization.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What are Django class-based views, and how do they differ from function-based views?",
+            options: [
+              "Django class-based views are used for handling front-end configurations, while function-based views are used for database migrations.",
+              "Django class-based views and function-based views serve the same purpose but offer different syntax for defining views in Django applications.",
+              "Django class-based views are a modern way to define views using Python classes, providing built-in functionality for common tasks, while function-based views use traditional functions to define views.",
+              "Django class-based views and function-based views are the same and can be used interchangeably in Django applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the concept of Django migrations and their importance in database schema changes.",
+            options: [
+              "Django migrations are used to handle client-side routing in Django applications.",
+              "Django migrations are a way to manage client-side form validations.",
+              "Django migrations are scripts that automatically apply changes to the database schema, making it easier to handle changes to models without losing data.",
+              "Django migrations are JavaScript files that handle front-end configurations in Django applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of Django's 'reverse()' function?",
+            options: [
+              "To handle client-side routing in Django applications.",
+              "To manage database migrations in Django applications.",
+              "To handle front-end form validations using JavaScript.",
+              "To generate a URL for a given view by specifying its name and optional parameters.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "In Django, what is the role of the 'django.contrib' apps, and how are they used?",
+            options: [
+              "The 'django.contrib' apps are used for handling client-side form validations.",
+              "The 'django.contrib' apps are a set of built-in Django applications that provide common functionalities, such as authentication, admin interface, and static file handling.",
+              "The 'django.contrib' apps are used for managing database migrations in Django applications.",
+              "The 'django.contrib' apps are JavaScript libraries that handle front-end configurations in Django applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the purpose of Django's 'transaction.atomic()' decorator or context manager.",
+            options: [
+              "To handle client-side routing in Django applications.",
+              "To manage database migrations in Django applications.",
+              "To handle front-end configurations in a Django application using JavaScript.",
+              "To ensure that a block of database operations is executed as a single transaction, with rollback on failure.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is Django's 'QuerySet' in the context of database queries?",
+            options: [
+              "Django's 'QuerySet' is a way to manage front-end form validations using JavaScript.",
+              "Django's 'QuerySet' is a class used for handling client-side authentication and authorization.",
+              "Django's 'QuerySet' is a set of CSS styles applied to a specific view.",
+              "Django's 'QuerySet' is a powerful API for building and executing database queries to retrieve data from the database.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the purpose of Django's 'get_or_create()' method in a queryset?",
+            options: [
+              "To handle front-end configurations in a Django application using JavaScript.",
+              "To manage database migrations in Django applications.",
+              "To handle client-side routing in Django applications.",
+              "To retrieve an object from the database or create it if it doesn't exist.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the use of Django's 'Paginator' and 'Page' objects for handling pagination.",
+            options: [
+              "Django's 'Paginator' is a middleware for handling client-side routing in Django applications, and 'Page' objects are used for managing database migrations.",
+              "Django's 'Paginator' and 'Page' objects are used for front-end form validations using JavaScript.",
+              "Django's 'Paginator' is used to manage database migrations, and 'Page' objects are used for handling client-side form validations.",
+              "Django's 'Paginator' is used to split query results into multiple pages, and 'Page' objects represent individual pages of data in a paginated list.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the purpose of Django's 'bulk_create()' method for model instances?",
+            options: [
+              "To handle client-side routing in Django applications.",
+              "To manage database migrations in Django applications.",
+              "To handle front-end form validations using JavaScript.",
+              "To efficiently create multiple model instances in a single database query, improving performance when dealing with large sets of data.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the use of Django's 'Signals' framework and provide an example of when it might be used.",
+            options: [
+              "Django's 'Signals' framework is used to manage database migrations in Django applications.",
+              "Django's 'Signals' framework is a set of JavaScript libraries used for handling front-end configurations in Django applications.",
+              "Django's 'Signals' framework is used for client-side form validations.",
+              "Django's 'Signals' framework allows decoupled components to get notified when certain actions occur elsewhere in the application. For example, it can be used to trigger certain actions after a model instance is saved or deleted.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Django's 'Middlewares', and how do they function in the request-response cycle?",
+            options: [
+              "Django's 'Middlewares' are JavaScript libraries that handle front-end form validations.",
+              "Django's 'Middlewares' are a way to manage database migrations in Django applications.",
+              "Django's 'Middlewares' are used for handling client-side authentication and authorization.",
+              "Django's 'Middlewares' are components that process requests and responses globally before they reach the views, allowing you to add functionalities to the request-response cycle, such as authentication, compression, or caching.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is Django's 'Session' framework, and how is it used for session management?",
+            options: [
+              "Django's 'Session' framework is used to handle front-end form validations using JavaScript.",
+              "Django's 'Session' framework is a way to manage database migrations in Django applications.",
+              "Django's 'Session' framework is used for client-side authentication and authorization.",
+              "Django's 'Session' framework is used to store and retrieve data that persists across requests, enabling session management for users.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Django's 'Context Processors' and how they are used to provide data to templates.",
+            options: [
+              "Django's 'Context Processors' are used to handle front-end form validations using JavaScript.",
+              "Django's 'Context Processors' are a way to manage database migrations in Django applications.",
+              "Django's 'Context Processors' are used for client-side authentication and authorization.",
+              "Django's 'Context Processors' are functions that provide data to templates context, making the data available globally in all templates across the project.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the purpose of Django's 'Template Tags' and 'Filters', and how are they used in templates?",
+            options: [
+              "Django's 'Template Tags' and 'Filters' are used to handle front-end form validations using JavaScript.",
+              "Django's 'Template Tags' and 'Filters' are a way to manage database migrations in Django applications.",
+              "Django's 'Template Tags' and 'Filters' are used for client-side authentication and authorization.",
+              "Django's 'Template Tags' and 'Filters' provide additional functionalities to templates, allowing you to perform complex logic, modify data, or present data in specific ways within templates.",
+            ],
+            correctAnswer: "4",
+          },
+        ],
       },
       "20 intermed django questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain the purpose of Django's 'static' and 'media' folders in a Django project.",
+            options: [
+              "The 'static' folder is used to handle front-end configurations in a Django application using JavaScript, and the 'media' folder is used for client-side form validations.",
+              "The 'static' folder is a way to manage client-side routing in Django applications, and the 'media' folder is used for managing database migrations.",
+              "The 'static' folder is used for storing static files like CSS, JavaScript, and images, while the 'media' folder is used for user-uploaded files such as images and documents.",
+              "The 'static' folder is used for client-side authentication and authorization, and the 'media' folder is used for handling front-end form validations.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What are Django's 'context processors', and how do they function in the request-response cycle?",
+            options: [
+              "Django's 'context processors' are JavaScript libraries used to handle front-end form validations in Django applications.",
+              "Django's 'context processors' are a way to manage client-side routing in Django applications.",
+              "Django's 'context processors' are used for client-side authentication and authorization.",
+              "Django's 'context processors' are functions that provide data to the context of all templates, making the data available globally in all templates across the project.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the use of Django's 'cache' framework and how it helps in improving website performance.",
+            options: [
+              "Django's 'cache' framework is used to handle client-side routing in Django applications.",
+              "Django's 'cache' framework is a JavaScript library for handling front-end configurations.",
+              "Django's 'cache' framework is used for client-side form validations.",
+              "Django's 'cache' framework provides a caching mechanism to store the results of expensive queries or computations, reducing the load on the database and improving website performance.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is Django's 'QuerySet' in the context of database queries?",
+            options: [
+              "Django's 'QuerySet' is a way to manage front-end form validations using JavaScript.",
+              "Django's 'QuerySet' is a JavaScript library for handling front-end configurations in Django applications.",
+              "Django's 'QuerySet' is used for client-side authentication and authorization.",
+              "Django's 'QuerySet' is a powerful API for building and executing database queries to retrieve data from the database.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the purpose of Django's 'decorators' and provide an example of when you might use them.",
+            options: [
+              "Django's 'decorators' are used for handling front-end configurations in a Django application using JavaScript.",
+              "Django's 'decorators' are a way to manage database migrations in Django applications.",
+              "Django's 'decorators' are used for client-side authentication and authorization.",
+              "Django's 'decorators' are functions that allow you to modify the behavior of view functions, such as adding authentication checks or caching to specific views.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the purpose of Django's 'related_name' attribute in model relationships?",
+            options: [
+              "Django's 'related_name' attribute is used to handle client-side routing in Django applications.",
+              "Django's 'related_name' attribute is used for managing database migrations in Django applications.",
+              "Django's 'related_name' attribute is used for client-side form validations.",
+              "Django's 'related_name' attribute allows you to specify a custom name for the reverse relation from the related model back to the model that defines the relationship.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the use of Django's 'DateField', 'TimeField', and 'DateTimeField' for working with date and time in models.",
+            options: [
+              "Django's 'DateField' is used to manage client-side routing in Django applications, 'TimeField' is used for database migrations, and 'DateTimeField' is used for client-side form validations.",
+              "Django's 'DateField', 'TimeField', and 'DateTimeField' are JavaScript libraries for handling front-end configurations in Django applications.",
+              "Django's 'DateField', 'TimeField', and 'DateTimeField' are used for client-side authentication and authorization.",
+              "Django's 'DateField', 'TimeField', and 'DateTimeField' are used to store and work with date and time values in the database, allowing you to perform various operations and queries related to date and time.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What are Django's 'class-based views', and how do they differ from 'function-based views'?",
+            options: [
+              "Django's 'class-based views' are JavaScript libraries used for handling front-end form validations in Django applications, while 'function-based views' are used to manage client-side routing.",
+              "Django's 'class-based views' and 'function-based views' are both used for managing database migrations in Django applications.",
+              "Django's 'class-based views' are a way to manage client-side form validations, and 'function-based views' are used for handling front-end configurations in Django applications.",
+              "Django's 'class-based views' are a modern way to define views using Python classes, providing built-in functionality for common tasks, while 'function-based views' use traditional functions to define views.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the purpose of Django's 'select_related' and 'prefetch_related' methods in a queryset?",
+            options: [
+              "Django's 'select_related' and 'prefetch_related' are used to handle front-end configurations in a Django application using JavaScript.",
+              "Django's 'select_related' and 'prefetch_related' are a way to manage database migrations in Django applications.",
+              "Django's 'select_related' and 'prefetch_related' are used for client-side form validations.",
+              "Django's 'select_related' and 'prefetch_related' are query optimizations to fetch related objects in a single query instead of multiple database hits, reducing the number of queries and improving performance.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the use of Django's 'FormView' and 'ModelFormMixin' for handling forms in class-based views.",
+            options: [
+              "Django's 'FormView' and 'ModelFormMixin' are used to manage client-side routing in Django applications.",
+              "Django's 'FormView' and 'ModelFormMixin' are JavaScript libraries for handling front-end configurations.",
+              "Django's 'FormView' and 'ModelFormMixin' are used for client-side authentication and authorization.",
+              "Django's 'FormView' is a class-based view that handles form display and processing, while 'ModelFormMixin' is a mixin used with 'FormView' to handle model forms and save form data to the database.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the purpose of Django's 'filter()' and 'exclude()' methods in a queryset?",
+            options: [
+              "Django's 'filter()' and 'exclude()' methods are used for handling front-end form validations using JavaScript.",
+              "Django's 'filter()' and 'exclude()' methods are a way to manage client-side routing in Django applications.",
+              "Django's 'filter()' and 'exclude()' methods are used for client-side authentication and authorization.",
+              "Django's 'filter()' and 'exclude()' methods are used to apply filters to a queryset, allowing you to retrieve specific objects based on certain conditions.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the purpose of Django's 'Session' framework, and how is it used for session management?",
+            options: [
+              "Django's 'Session' framework is used to handle front-end form validations using JavaScript.",
+              "Django's 'Session' framework is used for managing database migrations in Django applications.",
+              "Django's 'Session' framework is a JavaScript library for handling front-end configurations.",
+              "Django's 'Session' framework is used to store and retrieve data that persists across requests, enabling session management for users.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the purpose of Django's 'aggregate()' function in a queryset?",
+            options: [
+              "Django's 'aggregate()' function is used for handling front-end configurations in a Django application using JavaScript.",
+              "Django's 'aggregate()' function is a JavaScript library used to manage client-side routing in Django applications.",
+              "Django's 'aggregate()' function is used for client-side form validations.",
+              "Django's 'aggregate()' function is used to perform calculations on a queryset, such as calculating the sum, average, or count of certain fields.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the concept of Django's 'Query Expressions' and when they might be used.",
+            options: [
+              "Django's 'Query Expressions' are used for handling front-end form validations using JavaScript.",
+              "Django's 'Query Expressions' are a way to manage client-side routing in Django applications.",
+              "Django's 'Query Expressions' are used for client-side authentication and authorization.",
+              "Django's 'Query Expressions' are used to perform operations and comparisons at the database level, allowing you to perform complex queries and updates.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the purpose of Django's 'TransactionMiddleware', and how does it handle transactions?",
+            options: [
+              "Django's 'TransactionMiddleware' is used for handling front-end configurations in a Django application using JavaScript.",
+              "Django's 'TransactionMiddleware' is a JavaScript library for handling front-end form validations.",
+              "Django's 'TransactionMiddleware' is used for client-side authentication and authorization.",
+              "Django's 'TransactionMiddleware' is a middleware that automatically wraps each view in a database transaction, ensuring that the view's database operations are atomic and rolled back on failure.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the purpose of Django's 'prefetch_related()' and 'prefetch_related_objects()' methods in a queryset.",
+            options: [
+              "Django's 'prefetch_related()' and 'prefetch_related_objects()' are used for handling front-end form validations using JavaScript.",
+              "Django's 'prefetch_related()' and 'prefetch_related_objects()' are JavaScript libraries for handling front-end configurations in Django applications.",
+              "Django's 'prefetch_related()' and 'prefetch_related_objects()' are used for client-side authentication and authorization.",
+              "Django's 'prefetch_related()' and 'prefetch_related_objects()' are used to retrieve related objects along with the primary objects in a queryset, reducing the number of database queries and improving performance.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the purpose of Django's 'slug' field in a model, and how is it used?",
+            options: [
+              "Django's 'slug' field is used for handling client-side routing in Django applications.",
+              "Django's 'slug' field is used for managing database migrations in Django applications.",
+              "Django's 'slug' field is a JavaScript library for handling front-end configurations.",
+              "Django's 'slug' field is used to store a URL-friendly version of a string, often used in URLs for SEO-friendly and human-readable links.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the use of Django's 'formsets' for working with multiple forms on a single page.",
+            options: [
+              "Django's 'formsets' are used to handle front-end configurations in a Django application using JavaScript.",
+              "Django's 'formsets' are JavaScript libraries for handling front-end form validations.",
+              "Django's 'formsets' are used for client-side authentication and authorization.",
+              "Django's 'formsets' are a way to manage multiple forms of the same type on a single page, allowing you to handle bulk data entry and form submission.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "What is the purpose of Django's 'ModelAdmin' class in the admin interface, and how is it customized?",
+            options: [
+              "Django's 'ModelAdmin' class is used to manage front-end form validations using JavaScript.",
+              "Django's 'ModelAdmin' class is used for handling client-side routing in Django applications.",
+              "Django's 'ModelAdmin' class is used for client-side authentication and authorization.",
+              "Django's 'ModelAdmin' class is used to customize the appearance and behavior of models in the Django admin interface, such as adding custom fields, filters, and actions.",
+            ],
+            correctAnswer: "4",
+          },
+          {
+            question:
+              "Explain the use of Django's 'get_object_or_404()' and 'get_list_or_404()' functions.",
+            options: [
+              "Django's 'get_object_or_404()' and 'get_list_or_404()' are used to manage front-end configurations in a Django application using JavaScript.",
+              "Django's 'get_object_or_404()' and 'get_list_or_404()' are JavaScript libraries for handling front-end form validations.",
+              "Django's 'get_object_or_404()' and 'get_list_or_404()' are used for client-side authentication and authorization.",
+              "Django's 'get_object_or_404()' is used to retrieve a single object from the database or raise a 404 error if the object does not exist, while 'get_list_or_404()' is used to retrieve a list of objects or raise a 404 error if the list is empty.",
+            ],
+            correctAnswer: "4",
+          },
+        ],
       },
       "10 advanced django questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain the purpose of Django's 'Custom Managers' and when you might use them in a Django application.",
+            options: [
+              "Django's 'Custom Managers' are used to handle front-end form validations using JavaScript.",
+              "Django's 'Custom Managers' are a way to manage client-side routing in Django applications.",
+              "Django's 'Custom Managers' are used for client-side authentication and authorization.",
+              "Django's 'Custom Managers' are custom manager classes that allow you to add custom query methods or encapsulate complex queries for a model, providing a higher-level API for database access.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What is Django's 'Query Expression API', and how does it differ from regular query methods?",
+            options: [
+              "Django's 'Query Expression API' is used to handle front-end configurations in a Django application using JavaScript.",
+              "Django's 'Query Expression API' is a JavaScript library for handling front-end form validations.",
+              "Django's 'Query Expression API' is used for client-side authentication and authorization.",
+              "Django's 'Query Expression API' allows you to perform complex database operations using Python expressions, extending the capabilities of regular query methods.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "Explain the use of Django's 'Signals' in decoupling components within a Django application.",
+            options: [
+              "Django's 'Signals' are used to manage front-end form validations using JavaScript.",
+              "Django's 'Signals' are a JavaScript library for handling front-end configurations in Django applications.",
+              "Django's 'Signals' are used for client-side authentication and authorization.",
+              "Django's 'Signals' allow certain senders to notify a set of receivers when certain actions occur, providing a decoupled way to trigger additional actions or behavior based on events.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What are Django's 'Middleware' classes, and how do they function in the request-response cycle?",
+            options: [
+              "Django's 'Middleware' classes are used for handling front-end form validations using JavaScript.",
+              "Django's 'Middleware' classes are a way to manage client-side routing in Django applications.",
+              "Django's 'Middleware' classes are used for client-side authentication and authorization.",
+              "Django's 'Middleware' classes are components that process HTTP requests and responses, allowing you to perform various operations at different stages of the request-response cycle, such as authentication, caching, compression, etc.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "Explain the use of Django's 'Abstract Base Classes' for model inheritance, and provide an example of when you might use them.",
+            options: [
+              "Django's 'Abstract Base Classes' are used to handle front-end form validations in a Django application using JavaScript.",
+              "Django's 'Abstract Base Classes' are a JavaScript library for handling front-end configurations.",
+              "Django's 'Abstract Base Classes' are used for client-side authentication and authorization.",
+              "Django's 'Abstract Base Classes' are used to create model inheritance, allowing you to define common fields and methods in a base model that can be inherited by other models, promoting code reuse and maintainability.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What is the purpose of Django's 'Model Inheritance' and what are the different types of model inheritance?",
+            options: [
+              "Django's 'Model Inheritance' is used for handling front-end form validations using JavaScript.",
+              "Django's 'Model Inheritance' is a JavaScript library for handling front-end configurations.",
+              "Django's 'Model Inheritance' is used for client-side authentication and authorization.",
+              "Django's 'Model Inheritance' allows you to create new models based on existing ones, enabling three types of inheritance: Abstract Base Classes, Multi-table Inheritance, and Proxy Models.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "Explain the concept of Django's 'database routers' and how they are used to manage multiple databases.",
+            options: [
+              "Django's 'database routers' are used to handle front-end form validations in a Django application using JavaScript.",
+              "Django's 'database routers' are a JavaScript library for handling front-end configurations.",
+              "Django's 'database routers' are used for client-side authentication and authorization.",
+              "Django's 'database routers' are components that allow you to specify different databases for different apps or models, enabling you to distribute data across multiple databases and manage database routing in complex projects.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What is Django's 'GeoDjango' and how does it support geographic data in a Django application?",
+            options: [
+              "Django's 'GeoDjango' is used for handling front-end form validations using JavaScript.",
+              "Django's 'GeoDjango' is a JavaScript library for handling front-end configurations.",
+              "Django's 'GeoDjango' is used for client-side authentication and authorization.",
+              "Django's 'GeoDjango' is an extension to Django that adds support for geographic data and operations, allowing you to work with points, lines, polygons, and perform spatial queries and calculations.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "Explain the use of Django's 'Asynchronous Views' using Django's 'async' and 'await' syntax.",
+            options: [
+              "Django's 'Asynchronous Views' are used to handle front-end form validations in a Django application using JavaScript.",
+              "Django's 'Asynchronous Views' are a JavaScript library for handling front-end configurations.",
+              "Django's 'Asynchronous Views' are used for client-side authentication and authorization.",
+              "Django's 'Asynchronous Views' allow you to define views using 'async def' and use 'await' to perform asynchronous operations, enabling better performance and scalability for certain tasks.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What is Django's 'contenttypes' framework, and how does it facilitate generic relationships in models?",
+            options: [
+              "Django's 'contenttypes' framework is used for handling front-end form validations using JavaScript.",
+              "Django's 'contenttypes' framework is a JavaScript library for handling front-end configurations.",
+              "Django's 'contenttypes' framework is used for client-side authentication and authorization.",
+              "Django's 'contenttypes' framework allows you to create generic relationships between models, enabling a model to have a foreign key to any other model using a single field, promoting flexibility and reusability in the database schema.",
+            ],
+            correctAnswer: 3,
+          },
+        ],
       },
       "15 advanced django questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain Django's 'Contrib Apps' and provide examples of some commonly used contrib apps.",
+            options: [
+              "Django's 'Contrib Apps' are used for handling front-end form validations using JavaScript.",
+              "Django's 'Contrib Apps' are a JavaScript library for handling front-end configurations.",
+              "Django's 'Contrib Apps' are used for client-side authentication and authorization.",
+              "Django's 'Contrib Apps' are pre-built apps provided by the Django community that offer reusable functionality and can be easily integrated into Django projects, such as 'django.contrib.admin', 'django.contrib.auth', etc.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What is Django's 'Caching Framework', and how does it improve the performance of a Django application?",
+            options: [
+              "Django's 'Caching Framework' is used for handling front-end form validations using JavaScript.",
+              "Django's 'Caching Framework' is a JavaScript library for handling front-end configurations.",
+              "Django's 'Caching Framework' is used for client-side authentication and authorization.",
+              "Django's 'Caching Framework' allows you to store frequently accessed data in cache memory, reducing the need to recompute or fetch data from the database, thus improving the response time and overall performance of the application.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "Explain Django's 'File Storage' system and how it manages uploaded files in a Django application.",
+            options: [
+              "Django's 'File Storage' system is used for handling front-end form validations using JavaScript.",
+              "Django's 'File Storage' system is a JavaScript library for handling front-end configurations.",
+              "Django's 'File Storage' system is used for client-side authentication and authorization.",
+              "Django's 'File Storage' system provides an abstraction layer over various file storage backends, such as local file storage, Amazon S3, Google Cloud Storage, allowing you to manage and handle uploaded files efficiently.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What is Django's 'Django Rest Framework (DRF)', and how does it facilitate building RESTful APIs?",
+            options: [
+              "Django's 'Django Rest Framework (DRF)' is used for handling front-end form validations using JavaScript.",
+              "Django's 'Django Rest Framework (DRF)' is a JavaScript library for handling front-end configurations.",
+              "Django's 'Django Rest Framework (DRF)' is used for client-side authentication and authorization.",
+              "Django's 'Django Rest Framework (DRF)' is a powerful toolkit for building Web APIs, providing serialization, authentication, permissions, pagination, and other utilities to simplify the process of creating RESTful APIs.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "Explain the purpose of Django's 'Django Channels' and how it enables handling real-time WebSockets and asynchronous tasks.",
+            options: [
+              "Django's 'Django Channels' are used to manage front-end form validations using JavaScript.",
+              "Django's 'Django Channels' are a way to manage client-side routing in Django applications.",
+              "Django's 'Django Channels' are used for client-side authentication and authorization.",
+              "Django's 'Django Channels' extends Django to handle WebSockets, allowing real-time communication and asynchronous task processing, making it suitable for building applications that require live updates and real-time interactions.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What is Django's 'Template Engine', and how does it simplify the rendering of dynamic content in templates?",
+            options: [
+              "Django's 'Template Engine' is used for handling front-end form validations using JavaScript.",
+              "Django's 'Template Engine' is a JavaScript library for handling front-end configurations.",
+              "Django's 'Template Engine' is used for client-side authentication and authorization.",
+              "Django's 'Template Engine' allows you to define dynamic templates with placeholders that are replaced by actual values during rendering, making it easier to generate dynamic HTML content and separate presentation from data.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "Explain Django's 'Custom Template Tags and Filters' and how they extend template functionality.",
+            options: [
+              "Django's 'Custom Template Tags and Filters' are used to handle front-end form validations using JavaScript.",
+              "Django's 'Custom Template Tags and Filters' are a JavaScript library for handling front-end configurations.",
+              "Django's 'Custom Template Tags and Filters' are used for client-side authentication and authorization.",
+              "Django's 'Custom Template Tags and Filters' allow you to create custom template tags and filters to perform complex operations and extend the capabilities of Django templates.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What is Django's 'Serialization', and how is it used to convert complex data structures to different formats?",
+            options: [
+              "Django's 'Serialization' is used for handling front-end form validations using JavaScript.",
+              "Django's 'Serialization' is a JavaScript library for handling front-end configurations.",
+              "Django's 'Serialization' is used for client-side authentication and authorization.",
+              "Django's 'Serialization' allows you to convert complex data, such as QuerySets or model instances, to different formats like JSON, XML, or YAML, making it easier to transfer data over the network or store it in various formats.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "Explain Django's 'Form Wizard' and how it simplifies the process of handling multi-step forms.",
+            options: [
+              "Django's 'Form Wizard' is used for handling front-end form validations using JavaScript.",
+              "Django's 'Form Wizard' is a JavaScript library for handling front-end configurations.",
+              "Django's 'Form Wizard' is used for client-side authentication and authorization.",
+              "Django's 'Form Wizard' provides a way to break a complex form into multiple steps, guiding users through the process of filling out the form and handling form data efficiently.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What is Django's 'Form Preview' and how does it allow users to review form data before submission?",
+            options: [
+              "Django's 'Form Preview' is used for handling front-end form validations using JavaScript.",
+              "Django's 'Form Preview' is a JavaScript library for handling front-end configurations.",
+              "Django's 'Form Preview' is used for client-side authentication and authorization.",
+              "Django's 'Form Preview' allows users to review form data before submitting it, reducing the risk of errors and providing a chance to make corrections.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "Explain Django's 'ModelForms' and how they simplify the process of creating forms based on models.",
+            options: [
+              "Django's 'ModelForms' are used for handling front-end form validations using JavaScript.",
+              "Django's 'ModelForms' are a JavaScript library for handling front-end configurations.",
+              "Django's 'ModelForms' are used for client-side authentication and authorization.",
+              "Django's 'ModelForms' allow you to automatically generate forms from existing models, saving time and effort in form creation and validation.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What are Django's 'Transaction Management' features, and how do they ensure data integrity in database operations?",
+            options: [
+              "Django's 'Transaction Management' is used for handling front-end form validations using JavaScript.",
+              "Django's 'Transaction Management' is a JavaScript library for handling front-end configurations.",
+              "Django's 'Transaction Management' is used for client-side authentication and authorization.",
+              "Django's 'Transaction Management' allows you to manage database transactions, ensuring that database operations are atomic and preserving data integrity even in the case of errors or exceptions.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "Explain Django's 'Database Migrations' and how they facilitate managing changes to database schemas over time.",
+            options: [
+              "Django's 'Database Migrations' are used for handling front-end form validations using JavaScript.",
+              "Django's 'Database Migrations' are a JavaScript library for handling front-end configurations.",
+              "Django's 'Database Migrations' are used for client-side authentication and authorization.",
+              "Django's 'Database Migrations' are a version control system for database schemas, allowing you to apply changes to the database in a structured and reversible manner as your application evolves.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What is Django's 'Authentication Middleware', and how does it manage user authentication in Django applications?",
+            options: [
+              "Django's 'Authentication Middleware' is used for handling front-end form validations using JavaScript.",
+              "Django's 'Authentication Middleware' is a JavaScript library for handling front-end configurations.",
+              "Django's 'Authentication Middleware' is used for client-side authentication and authorization.",
+              "Django's 'Authentication Middleware' is responsible for identifying and authenticating users, handling sessions, and managing user authentication during requests and responses.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "Explain Django's 'Authorization' and how it manages user permissions and access control in Django applications.",
+            options: [
+              "Django's 'Authorization' is used for handling front-end form validations using JavaScript.",
+              "Django's 'Authorization' is a JavaScript library for handling front-end configurations.",
+              "Django's 'Authorization' is used for client-side authentication and authorization.",
+              "Django's 'Authorization' is a mechanism for controlling user access to resources and actions, defining permissions and user roles to ensure secure and controlled access to specific parts of the application.",
+            ],
+            correctAnswer: 3,
+          },
+        ],
       },
       "20 advanced django questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain Django's 'Database Routing' and how it allows you to manage multiple databases in a Django project.",
+            options: [
+              "Django's 'Database Routing' is used for handling front-end form validations using JavaScript.",
+              "Django's 'Database Routing' is a JavaScript library for handling front-end configurations.",
+              "Django's 'Database Routing' is used for client-side authentication and authorization.",
+              "Django's 'Database Routing' is a feature that enables you to define rules for directing different models to different databases, allowing you to distribute data across multiple databases in a Django project.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What is Django's 'FileField' and 'ImageField', and how do they facilitate file and image handling in models?",
+            options: [
+              "Django's 'FileField' and 'ImageField' are used for handling front-end form validations using JavaScript.",
+              "Django's 'FileField' and 'ImageField' are a JavaScript library for handling front-end configurations.",
+              "Django's 'FileField' and 'ImageField' are used for client-side authentication and authorization.",
+              "Django's 'FileField' and 'ImageField' are model fields that allow you to store and manage files and images in models, handling file uploads, storage, and retrieval effortlessly.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "Explain Django's 'Prefetch Related' and 'Prefetch Generic' query optimizations, and how they improve database query performance.",
+            options: [
+              "Django's 'Prefetch Related' and 'Prefetch Generic' are used for handling front-end form validations using JavaScript.",
+              "Django's 'Prefetch Related' and 'Prefetch Generic' are a JavaScript library for handling front-end configurations.",
+              "Django's 'Prefetch Related' and 'Prefetch Generic' are used for client-side authentication and authorization.",
+              "Django's 'Prefetch Related' and 'Prefetch Generic' are query optimizations that allow you to reduce the number of database queries by prefetching related and generic foreign key relationships, significantly improving query performance.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What are Django's 'Custom Template Context Processors', and how do they provide additional data to templates?",
+            options: [
+              "Django's 'Custom Template Context Processors' are used for handling front-end form validations using JavaScript.",
+              "Django's 'Custom Template Context Processors' are a JavaScript library for handling front-end configurations.",
+              "Django's 'Custom Template Context Processors' are used for client-side authentication and authorization.",
+              "Django's 'Custom Template Context Processors' are functions that add custom data to the template context, making it available to all templates rendered with RequestContext.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "Explain Django's 'Middlewares' and how they function in the request-response cycle.",
+            options: [
+              "Django's 'Middlewares' are used for handling front-end form validations using JavaScript.",
+              "Django's 'Middlewares' are a JavaScript library for handling front-end configurations.",
+              "Django's 'Middlewares' are used for client-side authentication and authorization.",
+              "Django's 'Middlewares' are components that process HTTP requests and responses, providing a way to perform additional operations before or after a view is executed, allowing you to add functionalities like authentication, caching, etc.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What is Django's 'Contrib Messages' framework, and how does it facilitate sending messages to users?",
+            options: [
+              "Django's 'Contrib Messages' framework is used for handling front-end form validations using JavaScript.",
+              "Django's 'Contrib Messages' framework is a JavaScript library for handling front-end configurations.",
+              "Django's 'Contrib Messages' framework is used for client-side authentication and authorization.",
+              "Django's 'Contrib Messages' framework allows you to send messages to users, like success or error messages, which persist across redirect requests.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "Explain Django's 'Content Type Framework', and how it enables generic relationships between models.",
+            options: [
+              "Django's 'Content Type Framework' is used for handling front-end form validations using JavaScript.",
+              "Django's 'Content Type Framework' is a JavaScript library for handling front-end configurations.",
+              "Django's 'Content Type Framework' is used for client-side authentication and authorization.",
+              "Django's 'Content Type Framework' allows you to create generic relationships between models, enabling a model to have a foreign key to any other model using a single field, promoting flexibility and reusability in the database schema.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What is Django's 'Custom Field' and how does it allow you to create custom database fields?",
+            options: [
+              "Django's 'Custom Field' is used for handling front-end form validations using JavaScript.",
+              "Django's 'Custom Field' is a JavaScript library for handling front-end configurations.",
+              "Django's 'Custom Field' is used for client-side authentication and authorization.",
+              "Django's 'Custom Field' allows you to create custom database fields, defining how data is stored and retrieved in the database, extending the available field types in Django models.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "Explain Django's 'Template Tags' and how they allow you to extend template functionality.",
+            options: [
+              "Django's 'Template Tags' are used for handling front-end form validations using JavaScript.",
+              "Django's 'Template Tags' are a JavaScript library for handling front-end configurations.",
+              "Django's 'Template Tags' are used for client-side authentication and authorization.",
+              "Django's 'Template Tags' are custom template tags that enable you to add complex logic and functionalities to Django templates, making them more powerful and expressive.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What is Django's 'Custom Authentication Backend', and how does it allow you to implement custom authentication methods?",
+            options: [
+              "Django's 'Custom Authentication Backend' is used for handling front-end form validations using JavaScript.",
+              "Django's 'Custom Authentication Backend' is a JavaScript library for handling front-end configurations.",
+              "Django's 'Custom Authentication Backend' is used for client-side authentication and authorization.",
+              "Django's 'Custom Authentication Backend' allows you to define custom authentication methods and backend logic, providing flexibility in authenticating users against different data sources and systems.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "Explain Django's 'Custom Managers' and how they allow you to create custom query methods for models.",
+            options: [
+              "Django's 'Custom Managers' are used for handling front-end form validations using JavaScript.",
+              "Django's 'Custom Managers' are a JavaScript library for handling front-end configurations.",
+              "Django's 'Custom Managers' are used for client-side authentication and authorization.",
+              "Django's 'Custom Managers' are custom manager classes that allow you to add custom query methods or encapsulate complex queries for a model, providing a higher-level API for database access.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What is Django's 'Bulk Operations' and how does it optimize database interactions for large datasets?",
+            options: [
+              "Django's 'Bulk Operations' are used for handling front-end form validations using JavaScript.",
+              "Django's 'Bulk Operations' are a JavaScript library for handling front-end configurations.",
+              "Django's 'Bulk Operations' are used for client-side authentication and authorization.",
+              "Django's 'Bulk Operations' allow you to perform batch operations on the database, reducing the number of queries and significantly improving performance when dealing with large datasets.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "Explain Django's 'Database Functions' and how they enable you to use database-specific functions in queries.",
+            options: [
+              "Django's 'Database Functions' are used for handling front-end form validations using JavaScript.",
+              "Django's 'Database Functions' are a JavaScript library for handling front-end configurations.",
+              "Django's 'Database Functions' are used for client-side authentication and authorization.",
+              "Django's 'Database Functions' allow you to use database-specific functions in queries, leveraging the full power of your database engine in Django's ORM.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What is Django's 'Transaction Management' and how does it ensure data consistency and integrity in database operations?",
+            options: [
+              "Django's 'Transaction Management' is used for handling front-end form validations using JavaScript.",
+              "Django's 'Transaction Management' is a JavaScript library for handling front-end configurations.",
+              "Django's 'Transaction Management' is used for client-side authentication and authorization.",
+              "Django's 'Transaction Management' allows you to manage database transactions, ensuring that database operations are atomic and preserving data consistency and integrity.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "Explain Django's 'Custom Validators' and how they allow you to implement custom validation logic for form fields.",
+            options: [
+              "Django's 'Custom Validators' are used for handling front-end form validations using JavaScript.",
+              "Django's 'Custom Validators' are a JavaScript library for handling front-end configurations.",
+              "Django's 'Custom Validators' are used for client-side authentication and authorization.",
+              "Django's 'Custom Validators' allow you to define custom validation functions for form fields, ensuring that data entered by users meets specific criteria.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What is Django's 'GeoDjango' and how does it support geographic data and operations?",
+            options: [
+              "Django's 'GeoDjango' is used for handling front-end form validations using JavaScript.",
+              "Django's 'GeoDjango' is a JavaScript library for handling front-end configurations.",
+              "Django's 'GeoDjango' is used for client-side authentication and authorization.",
+              "Django's 'GeoDjango' is an extension to Django that adds support for geographic data and operations, allowing you to work with points, lines, polygons, and perform spatial queries and calculations.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "Explain Django's 'Admin Actions' and how they allow you to perform bulk operations on model records from the Django admin interface.",
+            options: [
+              "Django's 'Admin Actions' are used for handling front-end form validations using JavaScript.",
+              "Django's 'Admin Actions' are a JavaScript library for handling front-end configurations.",
+              "Django's 'Admin Actions' are used for client-side authentication and authorization.",
+              "Django's 'Admin Actions' allow you to create custom actions in the Django admin interface, enabling you to perform bulk operations on selected model records.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What is Django's 'Django REST framework' and how does it simplify building RESTful APIs?",
+            options: [
+              "Django's 'Django REST framework' is used for handling front-end form validations using JavaScript.",
+              "Django's 'Django REST framework' is a JavaScript library for handling front-end configurations.",
+              "Django's 'Django REST framework' is used for client-side authentication and authorization.",
+              "Django's 'Django REST framework' is a powerful toolkit for building Web APIs, providing serialization, authentication, permissions, pagination, and other utilities to simplify the process of creating RESTful APIs.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "Explain Django's 'Authentication Backends' and how they allow you to customize user authentication methods.",
+            options: [
+              "Django's 'Authentication Backends' are used for handling front-end form validations using JavaScript.",
+              "Django's 'Authentication Backends' are a JavaScript library for handling front-end configurations.",
+              "Django's 'Authentication Backends' are used for client-side authentication and authorization.",
+              "Django's 'Authentication Backends' allow you to define custom authentication methods, providing flexibility in authenticating users against different data sources and systems.",
+            ],
+            correctAnswer: 3,
+          },
+          {
+            question:
+              "What is Django's 'Custom Test Runners' and how do they allow you to customize test execution?",
+            options: [
+              "Django's 'Custom Test Runners' are used for handling front-end form validations using JavaScript.",
+              "Django's 'Custom Test Runners' are a JavaScript library for handling front-end configurations.",
+              "Django's 'Custom Test Runners' are used for client-side authentication and authorization.",
+              "Django's 'Custom Test Runners' allow you to define custom behavior during test execution, enabling you to customize the test suite and control the test output and behavior.",
+            ],
+            correctAnswer: 3,
+          },
+        ],
       },
     },
     flask: {
       "10 beginner flask questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is Flask?",
+            options: [
+              "A front-end JavaScript framework.",
+              "A back-end database management system.",
+              "A micro web framework for building web applications in Python.",
+              "A markup language for creating web pages.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What programming language is Flask built on?",
+            options: ["Java", "Python", "JavaScript", "C#"],
+            correctAnswer: "1",
+          },
+          {
+            question: "Which command is used to install Flask?",
+            options: [
+              "npm install flask",
+              "pip install flask",
+              "apt-get install flask",
+              "install flask",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the purpose of a Flask route?",
+            options: [
+              "To define the layout and design of a web page.",
+              "To handle user authentication.",
+              "To map URLs to Python functions and define the behavior of the application for different routes.",
+              "To manage database operations.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "How do you define a route in Flask?",
+            options: [
+              "Using the @app.route decorator above a Python function.",
+              "By creating a 'route()' object and passing it the URL and function.",
+              "Using the 'def route()' statement at the beginning of a Python function.",
+              "By specifying the route in the HTML template.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What does the following Flask code do? app.run()",
+            options: [
+              "Starts the Flask application on the specified host and port.",
+              "Executes the Python script containing the Flask app.",
+              "Defines a new route in the Flask application.",
+              "Installs Flask on the system.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "How does Flask handle HTTP requests?",
+            options: [
+              "Flask automatically sends HTTP requests to the server using AJAX.",
+              "Flask uses the 'fetch()' function in JavaScript to handle HTTP requests.",
+              "Flask is a server-side framework that processes HTTP requests and generates responses using Python functions.",
+              "Flask has built-in JavaScript functions to handle HTTP requests.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is a Flask template?",
+            options: [
+              "A pre-designed web page layout provided by Flask.",
+              "A function that renders JSON data in the Flask app.",
+              "A Python script that creates Flask routes.",
+              "A file containing HTML code with placeholders for dynamic content that Flask will fill in.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How do you pass data from a Flask route to an HTML template?",
+            options: [
+              "By using JavaScript functions to send data to the template.",
+              "By using the 'request' object in the template to fetch data.",
+              "By rendering the template with arguments in the 'render_template()' function.",
+              "By using Flask's 'data-pass' attribute in the template's HTML tags.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is Flask's 'Jinja2'?",
+            options: [
+              "A JavaScript library used for client-side rendering.",
+              "A database management system.",
+              "A templating engine used by Flask to render dynamic content in HTML templates.",
+              "A Python module that handles user authentication in Flask apps.",
+            ],
+            correctAnswer: "2",
+          },
+        ],
       },
       "15 beginner flask questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is Flask?",
+            options: [
+              "A front-end JavaScript framework.",
+              "A back-end database management system.",
+              "A micro web framework for building web applications in Python.",
+              "A markup language for creating web pages.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What programming language is Flask built on?",
+            options: ["Java", "Python", "JavaScript", "C#"],
+            correctAnswer: "1",
+          },
+          {
+            question: "Which command is used to install Flask?",
+            options: [
+              "npm install flask",
+              "pip install flask",
+              "apt-get install flask",
+              "install flask",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the purpose of a Flask route?",
+            options: [
+              "To define the layout and design of a web page.",
+              "To handle user authentication.",
+              "To map URLs to Python functions and define the behavior of the application for different routes.",
+              "To manage database operations.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "How do you define a route in Flask?",
+            options: [
+              "Using the @app.route decorator above a Python function.",
+              "By creating a 'route()' object and passing it the URL and function.",
+              "Using the 'def route()' statement at the beginning of a Python function.",
+              "By specifying the route in the HTML template.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What does the following Flask code do? app.run()",
+            options: [
+              "Starts the Flask application on the specified host and port.",
+              "Executes the Python script containing the Flask app.",
+              "Defines a new route in the Flask application.",
+              "Installs Flask on the system.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "How does Flask handle HTTP requests?",
+            options: [
+              "Flask automatically sends HTTP requests to the server using AJAX.",
+              "Flask uses the 'fetch()' function in JavaScript to handle HTTP requests.",
+              "Flask is a server-side framework that processes HTTP requests and generates responses using Python functions.",
+              "Flask has built-in JavaScript functions to handle HTTP requests.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is a Flask template?",
+            options: [
+              "A pre-designed web page layout provided by Flask.",
+              "A function that renders JSON data in the Flask app.",
+              "A Python script that creates Flask routes.",
+              "A file containing HTML code with placeholders for dynamic content that Flask will fill in.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How do you pass data from a Flask route to an HTML template?",
+            options: [
+              "By using JavaScript functions to send data to the template.",
+              "By using the 'request' object in the template to fetch data.",
+              "By rendering the template with arguments in the 'render_template()' function.",
+              "By using Flask's 'data-pass' attribute in the template's HTML tags.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is Flask's 'Jinja2'?",
+            options: [
+              "A JavaScript library used for client-side rendering.",
+              "A database management system.",
+              "A templating engine used by Flask to render dynamic content in HTML templates.",
+              "A Python module that handles user authentication in Flask apps.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "How do you access form data submitted in a POST request in Flask?",
+            options: [
+              "By using the 'request.form' dictionary.",
+              "By using the 'form' attribute of the 'request' object.",
+              "By using the 'data' attribute of the 'request' object.",
+              "By using the 'request.body' attribute.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Which Flask module is used for managing cookies and sessions?",
+            options: [
+              "flask.sql",
+              "flask.http",
+              "flask.cookie",
+              "flask.session",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of Flask's 'redirect' function?",
+            options: [
+              "To create a new URL route in the application.",
+              "To handle URL routing for client-side requests.",
+              "To redirect users to a different URL or route.",
+              "To render a template with dynamic content.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "How can you access query parameters from the URL in Flask?",
+            options: [
+              "By using the 'query' attribute of the 'request' object.",
+              "By using the 'request.params' dictionary.",
+              "By using the 'query_string' attribute of the 'request' object.",
+              "By using the 'request.args' dictionary.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is Flask's 'request' object used for?",
+            options: [
+              "To send HTTP requests to the server.",
+              "To receive HTTP responses from the server.",
+              "To access data from incoming HTTP requests, such as form data, query parameters, and cookies.",
+              "To manage the application's routing and URL mapping.",
+            ],
+            correctAnswer: "2",
+          },
+        ],
       },
       "20 beginner flask questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is Flask?",
+            options: [
+              "A front-end JavaScript framework.",
+              "A back-end database management system.",
+              "A micro web framework for building web applications in Python.",
+              "A markup language for creating web pages.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What programming language is Flask built on?",
+            options: ["Java", "Python", "JavaScript", "C#"],
+            correctAnswer: "1",
+          },
+          {
+            question: "Which command is used to install Flask?",
+            options: [
+              "npm install flask",
+              "pip install flask",
+              "apt-get install flask",
+              "install flask",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the purpose of a Flask route?",
+            options: [
+              "To define the layout and design of a web page.",
+              "To handle user authentication.",
+              "To map URLs to Python functions and define the behavior of the application for different routes.",
+              "To manage database operations.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "How do you define a route in Flask?",
+            options: [
+              "Using the @app.route decorator above a Python function.",
+              "By creating a 'route()' object and passing it the URL and function.",
+              "Using the 'def route()' statement at the beginning of a Python function.",
+              "By specifying the route in the HTML template.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What does the following Flask code do? app.run()",
+            options: [
+              "Starts the Flask application on the specified host and port.",
+              "Executes the Python script containing the Flask app.",
+              "Defines a new route in the Flask application.",
+              "Installs Flask on the system.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "How does Flask handle HTTP requests?",
+            options: [
+              "Flask automatically sends HTTP requests to the server using AJAX.",
+              "Flask uses the 'fetch()' function in JavaScript to handle HTTP requests.",
+              "Flask is a server-side framework that processes HTTP requests and generates responses using Python functions.",
+              "Flask has built-in JavaScript functions to handle HTTP requests.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is a Flask template?",
+            options: [
+              "A pre-designed web page layout provided by Flask.",
+              "A function that renders JSON data in the Flask app.",
+              "A Python script that creates Flask routes.",
+              "A file containing HTML code with placeholders for dynamic content that Flask will fill in.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How do you pass data from a Flask route to an HTML template?",
+            options: [
+              "By using JavaScript functions to send data to the template.",
+              "By using the 'request' object in the template to fetch data.",
+              "By rendering the template with arguments in the 'render_template()' function.",
+              "By using Flask's 'data-pass' attribute in the template's HTML tags.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is Flask's 'Jinja2'?",
+            options: [
+              "A JavaScript library used for client-side rendering.",
+              "A database management system.",
+              "A templating engine used by Flask to render dynamic content in HTML templates.",
+              "A Python module that handles user authentication in Flask apps.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "How do you access form data submitted in a POST request in Flask?",
+            options: [
+              "By using the 'request.form' dictionary.",
+              "By using the 'form' attribute of the 'request' object.",
+              "By using the 'data' attribute of the 'request' object.",
+              "By using the 'request.body' attribute.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Which Flask module is used for managing cookies and sessions?",
+            options: [
+              "flask.sql",
+              "flask.http",
+              "flask.cookie",
+              "flask.session",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of Flask's 'redirect' function?",
+            options: [
+              "To create a new URL route in the application.",
+              "To handle URL routing for client-side requests.",
+              "To redirect users to a different URL or route.",
+              "To render a template with dynamic content.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "How can you access query parameters from the URL in Flask?",
+            options: [
+              "By using the 'query' attribute of the 'request' object.",
+              "By using the 'request.params' dictionary.",
+              "By using the 'query_string' attribute of the 'request' object.",
+              "By using the 'request.args' dictionary.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is Flask's 'request' object used for?",
+            options: [
+              "To send HTTP requests to the server.",
+              "To receive HTTP responses from the server.",
+              "To access data from incoming HTTP requests, such as form data, query parameters, and cookies.",
+              "To manage the application's routing and URL mapping.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of Flask's 'abort' function?",
+            options: [
+              "To stop the execution of a Python function.",
+              "To handle exceptions in Flask routes.",
+              "To terminate the application's execution.",
+              "To abort the current HTTP request and return an error response.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How do you handle static files such as CSS and JavaScript in Flask?",
+            options: [
+              "By including the files directly in the HTML templates.",
+              "By using the 'static' folder and serving files through Flask's 'url_for' function.",
+              "By using the 'static' folder and directly linking to the files in the HTML templates.",
+              "By using the 'static' folder and serving files through Flask's 'request.static' attribute.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the purpose of Flask's 'url_for' function?",
+            options: [
+              "To create a URL route in Flask.",
+              "To handle URL routing for client-side requests.",
+              "To generate a URL for a specific route defined in the application.",
+              "To redirect users to a different URL or route.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the default port number on which the Flask development server runs?",
+            options: ["5000", "8080", "3000", "8000"],
+            correctAnswer: "0",
+          },
+          {
+            question: "How do you start the development server in Flask?",
+            options: [
+              "Run the command 'python app.py'.",
+              "Run the command 'flask run'.",
+              "Run the command 'python server.py'.",
+              "Run the command 'flask start'.",
+            ],
+            correctAnswer: "1",
+          },
+        ],
       },
       "10 intermed flask questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is Flask-WTF used for in Flask applications?",
+            options: [
+              "Handling HTTP requests and responses.",
+              "Validating and processing HTML forms.",
+              "Managing user authentication and authorization.",
+              "Creating API endpoints for the application.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the purpose of Flask's 'Blueprint'?",
+            options: [
+              "To create a blueprint of the application's structure.",
+              "To handle routing and URL mapping in the application.",
+              "To organize and group related routes and views.",
+              "To generate dynamic HTML templates.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "How do you define custom error pages (e.g., 404 Not Found) in Flask?",
+            options: [
+              "By using the @app.errorhandler decorator.",
+              "By creating a new route for each error page.",
+              "By modifying the built-in Flask error handling functions.",
+              "By defining custom error templates in the 'errors' folder.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is the purpose of Flask's 'g' object?",
+            options: [
+              "To store and share data globally between different parts of the application during a single request.",
+              "To manage and interact with the application's database.",
+              "To handle and store user sessions.",
+              "To manage user authentication and authorization.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "In Flask, what does the '@app.before_request' decorator do?",
+            options: [
+              "It defines a function that runs before any request is processed.",
+              "It handles HTTP requests before they reach the server.",
+              "It runs a function after the request has been processed.",
+              "It defines a function that runs after any request is processed.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is Flask-Migrate used for in Flask applications?",
+            options: [
+              "Handling data migrations between different database versions.",
+              "Creating and managing database schemas.",
+              "Managing user sessions and cookies.",
+              "Validating and processing HTML forms.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "In Flask, how do you set up a database connection?",
+            options: [
+              "By creating a new 'Database' object and passing it the connection parameters.",
+              "By using the 'flask.db.connect()' function.",
+              "By creating a 'SQLAlchemy' object and configuring it with the application.",
+              "By defining a new route that handles the database connection.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of Flask's 'current_app'?",
+            options: [
+              "To access the application context outside of request-handling functions.",
+              "To store the current user's session data.",
+              "To handle the current request's headers and cookies.",
+              "To manage and store database connections.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is Flask-CORS used for in Flask applications?",
+            options: [
+              "To enable Cross-Origin Resource Sharing (CORS) for handling requests from different domains.",
+              "To handle user authentication and authorization.",
+              "To manage and interact with the application's database.",
+              "To create API endpoints for the application.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "In Flask, how do you handle file uploads from HTML forms?",
+            options: [
+              "By using the 'request.file_upload' attribute.",
+              "By creating a new route specifically for handling file uploads.",
+              "By using the 'request.files' dictionary.",
+              "By setting the 'enctype' attribute of the HTML form to 'multipart/form-data'.",
+            ],
+            correctAnswer: "2",
+          },
+        ],
       },
       "15 intermed flask questions": {
-        questions: [],
+        questions: [
+          {
+            question: "What is the purpose of Flask's 'session' object?",
+            options: [
+              "To manage database connections in the application.",
+              "To store user-specific data across requests using cookies.",
+              "To handle user authentication and authorization.",
+              "To manage the application's static files.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "How do you handle database operations in Flask?",
+            options: [
+              "By using the 'flask.db' module for direct SQL queries.",
+              "By creating a new 'Database' object and passing it the connection parameters.",
+              "By using Flask's built-in 'db' object and defining models with SQLAlchemy.",
+              "By running SQL scripts directly in the HTML templates.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of Flask's 'url_for' function?",
+            options: [
+              "To create a new URL route in the application.",
+              "To handle URL routing for client-side requests.",
+              "To generate a URL for a specific route defined in the application.",
+              "To redirect users to a different URL or route.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is Flask-SQLAlchemy used for in Flask applications?",
+            options: [
+              "Handling data migrations between different database versions.",
+              "Creating and managing database schemas.",
+              "Managing user sessions and cookies.",
+              "Interacting with the application's database using an Object-Relational Mapping (ORM) system.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "In Flask, how do you define a 'one-to-many' relationship between two database models using SQLAlchemy?",
+            options: [
+              "By using the 'relationship' attribute with the 'lazy' option set to 'one'.",
+              "By using the 'relationship' attribute with the 'uselist' option set to 'True'.",
+              "By using the 'relationship' attribute with the 'uselist' option set to 'False'.",
+              "By defining a foreign key in the primary model referencing the other model's primary key.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is the purpose of Flask's 'before_first_request' decorator?",
+            options: [
+              "To define a function that runs before any request is processed.",
+              "To handle HTTP requests before they reach the server.",
+              "To define a function that runs once before the first request is processed.",
+              "To define a function that runs after the first request is processed.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "In Flask, how do you handle form validation?",
+            options: [
+              "By using JavaScript to validate forms on the client-side.",
+              "By using Flask's built-in form validation functions.",
+              "By using the 'form.validate_on_submit()' method with Flask-WTF.",
+              "By creating a custom form validation function for each form.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of Flask's 'flash' function?",
+            options: [
+              "To display flash messages to the user for a short period.",
+              "To handle file uploads in the application.",
+              "To manage user sessions and cookies.",
+              "To handle HTTP requests and responses.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is Flask-Migrate used for in Flask applications?",
+            options: [
+              "Handling data migrations between different database versions.",
+              "Creating and managing database schemas.",
+              "Managing user sessions and cookies.",
+              "Validating and processing HTML forms.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "In Flask, how do you handle file uploads from HTML forms?",
+            options: [
+              "By using the 'request.file_upload' attribute.",
+              "By creating a new route specifically for handling file uploads.",
+              "By using the 'request.files' dictionary.",
+              "By setting the 'enctype' attribute of the HTML form to 'multipart/form-data'.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of Flask's 'g' object?",
+            options: [
+              "To store and share data globally between different parts of the application during a single request.",
+              "To manage and interact with the application's database.",
+              "To handle and store user sessions.",
+              "To manage user authentication and authorization.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is the purpose of Flask's 'current_app'?",
+            options: [
+              "To access the application context outside of request-handling functions.",
+              "To store the current user's session data.",
+              "To handle the current request's headers and cookies.",
+              "To manage and store database connections.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "In Flask, how do you set up a database connection?",
+            options: [
+              "By creating a new 'Database' object and passing it the connection parameters.",
+              "By using the 'flask.db.connect()' function.",
+              "By creating a 'SQLAlchemy' object and configuring it with the application.",
+              "By defining a new route that handles the database connection.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is Flask-CORS used for in Flask applications?",
+            options: [
+              "To enable Cross-Origin Resource Sharing (CORS) for handling requests from different domains.",
+              "To handle user authentication and authorization.",
+              "To manage and interact with the application's database.",
+              "To create API endpoints for the application.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "How do you handle database operations in Flask?",
+            options: [
+              "By using the 'flask.db' module for direct SQL queries.",
+              "By creating a new 'Database' object and passing it the connection parameters.",
+              "By using Flask's built-in 'db' object and defining models with SQLAlchemy.",
+              "By running SQL scripts directly in the HTML templates.",
+            ],
+            correctAnswer: "2",
+          },
+        ],
       },
       "20 intermed flask questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What is the purpose of Flask's 'before_request' decorator?",
+            options: [
+              "To define a function that runs before any request is processed.",
+              "To handle HTTP requests before they reach the server.",
+              "To define a function that runs before each request is processed.",
+              "To define a function that runs after each request is processed.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "In Flask, how do you handle form validation?",
+            options: [
+              "By using JavaScript to validate forms on the client-side.",
+              "By using Flask's built-in form validation functions.",
+              "By using the 'form.validate_on_submit()' method with Flask-WTF.",
+              "By creating a custom form validation function for each form.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of Flask's 'flash' function?",
+            options: [
+              "To display flash messages to the user for a short period.",
+              "To handle file uploads in the application.",
+              "To manage user sessions and cookies.",
+              "To handle HTTP requests and responses.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is Flask-SQLAlchemy used for in Flask applications?",
+            options: [
+              "Handling data migrations between different database versions.",
+              "Creating and managing database schemas.",
+              "Managing user sessions and cookies.",
+              "Interacting with the application's database using an Object-Relational Mapping (ORM) system.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "In Flask, how do you define a 'one-to-many' relationship between two database models using SQLAlchemy?",
+            options: [
+              "By using the 'relationship' attribute with the 'lazy' option set to 'one'.",
+              "By using the 'relationship' attribute with the 'uselist' option set to 'True'.",
+              "By using the 'relationship' attribute with the 'uselist' option set to 'False'.",
+              "By defining a foreign key in the primary model referencing the other model's primary key.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is the purpose of Flask's 'before_first_request' decorator?",
+            options: [
+              "To define a function that runs before any request is processed.",
+              "To handle HTTP requests before they reach the server.",
+              "To define a function that runs once before the first request is processed.",
+              "To define a function that runs after the first request is processed.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is Flask-Security used for in Flask applications?",
+            options: [
+              "Handling user authentication and authorization.",
+              "Creating and managing database schemas.",
+              "Interacting with the application's database using an Object-Relational Mapping (ORM) system.",
+              "Handling data migrations between different database versions.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is the purpose of Flask's 'url_for' function?",
+            options: [
+              "To create a new URL route in the application.",
+              "To handle URL routing for client-side requests.",
+              "To generate a URL for a specific route defined in the application.",
+              "To redirect users to a different URL or route.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "In Flask, how do you define a custom error page for 404 Not Found?",
+            options: [
+              "By using the @app.errorhandler decorator with the error code 404.",
+              "By creating a new route specifically for handling 404 errors.",
+              "By modifying the built-in Flask error handling functions.",
+              "By defining a custom error template in the 'errors' folder.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "In Flask, how do you access the current user's information in a view function?",
+            options: [
+              "By using the 'current_user' global variable.",
+              "By fetching the user information from the database in each view function.",
+              "By using the 'user' attribute of the 'request' object.",
+              "By using the 'current_user' attribute of the 'flask_login' module.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of Flask's 'g' object?",
+            options: [
+              "To store and share data globally between different parts of the application during a single request.",
+              "To manage and interact with the application's database.",
+              "To handle and store user sessions.",
+              "To manage user authentication and authorization.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "What is the purpose of Flask's 'current_app'?",
+            options: [
+              "To access the application context outside of request-handling functions.",
+              "To store the current user's session data.",
+              "To handle the current request's headers and cookies.",
+              "To manage and store database connections.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "In Flask, how do you set up a database connection?",
+            options: [
+              "By creating a new 'Database' object and passing it the connection parameters.",
+              "By using the 'flask.db.connect()' function.",
+              "By creating a 'SQLAlchemy' object and configuring it with the application.",
+              "By defining a new route that handles the database connection.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is Flask-CORS used for in Flask applications?",
+            options: [
+              "To enable Cross-Origin Resource Sharing (CORS) for handling requests from different domains.",
+              "To handle user authentication and authorization.",
+              "To manage and interact with the application's database.",
+              "To create API endpoints for the application.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question: "How do you handle database operations in Flask?",
+            options: [
+              "By using the 'flask.db' module for direct SQL queries.",
+              "By creating a new 'Database' object and passing it the connection parameters.",
+              "By using Flask's built-in 'db' object and defining models with SQLAlchemy.",
+              "By running SQL scripts directly in the HTML templates.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question: "What is the purpose of Flask's 'abort' function?",
+            options: [
+              "To stop the execution of a Python function.",
+              "To handle exceptions in Flask routes.",
+              "To terminate the application's execution.",
+              "To abort the current HTTP request and return an error response.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How do you handle static files such as CSS and JavaScript in Flask?",
+            options: [
+              "By including the files directly in the HTML templates.",
+              "By using the 'static' folder and serving files through Flask's 'url_for' function.",
+              "By using the 'static' folder and directly linking to the files in the HTML templates.",
+              "By using the 'static' folder and serving files through Flask's 'request.static' attribute.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question: "What is the purpose of Flask's 'redirect' function?",
+            options: [
+              "To create a new URL route in the application.",
+              "To handle URL routing for client-side requests.",
+              "To redirect users to a different URL or route.",
+              "To render a template with dynamic content.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "In Flask, how do you access query parameters from the URL?",
+            options: [
+              "By using the 'query' attribute of the 'request' object.",
+              "By using the 'request.params' dictionary.",
+              "By using the 'query_string' attribute of the 'request' object.",
+              "By using the 'request.args' dictionary.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question: "What is the purpose of Flask's 'session' object?",
+            options: [
+              "To manage database connections in the application.",
+              "To store user-specific data across requests using cookies.",
+              "To handle user authentication and authorization.",
+              "To manage the application's static files.",
+            ],
+            correctAnswer: "1",
+          },
+        ],
       },
       "10 advanced flask questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What is Flask Blueprints, and how do they enhance the structure of large applications?",
+            options: [
+              "Flask Blueprints are a way to organize views, templates, and static files in a Flask application.",
+              "Flask Blueprints are used to handle database migrations and versioning.",
+              "Flask Blueprints are a set of pre-defined CSS styles and templates for quick application development.",
+              "Flask Blueprints are used to enable asynchronous tasks and background processing in Flask applications.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What are Flask Signals, and how are they used in Flask applications?",
+            options: [
+              "Flask Signals are used to implement real-time event-driven communication between the server and the client.",
+              "Flask Signals are used to send push notifications to mobile devices.",
+              "Flask Signals are a mechanism for enabling scheduled tasks and cron jobs in Flask applications.",
+              "Flask Signals allow certain senders to notify a set of receivers when an action occurs, enabling decoupling and extensibility.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain how you can implement role-based access control (RBAC) in a Flask application.",
+            options: [
+              "RBAC can be implemented using decorators to restrict access to certain routes based on user roles.",
+              "RBAC can be implemented by manually checking user roles in each view function.",
+              "RBAC can be implemented by using middleware to handle authentication and authorization.",
+              "RBAC can be implemented by creating separate Flask Blueprints for each user role.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "How do you implement a RESTful API using Flask? Provide an example.",
+            options: [
+              "By creating specific routes for each API endpoint, such as '/api/users' or '/api/products'.",
+              "By creating separate Flask Blueprints for each API resource.",
+              "By using Flask-RESTful extension to define resources and their corresponding CRUD operations.",
+              "By using the 'POST', 'GET', 'PUT', and 'DELETE' methods directly in the view functions.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What is the purpose of Flask-Migrate, and how do you use it to manage database migrations?",
+            options: [
+              "Flask-Migrate is used to handle user authentication and authorization in Flask applications.",
+              "Flask-Migrate is used to manage data migrations between different database versions.",
+              "Flask-Migrate is used to create API endpoints for the application.",
+              "Flask-Migrate is used to implement WebSocket communication in Flask applications.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of Flask's application factory pattern. What benefits does it offer?",
+            options: [
+              "The application factory pattern is a way to create Flask applications using a factory function instead of a single instance.",
+              "The application factory pattern is a way to manage user sessions and cookies in Flask applications.",
+              "The application factory pattern is a method to enable asynchronous tasks and background processing in Flask applications.",
+              "The application factory pattern is a design pattern for building microservices in Flask.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What are Flask Contexts, and how do they work in Flask applications?",
+            options: [
+              "Flask Contexts are used to manage the application's database connections.",
+              "Flask Contexts are used to manage asynchronous tasks in Flask applications.",
+              "Flask Contexts are used to handle different types of HTTP requests and responses.",
+              "Flask Contexts provide a way to share information across different parts of the application during a request's lifecycle.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain the purpose of Flask-SocketIO and how it enables real-time communication in Flask applications.",
+            options: [
+              "Flask-SocketIO is used to handle WebSocket connections and enable real-time bidirectional communication between the server and the client.",
+              "Flask-SocketIO is used to implement RESTful APIs and enable real-time data exchange.",
+              "Flask-SocketIO is used to manage user authentication and authorization in Flask applications.",
+              "Flask-SocketIO is used to handle background tasks and asynchronous operations in Flask applications.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "How do you handle file uploads and storage in Flask applications? Provide an example.",
+            options: [
+              "File uploads are handled by directly saving the files to a specific folder on the server.",
+              "File uploads are handled by using a custom file upload library in the Flask application.",
+              "File uploads are handled by using the 'request.file_upload' attribute.",
+              "File uploads are handled by using Flask extensions like Flask-Uploads or Flask-Dropzone.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the purpose of Flask's 'ctx' attribute, and how is it used in advanced scenarios?",
+            options: [
+              "The 'ctx' attribute provides access to the application context outside of request-handling functions.",
+              "The 'ctx' attribute is used to manage user sessions and cookies in Flask applications.",
+              "The 'ctx' attribute is used to handle asynchronous tasks and background processing in Flask applications.",
+              "The 'ctx' attribute provides access to the current request context, enabling advanced request-specific operations.",
+            ],
+            correctAnswer: "3",
+          },
+        ],
       },
       "15 advanced flask questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "What is the purpose of Flask's 'context processors' and how do you use them in templates?",
+            options: [
+              "Context processors are used to handle database operations in Flask applications.",
+              "Context processors are used to create custom template functions that can be used in Jinja templates.",
+              "Context processors are used to manage user sessions and cookies.",
+              "Context processors are used to handle asynchronous tasks and background processing.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of 'Werkzeug' in Flask and its significance.",
+            options: [
+              "Werkzeug is a Python web application library used to handle HTTP requests and responses in Flask applications.",
+              "Werkzeug is a database management system used with Flask applications.",
+              "Werkzeug is a JavaScript library used for client-side interactions in Flask applications.",
+              "Werkzeug is a template engine used to render HTML templates in Flask applications.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What are Flask Blueprints, and how do they enhance the modularity and extensibility of large applications?",
+            options: [
+              "Flask Blueprints are a way to organize views, templates, and static files in a Flask application.",
+              "Flask Blueprints are used to handle database migrations and versioning.",
+              "Flask Blueprints are a set of pre-defined CSS styles and templates for quick application development.",
+              "Flask Blueprints are used to create reusable and self-contained components that can be registered in multiple Flask applications.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How do you implement custom error handling for specific HTTP status codes in Flask?",
+            options: [
+              "By using the 'errorhandler' decorator with the specific status code.",
+              "By creating separate Flask Blueprints for each error code.",
+              "By using the 'error_code' attribute of the 'request' object in view functions.",
+              "By using the 'exception_handler' decorator for specific exceptions.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the purpose of Flask's 'url_for' function, and how is it different from directly specifying URLs in templates?",
+            options: [
+              "The 'url_for' function generates URLs dynamically based on the route's name and arguments, making it more flexible and less error-prone than hardcoding URLs in templates.",
+              "The 'url_for' function is used to handle URL routing for client-side requests.",
+              "The 'url_for' function allows Flask applications to handle WebSocket communication.",
+              "The 'url_for' function is used to redirect users to a different URL or route.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "How do you implement custom URL converters in Flask routes, and what benefits do they offer?",
+            options: [
+              "Custom URL converters are implemented by creating a new 'Converter' class and registering it with the application, enabling more specific and customized route patterns.",
+              "Custom URL converters are implemented by defining regular expressions directly in the route parameters.",
+              "Custom URL converters are implemented by using Flask's built-in converters, such as 'int' and 'float'.",
+              "Custom URL converters are implemented by using JavaScript to handle URL conversions on the client-side.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Explain how you can use Flask's 'after_request' and 'teardown_request' decorators.",
+            options: [
+              "The 'after_request' decorator is used to define a function that runs after each request is processed, while the 'teardown_request' decorator is used to define a function that runs after each request is processed, regardless of whether an exception occurred.",
+              "The 'after_request' decorator is used to handle HTTP responses before they are sent to the client, while the 'teardown_request' decorator is used to manage database connections after each request.",
+              "The 'after_request' decorator is used to define a function that runs before each request is processed, while the 'teardown_request' decorator is used to define a function that runs after each request is processed, but only if no exception occurred.",
+              "The 'after_request' decorator is used to manage user sessions and cookies, while the 'teardown_request' decorator is used to handle asynchronous tasks and background processing.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What are Flask Extensions, and how do they contribute to the scalability of Flask applications?",
+            options: [
+              "Flask Extensions are a way to modularize Flask applications by providing additional functionalities, such as database support, authentication, and API management.",
+              "Flask Extensions are used to handle WebSocket communication in Flask applications.",
+              "Flask Extensions are used to create reusable and sharable template components for Flask applications.",
+              "Flask Extensions are used to manage user sessions and cookies.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "How do you handle file uploads and storage securely in Flask applications? Provide best practices.",
+            options: [
+              "File uploads are handled by directly saving the files to a specific folder on the server.",
+              "File uploads are handled by using the 'request.file_upload' attribute.",
+              "File uploads are handled by using Flask extensions like Flask-Uploads or Flask-Dropzone.",
+              "File uploads are handled by sanitizing and validating the uploaded files and storing them in a secure location, such as on cloud storage services.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the purpose of Flask's 'stream_with_context' function, and how is it used for streaming large responses?",
+            options: [
+              "The 'stream_with_context' function is used to handle WebSocket communication in Flask applications.",
+              "The 'stream_with_context' function is used to manage asynchronous tasks and background processing in Flask applications.",
+              "The 'stream_with_context' function is used to handle long-polling requests.",
+              "The 'stream_with_context' function is used to stream large responses in a memory-efficient way, making it ideal for handling large files or real-time data streaming.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain how you can optimize the performance of a Flask application to handle a large number of concurrent users.",
+            options: [
+              "Optimize the performance by using asynchronous programming techniques such as Flask-SocketIO or gevent.",
+              "Optimize the performance by using multiple instances of the application with load balancing.",
+              "Optimize the performance by minimizing database queries and implementing caching mechanisms.",
+              "Optimize the performance by reducing the usage of Flask Extensions and using pure Flask functionalities instead.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "What is the purpose of Flask's 'send_file' function, and how is it used to serve files in Flask applications?",
+            options: [
+              "The 'send_file' function is used to manage user sessions and cookies in Flask applications.",
+              "The 'send_file' function is used to handle WebSocket communication in Flask applications.",
+              "The 'send_file' function is used to serve files to clients, making it suitable for file downloads or streaming large files.",
+              "The 'send_file' function is used to handle background tasks and asynchronous operations in Flask applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "How do you implement pagination for large data sets in Flask applications?",
+            options: [
+              "Pagination can be implemented by manually slicing the data set based on the current page and the number of items per page.",
+              "Pagination can be implemented using Flask extensions like Flask-Paginate or Flask-SQLAlchemy.",
+              "Pagination can be implemented by handling the pagination logic in JavaScript on the client-side.",
+              "Pagination is automatically managed by Flask's built-in features when returning large data sets in view functions.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What are Flask Blueprints, and how do you utilize them to create modular and reusable components in a large application?",
+            options: [
+              "Flask Blueprints are used to handle database migrations and versioning.",
+              "Flask Blueprints are a set of pre-defined CSS styles and templates for quick application development.",
+              "Flask Blueprints are used to create reusable and self-contained components that can be registered in multiple Flask applications.",
+              "Flask Blueprints are used to enable asynchronous tasks and background processing in Flask applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain how you can handle cross-site request forgery (CSRF) protection in Flask applications.",
+            options: [
+              "CSRF protection can be implemented by manually adding a CSRF token to each form in the application.",
+              "CSRF protection is automatically enabled by Flask's built-in security features.",
+              "CSRF protection can be implemented using Flask extensions like Flask-WTF.",
+              "CSRF protection can be implemented by using JavaScript on the client-side to manage CSRF tokens.",
+            ],
+            correctAnswer: "2",
+          },
+        ],
       },
       "20 advanced flask questions": {
-        questions: [],
+        questions: [
+          {
+            question:
+              "Explain the purpose of Flask's 'Blueprints' and how they contribute to the maintainability and scalability of large applications.",
+            options: [
+              "Flask Blueprints are used to organize views, templates, and static files in a Flask application.",
+              "Flask Blueprints are used to handle database migrations and versioning.",
+              "Flask Blueprints are a set of pre-defined CSS styles and templates for quick application development.",
+              "Flask Blueprints are used to create modular and reusable components that can be registered in multiple Flask applications, making it easier to manage large codebases.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How do you implement token-based authentication in Flask applications, and what benefits does it offer over traditional session-based authentication?",
+            options: [
+              "Token-based authentication can be implemented using Flask extensions like Flask-Login.",
+              "Token-based authentication can be implemented using JWT (JSON Web Tokens) to generate and verify tokens, providing stateless authentication and scalability.",
+              "Token-based authentication can be implemented by storing tokens in user sessions on the server.",
+              "Token-based authentication can be implemented by using Flask-Security to manage user authentication and authorization.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of 'request hooks' in Flask and how they can be used to modify requests and responses globally across the application.",
+            options: [
+              "Request hooks are used to handle HTTP requests and responses before they reach the server.",
+              "Request hooks are used to manage user sessions and cookies.",
+              "Request hooks are used to handle asynchronous tasks and background processing in Flask applications.",
+              "Request hooks are functions that can be registered with the application to intercept and modify requests and responses globally, enabling functionalities such as logging, error handling, or authentication checks.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How do you implement role-based access control (RBAC) with dynamic permissions in Flask applications?",
+            options: [
+              "RBAC can be implemented using Flask's built-in decorators to restrict access to specific routes based on user roles and permissions.",
+              "RBAC can be implemented by defining a role hierarchy and dynamically assigning permissions to roles.",
+              "RBAC can be implemented by using Flask-Principal to manage roles and permissions.",
+              "RBAC can be implemented by manually checking user roles and permissions in each view function.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "What is the purpose of Flask's 'Signals' and how are they used to enable decoupled and event-driven communication within a Flask application?",
+            options: [
+              "Flask Signals are used to handle WebSocket communication in Flask applications.",
+              "Flask Signals are used to implement RESTful APIs and enable real-time data exchange.",
+              "Flask Signals are used to manage asynchronous tasks and background processing in Flask applications.",
+              "Flask Signals are a mechanism for enabling communication between different parts of the application by allowing certain senders to notify a set of receivers when an action occurs, decoupling components and enabling extensibility.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "What is the role of Flask's 'context globals,' such as 'g' and 'current_app,' and how do they enable communication within the application during a request's lifecycle?",
+            options: [
+              "Flask's 'context globals' are used to manage user sessions and cookies in Flask applications.",
+              "Flask's 'context globals' are used to handle asynchronous tasks and background processing in Flask applications.",
+              "Flask's 'context globals' are used to store data that is specific to a particular request and accessible globally during that request's lifecycle.",
+              "Flask's 'context globals' are used to manage database connections in the application.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the purpose of Flask's 'Extension' class and how you can create custom Flask extensions to add new functionalities to the application.",
+            options: [
+              "Flask's 'Extension' class is used to handle database operations in Flask applications.",
+              "Flask's 'Extension' class is used to manage user sessions and cookies.",
+              "Flask's 'Extension' class is used to handle asynchronous tasks and background processing in Flask applications.",
+              "Flask's 'Extension' class is used as a base class to create custom Flask extensions, which can be added to the application to extend its functionalities, such as database support, authentication, API management, and more.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How do you implement fine-grained caching mechanisms for specific views or resources in Flask applications?",
+            options: [
+              "Caching can be implemented using the 'cache' attribute of the 'request' object in Flask views.",
+              "Caching can be implemented by manually storing the responses of specific views in a cache, such as Redis.",
+              "Caching can be implemented by using Flask-Caching extension to selectively cache the responses of specific views or resources, allowing fine-grained control over cache expiration and invalidation.",
+              "Caching is automatically handled by Flask's built-in caching mechanisms for all views by default.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "Explain the concept of Flask's 'app context' and 'request context,' and how they enable the sharing of data across the application.",
+            options: [
+              "Flask's 'app context' and 'request context' are used to manage user sessions and cookies in Flask applications.",
+              "Flask's 'app context' and 'request context' are used to handle asynchronous tasks and background processing in Flask applications.",
+              "Flask's 'app context' provides a way to share data across different parts of the application during its lifecycle, while 'request context' provides a way to share data across different parts of the application during a specific request's lifecycle.",
+              "Flask's 'app context' provides a way to manage database connections, while 'request context' provides a way to handle different types of HTTP requests and responses.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are the best practices for deploying Flask applications in production environments, considering performance, security, and scalability?",
+            options: [
+              "Deploy Flask applications on shared hosting environments to reduce costs.",
+              "Use a production-ready web server, such as Gunicorn or uWSGI, to serve the application.",
+              "Enable debug mode in production to quickly identify and fix issues.",
+              "Use a reverse proxy, such as Nginx or Apache, to handle SSL termination and load balancing.",
+            ],
+            correctAnswer: "1",
+          },
+          {
+            question:
+              "Explain the concept of 'Application Factories' in Flask and how they contribute to the configurability and testability of the application.",
+            options: [
+              "Application Factories are used to manage user sessions and cookies in Flask applications.",
+              "Application Factories are used to handle asynchronous tasks and background processing in Flask applications.",
+              "Application Factories are used to create separate instances of the application with different configurations, enabling easier testing and development.",
+              "Application Factories are used to handle WebSocket communication in Flask applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are Flask Blueprints, and how do you utilize them to create modular and reusable components in a large application?",
+            options: [
+              "Flask Blueprints are used to handle database migrations and versioning.",
+              "Flask Blueprints are a set of pre-defined CSS styles and templates for quick application development.",
+              "Flask Blueprints are used to create reusable and self-contained components that can be registered in multiple Flask applications.",
+              "Flask Blueprints are used to enable asynchronous tasks and background processing in Flask applications.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "How do you implement custom URL converters in Flask routes, and what benefits do they offer over built-in converters?",
+            options: [
+              "Custom URL converters are implemented by defining regular expressions directly in the route parameters.",
+              "Custom URL converters are implemented by using Flask's built-in converters, such as 'int' and 'float'.",
+              "Custom URL converters are implemented by using JavaScript to handle URL conversions on the client-side.",
+              "Custom URL converters are implemented by creating a new 'Converter' class and registering it with the application, enabling more specific and customized route patterns.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "How do you handle file uploads and storage securely in Flask applications? Provide best practices.",
+            options: [
+              "File uploads are handled by directly saving the files to a specific folder on the server.",
+              "File uploads are handled by using the 'request.file_upload' attribute.",
+              "File uploads are handled by using Flask extensions like Flask-Uploads or Flask-Dropzone.",
+              "File uploads are handled by sanitizing and validating the uploaded files and storing them in a secure location, such as on cloud storage services.",
+            ],
+            correctAnswer: "3",
+          },
+          {
+            question:
+              "Explain how you can use Flask's 'after_request' and 'teardown_request' decorators to add functionalities to the request and response cycle.",
+            options: [
+              "The 'after_request' decorator is used to handle HTTP responses before they are sent to the client, while the 'teardown_request' decorator is used to manage database connections after each request.",
+              "The 'after_request' decorator is used to define a function that runs before each request is processed, while the 'teardown_request' decorator is used to define a function that runs after each request is processed, but only if no exception occurred.",
+              "The 'after_request' decorator is used to define a function that runs after each request is processed, while the 'teardown_request' decorator is used to define a function that runs after each request is processed, regardless of whether an exception occurred.",
+              "The 'after_request' decorator is used to manage user sessions and cookies, while the 'teardown_request' decorator is used to handle asynchronous tasks and background processing.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "What are Flask Extensions, and how do they contribute to the maintainability and extensibility of Flask applications?",
+            options: [
+              "Flask Extensions are a way to modularize Flask applications by providing additional functionalities, such as database support, authentication, and API management.",
+              "Flask Extensions are used to handle WebSocket communication in Flask applications.",
+              "Flask Extensions are used to create reusable and sharable template components for Flask applications.",
+              "Flask Extensions are used to manage user sessions and cookies.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Explain the purpose of Flask's 'url_for' function, and how is it used to generate URLs dynamically in Flask templates?",
+            options: [
+              "The 'url_for' function generates URLs dynamically based on the route's name and arguments, making it more flexible and less error-prone than hardcoding URLs in templates.",
+              "The 'url_for' function is used to handle URL routing for client-side requests.",
+              "The 'url_for' function allows Flask applications to handle WebSocket communication.",
+              "The 'url_for' function is used to redirect users to a different URL or route.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Explain how you can handle asynchronous tasks and background processing in Flask applications.",
+            options: [
+              "Asynchronous tasks and background processing can be handled using Flask's built-in async support with the 'async' and 'await' keywords in view functions.",
+              "Asynchronous tasks and background processing can be handled using Flask-SocketIO to enable real-time communication between clients and the server.",
+              "Asynchronous tasks and background processing can be handled by using Flask-Celery or Flask-RQ to delegate tasks to a background worker, such as RabbitMQ or Redis, allowing the main application to respond quickly to incoming requests.",
+              "Asynchronous tasks and background processing can be handled using JavaScript on the client-side.",
+            ],
+            correctAnswer: "2",
+          },
+          {
+            question:
+              "How do you optimize the performance of a Flask application to handle a large number of concurrent users?",
+            options: [
+              "Optimize the performance by using multiple instances of the application with load balancing.",
+              "Optimize the performance by minimizing database queries and implementing caching mechanisms.",
+              "Optimize the performance by using asynchronous programming techniques such as Flask-SocketIO or gevent.",
+              "Optimize the performance by reducing the usage of Flask Extensions and using pure Flask functionalities instead.",
+            ],
+            correctAnswer: "0",
+          },
+          {
+            question:
+              "Explain how you can implement real-time communication in Flask applications using WebSockets.",
+            options: [
+              "Real-time communication in Flask applications can be implemented by using the 'realtime' attribute of the 'request' object.",
+              "Real-time communication in Flask applications can be implemented by using the 'Flask-SocketIO' extension to enable WebSocket support.",
+              "Real-time communication in Flask applications can be implemented using Flask-RESTful to enable real-time data exchange.",
+              "Real-time communication in Flask applications can be implemented by using JavaScript on the client-side to handle WebSocket connections and communicate with the server.",
+            ],
+            correctAnswer: "1",
+          },
+        ],
       },
     },
   },
 };
-
+// !Review all questions are correct before flask
 export default data;
