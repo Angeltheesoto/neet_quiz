@@ -6779,23 +6779,23 @@ const data = {
             question:
               "Explain the RAII (Resource Acquisition Is Initialization) idiom in C++. How does it help in managing resources and avoiding memory leaks?",
             options: [
-              "The RAII idiom is a design pattern in C++ that associates the lifetime of a resource with the lifetime of an object. Resources, such as memory allocations or file handles, are acquired when the object is constructed and released when the object is destructed. This ensures that resources are properly cleaned up, even in the presence of exceptions or early returns. RAII helps avoid resource leaks and ensures safe and efficient resource management.",
               "The RAII idiom is a technique in C++ to handle resource management manually. It requires explicit allocation and deallocation of resources using 'new' and 'delete' or 'malloc' and 'free'. While it can avoid memory leaks, it requires careful tracking of resource ownership and can be error-prone.",
+              "The RAII idiom is a design pattern in C++ that associates the lifetime of a resource with the lifetime of an object. Resources, such as memory allocations or file handles, are acquired when the object is constructed and released when the object is destructed. This ensures that resources are properly cleaned up, even in the presence of exceptions or early returns. RAII helps avoid resource leaks and ensures safe and efficient resource management.",
               "The RAII idiom is a C++ feature that automatically manages resource allocation and deallocation. When an object is constructed, it acquires the necessary resources, and when it is destructed, it releases them. This automatic resource management ensures that resources are always cleaned up properly, even in the presence of exceptions or early returns.",
               "The RAII idiom is a design pattern in C++ that encourages manual resource management using 'new' and 'delete' or 'malloc' and 'free'. It is an alternative to garbage collection and helps avoid memory leaks.",
             ],
-            correctAnswer: "0",
+            correctAnswer: "1",
           },
           {
             question:
               "What are move semantics in C++? How do they differ from copy semantics, and when should you use them?",
             options: [
-              "Move semantics in C++ allow you to efficiently transfer the ownership of resources from one object to another. Instead of making a deep copy, move semantics enable the transfer of internal data, such as dynamically allocated memory, from one object to another. Move semantics use rvalue references ('&&') to indicate movable objects and move constructors/assignment operators to perform the transfer. Move semantics are more efficient than copy semantics for large objects or resources that are expensive to copy. They are particularly useful when dealing with temporary objects or in scenarios where you want to avoid unnecessary copying.",
               "Move semantics in C++ are a technique to copy objects from one location in memory to another. They are similar to copy constructors and copy assignment operators but use rvalue references ('&&'). Move semantics are preferred when you want to make a deep copy of an object.",
               "Move semantics in C++ are a feature that allows you to perform bitwise copying of objects. Unlike copy semantics, move semantics transfer the bitwise representation of objects from one location in memory to another. Move semantics use lvalue references ('&') to indicate movable objects.",
+              "Move semantics in C++ allow you to efficiently transfer the ownership of resources from one object to another. Instead of making a deep copy, move semantics enable the transfer of internal data, such as dynamically allocated memory, from one object to another. Move semantics use rvalue references ('&&') to indicate movable objects and move constructors/assignment operators to perform the transfer. Move semantics are more efficient than copy semantics for large objects or resources that are expensive to copy. They are particularly useful when dealing with temporary objects or in scenarios where you want to avoid unnecessary copying.",
               "Move semantics in C++ are a technique used to convert objects from one type to another. They use the 'static_cast' operator to perform type conversions. Move semantics are preferred when you want to change the type of an object.",
             ],
-            correctAnswer: "0",
+            correctAnswer: "2",
           },
           {
             question:
@@ -6823,45 +6823,45 @@ const data = {
             question:
               "Explain the concept of perfect forwarding in C++ and how it is used in template functions.",
             options: [
-              "Perfect forwarding is a feature in C++ that allows passing arguments to another function while preserving their value category (lvalue or rvalue) and const-qualification. It is accomplished using forwarding references, which are declared using 'auto&&'. Perfect forwarding is commonly used in template functions to forward arguments to other functions, avoiding unnecessary copies and maintaining the original type and const-qualification of the arguments. This feature is especially useful in generic programming when you want to propagate arguments through multiple function calls without losing their original characteristics.",
               "Perfect forwarding is a technique in C++ that ensures all function arguments are of the same type. It is used to avoid overloading functions with multiple argument types.",
+              "Perfect forwarding is a feature in C++ that allows passing arguments to another function while preserving their value category (lvalue or rvalue) and const-qualification. It is accomplished using forwarding references, which are declared using 'auto&&'. Perfect forwarding is commonly used in template functions to forward arguments to other functions, avoiding unnecessary copies and maintaining the original type and const-qualification of the arguments. This feature is especially useful in generic programming when you want to propagate arguments through multiple function calls without losing their original characteristics.",
               "Perfect forwarding is a design pattern in C++ that allows you to forward function calls to other objects. It is commonly used in delegation scenarios.",
               "Perfect forwarding is a feature in C++ that enables you to forward exceptions from one function to another. It ensures that exceptions are propagated through the call stack properly.",
             ],
-            correctAnswer: "0",
+            correctAnswer: "1",
           },
           {
             question:
               "What are variadic templates in C++? Provide an example of how you can define a variadic template function.",
             options: [
-              "Variadic templates in C++ allow you to define functions or classes that can accept a variable number of arguments. They are defined using the 'template' keyword followed by 'typename... Args' to represent the variadic parameter pack. Variadic templates are typically processed using recursion or the 'sizeof...(Args)' operator to handle each argument in the pack. For example, a simple variadic template function to calculate the sum of multiple values can be defined as follows:\ncpp\ntemplate<typename... Args>\nint sum(Args... args) {\n return (args + ...);\n}\n\nThis allows the 'sum' function to accept any number of arguments of different types and return their sum.",
               "Variadic templates in C++ are a technique used to create a list of functions with different signatures. It is commonly used in function overloading.",
               "Variadic templates in C++ allow you to define a fixed number of function arguments of the same type. They are commonly used in mathematical functions that take multiple parameters.",
               "Variadic templates in C++ are a feature that allows you to define a fixed number of function arguments of different types. It is commonly used in generic programming.",
+              "Variadic templates in C++ allow you to define functions or classes that can accept a variable number of arguments. They are defined using the 'template' keyword followed by 'typename... Args' to represent the variadic parameter pack. Variadic templates are typically processed using recursion or the 'sizeof...(Args)' operator to handle each argument in the pack. For example, a simple variadic template function to calculate the sum of multiple values can be defined as follows:\ncpp\ntemplate<typename... Args>\nint sum(Args... args) {\n return (args + ...);\n}\n\nThis allows the 'sum' function to accept any number of arguments of different types and return their sum.",
             ],
-            correctAnswer: "0",
+            correctAnswer: "3",
           },
           {
             question:
               "Describe the 'constexpr if' statement introduced in C++17. How does it differ from regular 'if' statements, and when should you use it?",
             options: [
-              "'constexpr if' is a feature introduced in C++17 that allows you to conditionally compile code based on compile-time conditions. It is an extension of the regular 'if' statement and is used in template metaprogramming to enable different code branches based on the properties of template arguments. The primary difference between 'constexpr if' and regular 'if' is that 'constexpr if' evaluates the condition at compile-time, while the regular 'if' evaluates it at runtime. This allows 'constexpr if' to optimize away the code that is not relevant for a specific instantiation of a template function or class, reducing code bloat and improving performance. You should use 'constexpr if' when you want to enable or disable code based on compile-time information, such as the type of template arguments or the values of constexpr variables.",
               "'constexpr if' is a keyword in C++ that is used to define constants that are computed at compile-time. It is used to improve performance by avoiding runtime computations.",
               "'constexpr if' is a keyword in C++ that is used to define template functions that can be evaluated at compile-time. It is used to improve template specialization.",
+              "'constexpr if' is a feature introduced in C++17 that allows you to conditionally compile code based on compile-time conditions. It is an extension of the regular 'if' statement and is used in template metaprogramming to enable different code branches based on the properties of template arguments. The primary difference between 'constexpr if' and regular 'if' is that 'constexpr if' evaluates the condition at compile-time, while the regular 'if' evaluates it at runtime. This allows 'constexpr if' to optimize away the code that is not relevant for a specific instantiation of a template function or class, reducing code bloat and improving performance. You should use 'constexpr if' when you want to enable or disable code based on compile-time information, such as the type of template arguments or the values of constexpr variables.",
               "'constexpr if' is a feature in C++ that allows you to define constant functions. It ensures that the functions do not modify the object they operate on.",
             ],
-            correctAnswer: "0",
+            correctAnswer: "2",
           },
           {
             question:
               "What is the purpose of 'std::enable_if' in C++? Provide an example of how it can be used in template functions.",
             options: [
-              "'std::enable_if' is a type trait introduced in C++11 that is used in template metaprogramming to enable or disable template functions or classes based on certain conditions. It allows you to control template specialization based on the properties of template arguments. 'std::enable_if' is typically used in conjunction with the 'std::enable_if_t' type alias and the 'std::is_xxx' type traits (e.g., 'std::is_integral', 'std::is_floating_point', etc.). For example, consider a template function that performs arithmetic operations only for numeric types (integral or floating-point). You can use 'std::enable_if' to enable the function only for numeric types ('std::is_arithmetic_v' checks if the type 'T' is arithmetic). If the template argument is not numeric, the function will be disabled, and the compiler will generate a substitution failure.\ncpp\n#include <type_traits>\ntemplate<typename T, typename = std::enable_if_t<std::is_arithmetic_v<T>>>\nT add(T a, T b) {\n return a + b;\n}\n",
               "'std::enable_if' is a C++ feature used to enable or disable the use of inheritance between classes. It allows you to control class hierarchies and access control.",
+              "'std::enable_if' is a type trait introduced in C++11 that is used in template metaprogramming to enable or disable template functions or classes based on certain conditions. It allows you to control template specialization based on the properties of template arguments. 'std::enable_if' is typically used in conjunction with the 'std::enable_if_t' type alias and the 'std::is_xxx' type traits (e.g., 'std::is_integral', 'std::is_floating_point', etc.). For example, consider a template function that performs arithmetic operations only for numeric types (integral or floating-point). You can use 'std::enable_if' to enable the function only for numeric types ('std::is_arithmetic_v' checks if the type 'T' is arithmetic). If the template argument is not numeric, the function will be disabled, and the compiler will generate a substitution failure.\ncpp\n#include <type_traits>\ntemplate<typename T, typename = std::enable_if_t<std::is_arithmetic_v<T>>>\nT add(T a, T b) {\n return a + b;\n}\n",
               "'std::enable_if' is a C++ feature that is used to enable or disable function overloading. It allows you to specify different versions of a function based on certain conditions.",
               "'std::enable_if' is a C++ feature used to enable or disable member functions in a class. It allows you to control the availability of member functions based on template arguments.",
             ],
-            correctAnswer: "0",
+            correctAnswer: "1",
           },
           {
             question:
@@ -6889,23 +6889,23 @@ const data = {
             question:
               "What are user-defined literals in C++? Provide an example of how you can define and use a user-defined literal.",
             options: [
-              'User-defined literals in C++ allow you to create custom literal suffixes to represent values of user-defined types. By overloading the \'operator""\' for your class, you can define how literals with specific suffixes are converted into instances of your class. For example, you can create a user-defined literal for representing distances in meters, as follows: class Distance { public: explicit Distance(double meters) : meters_(meters) {} double getMeters() const { return meters_; } }; Distance operator""_m(long double value) { return Distance(static_cast<double>(value)); } Distance operator""_m(unsigned long long value) { return Distance(static_cast<double>(value)); } int main() { Distance d1 = 10.5_m; // 10.5 meters Distance d2 = 2000_m; // 2000 meters return 0; }',
               "User-defined literals in C++ are a technique used to define constant variables in a class. They allow you to specify that the value of the variable cannot be changed after initialization.",
+              'User-defined literals in C++ allow you to create custom literal suffixes to represent values of user-defined types. By overloading the \'operator""\' for your class, you can define how literals with specific suffixes are converted into instances of your class. For example, you can create a user-defined literal for representing distances in meters, as follows: class Distance { public: explicit Distance(double meters) : meters_(meters) {} double getMeters() const { return meters_; } }; Distance operator""_m(long double value) { return Distance(static_cast<double>(value)); } Distance operator""_m(unsigned long long value) { return Distance(static_cast<double>(value)); } int main() { Distance d1 = 10.5_m; // 10.5 meters Distance d2 = 2000_m; // 2000 meters return 0; }',
               "User-defined literals in C++ are a feature that allows you to define custom functions to be used as literal suffixes. They are used to perform specific operations on literal values.",
               "User-defined literals in C++ are a feature that allows you to create custom literal prefixes to represent values in binary, octal, or hexadecimal format.",
             ],
-            correctAnswer: "0",
+            correctAnswer: "1",
           },
           {
             question:
               "Describe the concept of SFINAE (Substitution Failure Is Not An Error) in C++. How is it used in template metaprogramming?",
             options: [
-              "SFINAE (Substitution Failure Is Not An Error) is a principle in C++ template metaprogramming that allows a function or class template to fail substitution during the template instantiation without producing a compilation error. If a particular specialization of a template results in a substitution failure, the compiler will try to find an alternative specialization that can be used instead. This allows the compiler to select the best-matching template specialization based on the properties of the template arguments. SFINAE is often used in conjunction with 'std::enable_if' or 'decltype' to enable or disable template functions or classes based on the characteristics of the template arguments. By using SFINAE, you can create more flexible and versatile template code that adapts to different types and properties.",
               "SFINAE (Substitution Failure Is Not An Error) is a feature in C++ that allows you to use static_cast or dynamic_cast to perform type conversions between related classes.",
+              "SFINAE (Substitution Failure Is Not An Error) is a principle in C++ template metaprogramming that allows a function or class template to fail substitution during the template instantiation without producing a compilation error. If a particular specialization of a template results in a substitution failure, the compiler will try to find an alternative specialization that can be used instead. This allows the compiler to select the best-matching template specialization based on the properties of the template arguments. SFINAE is often used in conjunction with 'std::enable_if' or 'decltype' to enable or disable template functions or classes based on the characteristics of the template arguments. By using SFINAE, you can create more flexible and versatile template code that adapts to different types and properties.",
               "SFINAE (Substitution Failure Is Not An Error) is a C++ feature that allows you to declare multiple variables with the same name but different types. It is used to perform type overloading.",
               "SFINAE (Substitution Failure Is Not An Error) is a C++ feature that allows you to create custom error messages in templates. It is used to provide more informative error messages for template-related issues.",
             ],
-            correctAnswer: "0",
+            correctAnswer: "1",
           },
           {
             question:
@@ -7061,7 +7061,7 @@ const data = {
               "To validate the data types of props received by a component",
               "To define the structure of a component's virtual DOM",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the virtual DOM in React?",
@@ -7071,7 +7071,7 @@ const data = {
               "A way to manage CSS styles",
               "A file that contains component definitions",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "How do you conditionally render content in React?",
@@ -7081,7 +7081,7 @@ const data = {
               "By using the 'display' CSS property",
               "By using ternary operators or '&&' in JSX",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "How do you handle events in React?",
@@ -7091,7 +7091,7 @@ const data = {
               "By defining event handling methods like 'handleClick()'",
               "By using 'event.preventDefault()'",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is React Router used for?",
@@ -7101,7 +7101,7 @@ const data = {
               "To create a navigation system in React applications",
               "To interact with the server through AJAX requests",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -7112,7 +7112,7 @@ const data = {
               "By returning 'null' from the component's render method",
               "By using the 'disabled' prop",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the purpose of JSX in React?",
@@ -7122,7 +7122,7 @@ const data = {
               "A syntax extension for JavaScript to write HTML-like code",
               "A data storage format",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -7133,7 +7133,7 @@ const data = {
               "By using refs",
               "By using setState",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What is the significance of React Fragments?",
@@ -7143,7 +7143,7 @@ const data = {
               "To define the component's lifecycle",
               "To wrap multiple elements without adding an extra node to the DOM",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "What is the purpose of the 'key' prop in React lists?",
@@ -7153,7 +7153,7 @@ const data = {
               "To create a new array from the list",
               "To map the list items to a new structure",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What function is used to change the state in React?",
@@ -7163,7 +7163,7 @@ const data = {
               "this.state()",
               "setState()",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What is React?",
@@ -7173,7 +7173,7 @@ const data = {
               "A front-end JavaScript library for building user interfaces",
               "A database management system",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -7184,7 +7184,7 @@ const data = {
               "create-react-app my-app",
               "react new my-app",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What lifecycle method is used to fetch data in React?",
@@ -7194,7 +7194,7 @@ const data = {
               "componentDidMount",
               "componentWillUpdate",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the purpose of the 'useState' hook in React?",
@@ -7204,7 +7204,7 @@ const data = {
               "To define the structure of the component's state",
               "To create custom hooks",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
         ],
       },
@@ -7218,7 +7218,7 @@ const data = {
               "A front-end JavaScript library for building user interfaces",
               "A database management system",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is JSX in React?",
@@ -7228,7 +7228,7 @@ const data = {
               "A syntax extension for JavaScript to write HTML-like code",
               "A data storage format",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -7239,7 +7239,7 @@ const data = {
               "create-react-app my-app",
               "react new my-app",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What is the virtual DOM in React?",
@@ -7249,7 +7249,7 @@ const data = {
               "A way to manage CSS styles",
               "A file that contains component definitions",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What lifecycle method is used to fetch data in React?",
@@ -7259,7 +7259,7 @@ const data = {
               "componentDidMount",
               "componentWillUpdate",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What function is used to change the state in React?",
@@ -7269,7 +7269,7 @@ const data = {
               "this.state()",
               "setState()",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What is the purpose of the 'key' prop in React lists?",
@@ -7279,7 +7279,7 @@ const data = {
               "To create a new array from the list",
               "To map the list items to a new structure",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -7290,7 +7290,7 @@ const data = {
               "By using refs",
               "By using setState",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What is the significance of React Fragments?",
@@ -7300,7 +7300,7 @@ const data = {
               "To define the component's lifecycle",
               "To wrap multiple elements without adding an extra node to the DOM",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -7311,7 +7311,7 @@ const data = {
               "By returning 'null' from the component's render method",
               "By using the 'disabled' prop",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the purpose of propTypes in React?",
@@ -7321,7 +7321,7 @@ const data = {
               "To validate the data types of props received by a component",
               "To define the structure of a component's virtual DOM",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "How do you handle events in React?",
@@ -7331,7 +7331,7 @@ const data = {
               "By defining event handling methods like 'handleClick()'",
               "By using 'event.preventDefault()'",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the purpose of the 'useState' hook in React?",
@@ -7341,7 +7341,7 @@ const data = {
               "To define the structure of the component's state",
               "To create custom hooks",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "How do you conditionally render content in React?",
@@ -7351,7 +7351,7 @@ const data = {
               "By using the 'display' CSS property",
               "By using ternary operators or '&&' in JSX",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "What is React Router used for?",
@@ -7361,7 +7361,7 @@ const data = {
               "To create a navigation system in React applications",
               "To interact with the server through AJAX requests",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -7372,7 +7372,7 @@ const data = {
               "To update the component's state",
               "To define the component's lifecycle methods",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "How do you perform component cleanup in React?",
@@ -7382,7 +7382,7 @@ const data = {
               "By using the 'componentWillUnmount()' method",
               "By using the 'useEffect()' hook with a cleanup function",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "What are React refs used for?",
@@ -7392,7 +7392,7 @@ const data = {
               "To add styling to React components",
               "To create custom React hooks",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "How do you make an HTTP request in React?",
@@ -7402,7 +7402,7 @@ const data = {
               "By using the 'http()' function",
               "By using the 'AJAX()' method",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is the purpose of the 'useEffect' hook in React?",
@@ -7412,7 +7412,7 @@ const data = {
               "To perform side effects in functional components",
               "To create custom hooks",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
         ],
       },
@@ -7427,7 +7427,7 @@ const data = {
               "React hooks are a new way of defining class components in React.",
               "React hooks are used for adding animations to React components.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -7438,7 +7438,7 @@ const data = {
               "It is used for handling form validation in React.",
               "It enables the use of Redux in React applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -7449,7 +7449,7 @@ const data = {
               "Function components use hooks, while class components use Redux.",
               "Class components are only used for legacy React applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is React context, and how is it used?",
@@ -7459,7 +7459,7 @@ const data = {
               "React context is a way to define the structure of the component's state.",
               "React context is a new way to define component lifecycle methods.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What are React portals, and how are they used?",
@@ -7469,7 +7469,7 @@ const data = {
               "React portals are used to manage state in complex React applications.",
               "React portals are used for integrating external JavaScript libraries with React components.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -7480,7 +7480,7 @@ const data = {
               "Controlled components in React are form elements that are controlled by React state, allowing React to manage their values.",
               "React uses the 'onChange' event for form inputs.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -7491,7 +7491,7 @@ const data = {
               "Code splitting is a way to split JavaScript code into multiple files for better organization.",
               "Code splitting allows React components to be split into multiple smaller chunks, preloaded with the main bundle to improve performance.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -7502,7 +7502,7 @@ const data = {
               "SSR allows React components to be rendered without using the virtual DOM.",
               "SSR is a way to execute React components on both the server and the client for faster rendering.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "How do you optimize performance in React applications?",
@@ -7512,7 +7512,7 @@ const data = {
               "By increasing the size of the virtual DOM.",
               "By using anonymous functions for event handling in JSX.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -7523,7 +7523,7 @@ const data = {
               "The 'useMemo' hook is used for form validation, and 'useCallback' is used for handling animations.",
               "The 'useMemo' hook is used to create custom hooks, and 'useCallback' is used to define component lifecycle methods.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
         ],
       },
@@ -7538,7 +7538,7 @@ const data = {
               "React hooks are a new way of defining class components in React.",
               "React hooks are used for adding animations to React components.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -7549,7 +7549,7 @@ const data = {
               "It is used for handling form validation in React.",
               "It enables the use of Redux in React applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -7560,7 +7560,7 @@ const data = {
               "Function components use hooks, while class components use Redux.",
               "Class components are only used for legacy React applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is React context, and how is it used?",
@@ -7570,7 +7570,7 @@ const data = {
               "React context is a way to define the structure of the component's state.",
               "React context is a new way to define component lifecycle methods.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What are React portals, and how are they used?",
@@ -7580,7 +7580,7 @@ const data = {
               "React portals are used to manage state in complex React applications.",
               "React portals are used for integrating external JavaScript libraries with React components.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -7591,7 +7591,7 @@ const data = {
               "Controlled components in React are form elements that are controlled by React state, allowing React to manage their values.",
               "React uses the 'onChange' event for form inputs.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -7602,7 +7602,7 @@ const data = {
               "Code splitting is a way to split JavaScript code into multiple files for better organization.",
               "Code splitting allows React components to be split into multiple smaller chunks, preloaded with the main bundle to improve performance.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -7613,7 +7613,7 @@ const data = {
               "SSR allows React components to be rendered without using the virtual DOM.",
               "SSR is a way to execute React components on both the server and the client for faster rendering.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "How do you optimize performance in React applications?",
@@ -7623,7 +7623,7 @@ const data = {
               "By increasing the size of the virtual DOM.",
               "By using anonymous functions for event handling in JSX.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -7634,7 +7634,7 @@ const data = {
               "The 'useMemo' hook is used for form validation, and 'useCallback' is used for handling animations.",
               "The 'useMemo' hook is used to create custom hooks, and 'useCallback' is used to define component lifecycle methods.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is the purpose of the 'useEffect' hook in React?",
@@ -7644,7 +7644,7 @@ const data = {
               "To perform side effects in functional components",
               "To create custom hooks",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -7655,7 +7655,7 @@ const data = {
               "To create navigation links in React components",
               "To handle client-side routing and enable navigation between different views in a single-page application",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -7666,7 +7666,7 @@ const data = {
               "HOCs are components that encapsulate other components and enhance their behavior",
               "HOCs are components that handle form validation in React applications",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -7677,7 +7677,7 @@ const data = {
               "React Error Boundaries are components that handle Redux errors in React applications",
               "React Error Boundaries are components that handle form validation errors in React applications",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -7688,7 +7688,7 @@ const data = {
               "By using React Native instead of React for mobile development",
               "By implementing lazy loading and optimizing image sizes",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
         ],
       },
@@ -7703,7 +7703,7 @@ const data = {
               "React hooks are a new way of defining class components in React.",
               "React hooks are used for adding animations to React components.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -7714,7 +7714,7 @@ const data = {
               "It is used for handling form validation in React.",
               "It enables the use of Redux in React applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -7725,7 +7725,7 @@ const data = {
               "Function components use hooks, while class components use Redux.",
               "Class components are only used for legacy React applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is React context, and how is it used?",
@@ -7735,7 +7735,7 @@ const data = {
               "React context is a way to define the structure of the component's state.",
               "React context is a new way to define component lifecycle methods.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What are React portals, and how are they used?",
@@ -7745,7 +7745,7 @@ const data = {
               "React portals are used to manage state in complex React applications.",
               "React portals are used for integrating external JavaScript libraries with React components.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -7756,7 +7756,7 @@ const data = {
               "Controlled components in React are form elements that are controlled by React state, allowing React to manage their values.",
               "React uses the 'onChange' event for form inputs.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -7767,7 +7767,7 @@ const data = {
               "Code splitting is a way to split JavaScript code into multiple files for better organization.",
               "Code splitting allows React components to be split into multiple smaller chunks, preloaded with the main bundle to improve performance.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -7778,7 +7778,7 @@ const data = {
               "SSR allows React components to be rendered without using the virtual DOM.",
               "SSR is a way to execute React components on both the server and the client for faster rendering.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "How do you optimize performance in React applications?",
@@ -7788,7 +7788,7 @@ const data = {
               "By increasing the size of the virtual DOM.",
               "By using anonymous functions for event handling in JSX.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -7799,7 +7799,7 @@ const data = {
               "The 'useMemo' hook is used for form validation, and 'useCallback' is used for handling animations.",
               "The 'useMemo' hook is used to create custom hooks, and 'useCallback' is used to define component lifecycle methods.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is the purpose of the 'useEffect' hook in React?",
@@ -7809,7 +7809,7 @@ const data = {
               "To perform side effects in functional components",
               "To create custom hooks",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -7820,7 +7820,7 @@ const data = {
               "To create navigation links in React components",
               "To handle client-side routing and enable navigation between different views in a single-page application",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -7831,7 +7831,7 @@ const data = {
               "HOCs are components that encapsulate other components and enhance their behavior",
               "HOCs are components that handle form validation in React applications",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -7842,7 +7842,7 @@ const data = {
               "React Error Boundaries are components that handle Redux errors in React applications",
               "React Error Boundaries are components that handle form validation errors in React applications",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -7853,7 +7853,7 @@ const data = {
               "By using React Native instead of React for mobile development",
               "By implementing lazy loading and optimizing image sizes",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -7864,7 +7864,7 @@ const data = {
               "React.memo() is a method that memoizes functional components, preventing unnecessary re-renders when the component's props don't change.",
               "React.memo() is a method used to implement React context in functional components.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What are the benefits of using React fragments?",
@@ -7874,7 +7874,7 @@ const data = {
               "React fragments provide a way to handle AJAX requests in React components.",
               "React fragments are used to encapsulate React components.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -7885,7 +7885,7 @@ const data = {
               "Lazy loading is a method to load images in React components asynchronously.",
               "Lazy loading is a way to handle errors in React components.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is the role of the 'useContext' hook in React?",
@@ -7895,7 +7895,7 @@ const data = {
               "The 'useContext' hook is used to manage global state in React applications through the React context API.",
               "The 'useContext' hook is used to create custom hooks in React components.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -7906,7 +7906,7 @@ const data = {
               "React refs are used to store references to DOM elements or React components, especially when imperative operations are needed.",
               "React refs are used to handle navigation in React applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
         ],
       },
@@ -7921,7 +7921,7 @@ const data = {
               "React Fiber optimizes Redux state management in React applications.",
               "React Fiber improves form handling in React applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -7932,7 +7932,7 @@ const data = {
               "React custom hooks are functions that allow the sharing of stateful logic between components without using higher-order components or render props.",
               "React custom hooks are used to integrate external JavaScript libraries with React components.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -7943,7 +7943,7 @@ const data = {
               "React Suspense is used for error handling in React applications.",
               "React Suspense is a feature that allows components to wait for something, like data fetching or lazy loading, before rendering.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -7954,7 +7954,7 @@ const data = {
               "React.memo() and React.PureComponent are used interchangeably for optimizing the performance of functional components.",
               "React.memo() and React.PureComponent are used to handle errors in functional and class components, respectively.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -7965,7 +7965,7 @@ const data = {
               "SSR is a way to render React components without using the virtual DOM. Its limitations include the inability to handle dynamic content and server resource limitations.",
               "SSR is a way to execute React components on both the server and the client for faster rendering. Its limitations include the complexity of handling client-side routing and maintaining consistent state.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -7976,7 +7976,7 @@ const data = {
               "React forwardRef is used to manage the state of class components in React applications. It allows accessing the DOM nodes of class components.",
               "React forwardRef is a method to handle AJAX requests in React components.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -7987,7 +7987,7 @@ const data = {
               "React render props are a way to handle errors in React components.",
               "React render props are used to integrate external JavaScript libraries with React components.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -7998,7 +7998,7 @@ const data = {
               "React concurrent mode is used for error handling in React applications.",
               "React concurrent mode is a feature that allows components to wait for something, like data fetching or lazy loading, before rendering.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -8009,7 +8009,7 @@ const data = {
               "React's Context API provides better compatibility with third-party libraries compared to Redux. Redux is preferred only for managing local component state.",
               "React's Context API and Redux are interchangeable for state management, and developers can choose either based on personal preference.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -8020,7 +8020,7 @@ const data = {
               "React portals are a technique to manage state in complex React applications.",
               "React portals are used for rendering child components outside the DOM hierarchy of the parent component. They are beneficial for creating modals, tooltips, and other UI elements that need to be rendered outside the main DOM structure.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
         ],
       },
@@ -8035,7 +8035,7 @@ const data = {
               "React Fiber optimizes Redux state management in React applications.",
               "React Fiber improves form handling in React applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -8046,7 +8046,7 @@ const data = {
               "React custom hooks are functions that allow the sharing of stateful logic between components without using higher-order components or render props.",
               "React custom hooks are used to integrate external JavaScript libraries with React components.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -8057,7 +8057,7 @@ const data = {
               "React Suspense is used for error handling in React applications.",
               "React Suspense is a feature that allows components to wait for something, like data fetching or lazy loading, before rendering.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8068,7 +8068,7 @@ const data = {
               "React.memo() and React.PureComponent are used interchangeably for optimizing the performance of functional components.",
               "React.memo() and React.PureComponent are used to handle errors in functional and class components, respectively.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -8079,7 +8079,7 @@ const data = {
               "SSR is a way to render React components without using the virtual DOM. Its limitations include the inability to handle dynamic content and server resource limitations.",
               "SSR is a way to execute React components on both the server and the client for faster rendering. Its limitations include the complexity of handling client-side routing and maintaining consistent state.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -8090,7 +8090,7 @@ const data = {
               "React forwardRef is used to manage the state of class components in React applications. It allows accessing the DOM nodes of class components.",
               "React forwardRef is a method to handle AJAX requests in React components.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -8101,7 +8101,7 @@ const data = {
               "React render props are a way to handle errors in React components.",
               "React render props are used to integrate external JavaScript libraries with React components.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -8112,7 +8112,7 @@ const data = {
               "React concurrent mode is used for error handling in React applications.",
               "React concurrent mode is a feature that allows components to wait for something, like data fetching or lazy loading, before rendering.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -8123,7 +8123,7 @@ const data = {
               "React's Context API provides better compatibility with third-party libraries compared to Redux. Redux is preferred only for managing local component state.",
               "React's Context API and Redux are interchangeable for state management, and developers can choose either based on personal preference.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -8134,7 +8134,7 @@ const data = {
               "React portals are a technique to manage state in complex React applications.",
               "React portals are used for rendering child components outside the DOM hierarchy of the parent component. They are beneficial for creating modals, tooltips, and other UI elements that need to be rendered outside the main DOM structure.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8145,7 +8145,7 @@ const data = {
               "React's Error Boundaries are used to implement client-side routing in React applications.",
               "React's Error Boundaries are used to manage the state of class components in React applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -8156,7 +8156,7 @@ const data = {
               "React Hooks Rules of Use recommend using hooks only in functional components and not using them inside loops or conditions.",
               "React Hooks Rules of Use are a set of rules for using hooks in React applications that help to write cleaner and more maintainable code.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8167,7 +8167,7 @@ const data = {
               "React event handling is a way to handle asynchronous operations in React components.",
               "Synthetic events are custom events created by React to manage state in functional components.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -8178,7 +8178,7 @@ const data = {
               "React contextType is used to consume context in class components by specifying the context object the component should subscribe to.",
               "React contextType is used to create global state in class components.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -8189,7 +8189,7 @@ const data = {
               "React memoization is a caching mechanism used to store the results of expensive calculations in functional components, preventing unnecessary re-computations and re-renders.",
               "React memoization is used to manage state in functional components.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
         ],
       },
@@ -8204,7 +8204,7 @@ const data = {
               "React Fiber optimizes Redux state management in React applications.",
               "React Fiber improves form handling in React applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -8215,7 +8215,7 @@ const data = {
               "React custom hooks are functions that allow the sharing of stateful logic between components without using higher-order components or render props.",
               "React custom hooks are used to integrate external JavaScript libraries with React components.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -8226,7 +8226,7 @@ const data = {
               "React Suspense is used for error handling in React applications.",
               "React Suspense is a feature that allows components to wait for something, like data fetching or lazy loading, before rendering.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8237,7 +8237,7 @@ const data = {
               "React.memo() and React.PureComponent are used interchangeably for optimizing the performance of functional components.",
               "React.memo() and React.PureComponent are used to handle errors in functional and class components, respectively.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -8248,7 +8248,7 @@ const data = {
               "SSR is a way to render React components without using the virtual DOM. Its limitations include the inability to handle dynamic content and server resource limitations.",
               "SSR is a way to execute React components on both the server and the client for faster rendering. Its limitations include the complexity of handling client-side routing and maintaining consistent state.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -8259,7 +8259,7 @@ const data = {
               "React forwardRef is used to manage the state of class components in React applications. It allows accessing the DOM nodes of class components.",
               "React forwardRef is a method to handle AJAX requests in React components.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -8270,7 +8270,7 @@ const data = {
               "React render props are a way to handle errors in React components.",
               "React render props are used to integrate external JavaScript libraries with React components.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -8281,7 +8281,7 @@ const data = {
               "React concurrent mode is used for error handling in React applications.",
               "React concurrent mode is a feature that allows components to wait for something, like data fetching or lazy loading, before rendering.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -8292,7 +8292,7 @@ const data = {
               "React's Context API provides better compatibility with third-party libraries compared to Redux. Redux is preferred only for managing local component state.",
               "React's Context API and Redux are interchangeable for state management, and developers can choose either based on personal preference.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -8303,7 +8303,7 @@ const data = {
               "React portals are a technique to manage state in complex React applications.",
               "React portals are used for rendering child components outside the DOM hierarchy of the parent component. They are beneficial for creating modals, tooltips, and other UI elements that need to be rendered outside the main DOM structure.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8314,7 +8314,7 @@ const data = {
               "React's Error Boundaries are used to implement client-side routing in React applications.",
               "React's Error Boundaries are used to manage the state of class components in React applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -8325,7 +8325,7 @@ const data = {
               "React Hooks Rules of Use recommend using hooks only in functional components and not using them inside loops or conditions.",
               "React Hooks Rules of Use are a set of rules for using hooks in React applications that help to write cleaner and more maintainable code.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8336,7 +8336,7 @@ const data = {
               "React event handling is a way to handle asynchronous operations in React components.",
               "Synthetic events are custom events created by React to manage state in functional components.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -8347,7 +8347,7 @@ const data = {
               "React contextType is used to consume context in class components by specifying the context object the component should subscribe to.",
               "React contextType is used to create global state in class components.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -8358,7 +8358,7 @@ const data = {
               "React memoization is a caching mechanism used to store the results of expensive calculations in functional components, preventing unnecessary re-computations and re-renders.",
               "React memoization is used to manage state in functional components.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -8369,7 +8369,7 @@ const data = {
               "The 'useImperativeHandle' hook is used to expose certain methods or properties of a child component to its parent component.",
               "The 'useImperativeHandle' hook is used to create memoized components in React applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -8380,7 +8380,7 @@ const data = {
               "React suspense is used to manage the state of class components.",
               "Error boundaries and React suspense work together to handle errors that occur during asynchronous operations, like data fetching, in React applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8391,7 +8391,7 @@ const data = {
               "React fragments provide a way to handle AJAX requests in React components.",
               "React fragments are used to encapsulate React components.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -8402,7 +8402,7 @@ const data = {
               "Lazy loading is a method to load images in React components asynchronously.",
               "Lazy loading is a way to handle errors in React components.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is the role of the 'useContext' hook in React?",
@@ -8412,7 +8412,7 @@ const data = {
               "The 'useContext' hook is used to manage global state in React applications through the React context API.",
               "The 'useContext' hook is used to create custom hooks in React components.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
         ],
       },
@@ -8428,7 +8428,7 @@ const data = {
               "Angular is a database management system.",
               "Angular is a markup language for creating web pages.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is TypeScript, and why is it used in Angular?",
@@ -8438,7 +8438,7 @@ const data = {
               "TypeScript is a markup language for creating web pages.",
               "TypeScript is a superset of JavaScript that adds static typing and other features, making it a more robust language for building Angular applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "What are components in Angular?",
@@ -8448,7 +8448,7 @@ const data = {
               "Components are used to create and manage databases in Angular applications.",
               "Components are used to define custom HTML elements and their behavior in Angular applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is data binding in Angular?",
@@ -8458,7 +8458,7 @@ const data = {
               "Data binding is a process of automatically synchronizing data between the model (component) and the view (template) in Angular applications.",
               "Data binding is a method to handle user input in Angular applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is interpolation in Angular?",
@@ -8468,7 +8468,7 @@ const data = {
               "Interpolation is a process of binding data from the component to the view (template) using curly braces {{}} in Angular applications.",
               "Interpolation is a method to define custom HTML elements in Angular applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is a template in Angular?",
@@ -8478,7 +8478,7 @@ const data = {
               "A template is a file that defines the structure and layout of the HTML for an Angular component.",
               "A template is a file that defines the routes and navigation for an Angular application.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the purpose of the NgModule in Angular?",
@@ -8488,7 +8488,7 @@ const data = {
               "NgModule is used to create custom HTML elements in Angular applications.",
               "NgModule is used to organize and configure the components, directives, pipes, and services that belong to a specific Angular application or feature.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "What is the purpose of the Angular CLI?",
@@ -8498,7 +8498,7 @@ const data = {
               "Angular CLI is a set of commands that helps with creating, building, and managing Angular projects, components, services, and more.",
               "Angular CLI is used to define the styles for an Angular component.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What are services in Angular, and how are they used?",
@@ -8508,7 +8508,7 @@ const data = {
               "Services are used to create and manage databases in Angular applications.",
               "Services are used to encapsulate reusable logic and data that can be shared across different components in Angular applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8519,7 +8519,7 @@ const data = {
               "Run the command ng generate component MyComponent.",
               "Run the command ng create component MyComponent.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
         ],
       },
@@ -8533,7 +8533,7 @@ const data = {
               "Angular is a database management system.",
               "Angular is a markup language for creating web pages.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is TypeScript, and why is it used in Angular?",
@@ -8543,7 +8543,7 @@ const data = {
               "TypeScript is a markup language for creating web pages.",
               "TypeScript is a superset of JavaScript that adds static typing and other features, making it a more robust language for building Angular applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "What are components in Angular?",
@@ -8553,7 +8553,7 @@ const data = {
               "Components are used to create and manage databases in Angular applications.",
               "Components are used to define custom HTML elements and their behavior in Angular applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is data binding in Angular?",
@@ -8563,7 +8563,7 @@ const data = {
               "Data binding is a process of automatically synchronizing data between the model (component) and the view (template) in Angular applications.",
               "Data binding is a method to handle user input in Angular applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is interpolation in Angular?",
@@ -8573,7 +8573,7 @@ const data = {
               "Interpolation is a process of binding data from the component to the view (template) using curly braces {{}} in Angular applications.",
               "Interpolation is a method to define custom HTML elements in Angular applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is a template in Angular?",
@@ -8583,7 +8583,7 @@ const data = {
               "A template is a file that defines the structure and layout of the HTML for an Angular component.",
               "A template is a file that defines the routes and navigation for an Angular application.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the purpose of the NgModule in Angular?",
@@ -8593,7 +8593,7 @@ const data = {
               "NgModule is used to create custom HTML elements in Angular applications.",
               "NgModule is used to organize and configure the components, directives, pipes, and services that belong to a specific Angular application or feature.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "What is the purpose of the Angular CLI?",
@@ -8603,7 +8603,7 @@ const data = {
               "Angular CLI is a set of commands that helps with creating, building, and managing Angular projects, components, services, and more.",
               "Angular CLI is used to define the styles for an Angular component.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What are services in Angular, and how are they used?",
@@ -8613,7 +8613,7 @@ const data = {
               "Services are used to create and manage databases in Angular applications.",
               "Services are used to encapsulate reusable logic and data that can be shared across different components in Angular applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8624,7 +8624,7 @@ const data = {
               "Run the command ng generate component MyComponent.",
               "Run the command ng create component MyComponent.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the purpose of directives in Angular?",
@@ -8634,7 +8634,7 @@ const data = {
               "Directives are used to create and manage databases in Angular applications.",
               "Directives are used to add behavior to elements in the DOM in Angular applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8645,7 +8645,7 @@ const data = {
               "Run the command ng build.",
               "Run the command ng run.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What is the purpose of dependency injection in Angular?",
@@ -8655,7 +8655,7 @@ const data = {
               "Dependency injection is a process of passing services or other objects as dependencies to a component, ensuring that the component has access to the required services or objects.",
               "Dependency injection is a method to define custom HTML elements in Angular applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -8666,7 +8666,7 @@ const data = {
               "Run the command ng create service MyService.",
               "Run the command ng service MyService.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is the purpose of the router module in Angular?",
@@ -8676,7 +8676,7 @@ const data = {
               "The router module is used to create and manage databases in Angular applications.",
               "The router module is used to manage navigation and define routes for different components in Angular applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
         ],
       },
@@ -8690,7 +8690,7 @@ const data = {
               "Angular is a database management system.",
               "Angular is a markup language for creating web pages.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is TypeScript, and why is it used in Angular?",
@@ -8700,7 +8700,7 @@ const data = {
               "TypeScript is a markup language for creating web pages.",
               "TypeScript is a superset of JavaScript that adds static typing and other features, making it a more robust language for building Angular applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "What are components in Angular?",
@@ -8710,7 +8710,7 @@ const data = {
               "Components are used to create and manage databases in Angular applications.",
               "Components are used to define custom HTML elements and their behavior in Angular applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is data binding in Angular?",
@@ -8720,7 +8720,7 @@ const data = {
               "Data binding is a process of automatically synchronizing data between the model (component) and the view (template) in Angular applications.",
               "Data binding is a method to handle user input in Angular applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is interpolation in Angular?",
@@ -8730,7 +8730,7 @@ const data = {
               "Interpolation is a process of binding data from the component to the view (template) using curly braces {{}} in Angular applications.",
               "Interpolation is a method to define custom HTML elements in Angular applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is a template in Angular?",
@@ -8740,7 +8740,7 @@ const data = {
               "A template is a file that defines the structure and layout of the HTML for an Angular component.",
               "A template is a file that defines the routes and navigation for an Angular application.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the purpose of the NgModule in Angular?",
@@ -8750,7 +8750,7 @@ const data = {
               "NgModule is used to create custom HTML elements in Angular applications.",
               "NgModule is used to organize and configure the components, directives, pipes, and services that belong to a specific Angular application or feature.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "What is the purpose of the Angular CLI?",
@@ -8760,7 +8760,7 @@ const data = {
               "Angular CLI is a set of commands that helps with creating, building, and managing Angular projects, components, services, and more.",
               "Angular CLI is used to define the styles for an Angular component.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What are services in Angular, and how are they used?",
@@ -8770,7 +8770,7 @@ const data = {
               "Services are used to create and manage databases in Angular applications.",
               "Services are used to encapsulate reusable logic and data that can be shared across different components in Angular applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8781,7 +8781,7 @@ const data = {
               "Run the command ng generate component MyComponent.",
               "Run the command ng create component MyComponent.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the purpose of directives in Angular?",
@@ -8791,7 +8791,7 @@ const data = {
               "Directives are used to create and manage databases in Angular applications.",
               "Directives are used to add behavior to elements in the DOM in Angular applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8802,7 +8802,7 @@ const data = {
               "Run the command ng build.",
               "Run the command ng run.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What is the purpose of dependency injection in Angular?",
@@ -8812,7 +8812,7 @@ const data = {
               "Dependency injection is a process of passing services or other objects as dependencies to a component, ensuring that the component has access to the required services or objects.",
               "Dependency injection is a method to define custom HTML elements in Angular applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -8823,7 +8823,7 @@ const data = {
               "Run the command ng create service MyService.",
               "Run the command ng service MyService.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is the purpose of the router module in Angular?",
@@ -8833,7 +8833,7 @@ const data = {
               "The router module is used to create and manage databases in Angular applications.",
               "The router module is used to manage navigation and define routes for different components in Angular applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8844,7 +8844,7 @@ const data = {
               "Run the command ng generate module MyModule.",
               "Run the command ng module MyModule.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -8855,7 +8855,7 @@ const data = {
               "The 'ngFor' directive is used to create and manage databases in Angular applications.",
               "The 'ngFor' directive is used to repeat a template for each item in an array or iterable collection in Angular applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8866,7 +8866,7 @@ const data = {
               "Run the command ng generate component my-component --file my-component.ts.",
               "Run the command ng generate component my-component --extension ts.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What is the purpose of the 'ngIf' directive in Angular?",
@@ -8876,7 +8876,7 @@ const data = {
               "The 'ngIf' directive is used to conditionally add or remove an element from the DOM based on an expression in Angular applications.",
               "The 'ngIf' directive is used to create and manage databases in Angular applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -8887,7 +8887,7 @@ const data = {
               "The 'ngModel' directive is used to create and manage databases in Angular applications.",
               "The 'ngModel' directive is used to perform two-way data binding, enabling the synchronization of data between a form control and a component property in Angular applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
         ],
       },
@@ -8902,7 +8902,7 @@ const data = {
               "Angular modules are used to create and manage databases in Angular applications.",
               "Angular modules are used to group related components, services, directives, and other features together, making the application more modular and maintainable.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8913,7 +8913,7 @@ const data = {
               "Template-driven forms are built using template syntax in the HTML, while reactive forms are built programmatically using TypeScript.",
               "Template-driven forms and reactive forms both handle form input and validation, but reactive forms provide more control and flexibility, making them suitable for complex scenarios.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8924,7 +8924,7 @@ const data = {
               "Angular routing is used to define the structure and layout of the HTML for an Angular component.",
               "Angular routing is a mechanism that allows users to navigate between different views or components without reloading the entire page, making it easier to build single-page applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8935,7 +8935,7 @@ const data = {
               "Lazy loading is used to handle errors in Angular applications.",
               "Lazy loading is a way to manage global state in Angular applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -8946,7 +8946,7 @@ const data = {
               "Angular directives are used to create and manage databases in Angular applications.",
               "Angular directives are a way to extend HTML with custom behaviors and manipulate the DOM directly, while components are used to create custom HTML elements with their own templates and logic.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8957,7 +8957,7 @@ const data = {
               "Angular services are used to create and manage databases in Angular applications.",
               "Angular services are singletons that allow components to share data and functionality by providing a centralized way to store and manage application state and business logic.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8968,7 +8968,7 @@ const data = {
               "Dependency injection is a way to load external data into Angular applications.",
               "Dependency injection is a design pattern used in Angular to provide components with the services or dependencies they require, making it easier to manage and test application components.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8979,7 +8979,7 @@ const data = {
               "Angular pipes are used to define the structure and layout of the HTML for an Angular component.",
               "Angular pipes are a way to format and transform data in templates by applying functions to the data before displaying it to the user.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -8990,7 +8990,7 @@ const data = {
               "Angular animations are used to define the structure and layout of the HTML for an Angular component.",
               "Angular animations allow developers to add smooth and visually appealing transitions and effects to elements in Angular applications, enhancing the user experience.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9001,7 +9001,7 @@ const data = {
               "Angular guards are used to define the structure and layout of the HTML for an Angular component.",
               "Angular guards are used to protect routes and control access to specific routes based on conditions, such as user authentication status or roles.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
         ],
       },
@@ -9016,7 +9016,7 @@ const data = {
               "Angular modules are used to create and manage databases in Angular applications.",
               "Angular modules are used to group related components, services, directives, and other features together, making the application more modular and maintainable.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9027,7 +9027,7 @@ const data = {
               "Template-driven forms are built using template syntax in the HTML, while reactive forms are built programmatically using TypeScript.",
               "Template-driven forms and reactive forms both handle form input and validation, but reactive forms provide more control and flexibility, making them suitable for complex scenarios.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9038,7 +9038,7 @@ const data = {
               "Angular routing is used to define the structure and layout of the HTML for an Angular component.",
               "Angular routing is a mechanism that allows users to navigate between different views or components without reloading the entire page, making it easier to build single-page applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9049,7 +9049,7 @@ const data = {
               "Lazy loading is used to handle errors in Angular applications.",
               "Lazy loading is a way to manage global state in Angular applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -9060,7 +9060,7 @@ const data = {
               "Angular directives are used to create and manage databases in Angular applications.",
               "Angular directives are a way to extend HTML with custom behaviors and manipulate the DOM directly, while components are used to create custom HTML elements with their own templates and logic.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9071,7 +9071,7 @@ const data = {
               "Angular services are used to create and manage databases in Angular applications.",
               "Angular services are singletons that allow components to share data and functionality by providing a centralized way to store and manage application state and business logic.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9082,7 +9082,7 @@ const data = {
               "Dependency injection is a way to load external data into Angular applications.",
               "Dependency injection is a design pattern used in Angular to provide components with the services or dependencies they require, making it easier to manage and test application components.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9093,7 +9093,7 @@ const data = {
               "Angular pipes are used to define the structure and layout of the HTML for an Angular component.",
               "Angular pipes are a way to format and transform data in templates by applying functions to the data before displaying it to the user.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9104,7 +9104,7 @@ const data = {
               "Angular animations are used to define the structure and layout of the HTML for an Angular component.",
               "Angular animations allow developers to add smooth and visually appealing transitions and effects to elements in Angular applications, enhancing the user experience.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9115,7 +9115,7 @@ const data = {
               "Angular guards are used to define the structure and layout of the HTML for an Angular component.",
               "Angular guards are used to protect routes and control access to specific routes based on conditions, such as user authentication status or roles.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9126,7 +9126,7 @@ const data = {
               "Angular interceptors are used to define the structure and layout of the HTML for an Angular component.",
               "Angular interceptors are a way to intercept and modify HTTP requests and responses, allowing developers to add headers, handle errors, or perform other tasks globally for HTTP communication in Angular applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9137,7 +9137,7 @@ const data = {
               "Angular testing is used to define the structure and layout of the HTML for an Angular component.",
               "Angular testing involves writing unit tests, integration tests, and end-to-end tests to ensure the correctness and functionality of Angular applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9148,7 +9148,7 @@ const data = {
               "Angular forms validation is used to define the structure and layout of the HTML for an Angular component.",
               "Angular forms validation allows developers to enforce data integrity by validating user input using built-in and custom validators, such as required, pattern, and min/max length.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9159,7 +9159,7 @@ const data = {
               "Angular change detection is used to define the structure and layout of the HTML for an Angular component.",
               "Angular change detection is the process of automatically updating the view when there are changes in the component's model, ensuring that the view is always in sync with the data.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9170,7 +9170,7 @@ const data = {
               "Angular decorators are used to define the structure and layout of the HTML for an Angular component.",
               "Angular decorators are used to add metadata and modify the behavior of classes and components in Angular applications, such as defining component metadata, injecting dependencies, and creating custom decorators.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
         ],
       },
@@ -9185,7 +9185,7 @@ const data = {
               "Angular modules are used to create and manage databases in Angular applications.",
               "Angular modules are used to group related components, services, directives, and other features together, making the application more modular and maintainable.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9196,7 +9196,7 @@ const data = {
               "Template-driven forms are built using template syntax in the HTML, while reactive forms are built programmatically using TypeScript.",
               "Template-driven forms and reactive forms both handle form input and validation, but reactive forms provide more control and flexibility, making them suitable for complex scenarios.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9207,7 +9207,7 @@ const data = {
               "Angular routing is used to define the structure and layout of the HTML for an Angular component.",
               "Angular routing is a mechanism that allows users to navigate between different views or components without reloading the entire page, making it easier to build single-page applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9218,7 +9218,7 @@ const data = {
               "Lazy loading is used to handle errors in Angular applications.",
               "Lazy loading is a way to manage global state in Angular applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -9229,7 +9229,7 @@ const data = {
               "Angular directives are used to create and manage databases in Angular applications.",
               "Angular directives are a way to extend HTML with custom behaviors and manipulate the DOM directly, while components are used to create custom HTML elements with their own templates and logic.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9240,7 +9240,7 @@ const data = {
               "Angular services are used to create and manage databases in Angular applications.",
               "Angular services are singletons that allow components to share data and functionality by providing a centralized way to store and manage application state and business logic.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9251,7 +9251,7 @@ const data = {
               "Dependency injection is a way to load external data into Angular applications.",
               "Dependency injection is a design pattern used in Angular to provide components with the services or dependencies they require, making it easier to manage and test application components.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9262,7 +9262,7 @@ const data = {
               "Angular pipes are used to define the structure and layout of the HTML for an Angular component.",
               "Angular pipes are a way to format and transform data in templates by applying functions to the data before displaying it to the user.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9273,7 +9273,7 @@ const data = {
               "Angular animations are used to define the structure and layout of the HTML for an Angular component.",
               "Angular animations allow developers to add smooth and visually appealing transitions and effects to elements in Angular applications, enhancing the user experience.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9284,7 +9284,7 @@ const data = {
               "Angular guards are used to define the structure and layout of the HTML for an Angular component.",
               "Angular guards are used to protect routes and control access to specific routes based on conditions, such as user authentication status or roles.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9295,7 +9295,7 @@ const data = {
               "Angular interceptors are used to define the structure and layout of the HTML for an Angular component.",
               "Angular interceptors are a way to intercept and modify HTTP requests and responses, allowing developers to add headers, handle errors, or perform other tasks globally for HTTP communication in Angular applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9306,7 +9306,7 @@ const data = {
               "Angular testing is used to define the structure and layout of the HTML for an Angular component.",
               "Angular testing involves writing unit tests, integration tests, and end-to-end tests to ensure the correctness and functionality of Angular applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9317,7 +9317,7 @@ const data = {
               "Angular forms validation is used to define the structure and layout of the HTML for an Angular component.",
               "Angular forms validation allows developers to enforce data integrity by validating user input using built-in and custom validators, such as required, pattern, and min/max length.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9328,7 +9328,7 @@ const data = {
               "Angular change detection is used to define the structure and layout of the HTML for an Angular component.",
               "Angular change detection is the process of automatically updating the view when there are changes in the component's model, ensuring that the view is always in sync with the data.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9339,7 +9339,7 @@ const data = {
               "Angular decorators are used to define the structure and layout of the HTML for an Angular component.",
               "Angular decorators are used to add metadata and modify the behavior of classes and components in Angular applications, such as defining component metadata, injecting dependencies, and creating custom decorators.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9350,7 +9350,7 @@ const data = {
               "Angular templates are used to define the structure and layout of the HTML for an Angular component.",
               "Angular templates use a template syntax provided by Angular that extends HTML with directives and data bindings, allowing developers to create dynamic and responsive user interfaces.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9361,7 +9361,7 @@ const data = {
               "Angular zones are used to define the structure and layout of the HTML for an Angular component.",
               "Angular zones are execution contexts that help to manage change detection and update the view when asynchronous tasks, such as HTTP requests or timers, are completed.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9372,7 +9372,7 @@ const data = {
               "The 'ng-container' element is used to define the structure and layout of the HTML for an Angular component.",
               "The 'ng-container' element is a non-rendered element that allows developers to group multiple elements without adding an extra wrapper to the DOM, making it useful for structural directives like 'ngIf' or 'ngFor'.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9383,7 +9383,7 @@ const data = {
               "The 'ViewChild' and 'ContentChild' decorators are used to define the structure and layout of the HTML for an Angular component.",
               "The 'ViewChild' decorator is used to access a child component or element from a parent component, while the 'ContentChild' decorator is used to access a projected child component or element from a parent component.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9394,7 +9394,7 @@ const data = {
               "Angular schematics are used to define the structure and layout of the HTML for an Angular component.",
               "Angular schematics are command-line tools provided by the Angular CLI that allow developers to generate and modify code in an Angular project, creating components, services, modules, and more with custom templates and configurations.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
         ],
       },
@@ -9409,7 +9409,7 @@ const data = {
               "Angular Ivy is a rendering engine and compiler in Angular that replaces the View Engine. It offers better performance, smaller bundle sizes, and improved tree shaking.",
               "Angular Ivy is a reactive programming library used for handling asynchronous data streams in Angular applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -9420,18 +9420,18 @@ const data = {
               "AOT is a way to define the structure and layout of the HTML for an Angular component.",
               "AOT compilation compiles Angular templates during the build process, which improves application loading performance and ensures that template errors are caught early.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
               "Explain the Angular Universal concept and its use in server-side rendering (SSR).",
             options: [
               "Angular Universal is a way to handle server-side logic in Angular applications.",
+              "Angular Universal is a set of tools that allow developers to perform server-side rendering (SSR) of Angular applications, which improves SEO, initial loading speed, and enables applications to be rendered on the server side before being sent to the client.",
               "Angular Universal is a tool used to create and manage databases in Angular applications.",
               "Angular Universal is a technique to define the structure and layout of the HTML for an Angular component.",
-              "Angular Universal is a set of tools that allow developers to perform server-side rendering (SSR) of Angular applications, which improves SEO, initial loading speed, and enables applications to be rendered on the server side before being sent to the client.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "1",
           },
           {
             question:
@@ -9439,21 +9439,21 @@ const data = {
             options: [
               "Angular custom decorators are used to handle server-side logic in Angular applications.",
               "Angular custom decorators are used to create and manage databases in Angular applications.",
-              "Angular custom decorators are used to define the structure and layout of the HTML for an Angular component.",
               "Angular custom decorators allow developers to create reusable behavior and metadata that can be applied to classes, properties, methods, or parameters, enhancing code readability and providing a way to extend Angular functionality.",
+              "Angular custom decorators are used to define the structure and layout of the HTML for an Angular component.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "2",
           },
           {
             question:
               "Explain the NgRx library and its role in managing state in Angular applications.",
             options: [
               "NgRx is a technique to handle server-side logic in Angular applications.",
+              "NgRx is a state management library based on Redux that provides a predictable state container for Angular applications, making it easier to manage and share data across components and services.",
               "NgRx is a tool used to create and manage databases in Angular applications.",
               "NgRx is a way to define the structure and layout of the HTML for an Angular component.",
-              "NgRx is a state management library based on Redux that provides a predictable state container for Angular applications, making it easier to manage and share data across components and services.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "1",
           },
           {
             question:
@@ -9464,7 +9464,7 @@ const data = {
               "The Angular Compiler API is used to define the structure and layout of the HTML for an Angular component.",
               "The Angular Compiler API allows developers to programmatically interact with the Angular template compiler, enabling dynamic template generation, template transformation, and custom template processing at runtime.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9475,7 +9475,7 @@ const data = {
               "Angular zone-less change detection is used to define the structure and layout of the HTML for an Angular component.",
               "Angular zone-less change detection eliminates the need for Angular zones and allows developers to manually trigger change detection for specific parts of the application, improving performance and reducing unnecessary change detection cycles.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9483,21 +9483,21 @@ const data = {
             options: [
               "Dynamic components are used to handle server-side logic in Angular applications.",
               "Dynamic components are used to create and manage databases in Angular applications.",
-              "Dynamic components are used to define the structure and layout of the HTML for an Angular component.",
               "Dynamic components allow developers to create and load components dynamically at runtime, using the ComponentFactoryResolver and ViewContainerRef, which is useful for building flexible and dynamic user interfaces.",
+              "Dynamic components are used to define the structure and layout of the HTML for an Angular component.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "2",
           },
           {
             question:
               "Explain the role of Web Workers in Angular applications and how they can improve performance.",
             options: [
               "Web Workers are used to handle server-side logic in Angular applications.",
+              "Web Workers allow developers to run background tasks in separate threads, freeing up the main UI thread and improving application responsiveness and performance.",
               "Web Workers are used to create and manage databases in Angular applications.",
               "Web Workers are used to define the structure and layout of the HTML for an Angular component.",
-              "Web Workers allow developers to run background tasks in separate threads, freeing up the main UI thread and improving application responsiveness and performance.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "1",
           },
           {
             question:
@@ -9505,10 +9505,10 @@ const data = {
             options: [
               "Angular schematics are used to handle server-side logic in Angular applications.",
               "Angular schematics are used to create and manage databases in Angular applications.",
-              "Angular schematics are used to define the structure and layout of the HTML for an Angular component.",
               "Angular schematics are command-line tools provided by the Angular CLI that allow developers to generate and modify code in an Angular project, creating components, services, modules, and more with custom templates and configurations.",
+              "Angular schematics are used to define the structure and layout of the HTML for an Angular component.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "2",
           },
         ],
       },
@@ -9523,7 +9523,7 @@ const data = {
               "Angular Ivy is a rendering engine and compiler in Angular that replaces the View Engine. It offers better performance, smaller bundle sizes, and improved tree shaking.",
               "Angular Ivy is a reactive programming library used for handling asynchronous data streams in Angular applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -9534,7 +9534,7 @@ const data = {
               "AOT is a way to define the structure and layout of the HTML for an Angular component.",
               "AOT compilation compiles Angular templates during the build process, which improves application loading performance and ensures that template errors are caught early.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9542,21 +9542,21 @@ const data = {
             options: [
               "Angular Universal is a way to handle server-side logic in Angular applications.",
               "Angular Universal is a tool used to create and manage databases in Angular applications.",
-              "Angular Universal is a technique to define the structure and layout of the HTML for an Angular component.",
               "Angular Universal is a set of tools that allow developers to perform server-side rendering (SSR) of Angular applications, which improves SEO, initial loading speed, and enables applications to be rendered on the server side before being sent to the client.",
+              "Angular Universal is a technique to define the structure and layout of the HTML for an Angular component.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "2",
           },
           {
             question:
               "What are Angular custom decorators, and how can they be used to enhance code readability and reusability?",
             options: [
+              "Angular custom decorators allow developers to create reusable behavior and metadata that can be applied to classes, properties, methods, or parameters, enhancing code readability and providing a way to extend Angular functionality.",
               "Angular custom decorators are used to handle server-side logic in Angular applications.",
               "Angular custom decorators are used to create and manage databases in Angular applications.",
               "Angular custom decorators are used to define the structure and layout of the HTML for an Angular component.",
-              "Angular custom decorators allow developers to create reusable behavior and metadata that can be applied to classes, properties, methods, or parameters, enhancing code readability and providing a way to extend Angular functionality.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "0",
           },
           {
             question:
@@ -9567,7 +9567,7 @@ const data = {
               "Angular state management patterns are used to define the structure and layout of the HTML for an Angular component.",
               "NgRx is a state management library based on Redux, which follows a centralized, immutable store pattern, while RxJS Subjects provide a more decentralized, observable-based approach for managing state within Angular components.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9578,18 +9578,18 @@ const data = {
               "The Angular Compiler API is used to define the structure and layout of the HTML for an Angular component.",
               "The Angular Compiler API allows developers to programmatically interact with the Angular template compiler, enabling dynamic template generation, template transformation, and custom template processing at runtime.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
               "What are Angular reactive forms, and how do they differ from template-driven forms?",
             options: [
               "Angular reactive forms are used to handle server-side logic in Angular applications.",
+              "Angular reactive forms provide a more programmatic and flexible approach to form handling, where form controls and validations are defined in the component class using TypeScript, offering better control and testability compared to template-driven forms.",
               "Angular reactive forms are used to create and manage databases in Angular applications.",
               "Angular reactive forms are used to define the structure and layout of the HTML for an Angular component.",
-              "Angular reactive forms provide a more programmatic and flexible approach to form handling, where form controls and validations are defined in the component class using TypeScript, offering better control and testability compared to template-driven forms.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "1",
           },
           {
             question:
@@ -9597,21 +9597,21 @@ const data = {
             options: [
               "Web Workers are used to handle server-side logic in Angular applications.",
               "Web Workers are used to create and manage databases in Angular applications.",
-              "Web Workers are used to define the structure and layout of the HTML for an Angular component.",
               "Web Workers allow developers to run background tasks in separate threads, freeing up the main UI thread and improving application responsiveness and performance.",
+              "Web Workers are used to define the structure and layout of the HTML for an Angular component.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "2",
           },
           {
             question:
               "What are dynamic components in Angular, and how can they be created and loaded at runtime?",
             options: [
               "Dynamic components are used to handle server-side logic in Angular applications.",
+              "Dynamic components allow developers to create and load components dynamically at runtime, using the ComponentFactoryResolver and ViewContainerRef, which is useful for building flexible and dynamic user interfaces.",
               "Dynamic components are used to create and manage databases in Angular applications.",
               "Dynamic components are used to define the structure and layout of the HTML for an Angular component.",
-              "Dynamic components allow developers to create and load components dynamically at runtime, using the ComponentFactoryResolver and ViewContainerRef, which is useful for building flexible and dynamic user interfaces.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "1",
           },
           {
             question:
@@ -9622,7 +9622,7 @@ const data = {
               "Angular zone-less change detection is used to define the structure and layout of the HTML for an Angular component.",
               "Angular zone-less change detection eliminates the need for Angular zones and allows developers to manually trigger change detection for specific parts of the application, improving performance and reducing unnecessary change detection cycles.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9633,7 +9633,7 @@ const data = {
               "Angular content projection is used to define the structure and layout of the HTML for an Angular component.",
               "Angular content projection allows developers to create reusable components with slots that can be filled with arbitrary content, enabling component customization and reusability.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9641,10 +9641,10 @@ const data = {
             options: [
               "Angular service workers are used to handle server-side logic in Angular applications.",
               "Angular service workers are used to create and manage databases in Angular applications.",
-              "Angular service workers are used to define the structure and layout of the HTML for an Angular component.",
               "Angular service workers allow developers to cache assets, enable offline access, and provide push notifications, enabling the creation of Progressive Web Apps (PWAs) that offer a better user experience and performance.",
+              "Angular service workers are used to define the structure and layout of the HTML for an Angular component.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "2",
           },
           {
             question:
@@ -9652,10 +9652,10 @@ const data = {
             options: [
               "Angular zones are used to handle server-side logic in Angular applications.",
               "Angular zones are used to create and manage databases in Angular applications.",
-              "Angular zones are used to define the structure and layout of the HTML for an Angular component.",
               "Angular zones are execution contexts that help to manage change detection and update the view when asynchronous tasks, such as HTTP requests or timers, are completed.",
+              "Angular zones are used to define the structure and layout of the HTML for an Angular component.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "2",
           },
           {
             question:
@@ -9666,7 +9666,7 @@ const data = {
               "Differential loading is a way to define the structure and layout of the HTML for an Angular component.",
               "Differential loading allows Angular to generate two separate bundles for modern browsers and legacy browsers, serving smaller and more efficient code to modern browsers that support ES2015+ features, while providing a fallback bundle with ES5 for older browsers.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9677,7 +9677,7 @@ const data = {
               "Angular schematics are used to define the structure and layout of the HTML for an Angular component.",
               "Angular schematics are command-line tools provided by the Angular CLI that allow developers to generate and modify code in an Angular project, creating components, services, modules, and more with custom templates and configurations.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
         ],
       },
@@ -9692,29 +9692,29 @@ const data = {
               "Angular Ivy is a rendering engine and compiler in Angular that replaces the View Engine. It offers better performance, smaller bundle sizes, and improved tree shaking.",
               "Angular Ivy is a reactive programming library used for handling asynchronous data streams in Angular applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
               "What is AOT (Ahead-of-Time) compilation in Angular, and why is it beneficial for production builds?",
             options: [
               "AOT is a technique to handle server-side logic in Angular applications.",
+              "AOT compilation compiles Angular templates during the build process, which improves application loading performance and ensures that template errors are caught early.",
               "AOT is a tool used to create and manage databases in Angular applications.",
               "AOT is a way to define the structure and layout of the HTML for an Angular component.",
-              "AOT compilation compiles Angular templates during the build process, which improves application loading performance and ensures that template errors are caught early.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "1",
           },
           {
             question:
               "Explain the Angular Universal concept and its use in server-side rendering (SSR).",
             options: [
               "Angular Universal is a way to handle server-side logic in Angular applications.",
+              "Angular Universal is a set of tools that allow developers to perform server-side rendering (SSR) of Angular applications, which improves SEO, initial loading speed, and enables applications to be rendered on the server side before being sent to the client.",
               "Angular Universal is a tool used to create and manage databases in Angular applications.",
               "Angular Universal is a technique to define the structure and layout of the HTML for an Angular component.",
-              "Angular Universal is a set of tools that allow developers to perform server-side rendering (SSR) of Angular applications, which improves SEO, initial loading speed, and enables applications to be rendered on the server side before being sent to the client.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "1",
           },
           {
             question:
@@ -9722,10 +9722,10 @@ const data = {
             options: [
               "Angular custom decorators are used to handle server-side logic in Angular applications.",
               "Angular custom decorators are used to create and manage databases in Angular applications.",
-              "Angular custom decorators are used to define the structure and layout of the HTML for an Angular component.",
               "Angular custom decorators allow developers to create reusable behavior and metadata that can be applied to classes, properties, methods, or parameters, enhancing code readability and providing a way to extend Angular functionality.",
+              "Angular custom decorators are used to define the structure and layout of the HTML for an Angular component.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "2",
           },
           {
             question:
@@ -9736,7 +9736,7 @@ const data = {
               "Angular state management patterns are used to define the structure and layout of the HTML for an Angular component.",
               "NgRx is a state management library based on Redux, which follows a centralized, immutable store pattern, while RxJS Subjects provide a more decentralized, observable-based approach for managing state within Angular components.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9747,18 +9747,18 @@ const data = {
               "The Angular Compiler API is used to define the structure and layout of the HTML for an Angular component.",
               "The Angular Compiler API allows developers to programmatically interact with the Angular template compiler, enabling dynamic template generation, template transformation, and custom template processing at runtime.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
               "What are Angular reactive forms, and how do they differ from template-driven forms?",
             options: [
+              "Angular reactive forms provide a more programmatic and flexible approach to form handling, where form controls and validations are defined in the component class using TypeScript, offering better control and testability compared to template-driven forms.",
               "Angular reactive forms are used to handle server-side logic in Angular applications.",
               "Angular reactive forms are used to create and manage databases in Angular applications.",
               "Angular reactive forms are used to define the structure and layout of the HTML for an Angular component.",
-              "Angular reactive forms provide a more programmatic and flexible approach to form handling, where form controls and validations are defined in the component class using TypeScript, offering better control and testability compared to template-driven forms.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "0",
           },
           {
             question:
@@ -9766,21 +9766,21 @@ const data = {
             options: [
               "Web Workers are used to handle server-side logic in Angular applications.",
               "Web Workers are used to create and manage databases in Angular applications.",
-              "Web Workers are used to define the structure and layout of the HTML for an Angular component.",
               "Web Workers allow developers to run background tasks in separate threads, freeing up the main UI thread and improving application responsiveness and performance.",
+              "Web Workers are used to define the structure and layout of the HTML for an Angular component.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "2",
           },
           {
             question:
               "What are dynamic components in Angular, and how can they be created and loaded at runtime?",
             options: [
+              "Dynamic components allow developers to create and load components dynamically at runtime, using the ComponentFactoryResolver and ViewContainerRef, which is useful for building flexible and dynamic user interfaces.",
               "Dynamic components are used to handle server-side logic in Angular applications.",
               "Dynamic components are used to create and manage databases in Angular applications.",
               "Dynamic components are used to define the structure and layout of the HTML for an Angular component.",
-              "Dynamic components allow developers to create and load components dynamically at runtime, using the ComponentFactoryResolver and ViewContainerRef, which is useful for building flexible and dynamic user interfaces.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "0",
           },
           {
             question:
@@ -9791,7 +9791,7 @@ const data = {
               "Angular zone-less change detection is used to define the structure and layout of the HTML for an Angular component.",
               "Angular zone-less change detection eliminates the need for Angular zones and allows developers to manually trigger change detection for specific parts of the application, improving performance and reducing unnecessary change detection cycles.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9802,7 +9802,7 @@ const data = {
               "Angular content projection is used to define the structure and layout of the HTML for an Angular component.",
               "Angular content projection allows developers to create reusable components with slots that can be filled with arbitrary content, enabling component customization and reusability.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9810,10 +9810,10 @@ const data = {
             options: [
               "Angular service workers are used to handle server-side logic in Angular applications.",
               "Angular service workers are used to create and manage databases in Angular applications.",
-              "Angular service workers are used to define the structure and layout of the HTML for an Angular component.",
               "Angular service workers allow developers to cache assets, enable offline access, and provide push notifications, enabling the creation of Progressive Web Apps (PWAs) that offer a better user experience and performance.",
+              "Angular service workers are used to define the structure and layout of the HTML for an Angular component.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "2",
           },
           {
             question:
@@ -9821,10 +9821,10 @@ const data = {
             options: [
               "Angular zones are used to handle server-side logic in Angular applications.",
               "Angular zones are used to create and manage databases in Angular applications.",
-              "Angular zones are used to define the structure and layout of the HTML for an Angular component.",
               "Angular zones are execution contexts that help to manage change detection and update the view when asynchronous tasks, such as HTTP requests or timers, are completed.",
+              "Angular zones are used to define the structure and layout of the HTML for an Angular component.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "2",
           },
           {
             question:
@@ -9835,7 +9835,7 @@ const data = {
               "Differential loading is a way to define the structure and layout of the HTML for an Angular component.",
               "Differential loading allows Angular to generate two separate bundles for modern browsers and legacy browsers, serving smaller and more efficient code to modern browsers that support ES2015+ features, while providing a fallback bundle with ES5 for older browsers.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9846,18 +9846,18 @@ const data = {
               "Angular schematics are used to define the structure and layout of the HTML for an Angular component.",
               "Angular schematics are command-line tools provided by the Angular CLI that allow developers to generate and modify code in an Angular project, creating components, services, modules, and more with custom templates and configurations.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
               "Explain the concept of Angular lazy loading and how it can improve application performance.",
             options: [
+              "Angular lazy loading allows developers to load modules and components only when they are needed, reducing the initial loading time and optimizing the application performance.",
               "Angular lazy loading is used to handle server-side logic in Angular applications.",
               "Angular lazy loading is used to create and manage databases in Angular applications.",
               "Angular lazy loading is used to define the structure and layout of the HTML for an Angular component.",
-              "Angular lazy loading allows developers to load modules and components only when they are needed, reducing the initial loading time and optimizing the application performance.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "0",
           },
           {
             question:
@@ -9865,21 +9865,21 @@ const data = {
             options: [
               "Angular animations are used to handle server-side logic in Angular applications.",
               "Angular animations are used to create and manage databases in Angular applications.",
-              "Angular animations are used to define the structure and layout of the HTML for an Angular component.",
               "Angular animations provide a way to animate HTML elements and components, creating smooth transitions and interactive UI effects, such as fade-ins, slide-ins, and rotations.",
+              "Angular animations are used to define the structure and layout of the HTML for an Angular component.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "2",
           },
           {
             question:
               "Explain the concept of Angular ChangeDetectionStrategy and how it can impact application performance.",
             options: [
               "Angular ChangeDetectionStrategy is used to handle server-side logic in Angular applications.",
+              "Angular ChangeDetectionStrategy allows developers to choose how change detection is triggered and can impact application performance by controlling when and how often change detection runs.",
               "Angular ChangeDetectionStrategy is used to create and manage databases in Angular applications.",
               "Angular ChangeDetectionStrategy is used to define the structure and layout of the HTML for an Angular component.",
-              "Angular ChangeDetectionStrategy allows developers to choose how change detection is triggered and can impact application performance by controlling when and how often change detection runs.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "1",
           },
           {
             question:
@@ -9890,7 +9890,7 @@ const data = {
               "The Angular TestBed is used to define the structure and layout of the HTML for an Angular component.",
               "The Angular TestBed provides utilities and methods to configure and create an isolated testing environment for Angular components, services, and modules, allowing developers to write unit tests and perform component testing in an isolated and controlled environment.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -9898,10 +9898,10 @@ const data = {
             options: [
               "Angular micro frontends are used to handle server-side logic in Angular applications.",
               "Angular micro frontends are used to create and manage databases in Angular applications.",
-              "Angular micro frontends are used to define the structure and layout of the HTML for an Angular component.",
               "Angular micro frontends involve breaking down a large Angular application into smaller, self-contained applications that can be developed, deployed, and maintained independently, enabling better scalability, modularity, and team collaboration.",
+              "Angular micro frontends are used to define the structure and layout of the HTML for an Angular component.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "2",
           },
         ],
       },
@@ -9917,7 +9917,7 @@ const data = {
               "A front-end JavaScript framework for building user interfaces.",
               "A programming language for server-side development.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What are the key features of Vue.js?",
@@ -9927,7 +9927,7 @@ const data = {
               "Server-side rendering, code splitting, and hot module replacement.",
               "Form validation, database querying, and RESTful API integration.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What is the Vue instance?",
@@ -9937,7 +9937,7 @@ const data = {
               "A JavaScript object that serves as the root of a Vue application and contains data, methods, computed properties, and more.",
               "A predefined global object provided by Vue.js for managing application state.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "How do you perform data binding in Vue.js?",
@@ -9947,7 +9947,7 @@ const data = {
               "Using the v-model directive to create two-way data binding between form inputs and Vue instance data.",
               "By defining a watcher function to observe changes in data and updating the DOM accordingly.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What are components in Vue.js?",
@@ -9957,7 +9957,7 @@ const data = {
               "Components are reusable and self-contained blocks of Vue.js code that can be composed to build complex UIs.",
               "Components are built-in UI elements provided by Vue.js for common use cases.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the Vue.js template syntax?",
@@ -9967,7 +9967,7 @@ const data = {
               "Vue.js templates use Angular-like syntax with square brackets.",
               "Vue.js templates use HTML-like syntax with directives denoted by 'v-' prefix, such as v-if, v-for, v-bind, and v-on.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "What does the 'v-for' directive do in Vue.js?",
@@ -9977,7 +9977,7 @@ const data = {
               "It creates a loop to iterate over an array or an object and render content for each item.",
               "It performs two-way data binding between form inputs and Vue instance data.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "How do you handle user events in Vue.js?",
@@ -9987,7 +9987,7 @@ const data = {
               "By using the 'v-for' directive to loop over data and render content.",
               "By defining computed properties to handle user interactions.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What are computed properties in Vue.js?",
@@ -9997,7 +9997,7 @@ const data = {
               "Computed properties are functions that calculate and cache data based on other data properties, allowing for reactive updates.",
               "Computed properties are used to perform API calls to the server and update the DOM accordingly.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "How do you conditionally render content in Vue.js?",
@@ -10007,7 +10007,7 @@ const data = {
               "By using the 'v-if', 'v-else-if', and 'v-else' directives to conditionally render content based on a data property's value.",
               "By using the 'v-model' directive for two-way data binding.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
         ],
       },
@@ -10021,7 +10021,7 @@ const data = {
               "A front-end JavaScript framework for building user interfaces.",
               "A programming language for server-side development.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What are the key features of Vue.js?",
@@ -10031,7 +10031,7 @@ const data = {
               "Server-side rendering, code splitting, and hot module replacement.",
               "Form validation, database querying, and RESTful API integration.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What is the Vue instance?",
@@ -10041,7 +10041,7 @@ const data = {
               "A JavaScript object that serves as the root of a Vue application and contains data, methods, computed properties, and more.",
               "A predefined global object provided by Vue.js for managing application state.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "How do you perform data binding in Vue.js?",
@@ -10051,7 +10051,7 @@ const data = {
               "Using the v-model directive to create two-way data binding between form inputs and Vue instance data.",
               "By defining a watcher function to observe changes in data and updating the DOM accordingly.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What are components in Vue.js?",
@@ -10061,7 +10061,7 @@ const data = {
               "Components are reusable and self-contained blocks of Vue.js code that can be composed to build complex UIs.",
               "Components are built-in UI elements provided by Vue.js for common use cases.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the Vue.js template syntax?",
@@ -10071,7 +10071,7 @@ const data = {
               "Vue.js templates use Angular-like syntax with square brackets.",
               "Vue.js templates use HTML-like syntax with directives denoted by 'v-' prefix, such as v-if, v-for, v-bind, and v-on.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "What does the 'v-for' directive do in Vue.js?",
@@ -10081,7 +10081,7 @@ const data = {
               "It creates a loop to iterate over an array or an object and render content for each item.",
               "It performs two-way data binding between form inputs and Vue instance data.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "How do you handle user events in Vue.js?",
@@ -10091,7 +10091,7 @@ const data = {
               "By using the 'v-for' directive to loop over data and render content.",
               "By defining computed properties to handle user interactions.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What are computed properties in Vue.js?",
@@ -10101,7 +10101,7 @@ const data = {
               "Computed properties are functions that calculate and cache data based on other data properties, allowing for reactive updates.",
               "Computed properties are used to perform API calls to the server and update the DOM accordingly.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "How do you conditionally render content in Vue.js?",
@@ -10111,7 +10111,7 @@ const data = {
               "By using the 'v-if', 'v-else-if', and 'v-else' directives to conditionally render content based on a data property's value.",
               "By using the 'v-model' directive for two-way data binding.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10122,7 +10122,7 @@ const data = {
               "To create a loop in the Vue template.",
               "To conditionally render content in the Vue template.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -10133,7 +10133,7 @@ const data = {
               "By using the 'v-on' directive in the parent and the 'v-bind' directive in the child.",
               "By using the 'v-emit' directive to emit data from the parent to the child component.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -10144,7 +10144,7 @@ const data = {
               "To create a loop in the Vue template.",
               "To conditionally render content in the Vue template.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -10155,7 +10155,7 @@ const data = {
           {
             question: "Which of the following is a lifecycle hook in Vue.js?",
             options: ["v-init", "v-create", "created", "v-render"],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
         ],
       },
@@ -10169,7 +10169,7 @@ const data = {
               "A front-end JavaScript framework for building user interfaces.",
               "A programming language for server-side development.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What are the key features of Vue.js?",
@@ -10179,7 +10179,7 @@ const data = {
               "Server-side rendering, code splitting, and hot module replacement.",
               "Form validation, database querying, and RESTful API integration.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What is the Vue instance?",
@@ -10189,7 +10189,7 @@ const data = {
               "A JavaScript object that serves as the root of a Vue application and contains data, methods, computed properties, and more.",
               "A predefined global object provided by Vue.js for managing application state.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "How do you perform data binding in Vue.js?",
@@ -10199,7 +10199,7 @@ const data = {
               "Using the v-model directive to create two-way data binding between form inputs and Vue instance data.",
               "By defining a watcher function to observe changes in data and updating the DOM accordingly.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What are components in Vue.js?",
@@ -10209,7 +10209,7 @@ const data = {
               "Components are reusable and self-contained blocks of Vue.js code that can be composed to build complex UIs.",
               "Components are built-in UI elements provided by Vue.js for common use cases.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the Vue.js template syntax?",
@@ -10219,7 +10219,7 @@ const data = {
               "Vue.js templates use Angular-like syntax with square brackets.",
               "Vue.js templates use HTML-like syntax with directives denoted by 'v-' prefix, such as v-if, v-for, v-bind, and v-on.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "What does the 'v-for' directive do in Vue.js?",
@@ -10229,7 +10229,7 @@ const data = {
               "It creates a loop to iterate over an array or an object and render content for each item.",
               "It performs two-way data binding between form inputs and Vue instance data.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "How do you handle user events in Vue.js?",
@@ -10239,7 +10239,7 @@ const data = {
               "By using the 'v-for' directive to loop over data and render content.",
               "By defining computed properties to handle user interactions.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What are computed properties in Vue.js?",
@@ -10249,7 +10249,7 @@ const data = {
               "Computed properties are functions that calculate and cache data based on other data properties, allowing for reactive updates.",
               "Computed properties are used to perform API calls to the server and update the DOM accordingly.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "How do you conditionally render content in Vue.js?",
@@ -10259,7 +10259,7 @@ const data = {
               "By using the 'v-if', 'v-else-if', and 'v-else' directives to conditionally render content based on a data property's value.",
               "By using the 'v-model' directive for two-way data binding.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10270,7 +10270,7 @@ const data = {
               "To create a loop in the Vue template.",
               "To conditionally render content in the Vue template.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -10281,7 +10281,7 @@ const data = {
               "By using the 'v-on' directive in the parent and the 'v-bind' directive in the child.",
               "By using the 'v-emit' directive to emit data from the parent to the child component.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -10292,18 +10292,18 @@ const data = {
               "To create a loop in the Vue template.",
               "To conditionally render content in the Vue template.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
               "What is the Vue.js directive used for iterating over an array?",
             options: ["v-for", "v-bind", "v-model", "v-on"],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "Which of the following is a lifecycle hook in Vue.js?",
             options: ["v-init", "v-create", "created", "v-render"],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the purpose of the 'v-if' directive in Vue.js?",
@@ -10313,13 +10313,13 @@ const data = {
               "To conditionally render content based on a data property's value.",
               "To define a custom event listener in the Vue instance.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
               "What is the Vue.js directive used for two-way data binding?",
             options: ["v-for", "v-bind", "v-model", "v-on"],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10330,12 +10330,12 @@ const data = {
               "To conditionally render content based on a data property's value.",
               "To create a loop in the Vue template.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the Vue.js directive used for event handling?",
             options: ["v-for", "v-bind", "v-model", "v-on"],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -10346,7 +10346,7 @@ const data = {
               "To conditionally render content based on a data property's value.",
               "To render HTML content dynamically from a data property, but with potential security risks.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
         ],
       },
@@ -10361,7 +10361,7 @@ const data = {
               "Directives are used for adding behavior to existing DOM elements, while components are self-contained and reusable blocks of UI with their own behavior and template.",
               "Directives and components are the same; they are interchangeable terms in Vue.js.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "Explain the purpose of Vuex in Vue.js applications.",
@@ -10371,7 +10371,7 @@ const data = {
               "Vuex is a library for routing and navigation in Vue.js applications.",
               "Vuex is a utility library for handling HTTP requests and AJAX in Vue.js applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -10382,7 +10382,7 @@ const data = {
               "Mixins are used to combine and reuse component options, such as data, methods, computed properties, and lifecycle hooks, among multiple components.",
               "Mixins are used to manage the routing and navigation between pages in Vue.js applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10393,7 +10393,7 @@ const data = {
               "SFCs are used to define components that can be loaded asynchronously, reducing the initial loading time of the application.",
               "SFCs are used to manage application state and data flow between components in Vue.js applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -10404,7 +10404,7 @@ const data = {
               "Dynamic components are components with no fixed template and can be rendered based on a data property.",
               "Dynamic components are components that can be created and destroyed dynamically at runtime using JavaScript.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10415,7 +10415,7 @@ const data = {
               "The 'provide' option is used to create a reactive data flow between components, while the 'inject' option is used to handle event communication.",
               "The 'provide' and 'inject' options are no longer supported in the latest version of Vue.js.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -10426,7 +10426,7 @@ const data = {
               "Vue Router is a utility for handling form validation and user input in Vue.js applications.",
               "Vue Router is a routing library that allows developers to define and manage client-side routes in Vue.js applications, enabling the creation of single-page applications (SPAs).",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -10437,7 +10437,7 @@ const data = {
               "The watch property is used to observe changes in data properties and trigger callback functions when the data changes, allowing developers to respond to the changes and perform actions accordingly.",
               "The watch property is used to define computed properties that update dynamically based on data changes.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10448,7 +10448,7 @@ const data = {
               "Slots are used to define the layout and structure of a component in Vue.js applications.",
               "Slots are placeholders in the component template that allow content to be distributed from the parent component, enabling developers to inject custom content into a component's template.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -10459,7 +10459,7 @@ const data = {
               "Server-side rendering is a technique that renders Vue.js components on the server and sends pre-rendered HTML to the client, improving initial load time and SEO-friendliness.",
               "Server-side rendering is a technique for caching data on the server side in Vue.js applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
         ],
       },
@@ -10474,7 +10474,7 @@ const data = {
               "Directives are used for adding behavior to existing DOM elements, while components are self-contained and reusable blocks of UI with their own behavior and template.",
               "Directives and components are the same; they are interchangeable terms in Vue.js.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "Explain the purpose of Vuex in Vue.js applications.",
@@ -10484,7 +10484,7 @@ const data = {
               "Vuex is a library for routing and navigation in Vue.js applications.",
               "Vuex is a utility library for handling HTTP requests and AJAX in Vue.js applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -10495,7 +10495,7 @@ const data = {
               "Mixins are used to combine and reuse component options, such as data, methods, computed properties, and lifecycle hooks, among multiple components.",
               "Mixins are used to manage the routing and navigation between pages in Vue.js applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10506,7 +10506,7 @@ const data = {
               "SFCs are used to define components that can be loaded asynchronously, reducing the initial loading time of the application.",
               "SFCs are used to manage application state and data flow between components in Vue.js applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -10517,7 +10517,7 @@ const data = {
               "Dynamic components are components with no fixed template and can be rendered based on a data property.",
               "Dynamic components are components that can be created and destroyed dynamically at runtime using JavaScript.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10528,7 +10528,7 @@ const data = {
               "The 'provide' option is used to create a reactive data flow between components, while the 'inject' option is used to handle event communication.",
               "The 'provide' and 'inject' options are no longer supported in the latest version of Vue.js.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -10539,7 +10539,7 @@ const data = {
               "Vue Router is a utility for handling form validation and user input in Vue.js applications.",
               "Vue Router is a routing library that allows developers to define and manage client-side routes in Vue.js applications, enabling the creation of single-page applications (SPAs).",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -10550,7 +10550,7 @@ const data = {
               "The watch property is used to observe changes in data properties and trigger callback functions when the data changes, allowing developers to respond to the changes and perform actions accordingly.",
               "The watch property is used to define computed properties that update dynamically based on data changes.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10561,7 +10561,7 @@ const data = {
               "Slots are used to define the layout and structure of a component in Vue.js applications.",
               "Slots are placeholders in the component template that allow content to be distributed from the parent component, enabling developers to inject custom content into a component's template.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -10572,7 +10572,7 @@ const data = {
               "Server-side rendering is a technique that renders Vue.js components on the server and sends pre-rendered HTML to the client, improving initial load time and SEO-friendliness.",
               "Server-side rendering is a technique for caching data on the server side in Vue.js applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10583,7 +10583,7 @@ const data = {
               "Mixins are used to combine and reuse component options, such as data, methods, computed properties, and lifecycle hooks, among multiple components.",
               "Mixins are used to manage the routing and navigation between pages in Vue.js applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10594,7 +10594,7 @@ const data = {
               "The Vue.js transition system is used to animate the entering, leaving, and updating of elements in the DOM.",
               "The Vue.js transition system is used to define custom directives for handling animations in Vue.js applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10605,7 +10605,7 @@ const data = {
               "By avoiding the use of Single File Components (SFCs) and using inline templates.",
               "By using complex nested components to improve code readability.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -10616,7 +10616,7 @@ const data = {
               "SSR is a technique for creating custom directives in Vue.js applications.",
               "SSR is a technique for handling asynchronous tasks and API calls in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -10627,7 +10627,7 @@ const data = {
               "By using try-catch blocks in JavaScript code to handle errors.",
               "By using error boundaries and error handling methods provided by Vue.js, such as the 'errorCaptured' hook.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
         ],
       },
@@ -10642,7 +10642,7 @@ const data = {
               "Directives are used for adding behavior to existing DOM elements, while components are self-contained and reusable blocks of UI with their own behavior and template.",
               "Directives and components are the same; they are interchangeable terms in Vue.js.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "Explain the purpose of Vuex in Vue.js applications.",
@@ -10652,7 +10652,7 @@ const data = {
               "Vuex is a library for routing and navigation in Vue.js applications.",
               "Vuex is a utility library for handling HTTP requests and AJAX in Vue.js applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -10663,7 +10663,7 @@ const data = {
               "Mixins are used to combine and reuse component options, such as data, methods, computed properties, and lifecycle hooks, among multiple components.",
               "Mixins are used to manage the routing and navigation between pages in Vue.js applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10674,7 +10674,7 @@ const data = {
               "SFCs are used to define components that can be loaded asynchronously, reducing the initial loading time of the application.",
               "SFCs are used to manage application state and data flow between components in Vue.js applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -10685,7 +10685,7 @@ const data = {
               "Dynamic components are components with no fixed template and can be rendered based on a data property.",
               "Dynamic components are components that can be created and destroyed dynamically at runtime using JavaScript.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10696,7 +10696,7 @@ const data = {
               "The 'provide' option is used to create a reactive data flow between components, while the 'inject' option is used to handle event communication.",
               "The 'provide' and 'inject' options are no longer supported in the latest version of Vue.js.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -10707,7 +10707,7 @@ const data = {
               "Vue Router is a utility for handling form validation and user input in Vue.js applications.",
               "Vue Router is a routing library that allows developers to define and manage client-side routes in Vue.js applications, enabling the creation of single-page applications (SPAs).",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -10718,7 +10718,7 @@ const data = {
               "The watch property is used to observe changes in data properties and trigger callback functions when the data changes, allowing developers to respond to the changes and perform actions accordingly.",
               "The watch property is used to define computed properties that update dynamically based on data changes.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10729,7 +10729,7 @@ const data = {
               "Lazy loading is a technique for loading only the components that are currently visible in the viewport, improving the performance of the application when navigating between routes.",
               "Lazy loading is a technique for minimizing the use of third-party libraries and external dependencies in Vue.js applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10740,7 +10740,7 @@ const data = {
               "By avoiding the use of Single File Components (SFCs) and using inline templates.",
               "By using complex nested components to improve code readability.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -10751,7 +10751,7 @@ const data = {
               "SSR is a technique for creating custom directives in Vue.js applications.",
               "SSR is a technique for handling asynchronous tasks and API calls in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -10762,7 +10762,7 @@ const data = {
               "By using try-catch blocks in JavaScript code to handle errors.",
               "By using error boundaries and error handling methods provided by Vue.js, such as the 'errorCaptured' hook.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -10773,7 +10773,7 @@ const data = {
               "Vue.js provides a built-in state management solution called Vuex.",
               "Vue.js allows seamless integration of third-party libraries and other frontend frameworks.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -10784,7 +10784,7 @@ const data = {
               "Scoped styles are used to encapsulate component-specific CSS styles, preventing them from affecting other components.",
               "Scoped styles are used to define animations and transitions for Vue.js components.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10795,7 +10795,7 @@ const data = {
               "The 'key' attribute is used to handle user input and form validations in Vue.js applications.",
               "The 'key' attribute is used to define custom directives in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -10806,7 +10806,7 @@ const data = {
               "Lazy loading is a technique for loading only the components that are currently visible in the viewport, improving the performance of the application when navigating between routes.",
               "Lazy loading is a technique for minimizing the use of third-party libraries and external dependencies in Vue.js applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10817,7 +10817,7 @@ const data = {
               "Dynamic imports are used to split the application code into smaller chunks, loading only the necessary components and resources when needed, which improves load time.",
               "Dynamic imports are used to define custom directives for handling code splitting and load time optimization in Vue.js applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10828,7 +10828,7 @@ const data = {
               "Vue.js provides a built-in state management solution called Vuex.",
               "Vue.js allows seamless integration of third-party libraries and other frontend frameworks.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -10839,7 +10839,7 @@ const data = {
               "Scoped styles are used to encapsulate component-specific CSS styles, preventing them from affecting other components.",
               "Scoped styles are used to define animations and transitions for Vue.js components.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10850,7 +10850,7 @@ const data = {
               "The 'key' attribute is used to handle user input and form validations in Vue.js applications.",
               "The 'key' attribute is used to define custom directives in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
         ],
       },
@@ -10865,7 +10865,7 @@ const data = {
               "The Vue.js reactivity system tracks dependencies between data properties and the template, allowing it to detect changes and trigger automatic UI updates.",
               "The Vue.js reactivity system relies on manual event handling to update the UI when data changes.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10876,7 +10876,7 @@ const data = {
               "The Virtual DOM is an optimization technique that allows Vue.js to render components without using the actual DOM.",
               "The Virtual DOM is a technique for handling asynchronous tasks and API calls in Vue.js applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -10887,7 +10887,7 @@ const data = {
               "Custom directives are used to encapsulate component-specific CSS styles and behavior.",
               "Custom directives are used to extend Vue.js' capabilities by directly manipulating the DOM or adding additional behavior to elements.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -10898,7 +10898,7 @@ const data = {
               "SSE is a technique for handling client-to-server communication in Vue.js applications.",
               "SSE is a technique for server-side rendering in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -10909,7 +10909,7 @@ const data = {
               "Render functions provide a more programmatic approach to defining the DOM structure and logic in Vue.js applications, while template-based syntax provides a more declarative approach.",
               "Render functions are used to define complex animations and transitions in Vue.js applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10920,7 +10920,7 @@ const data = {
               "Custom error boundaries in Vue.js are used to define custom event listeners for error handling.",
               "Custom error boundaries in Vue.js are used to define custom CSS styles for error messages.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -10931,7 +10931,7 @@ const data = {
               "Functional components are used to define dynamic components in Vue.js applications.",
               "Functional components are used to define custom event listeners in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -10942,7 +10942,7 @@ const data = {
               "Using Vue.js mixins extensively can lead to complex and hard-to-maintain code, as it may introduce naming conflicts and unintended side effects.",
               "Using Vue.js mixins extensively can result in slower rendering performance due to the overhead of combining multiple mixins.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10953,7 +10953,7 @@ const data = {
               "Renderless components are used to define complex animations and transitions in Vue.js applications.",
               "Renderless components are used to handle user input and form validations in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -10964,7 +10964,7 @@ const data = {
               "SSR in Vue.js is not supported, and developers need to use other frontend frameworks for server-side rendering.",
               "SSR in Vue.js is achieved by using the 'v-on' directive to handle server-side events.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
         ],
       },
@@ -10979,7 +10979,7 @@ const data = {
               "The Vue.js reactivity system tracks dependencies between data properties and the template, allowing it to detect changes and trigger automatic UI updates.",
               "The Vue.js reactivity system relies on manual event handling to update the UI when data changes.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -10990,7 +10990,7 @@ const data = {
               "The Virtual DOM is an optimization technique that allows Vue.js to render components without using the actual DOM.",
               "The Virtual DOM is a technique for handling asynchronous tasks and API calls in Vue.js applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -11001,7 +11001,7 @@ const data = {
               "Custom directives are used to encapsulate component-specific CSS styles and behavior.",
               "Custom directives are used to extend Vue.js' capabilities by directly manipulating the DOM or adding additional behavior to elements.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -11012,7 +11012,7 @@ const data = {
               "SSE is a technique for handling client-to-server communication in Vue.js applications.",
               "SSE is a technique for server-side rendering in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11023,7 +11023,7 @@ const data = {
               "Functional components are used to define dynamic components in Vue.js applications.",
               "Functional components are used to define custom event listeners in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11034,7 +11034,7 @@ const data = {
               "Using Vue.js mixins extensively can lead to complex and hard-to-maintain code, as it may introduce naming conflicts and unintended side effects.",
               "Using Vue.js mixins extensively can result in slower rendering performance due to the overhead of combining multiple mixins.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -11045,7 +11045,7 @@ const data = {
               "Render functions provide a more programmatic approach to defining the DOM structure and logic in Vue.js applications, while template-based syntax provides a more declarative approach.",
               "Render functions are used to define complex animations and transitions in Vue.js applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -11056,7 +11056,7 @@ const data = {
               "Custom error boundaries in Vue.js are used to define custom event listeners for error handling.",
               "Custom error boundaries in Vue.js are used to define custom CSS styles for error messages.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11067,7 +11067,7 @@ const data = {
               "SSE is a technique for handling client-to-server communication in Vue.js applications.",
               "SSE is a technique for server-side rendering in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11078,7 +11078,7 @@ const data = {
               "Functional components are used to define dynamic components in Vue.js applications.",
               "Functional components are used to define custom event listeners in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11089,7 +11089,7 @@ const data = {
               "Using Vue.js mixins extensively can lead to complex and hard-to-maintain code, as it may introduce naming conflicts and unintended side effects.",
               "Using Vue.js mixins extensively can result in slower rendering performance due to the overhead of combining multiple mixins.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -11100,7 +11100,7 @@ const data = {
               "Render functions provide a more programmatic approach to defining the DOM structure and logic in Vue.js applications, while template-based syntax provides a more declarative approach.",
               "Render functions are used to define complex animations and transitions in Vue.js applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -11111,7 +11111,7 @@ const data = {
               "Custom error boundaries in Vue.js are used to define custom event listeners for error handling.",
               "Custom error boundaries in Vue.js are used to define custom CSS styles for error messages.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11122,7 +11122,7 @@ const data = {
               "SSE is a technique for handling client-to-server communication in Vue.js applications.",
               "SSE is a technique for server-side rendering in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11133,7 +11133,7 @@ const data = {
               "Functional components are used to define dynamic components in Vue.js applications.",
               "Functional components are used to define custom event listeners in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
         ],
       },
@@ -11148,7 +11148,7 @@ const data = {
               "The Vue.js reactivity system tracks dependencies between data properties and the template, allowing it to detect changes and trigger automatic UI updates.",
               "The Vue.js reactivity system relies on manual event handling to update the UI when data changes.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -11159,7 +11159,7 @@ const data = {
               "The Virtual DOM is an optimization technique that allows Vue.js to render components without using the actual DOM.",
               "The Virtual DOM is a technique for handling asynchronous tasks and API calls in Vue.js applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -11170,7 +11170,7 @@ const data = {
               "Custom directives are used to encapsulate component-specific CSS styles and behavior.",
               "Custom directives are used to extend Vue.js' capabilities by directly manipulating the DOM or adding additional behavior to elements.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -11181,7 +11181,7 @@ const data = {
               "SSE is a technique for handling client-to-server communication in Vue.js applications.",
               "SSE is a technique for server-side rendering in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11192,7 +11192,7 @@ const data = {
               "Functional components are used to define dynamic components in Vue.js applications.",
               "Functional components are used to define custom event listeners in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11203,7 +11203,7 @@ const data = {
               "Using Vue.js mixins extensively can lead to complex and hard-to-maintain code, as it may introduce naming conflicts and unintended side effects.",
               "Using Vue.js mixins extensively can result in slower rendering performance due to the overhead of combining multiple mixins.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -11214,7 +11214,7 @@ const data = {
               "Render functions provide a more programmatic approach to defining the DOM structure and logic in Vue.js applications, while template-based syntax provides a more declarative approach.",
               "Render functions are used to define complex animations and transitions in Vue.js applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -11228,7 +11228,7 @@ const data = {
               "SSE is a technique for handling client-to-server communication in Vue.js applications.",
               "SSE is a technique for server-side rendering in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11239,7 +11239,7 @@ const data = {
               "Functional components are used to define dynamic components in Vue.js applications.",
               "Functional components are used to define custom event listeners in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11250,7 +11250,7 @@ const data = {
               "Using Vue.js mixins extensively can lead to complex and hard-to-maintain code, as it may introduce naming conflicts and unintended side effects.",
               "Using Vue.js mixins extensively can result in slower rendering performance due to the overhead of combining multiple mixins.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -11261,7 +11261,7 @@ const data = {
               "Render functions provide a more programmatic approach to defining the DOM structure and logic in Vue.js applications, while template-based syntax provides a more declarative approach.",
               "Render functions are used to define complex animations and transitions in Vue.js applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -11272,7 +11272,7 @@ const data = {
               "Custom error boundaries in Vue.js are used to define custom event listeners for error handling.",
               "Custom error boundaries in Vue.js are used to define custom CSS styles for error messages.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11283,7 +11283,7 @@ const data = {
               "SSE is a technique for handling client-to-server communication in Vue.js applications.",
               "SSE is a technique for server-side rendering in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11294,7 +11294,7 @@ const data = {
               "Functional components are used to define dynamic components in Vue.js applications.",
               "Functional components are used to define custom event listeners in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11305,7 +11305,7 @@ const data = {
               "Using Vue.js mixins extensively can lead to complex and hard-to-maintain code, as it may introduce naming conflicts and unintended side effects.",
               "Using Vue.js mixins extensively can result in slower rendering performance due to the overhead of combining multiple mixins.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -11316,7 +11316,7 @@ const data = {
               "Render functions provide a more programmatic approach to defining the DOM structure and logic in Vue.js applications, while template-based syntax provides a more declarative approach.",
               "Render functions are used to define complex animations and transitions in Vue.js applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -11327,7 +11327,7 @@ const data = {
               "Custom error boundaries in Vue.js are used to define custom event listeners for error handling.",
               "Custom error boundaries in Vue.js are used to define custom CSS styles for error messages.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11338,7 +11338,7 @@ const data = {
               "SSE is a technique for handling client-to-server communication in Vue.js applications.",
               "SSE is a technique for server-side rendering in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11349,7 +11349,7 @@ const data = {
               "Functional components are used to define dynamic components in Vue.js applications.",
               "Functional components are used to define custom event listeners in Vue.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11360,7 +11360,7 @@ const data = {
               "Vue.js transitions are used to define enter/leave transitions when elements are added or removed from the DOM, while animations are used to animate the transition between different states of a component.",
               "Vue.js transitions and animations are achieved by using third-party libraries and plugins.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
         ],
       },
@@ -11376,7 +11376,7 @@ const data = {
               "Node.js is a database management system.",
               "Node.js is a markup language for creating web pages.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What does the term 'non-blocking' mean in Node.js?",
@@ -11386,7 +11386,7 @@ const data = {
               "Non-blocking refers to the lack of error handling in Node.js applications.",
               "Non-blocking means Node.js is a single-threaded environment.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -11397,7 +11397,7 @@ const data = {
               "You can include external modules using the 'require()' function and specifying the module name.",
               "External modules are automatically downloaded from the internet when your Node.js application runs for the first time.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -11408,7 +11408,7 @@ const data = {
               "The 'package.json' file lists all the dependencies and metadata of your Node.js application.",
               "The 'package.json' file is required to install Node.js itself on your system.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -11419,7 +11419,7 @@ const data = {
               "Node.js automatically installs all necessary modules when you run the application for the first time.",
               "You can only use the built-in modules that come with Node.js; external modules cannot be installed.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is the role of the 'fs' module in Node.js?",
@@ -11429,7 +11429,7 @@ const data = {
               "The 'fs' module is used for working with the file system, allowing you to read and write files in your Node.js application.",
               "The 'fs' module is used for handling front-end rendering in Node.js applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the purpose of the 'http' module in Node.js?",
@@ -11439,7 +11439,7 @@ const data = {
               "The 'http' module is used for managing user authentication and authorization in Node.js applications.",
               "The 'http' module is used for handling front-end rendering in Node.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "How can you create a simple HTTP server in Node.js?",
@@ -11449,7 +11449,7 @@ const data = {
               "An HTTP server is automatically created when you run a Node.js application.",
               "You need to use a third-party library to create an HTTP server in Node.js.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is the role of the 'npm' command in Node.js?",
@@ -11459,7 +11459,7 @@ const data = {
               "The 'npm' command is used for installing and managing external modules in your Node.js projects.",
               "The 'npm' command is used for creating new Node.js projects from scratch.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "How can you start a Node.js application?",
@@ -11469,7 +11469,7 @@ const data = {
               "You can start a Node.js application by running the 'node' command followed by the application file name.",
               "Node.js applications start by clicking on the application icon on your desktop.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
         ],
       },
@@ -11483,7 +11483,7 @@ const data = {
               "Creating interactive graphics and animations.",
               "Managing databases and data storage.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "How do you print output to the console in Node.js?",
@@ -11493,19 +11493,19 @@ const data = {
               "Node.js does not have a built-in method for printing output to the console.",
               "Using the 'echo()' function from the 'fs' module.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
               "What command do you use to initialize a new Node.js project and create a 'package.json' file?",
             options: ["npm create", "npm init", "node create", "node init"],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
               "Which module do you use to work with file paths in Node.js?",
             options: ["fs", "path", "file", "util"],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -11516,7 +11516,7 @@ const data = {
               "Node.js automatically includes all necessary modules; no additional steps are required.",
               "Using the 'add()' function from the 'module' object.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -11527,7 +11527,7 @@ const data = {
               "It exports functions, objects, or values from a module to make them accessible to other parts of the application.",
               "Node.js does not use 'module.exports'; it relies on global variables.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the function of the 'npm install' command?",
@@ -11537,7 +11537,7 @@ const data = {
               "It installs a new version of the 'npm' package manager.",
               "It installs all available npm packages globally.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -11548,7 +11548,7 @@ const data = {
               "It holds the environment variables used in the Node.js application.",
               "Node.js does not have a 'process.argv' property.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11559,7 +11559,7 @@ const data = {
               "Node.js does not support HTTP servers; it is designed for other types of applications.",
               "Using the 'start()' method from the 'http' module and specifying the server port.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11570,13 +11570,13 @@ const data = {
               "You can use the 'handle()' method from the 'http' module to handle all incoming requests.",
               "You can use the 'on()' method from the 'http' module to register a request listener.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
               "Which method is used to read data from a file in Node.js?",
             options: ["readFile()", "openFile()", "read()", "fetch()"],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What does the 'npm start' command do?",
@@ -11586,7 +11586,7 @@ const data = {
               "It starts the Node.js package manager.",
               "It starts the Node.js server on a specified port.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "How can you handle errors in a Node.js application?",
@@ -11596,7 +11596,7 @@ const data = {
               "You can use the 'handleError()' function from the 'util' module.",
               "You can use the 'error()' method from the 'process' object to log errors to the console.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is the purpose of the 'npm run' command?",
@@ -11606,7 +11606,7 @@ const data = {
               "It installs the 'npm' package manager.",
               "It starts the Node.js server on a specified port.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "How can you execute a JavaScript file in Node.js?",
@@ -11616,7 +11616,7 @@ const data = {
               "Using the 'run()' function from the 'child_process' module.",
               "You can execute a JavaScript file by running the 'node' command followed by the file name.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
         ],
       },
@@ -11630,7 +11630,7 @@ const data = {
               "Creating interactive graphics and animations.",
               "Managing databases and data storage.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "How do you print output to the console in Node.js?",
@@ -11640,19 +11640,19 @@ const data = {
               "Node.js does not have a built-in method for printing output to the console.",
               "Using the 'echo()' function from the 'fs' module.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
               "What command do you use to initialize a new Node.js project and create a 'package.json' file?",
             options: ["npm create", "npm init", "node create", "node init"],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
               "Which module do you use to work with file paths in Node.js?",
             options: ["fs", "path", "file", "util"],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -11663,7 +11663,7 @@ const data = {
               "Node.js automatically includes all necessary modules; no additional steps are required.",
               "Using the 'add()' function from the 'module' object.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -11674,7 +11674,7 @@ const data = {
               "It exports functions, objects, or values from a module to make them accessible to other parts of the application.",
               "Node.js does not use 'module.exports'; it relies on global variables.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the function of the 'npm install' command?",
@@ -11684,7 +11684,7 @@ const data = {
               "It installs a new version of the 'npm' package manager.",
               "It installs all available npm packages globally.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -11695,7 +11695,7 @@ const data = {
               "It holds the environment variables used in the Node.js application.",
               "Node.js does not have a 'process.argv' property.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11706,7 +11706,7 @@ const data = {
               "Node.js does not support HTTP servers; it is designed for other types of applications.",
               "Using the 'start()' method from the 'http' module and specifying the server port.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11717,13 +11717,13 @@ const data = {
               "You can use the 'handle()' method from the 'http' module to handle all incoming requests.",
               "You can use the 'on()' method from the 'http' module to register a request listener.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
               "Which method is used to read data from a file in Node.js?",
             options: ["readFile()", "openFile()", "read()", "fetch()"],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What does the 'npm start' command do?",
@@ -11733,7 +11733,7 @@ const data = {
               "It starts the Node.js package manager.",
               "It starts the Node.js server on a specified port.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "How can you handle errors in a Node.js application?",
@@ -11743,7 +11743,7 @@ const data = {
               "You can use the 'handleError()' function from the 'util' module.",
               "You can use the 'error()' method from the 'process' object to log errors to the console.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is the purpose of the 'npm run' command?",
@@ -11753,7 +11753,7 @@ const data = {
               "It installs the 'npm' package manager.",
               "It starts the Node.js server on a specified port.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "How can you execute a JavaScript file in Node.js?",
@@ -11763,7 +11763,7 @@ const data = {
               "Using the 'run()' function from the 'child_process' module.",
               "You can execute a JavaScript file by running the 'node' command followed by the file name.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "What is the purpose of the 'events' module in Node.js?",
@@ -11773,7 +11773,7 @@ const data = {
               "The 'events' module is used for working with the file system in Node.js applications.",
               "The 'events' module is used to handle and respond to events in Node.js applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "What is the role of the 'fs' module in Node.js?",
@@ -11783,7 +11783,7 @@ const data = {
               "The 'fs' module is used for working with the file system, allowing you to read and write files in your Node.js application.",
               "The 'fs' module is used for handling front-end rendering in Node.js applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -11794,7 +11794,7 @@ const data = {
               "Node.js automatically installs all necessary modules when you run the application for the first time.",
               "You can only use the built-in modules that come with Node.js; external modules cannot be installed.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is the purpose of the 'http' module in Node.js?",
@@ -11804,7 +11804,7 @@ const data = {
               "The 'http' module is used for managing user authentication and authorization in Node.js applications.",
               "The 'http' module is used for handling front-end rendering in Node.js applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "How can you create a simple HTTP server in Node.js?",
@@ -11814,7 +11814,7 @@ const data = {
               "An HTTP server is automatically created when you run a Node.js application.",
               "You need to use a third-party library to create an HTTP server in Node.js.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
         ],
       },
@@ -11829,7 +11829,7 @@ const data = {
               "The 'async/await' syntax is used for defining middleware functions in Node.js applications.",
               "Node.js does not support 'async/await' syntax; it uses traditional callbacks for asynchronous operations.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -11840,7 +11840,7 @@ const data = {
               "Middleware in Node.js is a series of functions that are executed in the request-response cycle, and it is used to perform tasks such as authentication, logging, and error handling.",
               "Middleware in Node.js is used for defining the UI components in applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -11851,7 +11851,7 @@ const data = {
               "The 'EventEmitter' class in Node.js is used for working with file streams and handling asynchronous events.",
               "The 'EventEmitter' class in Node.js is used for handling user interface events in front-end applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -11862,7 +11862,7 @@ const data = {
               "The 'cluster' module in Node.js is used for creating network clusters to manage the communication between different Node.js applications.",
               "The 'cluster' module in Node.js is used for creating encrypted clusters to secure sensitive data in applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -11873,7 +11873,7 @@ const data = {
               "Streams in Node.js are used for reading and writing large datasets in chunks, reducing memory consumption and improving performance.",
               "Streams in Node.js are used for handling user interactions in front-end applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -11884,7 +11884,7 @@ const data = {
               "Promises in Node.js are used for creating animations and transitions in web applications, while callbacks are used for handling user interactions.",
               "Promises in Node.js are a legacy feature, and callbacks are the modern way to handle asynchronous operations.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -11895,7 +11895,7 @@ const data = {
               "The 'Buffer' class in Node.js is used for working with file streams and handling binary data efficiently.",
               "The 'Buffer' class in Node.js is used for defining the structure of binary data in databases.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -11906,7 +11906,7 @@ const data = {
               "The 'require()' function is used for importing built-in Node.js modules, while the 'import' statement is used for external modules.",
               "Node.js does not support the 'import' statement; it only uses the 'require()' function for importing modules.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -11917,7 +11917,7 @@ const data = {
               "The 'crypto' module in Node.js is used for generating random numbers for applications.",
               "The 'crypto' module in Node.js is used for cryptographic operations such as data encryption and decryption.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -11928,7 +11928,7 @@ const data = {
               "Middleware chaining in Node.js is a way to connect multiple databases to an application.",
               "Node.js does not support 'middleware chaining'; each middleware needs to be applied separately to a route.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
         ],
       },
@@ -11943,7 +11943,7 @@ const data = {
               "The 'fs.promises' module in Node.js is used for encrypting and decrypting data, while the traditional 'fs' module is used for reading and writing files.",
               "The 'fs.promises' module in Node.js is used for handling user interface interactions, while the traditional 'fs' module is used for server-side operations.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -11954,7 +11954,7 @@ const data = {
               "The 'os' module in Node.js is used for working with the file system and managing file operations.",
               "The 'os' module in Node.js provides functions to gather system information such as CPU architecture, memory, and network interfaces.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -11965,7 +11965,7 @@ const data = {
               "Middleware in Express.js is used for handling client-side JavaScript code in web applications.",
               "Express.js does not support middleware; it relies on traditional callback functions for handling requests.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -11976,7 +11976,7 @@ const data = {
               "Environment-specific configurations are managed using external modules, such as 'dotenv', to load environment variables based on the current environment (e.g., development, production).",
               "Environment-specific configurations are managed by creating separate applications for each environment, each with its own configuration.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -11987,7 +11987,7 @@ const data = {
               "Error handling middleware in Express.js is used for handling errors that occur in the front-end code of web applications.",
               "Express.js does not support error handling middleware; you need to handle errors using traditional try...catch blocks in your route handlers.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -11998,7 +11998,7 @@ const data = {
               "The 'path' module in Node.js is used for working with the file system and handling file paths, ensuring they are correct and formatted consistently across different operating systems.",
               "The 'path' module in Node.js is used for handling user interactions in front-end applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12009,7 +12009,7 @@ const data = {
               "Streams in Node.js are used for handling user interactions in front-end applications.",
               "Streams in Node.js are used for reading and writing data in chunks, making it more memory-efficient for handling large datasets compared to traditional file reading and writing operations.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -12020,7 +12020,7 @@ const data = {
               "Child processes in Node.js are used for handling parallel operations and executing external applications or scripts, allowing you to perform tasks concurrently.",
               "Node.js does not support child processes; it is a single-threaded environment.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12031,7 +12031,7 @@ const data = {
               "The 'cluster' module in Node.js is used for creating network clusters to manage the communication between different Node.js applications.",
               "The 'cluster' module in Node.js is used for creating encrypted clusters to secure sensitive data in applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -12042,7 +12042,7 @@ const data = {
               "The 'cookie-parser' middleware in Express.js is used for handling user authentication and authorization.",
               "The 'cookie-parser' middleware in Express.js is used for parsing and handling HTTP cookies in web applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -12053,7 +12053,7 @@ const data = {
               "The 'npm audit' command in Node.js is used for analyzing and identifying security vulnerabilities in your project's dependencies, helping you to keep your application secure.",
               "The 'npm audit' command in Node.js is used for optimizing the network performance of your applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12064,7 +12064,7 @@ const data = {
               "Object Destructuring in JavaScript is a way to create animations and transitions in web applications.",
               "Object Destructuring is not supported in Node.js; it is a browser-only feature.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -12075,7 +12075,7 @@ const data = {
               "Async iterators in Node.js allow you to iterate over asynchronous data sources, such as streams, making it easier to handle asynchronous data in a synchronous manner.",
               "Async iterators are not supported in Node.js; it is a feature available only in modern browsers.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12086,7 +12086,7 @@ const data = {
               "Gzip compression in Node.js is used for creating animated graphics and illustrations in web applications.",
               "Node.js does not support gzip compression; it is a feature available only in web servers.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -12097,7 +12097,7 @@ const data = {
               "Task runners like 'gulp' or 'grunt' provide a convenient way to automate repetitive tasks, such as minification, compilation, and testing, making the development process more efficient.",
               "Task runners like 'gulp' or 'grunt' are used for handling back-end logic in Node.js applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
         ],
       },
@@ -12112,7 +12112,7 @@ const data = {
               "Middleware in Express.js is used for handling client-side JavaScript code in web applications.",
               "Express.js does not support middleware; it relies on traditional callback functions for handling requests.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -12123,7 +12123,7 @@ const data = {
               "The 'path' module in Node.js is used for working with the file system and handling file paths, ensuring they are correct and formatted consistently across different operating systems.",
               "The 'path' module in Node.js is used for handling user interactions in front-end applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12134,7 +12134,7 @@ const data = {
               "Streams in Node.js are used for handling user interactions in front-end applications.",
               "Streams in Node.js are used for reading and writing data in chunks, making it more memory-efficient for handling large datasets compared to traditional file reading and writing operations.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -12145,7 +12145,7 @@ const data = {
               "Child processes in Node.js are used for handling parallel operations and executing external applications or scripts, allowing you to perform tasks concurrently.",
               "Node.js does not support child processes; it is a single-threaded environment.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12156,7 +12156,7 @@ const data = {
               "The 'cluster' module in Node.js is used for creating network clusters to manage the communication between different Node.js applications.",
               "The 'cluster' module in Node.js is used for creating encrypted clusters to secure sensitive data in applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -12167,7 +12167,7 @@ const data = {
               "The 'cookie-parser' middleware in Express.js is used for handling user authentication and authorization.",
               "The 'cookie-parser' middleware in Express.js is used for parsing and handling HTTP cookies in web applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -12178,7 +12178,7 @@ const data = {
               "The 'npm audit' command in Node.js is used for analyzing and identifying security vulnerabilities in your project's dependencies, helping you to keep your application secure.",
               "The 'npm audit' command in Node.js is used for optimizing the network performance of your applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12189,7 +12189,7 @@ const data = {
               "Object Destructuring in JavaScript is a way to create animations and transitions in web applications.",
               "Object Destructuring is not supported in Node.js; it is a browser-only feature.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -12200,7 +12200,7 @@ const data = {
               "Async iterators in Node.js allow you to iterate over asynchronous data sources, such as streams, making it easier to handle asynchronous data in a synchronous manner.",
               "Async iterators are not supported in Node.js; it is a feature available only in modern browsers.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12211,7 +12211,7 @@ const data = {
               "Gzip compression in Node.js is used for creating animated graphics and illustrations in web applications.",
               "Node.js does not support gzip compression; it is a feature available only in web servers.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -12222,7 +12222,7 @@ const data = {
               "Task runners like 'gulp' or 'grunt' provide a convenient way to automate repetitive tasks, such as minification, compilation, and testing, making the development process more efficient.",
               "Task runners like 'gulp' or 'grunt' are used for handling back-end logic in Node.js applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12233,7 +12233,7 @@ const data = {
               "The 'crypto' module in Node.js is used for cryptographic operations such as data encryption and decryption.",
               "The 'crypto' module in Node.js is used for creating complex animations and transitions.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12244,7 +12244,7 @@ const data = {
               "The 'Buffer' in Node.js is used for working with file streams and handling binary data efficiently.",
               "The 'Buffer' in Node.js is used for defining the structure of binary data in databases.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12255,7 +12255,7 @@ const data = {
               "The 'async/await' syntax in Node.js is used for defining middleware functions in applications.",
               "Node.js does not support 'async/await' syntax; it uses traditional callbacks for asynchronous operations.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -12266,7 +12266,7 @@ const data = {
               "The 'os' module in Node.js is used for working with the file system and managing file operations.",
               "The 'os' module in Node.js provides functions to gather system information such as CPU architecture, memory, and network interfaces.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -12277,7 +12277,7 @@ const data = {
               "Middleware chaining in Node.js is a way to connect multiple databases to an application.",
               "Node.js does not support 'middleware chaining'; each middleware needs to be applied separately to a route.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -12288,7 +12288,7 @@ const data = {
               "The 'require()' function is used for importing built-in Node.js modules, while the 'import' statement is used for external modules.",
               "Node.js does not support the 'import' statement; it only uses the 'require()' function for importing modules.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -12299,7 +12299,7 @@ const data = {
               "The 'perf_hooks' module in Node.js provides functions to measure the execution time of your code and identify performance bottlenecks in your applications.",
               "The 'perf_hooks' module in Node.js is used for managing user authentication and authorization.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12310,7 +12310,7 @@ const data = {
               "To handle file uploads in Node.js, you can use the 'multer' library, which simplifies the process of handling multipart/form-data, allowing you to upload files to your server easily.",
               "File uploads in Node.js are handled automatically by the 'http' module, so you don't need any additional libraries.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12321,7 +12321,7 @@ const data = {
               "Event emitters in Node.js are used for working with the file system and handling asynchronous events.",
               "Event emitters in Node.js are used for managing HTTP events in web applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
         ],
       },
@@ -12336,7 +12336,7 @@ const data = {
               "The event loop in Node.js is a process for managing database connections in real-time applications.",
               "The event loop in Node.js is used for handling authentication and authorization events in applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -12347,7 +12347,7 @@ const data = {
               "'V8' is the JavaScript engine developed by Google, used in Node.js to execute JavaScript code, and it compiles JavaScript code to machine code for faster execution.",
               "'V8' is a version control system used for managing code repositories in Node.js projects.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12358,7 +12358,7 @@ const data = {
               "'libuv' is a package manager used in Node.js for managing external dependencies.",
               "'libuv' is a template engine used in Node.js for server-side rendering.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -12369,7 +12369,7 @@ const data = {
               "'Worker Threads' in Node.js allow you to create separate threads to execute JavaScript code in parallel, improving the performance of CPU-intensive tasks.",
               "'Worker Threads' in Node.js is a way to manage WebSocket connections for real-time communication in web applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12380,7 +12380,7 @@ const data = {
               "The 'N-API' in Node.js is an API that provides a stable and consistent interface for native addons, ensuring that they are compatible with different Node.js versions, and reducing the risk of breaking changes.",
               "The 'N-API' in Node.js is a set of utility functions for working with the file system and managing file operations.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12391,7 +12391,7 @@ const data = {
               "'async_hooks' in Node.js is a set of hooks that allow you to track the lifetime of asynchronous operations, monitor their performance, and associate contextual data with them.",
               "'async_hooks' in Node.js is a feature for managing user interactions and events in applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12402,7 +12402,7 @@ const data = {
               "'Heap memory' and 'stack memory' in Node.js are terms used interchangeably to refer to the overall memory available for the application.",
               "'Heap memory' in Node.js refers to the memory used for handling network requests and responses, while 'stack memory' is used for managing WebSocket connections.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -12413,7 +12413,7 @@ const data = {
               "'Docker' in Node.js is a containerization platform that allows you to package your Node.js applications and their dependencies into containers, making them portable and easy to deploy across different environments.",
               "'Docker' in Node.js is a templating engine used for server-side rendering of web pages.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12424,7 +12424,7 @@ const data = {
               "'Memory leaks' in Node.js are not a concern; Node.js has built-in garbage collection that automatically handles memory management.",
               "'Memory leaks' in Node.js are caused by bugs in the JavaScript code, leading to unreleased memory that is no longer needed, and it can lead to a gradual loss of available memory and application crashes.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -12435,7 +12435,7 @@ const data = {
               "'PM2' in Node.js is a process manager that allows you to manage and monitor Node.js applications, enabling features like automatic restarts, load balancing, and log management.",
               "'PM2' in Node.js is a package manager used for managing external dependencies in Node.js projects.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
         ],
       },
@@ -12450,7 +12450,7 @@ const data = {
               "'C++ Addons' in Node.js allow you to write and integrate C++ code with your Node.js applications, enabling you to achieve performance improvements and access low-level system resources.",
               "'C++ Addons' in Node.js are used for managing external dependencies in your projects.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12461,7 +12461,7 @@ const data = {
               "'pmx' is a templating engine used for server-side rendering of web pages in Node.js.",
               "'pmx' in Node.js is a module for managing package dependencies and versioning.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -12472,7 +12472,7 @@ const data = {
               "'Vulnerability Scanning' in Node.js is a utility library for handling CSS styles in web applications.",
               "'Vulnerability Scanning' in Node.js is used for creating complex animations and transitions in web applications.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -12483,7 +12483,7 @@ const data = {
               "'Streaming compression' in Node.js allows you to compress and decompress data on-the-fly while reading or writing streams, reducing memory usage and improving performance.",
               "'Streaming compression' in Node.js is a technique for managing WebSocket connections.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12494,7 +12494,7 @@ const data = {
               "'dtrace-provider' in Node.js is used for managing user authentication and authorization in real-time applications.",
               "'dtrace-provider' in Node.js is a module for providing support for DTrace, a dynamic tracing framework for analyzing and troubleshooting applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -12505,7 +12505,7 @@ const data = {
               "'Zone.js' in Node.js is a package manager used for managing external dependencies in your projects.",
               "'Zone.js' in Node.js is a library that allows you to create and manage execution contexts, enabling you to track asynchronous operations and handle errors more effectively.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -12516,7 +12516,7 @@ const data = {
               "'Cluster messaging' and 'IPC' are used for creating complex animations and transitions in web applications.",
               "'Cluster messaging' and 'IPC' in Node.js allow you to communicate between multiple Node.js processes, enabling efficient sharing of data and workload distribution.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -12527,7 +12527,7 @@ const data = {
               "'Snapshotting' in Node.js refers to the process of converting JavaScript code to machine code and saving it as a snapshot, which can be used to speed up application startup time by avoiding the need to recompile the code each time the application starts.",
               "'Snapshotting' in Node.js is used for optimizing database queries in applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12538,7 +12538,7 @@ const data = {
               "'async_hooks' in Node.js is a set of hooks that allow you to track the lifetime of asynchronous operations, monitor their performance, and associate contextual data with them.",
               "'async_hooks' in Node.js is a feature for managing user interactions and events in applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12549,7 +12549,7 @@ const data = {
               "'Node.js C++ API' is a version control system used in Node.js projects for managing code repositories.",
               "'Node.js C++ API' allows you to write native addons using C++ that are compatible with different Node.js versions, reducing the need to recompile addons for each Node.js release.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -12560,7 +12560,7 @@ const data = {
               "'dtrace-provider' in Node.js is used for managing user authentication and authorization in real-time applications.",
               "'dtrace-provider' in Node.js is a module for providing support for DTrace, a dynamic tracing framework for analyzing and troubleshooting applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -12571,7 +12571,7 @@ const data = {
               "'ES Modules' are the latest standard for working with modules in JavaScript, providing a more standardized syntax for module imports and exports compared to CommonJS modules.",
               "'ES Modules' in Node.js is a feature for managing user interactions and events in applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12582,7 +12582,7 @@ const data = {
               "The 'N-API' in Node.js is an API that provides a stable and consistent interface for native addons, ensuring that they are compatible with different Node.js versions, and reducing the risk of breaking changes.",
               "The 'N-API' in Node.js is a set of utility functions for working with the file system and managing file operations.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12593,7 +12593,7 @@ const data = {
               "The 'V8 Heap Statistics' in Node.js provide insights into the memory usage of your application's V8 engine, allowing you to identify memory leaks and optimize memory management.",
               "The 'V8 Heap Statistics' in Node.js are a feature for managing user interactions and events in applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12604,7 +12604,7 @@ const data = {
               "'Zone.js' in Node.js is a package manager used for managing external dependencies in your projects.",
               "'Zone.js' in Node.js is a library that allows you to create and manage execution contexts, enabling you to track asynchronous operations and handle errors more effectively.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
         ],
       },
@@ -12619,7 +12619,7 @@ const data = {
               "'N-API' in Node.js is an API that provides a stable and consistent interface for native addons, allowing them to be compatible with different Node.js versions without the need for recompilation.",
               "'N-API' in Node.js is a feature for managing user interactions and events in applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12630,7 +12630,7 @@ const data = {
               "'Node.js C++ Addons' allow you to write and integrate C++ code with your Node.js applications, enabling you to achieve performance improvements and access low-level system resources.",
               "'Node.js C++ Addons' are used for managing external dependencies in your Node.js projects.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12641,7 +12641,7 @@ const data = {
               "'V8 Engine' is the JavaScript engine developed by Google, used in Node.js to execute JavaScript code, and it compiles JavaScript code to machine code for faster execution.",
               "'V8 Engine' is a version control system used in Node.js projects for managing code repositories.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12652,7 +12652,7 @@ const data = {
               "'Worker Threads' in Node.js allow you to create separate threads to execute JavaScript code in parallel, improving the performance of CPU-intensive tasks.",
               "'Worker Threads' in Node.js is a way to manage WebSocket connections for real-time communication in web applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12663,7 +12663,7 @@ const data = {
               "'dtrace-provider' in Node.js is used for managing user authentication and authorization in real-time applications.",
               "'dtrace-provider' in Node.js is a module for providing support for DTrace, a dynamic tracing framework for analyzing and troubleshooting applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -12674,7 +12674,7 @@ const data = {
               "'async_hooks' in Node.js is a set of hooks that allow you to track the lifetime of asynchronous operations, monitor their performance, and associate contextual data with them.",
               "'async_hooks' in Node.js is a feature for managing user interactions and events in applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12685,7 +12685,7 @@ const data = {
               "'Snapshotting' in Node.js refers to the process of converting JavaScript code to machine code and saving it as a snapshot, which can be used to speed up application startup time by avoiding the need to recompile the code each time the application starts.",
               "'Snapshotting' in Node.js is used for optimizing database queries in applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12696,7 +12696,7 @@ const data = {
               "'Node.js C++ API' is a version control system used in Node.js projects for managing code repositories.",
               "'Node.js C++ API' allows you to write native addons using C++ that are compatible with different Node.js versions, reducing the need to recompile addons for each Node.js release.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -12707,7 +12707,7 @@ const data = {
               "The 'V8 Heap Statistics' in Node.js provide insights into the memory usage of your application's V8 engine, allowing you to identify memory leaks and optimize memory management.",
               "The 'V8 Heap Statistics' in Node.js are a feature for managing user interactions and events in applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12718,7 +12718,7 @@ const data = {
               "'zone.js' in Node.js is a package manager used for managing external dependencies in your projects.",
               "'zone.js' in Node.js is a library that allows you to create and manage execution contexts, enabling you to track asynchronous operations and handle errors more effectively.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -12729,7 +12729,7 @@ const data = {
               "'N-API' in Node.js is an API that provides a stable and consistent interface for native addons, allowing them to be compatible with different Node.js versions without the need for recompilation.",
               "'N-API' in Node.js is a feature for managing user interactions and events in applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12740,7 +12740,7 @@ const data = {
               "'Node.js C++ Addons' allow you to write and integrate C++ code with your Node.js applications, enabling you to achieve performance improvements and access low-level system resources.",
               "'Node.js C++ Addons' are used for managing external dependencies in your Node.js projects.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12751,7 +12751,7 @@ const data = {
               "'V8 Engine' is the JavaScript engine developed by Google, used in Node.js to execute JavaScript code, and it compiles JavaScript code to machine code for faster execution.",
               "'V8 Engine' is a version control system used in Node.js projects for managing code repositories.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12762,7 +12762,7 @@ const data = {
               "'Worker Threads' in Node.js allow you to create separate threads to execute JavaScript code in parallel, improving the performance of CPU-intensive tasks.",
               "'Worker Threads' in Node.js is a way to manage WebSocket connections for real-time communication in web applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12773,7 +12773,7 @@ const data = {
               "'dtrace-provider' in Node.js is used for managing user authentication and authorization in real-time applications.",
               "'dtrace-provider' in Node.js is a module for providing support for DTrace, a dynamic tracing framework for analyzing and troubleshooting applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -12784,7 +12784,7 @@ const data = {
               "'async_hooks' in Node.js is a set of hooks that allow you to track the lifetime of asynchronous operations, monitor their performance, and associate contextual data with them.",
               "'async_hooks' in Node.js is a feature for managing user interactions and events in applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12795,7 +12795,7 @@ const data = {
               "'Snapshotting' in Node.js refers to the process of converting JavaScript code to machine code and saving it as a snapshot, which can be used to speed up application startup time by avoiding the need to recompile the code each time the application starts.",
               "'Snapshotting' in Node.js is used for optimizing database queries in applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12806,7 +12806,7 @@ const data = {
               "'Node.js C++ API' is a version control system used in Node.js projects for managing code repositories.",
               "'Node.js C++ API' allows you to write native addons using C++ that are compatible with different Node.js versions, reducing the need to recompile addons for each Node.js release.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -12817,7 +12817,7 @@ const data = {
               "The 'V8 Heap Statistics' in Node.js provide insights into the memory usage of your application's V8 engine, allowing you to identify memory leaks and optimize memory management.",
               "The 'V8 Heap Statistics' in Node.js are a feature for managing user interactions and events in applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12828,7 +12828,7 @@ const data = {
               "'zone.js' in Node.js is a package manager used for managing external dependencies in your projects.",
               "'zone.js' in Node.js is a library that allows you to create and manage execution contexts, enabling you to track asynchronous operations and handle errors more effectively.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
         ],
       },
@@ -12844,7 +12844,7 @@ const data = {
               "A database management system.",
               "A server-side scripting language.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -12855,7 +12855,7 @@ const data = {
               "It provides a way to map database tables to Python objects, making it easier to interact with the database using Python code.",
               "It is a template engine used for rendering dynamic HTML in Django applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12866,7 +12866,7 @@ const data = {
               "You define a model using Python code to represent the database schema and data structure, allowing you to interact with the database using Python objects.",
               "You define a model using CSS to style the appearance of a web page.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -12877,7 +12877,7 @@ const data = {
               "A Django template is an HTML file with placeholders for dynamic content that are filled in when the page is rendered.",
               "A Django template is a JavaScript file that handles the front-end logic of a Django application.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the purpose of Django's admin interface?",
@@ -12887,7 +12887,7 @@ const data = {
               "The admin interface is a built-in feature of Django that provides a graphical interface for managing database records and performing CRUD (Create, Read, Update, Delete) operations.",
               "The admin interface is a Python package used for handling external API requests in Django applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "How do you create a new Django project?",
@@ -12897,7 +12897,7 @@ const data = {
               "You use the 'django newproject' command in the command line.",
               "You create a new Python file and save it with a '.project' extension.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What is the purpose of Django's URL dispatcher?",
@@ -12907,7 +12907,7 @@ const data = {
               "The URL dispatcher is a template engine used for rendering dynamic HTML in Django applications.",
               "The URL dispatcher is responsible for mapping URLs to views in Django applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -12918,7 +12918,7 @@ const data = {
               "A Django view is an HTML file that defines the structure of a web page.",
               "A Django view is a CSS file that styles the appearance of a web page.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "How do you create a new Django app within a project?",
@@ -12928,7 +12928,7 @@ const data = {
               "You use the 'django app' command in the command line.",
               "You use the 'django startapp' command in the command line.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "What is the purpose of Django's settings.py file?",
@@ -12938,7 +12938,7 @@ const data = {
               "The settings.py file is a CSS file that styles the appearance of a web page.",
               "The settings.py file contains various configurations and settings for a Django project, such as database settings, installed apps, and middleware.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
         ],
       },
@@ -12947,7 +12947,7 @@ const data = {
           {
             question: "What is Django's primary programming language?",
             options: ["Java", "Python", "JavaScript", "Ruby"],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What does 'MVT' stand for in the context of Django?",
@@ -12957,7 +12957,7 @@ const data = {
               "Model-View-Testing",
               "Model-View-Table",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What is the purpose of Django's 'models.py' file?",
@@ -12967,7 +12967,7 @@ const data = {
               "To manage database migrations in Django applications.",
               "To define the database schema and data structure, representing tables and their relationships.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -12978,7 +12978,7 @@ const data = {
               "By using the 'django createsuperuser' command in the command line.",
               "By running 'npm createsuperuser' and providing the necessary information.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What is the purpose of Django's 'urls.py' file?",
@@ -12988,7 +12988,7 @@ const data = {
               "To define the URL routes of a Django application.",
               "To render dynamic HTML in Django applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "How do you create a new Django app within a project?",
@@ -12998,7 +12998,7 @@ const data = {
               "By using the 'django app' command in the command line.",
               "By using the 'django startapp' command in the command line.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "What is the purpose of Django's 'views.py' file?",
@@ -13008,7 +13008,7 @@ const data = {
               "To process HTTP requests and return HTTP responses, handling the logic of a web page.",
               "To style the appearance of a web page using CSS.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "How do you run a Django development server locally?",
@@ -13018,7 +13018,7 @@ const data = {
               "By running a specific Python script.",
               "By using the 'django server' command in the command line.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is the purpose of Django's 'settings.py' file?",
@@ -13028,7 +13028,7 @@ const data = {
               "To style the appearance of a web page using CSS.",
               "To contain various configurations and settings for a Django project, such as database settings, installed apps, and middleware.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "How do you create a new Django project?",
@@ -13038,7 +13038,7 @@ const data = {
               "By using the 'django newproject' command in the command line.",
               "By creating a new Python file and saving it with a '.project' extension.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What is the purpose of Django's 'forms.py' file?",
@@ -13048,7 +13048,7 @@ const data = {
               "To process form data on the client side.",
               "To define and manage HTML forms and their validations on the server side.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13059,7 +13059,7 @@ const data = {
               "To manage database migrations in Django applications.",
               "To specify the directory where static files are collected during the deployment process.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "What is the role of Django's 'admin.py' file?",
@@ -13069,7 +13069,7 @@ const data = {
               "To manage database migrations in Django applications.",
               "To customize the behavior and appearance of the admin interface for specific models.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13080,7 +13080,7 @@ const data = {
               "By using JavaScript to handle form validations.",
               "By using Python code to specify the field's type and additional attributes.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13091,7 +13091,7 @@ const data = {
               "Angle brackets (< ... >)",
               "Double parentheses (( ... ))",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
         ],
       },
@@ -13100,7 +13100,7 @@ const data = {
           {
             question: "What is Django's primary programming language?",
             options: ["Java", "Python", "JavaScript", "Ruby"],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What does 'MVT' stand for in the context of Django?",
@@ -13110,7 +13110,7 @@ const data = {
               "Model-View-Testing",
               "Model-View-Table",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What is the purpose of Django's 'models.py' file?",
@@ -13120,7 +13120,7 @@ const data = {
               "To manage database migrations in Django applications.",
               "To define the database schema and data structure, representing tables and their relationships.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13131,7 +13131,7 @@ const data = {
               "By using the 'django createsuperuser' command in the command line.",
               "By running 'npm createsuperuser' and providing the necessary information.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What is the purpose of Django's 'urls.py' file?",
@@ -13141,7 +13141,7 @@ const data = {
               "To define the URL routes of a Django application.",
               "To render dynamic HTML in Django applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "How do you create a new Django app within a project?",
@@ -13151,7 +13151,7 @@ const data = {
               "By using the 'django app' command in the command line.",
               "By using the 'django startapp' command in the command line.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "What is the purpose of Django's 'views.py' file?",
@@ -13161,7 +13161,7 @@ const data = {
               "To process HTTP requests and return HTTP responses, handling the logic of a web page.",
               "To style the appearance of a web page using CSS.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "How do you run a Django development server locally?",
@@ -13171,7 +13171,7 @@ const data = {
               "By running a specific Python script.",
               "By using the 'django server' command in the command line.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is the purpose of Django's 'settings.py' file?",
@@ -13181,7 +13181,7 @@ const data = {
               "To style the appearance of a web page using CSS.",
               "To contain various configurations and settings for a Django project, such as database settings, installed apps, and middleware.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "How do you create a new Django project?",
@@ -13191,7 +13191,7 @@ const data = {
               "By using the 'django newproject' command in the command line.",
               "By creating a new Python file and saving it with a '.project' extension.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What is the purpose of Django's 'forms.py' file?",
@@ -13201,7 +13201,7 @@ const data = {
               "To process form data on the client side.",
               "To define and manage HTML forms and their validations on the server side.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13212,7 +13212,7 @@ const data = {
               "To manage database migrations in Django applications.",
               "To specify the directory where static files are collected during the deployment process.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "What is the role of Django's 'admin.py' file?",
@@ -13222,7 +13222,7 @@ const data = {
               "To manage database migrations in Django applications.",
               "To customize the behavior and appearance of the admin interface for specific models.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13233,7 +13233,7 @@ const data = {
               "By using JavaScript to handle form validations.",
               "By using Python code to specify the field's type and additional attributes.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13244,7 +13244,7 @@ const data = {
               "Angle brackets (< ... >)",
               "Double parentheses (( ... ))",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "In Django, how do you define a URL pattern for a view?",
@@ -13254,7 +13254,7 @@ const data = {
               "By using the 'url()' function in 'urls.py' and passing the view's URL pattern.",
               "By using the 'define_url()' function in 'urls.py' and indicating the view's URL pattern.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question: "What is the purpose of Django's 'middleware'?",
@@ -13264,7 +13264,7 @@ const data = {
               "To process HTTP requests and responses globally before they reach the views.",
               "To handle front-end configurations in a Django application using JavaScript.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the purpose of Django's 'forms' module?",
@@ -13274,7 +13274,7 @@ const data = {
               "To process form data on the client side.",
               "To define and manage HTML forms and their validations on the server side.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13285,7 +13285,7 @@ const data = {
               "By specifying the model in the 'settings.py' file under the 'admin_models' section.",
               "By using the 'create_model()' function in 'admin.py' and providing the model's attributes.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question: "What is the purpose of Django's 'HttpResponse' class?",
@@ -13295,7 +13295,7 @@ const data = {
               "To process HTTP requests and return HTTP responses from views.",
               "To style the appearance of a web page using CSS.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
         ],
       },
@@ -13310,7 +13310,7 @@ const data = {
               "To specify the URL pattern for a view in 'urls.py'.",
               "To handle front-end form validations using JavaScript.",
             ],
-            correctAnswer: "1",
+            correctAnswer: "0",
           },
           {
             question:
@@ -13321,7 +13321,7 @@ const data = {
               "Django signals are used for sending and receiving messages between different components of a Django application.",
               "Django signals are a mechanism for allowing decoupled applications to get notified when certain actions occur elsewhere in the application.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13332,7 +13332,7 @@ const data = {
               "To retrieve an object from the database and raise a 404 error if it doesn't exist.",
               "To handle front-end form validations using JavaScript.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -13343,7 +13343,7 @@ const data = {
               "Django's 'context' is a dictionary-like object that holds data to be displayed in a template when rendering a view.",
               "Django's 'context' is a CSS file that styles the appearance of a web page.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -13354,7 +13354,7 @@ const data = {
               "To create a select dropdown list for a form in Django applications.",
               "To perform a SQL join and retrieve related objects in the same database query to reduce the number of database hits.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13365,7 +13365,7 @@ const data = {
               "To process HTTP requests and responses globally before they reach the views.",
               "To handle client-side interactions in a Django application using JavaScript.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -13376,7 +13376,7 @@ const data = {
               "Django's 'FormView' is used for handling client-side form validations, and 'CreateView' is used for handling form submissions.",
               "Django's 'FormView' is a class-based view for handling client-side authentication and authorization.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -13387,7 +13387,7 @@ const data = {
               "To specify the fields to be included in the database query.",
               "To retrieve related objects along with the main objects in the same database query to optimize database performance.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question: "What is the purpose of Django's 'SessionMiddleware'?",
@@ -13397,7 +13397,7 @@ const data = {
               "To handle front-end configurations in a Django application using JavaScript.",
               "To enable session management, allowing users to store and retrieve data across requests.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13408,7 +13408,7 @@ const data = {
               "Django's 'StaticFilesStorage' is a middleware for handling static files, and 'ManifestStaticFilesStorage' is used for front-end form validations.",
               "Django's 'StaticFilesStorage' and 'ManifestStaticFilesStorage' are used to collect and serve static files efficiently in a production environment, with 'ManifestStaticFilesStorage' adding unique hashes to file names for cache-busting purposes.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
         ],
       },
@@ -13423,7 +13423,7 @@ const data = {
               "Django's 'ModelForm' is a form class that is automatically generated from a model and simplifies the process of creating forms for model instances.",
               "Django's 'ModelForm' is used for client-side authentication and authorization.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -13434,7 +13434,7 @@ const data = {
               "Django class-based views are a modern way to define views using Python classes, providing built-in functionality for common tasks, while function-based views use traditional functions to define views.",
               "Django class-based views and function-based views are the same and can be used interchangeably in Django applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
@@ -13445,7 +13445,7 @@ const data = {
               "Django migrations are scripts that automatically apply changes to the database schema, making it easier to handle changes to models without losing data.",
               "Django migrations are JavaScript files that handle front-end configurations in Django applications.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question: "What is the purpose of Django's 'reverse()' function?",
@@ -13455,7 +13455,7 @@ const data = {
               "To handle front-end form validations using JavaScript.",
               "To generate a URL for a given view by specifying its name and optional parameters.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13466,7 +13466,7 @@ const data = {
               "The 'django.contrib' apps are used for managing database migrations in Django applications.",
               "The 'django.contrib' apps are JavaScript libraries that handle front-end configurations in Django applications.",
             ],
-            correctAnswer: "2",
+            correctAnswer: "1",
           },
           {
             question:
@@ -13477,7 +13477,7 @@ const data = {
               "To handle front-end configurations in a Django application using JavaScript.",
               "To ensure that a block of database operations is executed as a single transaction, with rollback on failure.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13488,7 +13488,7 @@ const data = {
               "Django's 'QuerySet' is a set of CSS styles applied to a specific view.",
               "Django's 'QuerySet' is a powerful API for building and executing database queries to retrieve data from the database.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13496,10 +13496,10 @@ const data = {
             options: [
               "To handle front-end configurations in a Django application using JavaScript.",
               "To manage database migrations in Django applications.",
-              "To handle client-side routing in Django applications.",
               "To retrieve an object from the database or create it if it doesn't exist.",
+              "To handle client-side routing in Django applications.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "2",
           },
           {
             question:
@@ -13510,7 +13510,7 @@ const data = {
               "Django's 'Paginator' is used to manage database migrations, and 'Page' objects are used for handling client-side form validations.",
               "Django's 'Paginator' is used to split query results into multiple pages, and 'Page' objects represent individual pages of data in a paginated list.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13521,7 +13521,7 @@ const data = {
               "To handle front-end form validations using JavaScript.",
               "To efficiently create multiple model instances in a single database query, improving performance when dealing with large sets of data.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13532,7 +13532,7 @@ const data = {
               "Django's 'Signals' framework is used for client-side form validations.",
               "Django's 'Signals' framework allows decoupled components to get notified when certain actions occur elsewhere in the application. For example, it can be used to trigger certain actions after a model instance is saved or deleted.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13543,18 +13543,18 @@ const data = {
               "Django's 'Middlewares' are used for handling client-side authentication and authorization.",
               "Django's 'Middlewares' are components that process requests and responses globally before they reach the views, allowing you to add functionalities to the request-response cycle, such as authentication, compression, or caching.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
               "What is Django's 'Session' framework, and how is it used for session management?",
             options: [
               "Django's 'Session' framework is used to handle front-end form validations using JavaScript.",
+              "Django's 'Session' framework is used to store and retrieve data that persists across requests, enabling session management for users.",
               "Django's 'Session' framework is a way to manage database migrations in Django applications.",
               "Django's 'Session' framework is used for client-side authentication and authorization.",
-              "Django's 'Session' framework is used to store and retrieve data that persists across requests, enabling session management for users.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "1",
           },
           {
             question:
@@ -13565,7 +13565,7 @@ const data = {
               "Django's 'Context Processors' are used for client-side authentication and authorization.",
               "Django's 'Context Processors' are functions that provide data to templates context, making the data available globally in all templates across the project.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13573,10 +13573,10 @@ const data = {
             options: [
               "Django's 'Template Tags' and 'Filters' are used to handle front-end form validations using JavaScript.",
               "Django's 'Template Tags' and 'Filters' are a way to manage database migrations in Django applications.",
-              "Django's 'Template Tags' and 'Filters' are used for client-side authentication and authorization.",
               "Django's 'Template Tags' and 'Filters' provide additional functionalities to templates, allowing you to perform complex logic, modify data, or present data in specific ways within templates.",
+              "Django's 'Template Tags' and 'Filters' are used for client-side authentication and authorization.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "2",
           },
         ],
       },
@@ -13591,18 +13591,18 @@ const data = {
               "The 'static' folder is used for storing static files like CSS, JavaScript, and images, while the 'media' folder is used for user-uploaded files such as images and documents.",
               "The 'static' folder is used for client-side authentication and authorization, and the 'media' folder is used for handling front-end form validations.",
             ],
-            correctAnswer: "3",
+            correctAnswer: "2",
           },
           {
             question:
               "What are Django's 'context processors', and how do they function in the request-response cycle?",
             options: [
+              "Django's 'context processors' are functions that provide data to the context of all templates, making the data available globally in all templates across the project.",
               "Django's 'context processors' are JavaScript libraries used to handle front-end form validations in Django applications.",
               "Django's 'context processors' are a way to manage client-side routing in Django applications.",
               "Django's 'context processors' are used for client-side authentication and authorization.",
-              "Django's 'context processors' are functions that provide data to the context of all templates, making the data available globally in all templates across the project.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "0",
           },
           {
             question:
@@ -13613,7 +13613,7 @@ const data = {
               "Django's 'cache' framework is used for client-side form validations.",
               "Django's 'cache' framework provides a caching mechanism to store the results of expensive queries or computations, reducing the load on the database and improving website performance.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13624,18 +13624,18 @@ const data = {
               "Django's 'QuerySet' is used for client-side authentication and authorization.",
               "Django's 'QuerySet' is a powerful API for building and executing database queries to retrieve data from the database.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
               "Explain the purpose of Django's 'decorators' and provide an example of when you might use them.",
             options: [
               "Django's 'decorators' are used for handling front-end configurations in a Django application using JavaScript.",
+              "Django's 'decorators' are functions that allow you to modify the behavior of view functions, such as adding authentication checks or caching to specific views.",
               "Django's 'decorators' are a way to manage database migrations in Django applications.",
               "Django's 'decorators' are used for client-side authentication and authorization.",
-              "Django's 'decorators' are functions that allow you to modify the behavior of view functions, such as adding authentication checks or caching to specific views.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "1",
           },
           {
             question:
@@ -13646,7 +13646,7 @@ const data = {
               "Django's 'related_name' attribute is used for client-side form validations.",
               "Django's 'related_name' attribute allows you to specify a custom name for the reverse relation from the related model back to the model that defines the relationship.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13654,10 +13654,10 @@ const data = {
             options: [
               "Django's 'DateField' is used to manage client-side routing in Django applications, 'TimeField' is used for database migrations, and 'DateTimeField' is used for client-side form validations.",
               "Django's 'DateField', 'TimeField', and 'DateTimeField' are JavaScript libraries for handling front-end configurations in Django applications.",
-              "Django's 'DateField', 'TimeField', and 'DateTimeField' are used for client-side authentication and authorization.",
               "Django's 'DateField', 'TimeField', and 'DateTimeField' are used to store and work with date and time values in the database, allowing you to perform various operations and queries related to date and time.",
+              "Django's 'DateField', 'TimeField', and 'DateTimeField' are used for client-side authentication and authorization.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "2",
           },
           {
             question:
@@ -13668,18 +13668,18 @@ const data = {
               "Django's 'class-based views' are a way to manage client-side form validations, and 'function-based views' are used for handling front-end configurations in Django applications.",
               "Django's 'class-based views' are a modern way to define views using Python classes, providing built-in functionality for common tasks, while 'function-based views' use traditional functions to define views.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
               "What is the purpose of Django's 'select_related' and 'prefetch_related' methods in a queryset?",
             options: [
+              "Django's 'select_related' and 'prefetch_related' are query optimizations to fetch related objects in a single query instead of multiple database hits, reducing the number of queries and improving performance.",
               "Django's 'select_related' and 'prefetch_related' are used to handle front-end configurations in a Django application using JavaScript.",
               "Django's 'select_related' and 'prefetch_related' are a way to manage database migrations in Django applications.",
               "Django's 'select_related' and 'prefetch_related' are used for client-side form validations.",
-              "Django's 'select_related' and 'prefetch_related' are query optimizations to fetch related objects in a single query instead of multiple database hits, reducing the number of queries and improving performance.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "0",
           },
           {
             question:
@@ -13690,7 +13690,7 @@ const data = {
               "Django's 'FormView' and 'ModelFormMixin' are used for client-side authentication and authorization.",
               "Django's 'FormView' is a class-based view that handles form display and processing, while 'ModelFormMixin' is a mixin used with 'FormView' to handle model forms and save form data to the database.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13701,18 +13701,18 @@ const data = {
               "Django's 'filter()' and 'exclude()' methods are used for client-side authentication and authorization.",
               "Django's 'filter()' and 'exclude()' methods are used to apply filters to a queryset, allowing you to retrieve specific objects based on certain conditions.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
               "Explain the purpose of Django's 'Session' framework, and how is it used for session management?",
             options: [
+              "Django's 'Session' framework is used to store and retrieve data that persists across requests, enabling session management for users.",
               "Django's 'Session' framework is used to handle front-end form validations using JavaScript.",
               "Django's 'Session' framework is used for managing database migrations in Django applications.",
               "Django's 'Session' framework is a JavaScript library for handling front-end configurations.",
-              "Django's 'Session' framework is used to store and retrieve data that persists across requests, enabling session management for users.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "0",
           },
           {
             question:
@@ -13720,10 +13720,10 @@ const data = {
             options: [
               "Django's 'aggregate()' function is used for handling front-end configurations in a Django application using JavaScript.",
               "Django's 'aggregate()' function is a JavaScript library used to manage client-side routing in Django applications.",
-              "Django's 'aggregate()' function is used for client-side form validations.",
               "Django's 'aggregate()' function is used to perform calculations on a queryset, such as calculating the sum, average, or count of certain fields.",
+              "Django's 'aggregate()' function is used for client-side form validations.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "2",
           },
           {
             question:
@@ -13734,7 +13734,7 @@ const data = {
               "Django's 'Query Expressions' are used for client-side authentication and authorization.",
               "Django's 'Query Expressions' are used to perform operations and comparisons at the database level, allowing you to perform complex queries and updates.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13745,18 +13745,18 @@ const data = {
               "Django's 'TransactionMiddleware' is used for client-side authentication and authorization.",
               "Django's 'TransactionMiddleware' is a middleware that automatically wraps each view in a database transaction, ensuring that the view's database operations are atomic and rolled back on failure.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
               "Explain the purpose of Django's 'prefetch_related()' and 'prefetch_related_objects()' methods in a queryset.",
             options: [
               "Django's 'prefetch_related()' and 'prefetch_related_objects()' are used for handling front-end form validations using JavaScript.",
+              "Django's 'prefetch_related()' and 'prefetch_related_objects()' are used to retrieve related objects along with the primary objects in a queryset, reducing the number of database queries and improving performance.",
               "Django's 'prefetch_related()' and 'prefetch_related_objects()' are JavaScript libraries for handling front-end configurations in Django applications.",
               "Django's 'prefetch_related()' and 'prefetch_related_objects()' are used for client-side authentication and authorization.",
-              "Django's 'prefetch_related()' and 'prefetch_related_objects()' are used to retrieve related objects along with the primary objects in a queryset, reducing the number of database queries and improving performance.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "1",
           },
           {
             question:
@@ -13764,10 +13764,10 @@ const data = {
             options: [
               "Django's 'slug' field is used for handling client-side routing in Django applications.",
               "Django's 'slug' field is used for managing database migrations in Django applications.",
-              "Django's 'slug' field is a JavaScript library for handling front-end configurations.",
               "Django's 'slug' field is used to store a URL-friendly version of a string, often used in URLs for SEO-friendly and human-readable links.",
+              "Django's 'slug' field is a JavaScript library for handling front-end configurations.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "2",
           },
           {
             question:
@@ -13778,7 +13778,7 @@ const data = {
               "Django's 'formsets' are used for client-side authentication and authorization.",
               "Django's 'formsets' are a way to manage multiple forms of the same type on a single page, allowing you to handle bulk data entry and form submission.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "3",
           },
           {
             question:
@@ -13786,21 +13786,21 @@ const data = {
             options: [
               "Django's 'ModelAdmin' class is used to manage front-end form validations using JavaScript.",
               "Django's 'ModelAdmin' class is used for handling client-side routing in Django applications.",
-              "Django's 'ModelAdmin' class is used for client-side authentication and authorization.",
               "Django's 'ModelAdmin' class is used to customize the appearance and behavior of models in the Django admin interface, such as adding custom fields, filters, and actions.",
+              "Django's 'ModelAdmin' class is used for client-side authentication and authorization.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "2",
           },
           {
             question:
               "Explain the use of Django's 'get_object_or_404()' and 'get_list_or_404()' functions.",
             options: [
               "Django's 'get_object_or_404()' and 'get_list_or_404()' are used to manage front-end configurations in a Django application using JavaScript.",
+              "Django's 'get_object_or_404()' is used to retrieve a single object from the database or raise a 404 error if the object does not exist, while 'get_list_or_404()' is used to retrieve a list of objects or raise a 404 error if the list is empty.",
               "Django's 'get_object_or_404()' and 'get_list_or_404()' are JavaScript libraries for handling front-end form validations.",
               "Django's 'get_object_or_404()' and 'get_list_or_404()' are used for client-side authentication and authorization.",
-              "Django's 'get_object_or_404()' is used to retrieve a single object from the database or raise a 404 error if the object does not exist, while 'get_list_or_404()' is used to retrieve a list of objects or raise a 404 error if the list is empty.",
             ],
-            correctAnswer: "4",
+            correctAnswer: "1",
           },
         ],
       },
@@ -13811,11 +13811,11 @@ const data = {
               "Explain the purpose of Django's 'Custom Managers' and when you might use them in a Django application.",
             options: [
               "Django's 'Custom Managers' are used to handle front-end form validations using JavaScript.",
+              "Django's 'Custom Managers' are custom manager classes that allow you to add custom query methods or encapsulate complex queries for a model, providing a higher-level API for database access.",
               "Django's 'Custom Managers' are a way to manage client-side routing in Django applications.",
               "Django's 'Custom Managers' are used for client-side authentication and authorization.",
-              "Django's 'Custom Managers' are custom manager classes that allow you to add custom query methods or encapsulate complex queries for a model, providing a higher-level API for database access.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "1",
           },
           {
             question:
@@ -13823,10 +13823,10 @@ const data = {
             options: [
               "Django's 'Query Expression API' is used to handle front-end configurations in a Django application using JavaScript.",
               "Django's 'Query Expression API' is a JavaScript library for handling front-end form validations.",
-              "Django's 'Query Expression API' is used for client-side authentication and authorization.",
               "Django's 'Query Expression API' allows you to perform complex database operations using Python expressions, extending the capabilities of regular query methods.",
+              "Django's 'Query Expression API' is used for client-side authentication and authorization.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "2",
           },
           {
             question:
@@ -13837,7 +13837,7 @@ const data = {
               "Django's 'Signals' are used for client-side authentication and authorization.",
               "Django's 'Signals' allow certain senders to notify a set of receivers when certain actions occur, providing a decoupled way to trigger additional actions or behavior based on events.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
@@ -13848,18 +13848,18 @@ const data = {
               "Django's 'Middleware' classes are used for client-side authentication and authorization.",
               "Django's 'Middleware' classes are components that process HTTP requests and responses, allowing you to perform various operations at different stages of the request-response cycle, such as authentication, caching, compression, etc.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
               "Explain the use of Django's 'Abstract Base Classes' for model inheritance, and provide an example of when you might use them.",
             options: [
+              "Django's 'Abstract Base Classes' are used to create model inheritance, allowing you to define common fields and methods in a base model that can be inherited by other models, promoting code reuse and maintainability.",
               "Django's 'Abstract Base Classes' are used to handle front-end form validations in a Django application using JavaScript.",
               "Django's 'Abstract Base Classes' are a JavaScript library for handling front-end configurations.",
               "Django's 'Abstract Base Classes' are used for client-side authentication and authorization.",
-              "Django's 'Abstract Base Classes' are used to create model inheritance, allowing you to define common fields and methods in a base model that can be inherited by other models, promoting code reuse and maintainability.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "0",
           },
           {
             question:
@@ -13870,29 +13870,29 @@ const data = {
               "Django's 'Model Inheritance' is used for client-side authentication and authorization.",
               "Django's 'Model Inheritance' allows you to create new models based on existing ones, enabling three types of inheritance: Abstract Base Classes, Multi-table Inheritance, and Proxy Models.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
               "Explain the concept of Django's 'database routers' and how they are used to manage multiple databases.",
             options: [
               "Django's 'database routers' are used to handle front-end form validations in a Django application using JavaScript.",
+              "Django's 'database routers' are components that allow you to specify different databases for different apps or models, enabling you to distribute data across multiple databases and manage database routing in complex projects.",
               "Django's 'database routers' are a JavaScript library for handling front-end configurations.",
               "Django's 'database routers' are used for client-side authentication and authorization.",
-              "Django's 'database routers' are components that allow you to specify different databases for different apps or models, enabling you to distribute data across multiple databases and manage database routing in complex projects.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "1",
           },
           {
             question:
               "What is Django's 'GeoDjango' and how does it support geographic data in a Django application?",
             options: [
               "Django's 'GeoDjango' is used for handling front-end form validations using JavaScript.",
+              "Django's 'GeoDjango' is an extension to Django that adds support for geographic data and operations, allowing you to work with points, lines, polygons, and perform spatial queries and calculations.",
               "Django's 'GeoDjango' is a JavaScript library for handling front-end configurations.",
               "Django's 'GeoDjango' is used for client-side authentication and authorization.",
-              "Django's 'GeoDjango' is an extension to Django that adds support for geographic data and operations, allowing you to work with points, lines, polygons, and perform spatial queries and calculations.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "1",
           },
           {
             question:
@@ -13900,21 +13900,21 @@ const data = {
             options: [
               "Django's 'Asynchronous Views' are used to handle front-end form validations in a Django application using JavaScript.",
               "Django's 'Asynchronous Views' are a JavaScript library for handling front-end configurations.",
-              "Django's 'Asynchronous Views' are used for client-side authentication and authorization.",
               "Django's 'Asynchronous Views' allow you to define views using 'async def' and use 'await' to perform asynchronous operations, enabling better performance and scalability for certain tasks.",
+              "Django's 'Asynchronous Views' are used for client-side authentication and authorization.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "2",
           },
           {
             question:
               "What is Django's 'contenttypes' framework, and how does it facilitate generic relationships in models?",
             options: [
               "Django's 'contenttypes' framework is used for handling front-end form validations using JavaScript.",
+              "Django's 'contenttypes' framework allows you to create generic relationships between models, enabling a model to have a foreign key to any other model using a single field, promoting flexibility and reusability in the database schema.",
               "Django's 'contenttypes' framework is a JavaScript library for handling front-end configurations.",
               "Django's 'contenttypes' framework is used for client-side authentication and authorization.",
-              "Django's 'contenttypes' framework allows you to create generic relationships between models, enabling a model to have a foreign key to any other model using a single field, promoting flexibility and reusability in the database schema.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "1",
           },
         ],
       },
@@ -13929,7 +13929,7 @@ const data = {
               "Django's 'Contrib Apps' are used for client-side authentication and authorization.",
               "Django's 'Contrib Apps' are pre-built apps provided by the Django community that offer reusable functionality and can be easily integrated into Django projects, such as 'django.contrib.admin', 'django.contrib.auth', etc.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
@@ -13940,7 +13940,7 @@ const data = {
               "Django's 'Caching Framework' is used for client-side authentication and authorization.",
               "Django's 'Caching Framework' allows you to store frequently accessed data in cache memory, reducing the need to recompute or fetch data from the database, thus improving the response time and overall performance of the application.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
@@ -13948,32 +13948,32 @@ const data = {
             options: [
               "Django's 'File Storage' system is used for handling front-end form validations using JavaScript.",
               "Django's 'File Storage' system is a JavaScript library for handling front-end configurations.",
-              "Django's 'File Storage' system is used for client-side authentication and authorization.",
               "Django's 'File Storage' system provides an abstraction layer over various file storage backends, such as local file storage, Amazon S3, Google Cloud Storage, allowing you to manage and handle uploaded files efficiently.",
+              "Django's 'File Storage' system is used for client-side authentication and authorization.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "2",
           },
           {
             question:
               "What is Django's 'Django Rest Framework (DRF)', and how does it facilitate building RESTful APIs?",
             options: [
+              "Django's 'Django Rest Framework (DRF)' is a powerful toolkit for building Web APIs, providing serialization, authentication, permissions, pagination, and other utilities to simplify the process of creating RESTful APIs.",
               "Django's 'Django Rest Framework (DRF)' is used for handling front-end form validations using JavaScript.",
               "Django's 'Django Rest Framework (DRF)' is a JavaScript library for handling front-end configurations.",
               "Django's 'Django Rest Framework (DRF)' is used for client-side authentication and authorization.",
-              "Django's 'Django Rest Framework (DRF)' is a powerful toolkit for building Web APIs, providing serialization, authentication, permissions, pagination, and other utilities to simplify the process of creating RESTful APIs.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "0",
           },
           {
             question:
               "Explain the purpose of Django's 'Django Channels' and how it enables handling real-time WebSockets and asynchronous tasks.",
             options: [
               "Django's 'Django Channels' are used to manage front-end form validations using JavaScript.",
+              "Django's 'Django Channels' extends Django to handle WebSockets, allowing real-time communication and asynchronous task processing, making it suitable for building applications that require live updates and real-time interactions.",
               "Django's 'Django Channels' are a way to manage client-side routing in Django applications.",
               "Django's 'Django Channels' are used for client-side authentication and authorization.",
-              "Django's 'Django Channels' extends Django to handle WebSockets, allowing real-time communication and asynchronous task processing, making it suitable for building applications that require live updates and real-time interactions.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "1",
           },
           {
             question:
@@ -13984,7 +13984,7 @@ const data = {
               "Django's 'Template Engine' is used for client-side authentication and authorization.",
               "Django's 'Template Engine' allows you to define dynamic templates with placeholders that are replaced by actual values during rendering, making it easier to generate dynamic HTML content and separate presentation from data.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
@@ -13995,18 +13995,18 @@ const data = {
               "Django's 'Custom Template Tags and Filters' are used for client-side authentication and authorization.",
               "Django's 'Custom Template Tags and Filters' allow you to create custom template tags and filters to perform complex operations and extend the capabilities of Django templates.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
               "What is Django's 'Serialization', and how is it used to convert complex data structures to different formats?",
             options: [
               "Django's 'Serialization' is used for handling front-end form validations using JavaScript.",
+              "Django's 'Serialization' allows you to convert complex data, such as QuerySets or model instances, to different formats like JSON, XML, or YAML, making it easier to transfer data over the network or store it in various formats.",
               "Django's 'Serialization' is a JavaScript library for handling front-end configurations.",
               "Django's 'Serialization' is used for client-side authentication and authorization.",
-              "Django's 'Serialization' allows you to convert complex data, such as QuerySets or model instances, to different formats like JSON, XML, or YAML, making it easier to transfer data over the network or store it in various formats.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "1",
           },
           {
             question:
@@ -14014,10 +14014,10 @@ const data = {
             options: [
               "Django's 'Form Wizard' is used for handling front-end form validations using JavaScript.",
               "Django's 'Form Wizard' is a JavaScript library for handling front-end configurations.",
-              "Django's 'Form Wizard' is used for client-side authentication and authorization.",
               "Django's 'Form Wizard' provides a way to break a complex form into multiple steps, guiding users through the process of filling out the form and handling form data efficiently.",
+              "Django's 'Form Wizard' is used for client-side authentication and authorization.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "2",
           },
           {
             question:
@@ -14028,7 +14028,7 @@ const data = {
               "Django's 'Form Preview' is used for client-side authentication and authorization.",
               "Django's 'Form Preview' allows users to review form data before submitting it, reducing the risk of errors and providing a chance to make corrections.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
@@ -14039,7 +14039,7 @@ const data = {
               "Django's 'ModelForms' are used for client-side authentication and authorization.",
               "Django's 'ModelForms' allow you to automatically generate forms from existing models, saving time and effort in form creation and validation.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
@@ -14047,21 +14047,21 @@ const data = {
             options: [
               "Django's 'Transaction Management' is used for handling front-end form validations using JavaScript.",
               "Django's 'Transaction Management' is a JavaScript library for handling front-end configurations.",
-              "Django's 'Transaction Management' is used for client-side authentication and authorization.",
               "Django's 'Transaction Management' allows you to manage database transactions, ensuring that database operations are atomic and preserving data integrity even in the case of errors or exceptions.",
+              "Django's 'Transaction Management' is used for client-side authentication and authorization.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "2",
           },
           {
             question:
               "Explain Django's 'Database Migrations' and how they facilitate managing changes to database schemas over time.",
             options: [
               "Django's 'Database Migrations' are used for handling front-end form validations using JavaScript.",
+              "Django's 'Database Migrations' are a version control system for database schemas, allowing you to apply changes to the database in a structured and reversible manner as your application evolves.",
               "Django's 'Database Migrations' are a JavaScript library for handling front-end configurations.",
               "Django's 'Database Migrations' are used for client-side authentication and authorization.",
-              "Django's 'Database Migrations' are a version control system for database schemas, allowing you to apply changes to the database in a structured and reversible manner as your application evolves.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "1",
           },
           {
             question:
@@ -14072,7 +14072,7 @@ const data = {
               "Django's 'Authentication Middleware' is used for client-side authentication and authorization.",
               "Django's 'Authentication Middleware' is responsible for identifying and authenticating users, handling sessions, and managing user authentication during requests and responses.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
@@ -14080,10 +14080,10 @@ const data = {
             options: [
               "Django's 'Authorization' is used for handling front-end form validations using JavaScript.",
               "Django's 'Authorization' is a JavaScript library for handling front-end configurations.",
-              "Django's 'Authorization' is used for client-side authentication and authorization.",
               "Django's 'Authorization' is a mechanism for controlling user access to resources and actions, defining permissions and user roles to ensure secure and controlled access to specific parts of the application.",
+              "Django's 'Authorization' is used for client-side authentication and authorization.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "2",
           },
         ],
       },
@@ -14095,10 +14095,10 @@ const data = {
             options: [
               "Django's 'Database Routing' is used for handling front-end form validations using JavaScript.",
               "Django's 'Database Routing' is a JavaScript library for handling front-end configurations.",
-              "Django's 'Database Routing' is used for client-side authentication and authorization.",
               "Django's 'Database Routing' is a feature that enables you to define rules for directing different models to different databases, allowing you to distribute data across multiple databases in a Django project.",
+              "Django's 'Database Routing' is used for client-side authentication and authorization.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "2",
           },
           {
             question:
@@ -14109,29 +14109,29 @@ const data = {
               "Django's 'FileField' and 'ImageField' are used for client-side authentication and authorization.",
               "Django's 'FileField' and 'ImageField' are model fields that allow you to store and manage files and images in models, handling file uploads, storage, and retrieval effortlessly.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
               "Explain Django's 'Prefetch Related' and 'Prefetch Generic' query optimizations, and how they improve database query performance.",
             options: [
               "Django's 'Prefetch Related' and 'Prefetch Generic' are used for handling front-end form validations using JavaScript.",
+              "Django's 'Prefetch Related' and 'Prefetch Generic' are query optimizations that allow you to reduce the number of database queries by prefetching related and generic foreign key relationships, significantly improving query performance.",
               "Django's 'Prefetch Related' and 'Prefetch Generic' are a JavaScript library for handling front-end configurations.",
               "Django's 'Prefetch Related' and 'Prefetch Generic' are used for client-side authentication and authorization.",
-              "Django's 'Prefetch Related' and 'Prefetch Generic' are query optimizations that allow you to reduce the number of database queries by prefetching related and generic foreign key relationships, significantly improving query performance.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "1",
           },
           {
             question:
               "What are Django's 'Custom Template Context Processors', and how do they provide additional data to templates?",
             options: [
+              "Django's 'Custom Template Context Processors' are functions that add custom data to the template context, making it available to all templates rendered with RequestContext.",
               "Django's 'Custom Template Context Processors' are used for handling front-end form validations using JavaScript.",
               "Django's 'Custom Template Context Processors' are a JavaScript library for handling front-end configurations.",
               "Django's 'Custom Template Context Processors' are used for client-side authentication and authorization.",
-              "Django's 'Custom Template Context Processors' are functions that add custom data to the template context, making it available to all templates rendered with RequestContext.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "0",
           },
           {
             question:
@@ -14142,7 +14142,7 @@ const data = {
               "Django's 'Middlewares' are used for client-side authentication and authorization.",
               "Django's 'Middlewares' are components that process HTTP requests and responses, providing a way to perform additional operations before or after a view is executed, allowing you to add functionalities like authentication, caching, etc.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
@@ -14153,7 +14153,7 @@ const data = {
               "Django's 'Contrib Messages' framework is used for client-side authentication and authorization.",
               "Django's 'Contrib Messages' framework allows you to send messages to users, like success or error messages, which persist across redirect requests.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
@@ -14164,7 +14164,7 @@ const data = {
               "Django's 'Content Type Framework' is used for client-side authentication and authorization.",
               "Django's 'Content Type Framework' allows you to create generic relationships between models, enabling a model to have a foreign key to any other model using a single field, promoting flexibility and reusability in the database schema.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
@@ -14172,10 +14172,10 @@ const data = {
             options: [
               "Django's 'Custom Field' is used for handling front-end form validations using JavaScript.",
               "Django's 'Custom Field' is a JavaScript library for handling front-end configurations.",
-              "Django's 'Custom Field' is used for client-side authentication and authorization.",
               "Django's 'Custom Field' allows you to create custom database fields, defining how data is stored and retrieved in the database, extending the available field types in Django models.",
+              "Django's 'Custom Field' is used for client-side authentication and authorization.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "2",
           },
           {
             question:
@@ -14186,7 +14186,7 @@ const data = {
               "Django's 'Template Tags' are used for client-side authentication and authorization.",
               "Django's 'Template Tags' are custom template tags that enable you to add complex logic and functionalities to Django templates, making them more powerful and expressive.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
@@ -14197,7 +14197,7 @@ const data = {
               "Django's 'Custom Authentication Backend' is used for client-side authentication and authorization.",
               "Django's 'Custom Authentication Backend' allows you to define custom authentication methods and backend logic, providing flexibility in authenticating users against different data sources and systems.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
@@ -14205,10 +14205,10 @@ const data = {
             options: [
               "Django's 'Custom Managers' are used for handling front-end form validations using JavaScript.",
               "Django's 'Custom Managers' are a JavaScript library for handling front-end configurations.",
-              "Django's 'Custom Managers' are used for client-side authentication and authorization.",
               "Django's 'Custom Managers' are custom manager classes that allow you to add custom query methods or encapsulate complex queries for a model, providing a higher-level API for database access.",
+              "Django's 'Custom Managers' are used for client-side authentication and authorization.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "2",
           },
           {
             question:
@@ -14219,7 +14219,7 @@ const data = {
               "Django's 'Bulk Operations' are used for client-side authentication and authorization.",
               "Django's 'Bulk Operations' allow you to perform batch operations on the database, reducing the number of queries and significantly improving performance when dealing with large datasets.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
@@ -14230,18 +14230,18 @@ const data = {
               "Django's 'Database Functions' are used for client-side authentication and authorization.",
               "Django's 'Database Functions' allow you to use database-specific functions in queries, leveraging the full power of your database engine in Django's ORM.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
               "What is Django's 'Transaction Management' and how does it ensure data consistency and integrity in database operations?",
             options: [
+              "Django's 'Transaction Management' allows you to manage database transactions, ensuring that database operations are atomic and preserving data consistency and integrity.",
               "Django's 'Transaction Management' is used for handling front-end form validations using JavaScript.",
               "Django's 'Transaction Management' is a JavaScript library for handling front-end configurations.",
               "Django's 'Transaction Management' is used for client-side authentication and authorization.",
-              "Django's 'Transaction Management' allows you to manage database transactions, ensuring that database operations are atomic and preserving data consistency and integrity.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "0",
           },
           {
             question:
@@ -14252,18 +14252,18 @@ const data = {
               "Django's 'Custom Validators' are used for client-side authentication and authorization.",
               "Django's 'Custom Validators' allow you to define custom validation functions for form fields, ensuring that data entered by users meets specific criteria.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
               "What is Django's 'GeoDjango' and how does it support geographic data and operations?",
             options: [
               "Django's 'GeoDjango' is used for handling front-end form validations using JavaScript.",
+              "Django's 'GeoDjango' is an extension to Django that adds support for geographic data and operations, allowing you to work with points, lines, polygons, and perform spatial queries and calculations.",
               "Django's 'GeoDjango' is a JavaScript library for handling front-end configurations.",
               "Django's 'GeoDjango' is used for client-side authentication and authorization.",
-              "Django's 'GeoDjango' is an extension to Django that adds support for geographic data and operations, allowing you to work with points, lines, polygons, and perform spatial queries and calculations.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "1",
           },
           {
             question:
@@ -14271,10 +14271,10 @@ const data = {
             options: [
               "Django's 'Admin Actions' are used for handling front-end form validations using JavaScript.",
               "Django's 'Admin Actions' are a JavaScript library for handling front-end configurations.",
-              "Django's 'Admin Actions' are used for client-side authentication and authorization.",
               "Django's 'Admin Actions' allow you to create custom actions in the Django admin interface, enabling you to perform bulk operations on selected model records.",
+              "Django's 'Admin Actions' are used for client-side authentication and authorization.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "2",
           },
           {
             question:
@@ -14285,7 +14285,7 @@ const data = {
               "Django's 'Django REST framework' is used for client-side authentication and authorization.",
               "Django's 'Django REST framework' is a powerful toolkit for building Web APIs, providing serialization, authentication, permissions, pagination, and other utilities to simplify the process of creating RESTful APIs.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
@@ -14296,7 +14296,7 @@ const data = {
               "Django's 'Authentication Backends' are used for client-side authentication and authorization.",
               "Django's 'Authentication Backends' allow you to define custom authentication methods, providing flexibility in authenticating users against different data sources and systems.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
           {
             question:
@@ -14307,7 +14307,7 @@ const data = {
               "Django's 'Custom Test Runners' are used for client-side authentication and authorization.",
               "Django's 'Custom Test Runners' allow you to define custom behavior during test execution, enabling you to customize the test suite and control the test output and behavior.",
             ],
-            correctAnswer: 3,
+            correctAnswer: "3",
           },
         ],
       },
@@ -15753,5 +15753,5 @@ const data = {
     },
   },
 };
-// !Review all questions are correct before flask
+// !On: angular "20 intermed angular questions"
 export default data;
