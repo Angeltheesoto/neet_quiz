@@ -47,7 +47,7 @@
     }
 
     ?Things to add to app:
-        1. Take quiz again button & exit button
+        1. Take quiz again button.
         2. Delete all saved quizzes.
-        3. Display the question number your on in each quiz question.
+        3. Reorder the quizzes every time you take it.
  -->

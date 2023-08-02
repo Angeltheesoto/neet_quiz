@@ -21,6 +21,8 @@ const QuestionItem = ({
   quizName,
   isEnd,
   idCount,
+  handleGenreSelect,
+  genre,
 }) => {
   const [totalCorrect, setTotalCorrect] = useState(0);
   const [currentQuiz, setCurrentQuiz] = useState(() => {
@@ -60,6 +62,11 @@ const QuestionItem = ({
           style={[styles.titleText, theme ? lightTheme.text : darkTheme.text]}
         >
           {question}
+        </Text>
+        <Text
+          style={[styles.questionNum, theme ? lightTheme.text : darkTheme.text]}
+        >
+          {idCount + 1} / {lengthOfQuiz}
         </Text>
         <View>
           {options?.map((option, index) => (
@@ -105,7 +112,9 @@ const QuestionItem = ({
               theme ? null : darkTheme.buttonContainer,
             ]}
           >
-            <Text style={theme ? null : darkTheme.text}>Next</Text>
+            <Text style={theme ? null : darkTheme.text}>
+              {idCount == lengthOfQuiz - 1 ? "Finish" : "Next"}
+            </Text>
           </TouchableOpacity>
         </View>
       </>
@@ -134,6 +143,17 @@ const QuestionItem = ({
             style={[styles.percentageText, theme ? null : darkTheme.text]}
           >{`${(totalCorrect / lengthOfQuiz) * 100}%`}</Text>
         </View>
+        <TouchableOpacity>
+          <Text
+            onPress={() => handleGenreSelect(genre)}
+            style={[
+              styles.buttonStyle,
+              theme ? null : darkTheme.buttonContainer,
+            ]}
+          >
+            Exit
+          </Text>
+        </TouchableOpacity>
       </View>
     );
   };
@@ -244,6 +264,10 @@ const styles = StyleSheet.create({
   percentageText: {
     fontSize: 50,
     fontWeight: "bold",
+  },
+  questionNum: {
+    marginBottom: 10,
+    textAlign: "center",
   },
 });
 export default QuestionItem;

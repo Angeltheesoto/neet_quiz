@@ -6,9 +6,23 @@ import { lightTheme, darkTheme } from "../styles/globalStyles";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import MyContext from "../contexts/MyContext";
 
-const Settings = () => {
+const Settings = ({ fetchLsData, setFetchLsData, initializeLocalStorage }) => {
   const [isLight, setIsLight] = useState(true);
   const { theme, toggleTheme } = useContext(MyContext);
+  const [bookmarkedItems, setBookmarkedItems] = useState(null);
+
+  useEffect(() => {
+    const fetchBookmarkedItems = async () => {
+      try {
+        const localBookmark = await AsyncStorage.getItem("bookmarkedItems");
+        setBookmarkedItems(localBookmark);
+      } catch (error) {
+        console.log("Error fetching bookmarked items:", error);
+      }
+    };
+
+    fetchBookmarkedItems();
+  }, []);
 
   const onPressRadioButton = () => {
     setIsLight((prev) => !prev);
@@ -43,6 +57,50 @@ const Settings = () => {
       </View>
     );
   };
+
+  // !add savedQuiz and setSavedQuiz to context and change it here so it updates in saved tab.
+  const clearData = () => {
+    return (
+      <>
+        <View>
+          <Text style={isLight ? lightTheme.text : darkTheme.text}>
+            Clicking this button will remove all saved quizzes.
+          </Text>
+        </View>
+        <TouchableOpacity
+          style={styles.clearButton}
+          onPress={() => {
+            // console.log("clicked");
+            clearLocalStorageItem("bookmarkedItems");
+          }}
+        >
+          <Text style={styles.clearText}>Delete all saved quizzes</Text>
+        </TouchableOpacity>
+        <Text style={isLight ? lightTheme.text : darkTheme.text}>
+          {bookmarkedItems}
+        </Text>
+      </>
+    );
+  };
+  // !Deletes localStorage
+  const clearLocalStorageItem = async (itemName) => {
+    try {
+      const localBookmark = await AsyncStorage.getItem("bookmarkedItems");
+      if (localBookmark !== null) {
+        await AsyncStorage.removeItem(itemName)
+          .then(() => initializeLocalStorage())
+          .then(() => {
+            setFetchLsData(!fetchLsData);
+          });
+      } else {
+        console.log('There is no "bookmarkedItems".');
+      }
+      console.log(`Removed item ${itemName} data.`);
+    } catch (err) {
+      console.log(`Could not delete ${itemName}:${err}`);
+    }
+  };
+  // clearLocalStorageItem("bookmarkedItems");
 
   const aboutContent = () => {
     return (
@@ -81,7 +139,12 @@ const Settings = () => {
     <View style={isLight ? lightTheme.container : darkTheme.container}>
       <View style={styles.settingItemContainer}>
         <SettingItem title={"Theme"} children={themeContent()} />
-        <SettingItem title={"About"} children={aboutContent()} isLast={true} />
+        <SettingItem title={"About"} children={aboutContent()} />
+        <SettingItem
+          title={"Delete Bookmarks"}
+          children={clearData()}
+          isLast={true}
+        />
       </View>
     </View>
   );
@@ -99,6 +162,19 @@ const styles = StyleSheet.create({
   radioButton: {
     flexDirection: "row",
     marginRight: 20,
+  },
+  clearButton: {
+    padding: 10,
+    backgroundColor: "tomato",
+    borderRadius: 10,
+    marginTop: 20,
+    width: 230,
+    alignSelf: "center",
+  },
+  clearText: {
+    textAlign: "center",
+    color: "white",
+    fontWeight: "bold",
   },
 });
 export default Settings;

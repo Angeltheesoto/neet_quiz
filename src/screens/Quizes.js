@@ -9,7 +9,7 @@ import { useNavigationState } from "@react-navigation/native";
 import { darkTheme, lightTheme } from "../styles/globalStyles";
 import MyContext from "../contexts/MyContext";
 
-const Quizes = () => {
+const Quizes = ({ fetchLsData, setFetchLsData }) => {
   const [genre, setGenre] = useState("javascript");
   const [selectedQuiz, setSelectedQuiz] = useState(null);
   const [selectedQuizQuestions, setSelectedQuizQuestions] = useState(null);
@@ -72,6 +72,7 @@ const Quizes = () => {
     }
   };
   // *console.log(savedQuiz);
+  // console.log(fetchLsData);
 
   // !Displays all title comp. if genre is chosen.
   const renderQuizList = () => {
@@ -157,6 +158,8 @@ const Quizes = () => {
             quizName={selectedQuiz}
             isEnd={isEnd}
             idCount={idCount}
+            handleGenreSelect={handleGenreSelect}
+            genre={genre}
           />
         );
       }
@@ -205,7 +208,7 @@ const Quizes = () => {
   // !Fetch local storage data
   useEffect(() => {
     fetchLocalStorageData();
-  }, [savedQuiz]);
+  }, [savedQuiz, fetchLsData]);
 
   return (
     <SafeAreaView styles={styles.container}>

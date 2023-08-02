@@ -42,7 +42,7 @@ export default function App() {
   return (
     <MyContext.Provider value={{ theme, toggleTheme }}>
       <NavigationContainer style={styles.container}>
-        <Tabs />
+        <Tabs initializeLocalStorage={initializeLocalStorage} />
       </NavigationContainer>
     </MyContext.Provider>
   );

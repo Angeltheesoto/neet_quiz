@@ -15753,5 +15753,4 @@ const data = {
     },
   },
 };
-// !On: angular "20 intermed angular questions"
 export default data;

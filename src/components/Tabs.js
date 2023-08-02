@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Quizes from "../screens/Quizes";
 import Saved from "../screens/Saved";
 import Settings from "../screens/Settings";
@@ -9,8 +9,9 @@ import MyContext from "../contexts/MyContext";
 
 const Tab = createBottomTabNavigator();
 
-const Tabs = () => {
+const Tabs = ({ initializeLocalStorage }) => {
   const { theme } = useContext(MyContext);
+  const [fetchLsData, setFetchLsData] = useState(false);
   return (
     <Tab.Navigator
       screenOptions={{
@@ -41,7 +42,9 @@ const Tabs = () => {
           ),
         }}
       >
-        {() => <Quizes />}
+        {() => (
+          <Quizes fetchLsData={fetchLsData} setFetchLsData={setFetchLsData} />
+        )}
       </Tab.Screen>
       <Tab.Screen
         name={"Saved"}
@@ -69,7 +72,13 @@ const Tabs = () => {
           ),
         }}
       >
-        {() => <Settings />}
+        {() => (
+          <Settings
+            initializeLocalStorage={initializeLocalStorage}
+            fetchLsData={fetchLsData}
+            setFetchLsData={setFetchLsData}
+          />
+        )}
       </Tab.Screen>
     </Tab.Navigator>
   );
