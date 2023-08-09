@@ -10,6 +10,8 @@ const Settings = ({ fetchLsData, setFetchLsData, initializeLocalStorage }) => {
   const [isLight, setIsLight] = useState(true);
   const { theme, toggleTheme } = useContext(MyContext);
   const [bookmarkedItems, setBookmarkedItems] = useState(null);
+  const [delSavedMessage, setDelSavedMessage] = useState(null);
+  const [showDelSavedMessage, setShowDelSavedMessage] = useState(true);
 
   useEffect(() => {
     const fetchBookmarkedItems = async () => {
@@ -70,15 +72,21 @@ const Settings = ({ fetchLsData, setFetchLsData, initializeLocalStorage }) => {
         <TouchableOpacity
           style={styles.clearButton}
           onPress={() => {
-            // console.log("clicked");
             clearLocalStorageItem("bookmarkedItems");
           }}
         >
           <Text style={styles.clearText}>Delete all saved quizzes</Text>
         </TouchableOpacity>
-        <Text style={isLight ? lightTheme.text : darkTheme.text}>
-          {bookmarkedItems}
-        </Text>
+        {showDelSavedMessage && (
+          <Text
+            style={[
+              styles.messagePrompt,
+              isLight ? lightTheme.text : darkTheme.text,
+            ]}
+          >
+            {delSavedMessage}
+          </Text>
+        )}
       </>
     );
   };
@@ -87,17 +95,22 @@ const Settings = ({ fetchLsData, setFetchLsData, initializeLocalStorage }) => {
     try {
       const localBookmark = await AsyncStorage.getItem("bookmarkedItems");
       if (localBookmark !== null) {
-        await AsyncStorage.removeItem(itemName)
-          .then(() => initializeLocalStorage())
-          .then(() => {
-            setFetchLsData(!fetchLsData);
-          });
+        await AsyncStorage.removeItem(itemName);
+        initializeLocalStorage();
+        setFetchLsData(!fetchLsData);
+        setDelSavedMessage("Deleted bookmarks successfully.");
+        setShowDelSavedMessage(true);
+        setTimeout(() => {
+          setShowDelSavedMessage(false);
+        }, 5000);
       } else {
-        console.log('There is no "bookmarkedItems".');
+        // console.log('There is no "bookmarkedItems".');
+        setDelSavedMessage("There are no saved bookmarks.");
       }
-      console.log(`Removed item ${itemName} data.`);
+      // console.log(`Removed item ${itemName} data.`);
     } catch (err) {
-      console.log(`Could not delete ${itemName}:${err}`);
+      // console.log(`Could not delete ${itemName}:${err}`);
+      setDelSavedMessage("Sorry, could not delete bookmarks.");
     }
   };
   // clearLocalStorageItem("bookmarkedItems");
@@ -175,6 +188,13 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "white",
     fontWeight: "bold",
+  },
+  messagePrompt: {
+    marginTop: 20,
+    padding: 5,
+    textAlign: "center",
+    borderWidth: 3,
+    borderColor: "gray",
   },
 });
 export default Settings;

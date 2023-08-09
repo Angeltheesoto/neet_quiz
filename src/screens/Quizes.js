@@ -69,6 +69,8 @@ const Quizes = ({ fetchLsData, setFetchLsData }) => {
     const data = await AsyncStorage.getItem("bookmarkedItems");
     if (data) {
       setSavedQuiz(JSON.parse(data));
+    } else {
+      setSavedQuiz({});
     }
   };
   // *console.log(savedQuiz);
@@ -209,6 +211,7 @@ const Quizes = ({ fetchLsData, setFetchLsData }) => {
   useEffect(() => {
     fetchLocalStorageData();
   }, [savedQuiz, fetchLsData]);
+  // console.log(savedQuiz);
 
   return (
     <SafeAreaView styles={styles.container}>
