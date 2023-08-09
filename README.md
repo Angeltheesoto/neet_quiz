@@ -47,7 +47,5 @@
     }
 
     ?Things to add to app:
-        1. Take quiz again button.
-        2. Delete all saved quizzes.
-        3. Reorder the quizzes every time you take it.
+        1. Reorder the quizzes every time you take it.
  -->

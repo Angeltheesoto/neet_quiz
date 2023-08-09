@@ -23,6 +23,7 @@ const QuestionItem = ({
   idCount,
   handleGenreSelect,
   genre,
+  handleRetakeQuiz,
 }) => {
   const [totalCorrect, setTotalCorrect] = useState(0);
   const [currentQuiz, setCurrentQuiz] = useState(() => {
@@ -143,7 +144,7 @@ const QuestionItem = ({
             style={[styles.percentageText, theme ? null : darkTheme.text]}
           >{`${(totalCorrect / lengthOfQuiz) * 100}%`}</Text>
         </View>
-        <TouchableOpacity>
+        <TouchableOpacity style={styles.endQuizButtonsContainer}>
           <Text
             onPress={() => handleGenreSelect(genre)}
             style={[
@@ -152,6 +153,28 @@ const QuestionItem = ({
             ]}
           >
             Exit
+          </Text>
+          <Text
+            onPress={() => {
+              const initialState = {
+                selectedOption: null,
+                isCorrect: null,
+                isReveal: false,
+              };
+              handleRetakeQuiz();
+              setCurrentQuiz(
+                Array.from({ length: lengthOfQuiz }, () => ({
+                  ...initialState,
+                }))
+              );
+              setTotalCorrect(0);
+            }}
+            style={[
+              styles.buttonStyle,
+              theme ? null : darkTheme.buttonContainer,
+            ]}
+          >
+            Retake
           </Text>
         </TouchableOpacity>
       </View>
@@ -223,8 +246,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#eee",
     padding: 10,
     borderRadius: 5,
+    marginTop: 20,
     marginRight: 10,
-    marginBottom: 10,
   },
   correct: {
     backgroundColor: "limegreen",
@@ -268,6 +291,11 @@ const styles = StyleSheet.create({
   questionNum: {
     marginBottom: 10,
     textAlign: "center",
+  },
+  endQuizButtonsContainer: {
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "space-between",
   },
 });
 export default QuestionItem;

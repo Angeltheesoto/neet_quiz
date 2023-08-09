@@ -35,6 +35,12 @@ const Quizes = ({ fetchLsData, setFetchLsData }) => {
   };
   // *console.log("Selected genre: ", genre);
 
+  // !Resets idCount and isEnd for retake
+  const handleRetakeQuiz = (gen, quizName) => {
+    setIdCount(0);
+    setIsEnd(false);
+  };
+
   const handleQuizSelect = (quiz) => {
     setSelectedQuiz(quiz);
   };
@@ -162,6 +168,7 @@ const Quizes = ({ fetchLsData, setFetchLsData }) => {
             idCount={idCount}
             handleGenreSelect={handleGenreSelect}
             genre={genre}
+            handleRetakeQuiz={handleRetakeQuiz}
           />
         );
       }
