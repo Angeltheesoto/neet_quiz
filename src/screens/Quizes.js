@@ -13,6 +13,7 @@ const Quizes = ({ fetchLsData, setFetchLsData }) => {
   const [genre, setGenre] = useState("javascript");
   const [selectedQuiz, setSelectedQuiz] = useState(null);
   const [selectedQuizQuestions, setSelectedQuizQuestions] = useState(null);
+  const [testQuizQuestions, setTestQuizQuestions] = useState(null);
 
   const [idCount, setIdCount] = useState(0);
   const [quizLength, setQuizLength] = useState(0);
@@ -39,6 +40,7 @@ const Quizes = ({ fetchLsData, setFetchLsData }) => {
   const handleRetakeQuiz = (gen, quizName) => {
     setIdCount(0);
     setIsEnd(false);
+    handleQuizQuestions();
   };
 
   const handleQuizSelect = (quiz) => {
@@ -46,9 +48,38 @@ const Quizes = ({ fetchLsData, setFetchLsData }) => {
   };
   // *console.log("Selected quiz: ", selectedQuiz);
 
+  // !Reorders the quizzes so they are not in order everytime
+  const reorderQuestions = (questions) => {
+    // Convert the object keys into an array of questions
+    const questionsArray = Object.values(questions);
+    // console.log("---Not shuffled", questionsArray);
+    // shuffle the array using a function
+    const shuffledQuestions = shuffleArray(questionsArray);
+    // console.log("---Shuffled array: ", shuffledQuestions);
+    return shuffledQuestions;
+  };
+
+  const shuffleArray = (array) => {
+    const shuffledArray = [...array];
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledArray[i], shuffledArray[j]] = [
+        shuffledArray[j],
+        shuffledArray[i],
+      ];
+    }
+    return shuffledArray;
+  };
+
   const handleQuizQuestions = () => {
     if (selectedQuiz) {
-      setSelectedQuizQuestions(data.quizes[genre][selectedQuiz]?.questions);
+      // ? This returns the array in order
+      // setSelectedQuizQuestions(data.quizes[genre][selectedQuiz]?.questions);
+      // ? This returns the array shuffled
+      const quizQuestions = data.quizes[genre][selectedQuiz]?.questions;
+      const reorderedQ = reorderQuestions(quizQuestions);
+      setSelectedQuizQuestions(reorderedQ);
+      // setTestQuizQuestions(reorderedQ);
     }
   };
   // *console.log("Selected questions: ", selectedQuizQuestions);
@@ -147,11 +178,13 @@ const Quizes = ({ fetchLsData, setFetchLsData }) => {
   // !Displays our chosen quiz and passes all props.
   const renderQuizQuestions = () => {
     const quizQuestions = data.quizes[genre][selectedQuiz].questions;
-    const question = quizQuestions[idCount].question;
-    const options = quizQuestions[idCount].options;
-    const correctAnswer = quizQuestions[idCount].correctAnswer;
-    const lengthOfQuiz = quizQuestions.length;
-    // console.log(lengthOfQuiz);
+    // const question = quizQuestions[idCount].question;
+    // const options = quizQuestions[idCount].options;
+    // const correctAnswer = quizQuestions[idCount].correctAnswer;
+    const question = selectedQuizQuestions[idCount].question;
+    const options = selectedQuizQuestions[idCount].options;
+    const correctAnswer = selectedQuizQuestions[idCount].correctAnswer;
+    const lengthOfQuiz = selectedQuizQuestions.length;
     if (selectedQuizQuestions && idCount >= 0 && idCount <= lengthOfQuiz) {
       if (quizQuestions) {
         return (
@@ -190,7 +223,7 @@ const Quizes = ({ fetchLsData, setFetchLsData }) => {
     if (idCount < quizLength - 1) {
       setIdCount((prev) => (prev += 1));
     } else {
-      console.log("You reached the end of the quiz.");
+      // console.log("You reached the end of the quiz.");
       setIsEnd(!isEnd);
     }
   };

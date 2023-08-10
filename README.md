@@ -48,4 +48,6 @@
 
     ?Things to add to app:
         1. Reorder the quizzes every time you take it.
+        2. Implement ads
+        3. upload to playstore
  -->
