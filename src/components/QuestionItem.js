@@ -140,9 +140,9 @@ const QuestionItem = ({
               : { borderColor: "red" },
           ]}
         >
-          <Text
-            style={[styles.percentageText, theme ? null : darkTheme.text]}
-          >{`${(totalCorrect / lengthOfQuiz) * 100}%`}</Text>
+          <Text style={[styles.percentageText, theme ? null : darkTheme.text]}>
+            {`${((totalCorrect / lengthOfQuiz) * 100).toFixed(0)}%`}
+          </Text>
         </View>
         <TouchableOpacity style={styles.endQuizButtonsContainer}>
           <Text

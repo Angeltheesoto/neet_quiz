@@ -47,7 +47,8 @@
     }
 
     ?Things to add to app:
-        1. Fix
-        1. Implement ads
-        2. upload to playstore
+        !1. BUG: When user clicks quiz and exits back with the starting exit button, that quiz cant be entered again until a different quiz is selected.
+        !2. BUG: Clicking buttons has a delay on them such as: quiz buttons, and bookmarks.
+        3. Implement ads
+        4. upload to playstore
  -->
